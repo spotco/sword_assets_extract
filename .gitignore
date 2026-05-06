@@ -1,0 +1,23 @@
+# Extracted/copied game assets and converted media
+/extracted/
+
+# Downloaded third-party tools/binaries
+/tools/
+
+# Generated large scan reports
+/reports/*.csv
+
+# Generated transient category lists/summaries
+/reports/audio_without_human_name.txt
+/reports/audio_name_summary.txt
+/reports/summary.txt
+/reports/unnamed_audio_*.txt
+
+# Python caches and local runtime noise
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local temp/probe files
+*.tmp
+*.log

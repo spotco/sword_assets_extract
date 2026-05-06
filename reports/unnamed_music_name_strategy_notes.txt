@@ -1,0 +1,21 @@
+Unnamed non-voice music candidates: 121
+high: 120
+missing: 1
+
+Bank type hits:
+story_music: 68
+scene_music: 39
+battle_music: 31
+non_music_bank: 13
+music: 3
+scenario_sfx_or_ambience: 1
+ui_music: 1
+
+Strategy results:
+1. Direct Wwise DIDX media-id to .bnk filename mapping recovered names for files whose media id is listed in a Music_*.bnk bank.
+2. HIRC MusicTrack/media-id tracing recovered additional names where music/ambience was referenced by events instead of DIDX entries.
+3. Exact decoded-audio hash matching was tested separately and found no duplicate named WEMs for the still-missing files.
+4. Duration/channel categorization is still needed to separate music/ambience from short SFX.
+
+Still missing after all music naming strategies in this script:
+audio/Media/953029036.wem	27.029s	possibly_music_ambience_or_long_sfx
