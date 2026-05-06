@@ -1,0 +1,10 @@
+Audio rows: 48409
+event_name: 42363
+bank_name: 5538
+missing: 508
+Missing human-readable WEM names: 508
+
+Missing by directory:
+349	audio\Media\cn
+158	audio\Media
+1	audio\Media\kr

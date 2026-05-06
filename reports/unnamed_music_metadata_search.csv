@@ -1,0 +1,18 @@
+media_id,relative_path,hit_file,hit_kind,offset,nearby_strings
+951805876,audio/Media/951805876.wem,audio/bnk_fx_sffazhen_2_1.bnk,be32,0x5b52,-C0@ | X^8@ | T5W6/  | zs;?
+277694270,audio/Media/277694270.wem,audio/Music_Battle_Tundra.bnk,le32,0x4f,BKHD( | HIRC
+351327745,audio/Media/351327745.wem,audio/Music_Battle_Unknown.bnk,le32,0x4f,BKHD( | HIRC | UUUUU
+288674136,audio/Media/288674136.wem,audio/Music_Story_Life.bnk,le32,0x4f,BKHD( | &>]p | CIHIRC  | UUUU
+951805876,audio/Media/951805876.wem,lua/lua_dbtemplate.unity3d,be32,0x954f90,KF;A | Wj:4{ | LS%= | kcwj
+351327745,audio/Media/351327745.wem,ui/dynamic_card_full/skin_card_hsolomonkinghashaf2set01.unity3d,be32,0x2f89a1,"UHq4 | %""ww | UPUW | W07@ | k8r8 |  \Y` | VeQP | PQQC"
+906001149,audio/Media/906001149.wem,scenario/scene/scene_city-os-ni00208.unity3d,be32,0xe2cc8,~||TF< | ^WWWKE' | 'pB? | PPP%@ | /!i] |  1#[-I
+906001149,audio/Media/906001149.wem,icon/activityworldboss/activityworldboss_stage2_shop_bg.unity3d,le32,0x1f591,"6rN* | U1zX(` | ?UQX | `6d,U | \R@K | ^0W\"
+351327745,audio/Media/351327745.wem,icon/card_full/card_hknightscaptainmset01.unity3d,le32,0x20460c,@%qi | %pW? | V*DE_G | RPS* | Xk(i; | llyh
+351327745,audio/Media/351327745.wem,icon/skin_card/skin_card_hcrimsonlavierfset01.unity3d,be32,0x2eeeb,L'S( | n2j\ | IRa8 | bZ4t | dUPSM | tT:H | BH%c
+351327745,audio/Media/351327745.wem,icon/skin_card_full/skin_card_hluciayoungcolonelm2set01.unity3d,le32,0x6272e6,"*K`? | AAvw}u @e | uiev  | ,]nA7m5@%3J | @UthT"
+351327745,audio/Media/351327745.wem,icon/skin_card_full/skin_card_uwhcfset01.unity3d,be32,0x6733b,!` `
+277694270,audio/Media/277694270.wem,dreamlands/prefab/furniture/dreamlands_prefab_furniture1.unity3d,be32,0x9c6cd,"qE$2 | "">03 | X>*V=  | G>`{?? | >X]=> | R1>' | !>d2=? | p40> | (d:>"
+351327745,audio/Media/351327745.wem,battle/map/stage_interior-ug-ni01001.unity3d,be32,0xe0cdb,"P1~~~0j | ~~~mVX | $""$@ | -/52 | !#55 | \#<<  | \$%%"
+815135894,audio/Media/815135894.wem,audio/jp/vo_hasina.bnk,le32,0xc4854,zI0x | W2Iy | 0|?t/X | |A{r  | .#@N);- | E*W>$5
+788761905,audio/Media/788761905.wem,audio/jp/vo_magenusi.bnk,le32,0x12d5b5,w[y_3 | `!:rg< | GcS8 | Wd// | +R$Z
+351327745,audio/Media/351327745.wem,audio/kr/vo_koukouna.bnk,be32,0xe87b1,"xj,P | u;@e | tN`H0 | |$p| | V+o) | <<{!"

@@ -1,0 +1,73 @@
+Game root: C:\Program Files (x86)\Steam\steamapps\common\Sword of Convallaria
+Assets root: C:\Program Files (x86)\Steam\steamapps\common\Sword of Convallaria\assets
+Files: 54470
+Skipped missing during scan: 0
+Excluded dirs: report
+Bytes: 8674355432
+
+Extensions:
+  .wem: 42871 files, 2192728754 bytes
+  .unity3d: 5913 files, 5037444517 bytes
+  .bnk: 5538 files, 736737736 bytes
+  .mp4: 120 files, 703158376 bytes
+  .proto: 25 files, 370055 bytes
+  .bytes: 1 files, 3493141 bytes
+  .txt: 1 files, 412998 bytes
+  .ini: 1 files, 9855 bytes
+
+Headers:
+  not_scanned: 44470
+  xor_XD_Audio_bank: 5478
+  xor_XD_Audio_riff: 4189
+  UnityFS: 266
+  wwise_bank: 58
+  unknown: 7
+  riff: 2
+
+Top directories by extension:
+  GamepadConfig.unity3d: .unity3d=1
+  PB: .proto=25
+  XDFeatureSettings.unity3d: .unity3d=1
+  animatorgeninfo.unity3d: .unity3d=1
+  area_setting.unity3d: .unity3d=1
+  area_setting2.unity3d: .unity3d=1
+  asset_bundle.unity3d: .unity3d=1
+  asset_dep.unity3d: .unity3d=1
+  asset_icon.unity3d: .unity3d=1
+  asset_loc.unity3d: .unity3d=1
+  asset_md5.unity3d: .unity3d=1
+  asset_not_bundle.unity3d: .unity3d=1
+  asset_sync.unity3d: .unity3d=1
+  atlas: .unity3d=247
+  audio: .wem=42871, .bnk=5538
+  battle: .unity3d=574
+  bnk_events.unity3d: .unity3d=1
+  capital: .unity3d=112
+  db_lua.bytes: .bytes=1
+  db_template.unity3d: .unity3d=1
+  deviceprofile.unity3d: .unity3d=1
+  dreamlands: .unity3d=57
+  eventgames: .unity3d=2
+  file_hash.txt: .txt=1
+  font: .unity3d=2
+  game_conf.unity3d: .unity3d=1
+  icon: .unity3d=2339
+  infinitechallenge: .unity3d=10
+  input_actions.unity3d: .unity3d=1
+  localization: .unity3d=303, .mp4=9
+  lua: .unity3d=27
+  minisandbox: .unity3d=62
+  movie: .mp4=111
+  newui: .unity3d=11
+  player_prefs.ini: .ini=1
+  resource_version.unity3d: .unity3d=1
+  scenario: .unity3d=764
+  scene: .unity3d=36
+  shaders.unity3d: .unity3d=1
+  share: .unity3d=317
+  shared.unity3d: .unity3d=1
+  tmp_sprite_asset.unity3d: .unity3d=1
+  ui: .unity3d=1008
+  uiminisandbox: .unity3d=2
+  uisandbox2: .unity3d=15
+  worldboss: .unity3d=4

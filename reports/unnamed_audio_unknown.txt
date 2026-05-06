@@ -1,0 +1,3 @@
+audio/Media/976066693.wem	18.936s	2ch	214 kbps
+audio/Media/983487834.wem	11.829s	2ch	90 kbps
+audio/Media/693990111.wem	10.268s	2ch	175 kbps

@@ -1,0 +1,509 @@
+relative_path,category,reason,duration_seconds,duration,channels,sample_rate,encoding,bitrate,size,source_state,vgmstream_ok
+audio/Media/1001162596.wem,likely_music_or_ambience,stereo and at least 60 seconds,270.239,4:30.239 seconds,2,44100 Hz,Custom Vorbis,167 kbps,5674210,wwise_riff,True
+audio/Media/100761389.wem,likely_music_or_ambience,stereo and at least 60 seconds,111.0,1:51.000 seconds,2,44100 Hz,Custom Vorbis,191 kbps,2651533,wwise_riff,True
+audio/Media/1014685452.wem,likely_music_or_ambience,stereo and at least 60 seconds,79.07900000000001,1:19.079 seconds,2,44100 Hz,Custom Vorbis,162 kbps,1607835,wwise_riff,True
+audio/Media/1021317097.wem,likely_music_or_ambience,stereo and at least 60 seconds,91.25,1:31.250 seconds,2,44100 Hz,Custom Vorbis,197 kbps,2247950,wwise_riff,True
+audio/Media/1031687532.wem,likely_sfx_or_voice_line,short duration,8.826,0:08.826 seconds,2,44100 Hz,Custom Vorbis,91 kbps,100526,wwise_riff,True
+audio/Media/1031952363.wem,likely_music_or_ambience,stereo and at least 60 seconds,80.055,1:20.055 seconds,2,44100 Hz,Custom Vorbis,150 kbps,1504543,wwise_riff,True
+audio/Media/1038605511.wem,likely_music_or_ambience,stereo and at least 60 seconds,115.75,1:55.750 seconds,2,44100 Hz,Custom Vorbis,218 kbps,3164673,wwise_riff,True
+audio/Media/105504850.wem,likely_music_or_ambience,stereo and at least 60 seconds,144.5,2:24.500 seconds,2,44100 Hz,Custom Vorbis,166 kbps,3012168,wwise_riff,True
+audio/Media/10565447.wem,likely_sfx_or_voice_line,short duration,8.5,0:08.500 seconds,2,44100 Hz,Custom Vorbis,120 kbps,128393,wwise_riff,True
+audio/Media/1066640034.wem,likely_music_or_ambience,stereo and at least 60 seconds,81.0,1:21.000 seconds,2,44100 Hz,Custom Vorbis,177 kbps,1796337,wwise_riff,True
+audio/Media/1068995827.wem,likely_music_or_ambience,stereo and at least 60 seconds,126.5,2:06.500 seconds,2,44100 Hz,Custom Vorbis,199 kbps,3150105,wwise_riff,True
+audio/Media/1070665945.wem,likely_sfx_or_voice_line,short duration,9.875,0:09.875 seconds,2,44100 Hz,Custom Vorbis,119 kbps,147803,wwise_riff,True
+audio/Media/118095155.wem,likely_music_or_ambience,stereo and at least 60 seconds,91.5,1:31.500 seconds,2,44100 Hz,Custom Vorbis,200 kbps,2289103,wwise_riff,True
+audio/Media/122075770.wem,likely_music_or_ambience,stereo and at least 60 seconds,70.75,1:10.750 seconds,2,44100 Hz,Custom Vorbis,198 kbps,1760014,wwise_riff,True
+audio/Media/139964385.wem,likely_sfx_or_voice_line,short duration,3.413,0:03.413 seconds,2,44100 Hz,Custom Vorbis,184 kbps,79020,wwise_riff,True
+audio/Media/146815214.wem,likely_music_or_ambience,stereo and at least 60 seconds,86.75,1:26.750 seconds,2,44100 Hz,Custom Vorbis,190 kbps,2060490,wwise_riff,True
+audio/Media/1476124.wem,likely_music_or_ambience,stereo and at least 60 seconds,143.109,2:23.109 seconds,2,44100 Hz,Custom Vorbis,179 kbps,3206490,wwise_riff,True
+audio/Media/149163012.wem,likely_sfx_or_voice_line,short duration,6.422,0:06.422 seconds,2,44100 Hz,Custom Vorbis,189 kbps,152199,wwise_riff,True
+audio/Media/155257144.wem,likely_sfx_or_voice_line,short duration,9.035,0:09.035 seconds,2,44100 Hz,Custom Vorbis,117 kbps,132993,wwise_riff,True
+audio/Media/160693475.wem,possibly_music_ambience_or_long_sfx,stereo and at least 20 seconds,56.42,0:56.420 seconds,2,44100 Hz,Custom Vorbis,124 kbps,875239,wwise_riff,True
+audio/Media/167931848.wem,likely_music_or_ambience,stereo and at least 60 seconds,125.401,2:05.401 seconds,2,44100 Hz,Custom Vorbis,171 kbps,2690534,wwise_riff,True
+audio/Media/176004972.wem,likely_music_or_ambience,stereo and at least 60 seconds,124.8,2:04.800 seconds,2,44100 Hz,Custom Vorbis,183 kbps,2862081,wwise_riff,True
+audio/Media/18643715.wem,likely_sfx_or_voice_line,short duration,9.797,0:09.797 seconds,2,44100 Hz,Custom Vorbis,194 kbps,238580,wwise_riff,True
+audio/Media/189573670.wem,likely_music_or_ambience,stereo and at least 60 seconds,128.768,2:08.768 seconds,2,44100 Hz,Custom Vorbis,170 kbps,2744298,wwise_riff,True
+audio/Media/190466020.wem,likely_sfx_or_voice_line,short duration,9.0,0:09.000 seconds,2,44100 Hz,Custom Vorbis,212 kbps,238748,wwise_riff,True
+audio/Media/190497010.wem,possibly_music_ambience_or_long_sfx,stereo and at least 20 seconds,45.484,0:45.484 seconds,2,44100 Hz,Custom Vorbis,172 kbps,978122,wwise_riff,True
+audio/Media/211191023.wem,likely_music_or_ambience,stereo and at least 60 seconds,118.25,1:58.250 seconds,2,44100 Hz,Custom Vorbis,178 kbps,2641462,wwise_riff,True
+audio/Media/214383592.wem,likely_music_or_ambience,stereo and at least 60 seconds,69.75,1:09.750 seconds,2,44100 Hz,Custom Vorbis,190 kbps,1659798,wwise_riff,True
+audio/Media/242962495.wem,likely_music_or_ambience,stereo and at least 60 seconds,117.01400000000001,1:57.014 seconds,2,44100 Hz,Custom Vorbis,172 kbps,2524954,wwise_riff,True
+audio/Media/25633412.wem,likely_music_or_ambience,stereo and at least 60 seconds,137.0,2:17.000 seconds,2,44100 Hz,Custom Vorbis,196 kbps,3359666,wwise_riff,True
+audio/Media/260078545.wem,likely_music_or_ambience,stereo and at least 60 seconds,127.918,2:07.918 seconds,2,44100 Hz,Custom Vorbis,165 kbps,2645033,wwise_riff,True
+audio/Media/264083307.wem,likely_music_or_ambience,stereo and at least 60 seconds,114.89699999999999,1:54.897 seconds,2,44100 Hz,Custom Vorbis,172 kbps,2476698,wwise_riff,True
+audio/Media/266959265.wem,likely_music_or_ambience,stereo and at least 60 seconds,119.25,1:59.250 seconds,2,44100 Hz,Custom Vorbis,181 kbps,2705432,wwise_riff,True
+audio/Media/269098139.wem,likely_music_or_ambience,stereo and at least 60 seconds,117.25,1:57.250 seconds,2,44100 Hz,Custom Vorbis,198 kbps,2910477,wwise_riff,True
+audio/Media/274471307.wem,likely_music_or_ambience,stereo and at least 60 seconds,114.0,1:54.000 seconds,2,44100 Hz,Custom Vorbis,176 kbps,2511066,wwise_riff,True
+audio/Media/276368363.wem,likely_music_or_ambience,stereo and at least 60 seconds,112.75,1:52.750 seconds,2,44100 Hz,Custom Vorbis,194 kbps,2746518,wwise_riff,True
+audio/Media/277694270.wem,likely_music_or_ambience,stereo and at least 60 seconds,120.5,2:00.500 seconds,2,44100 Hz,Custom Vorbis,184 kbps,2775599,wwise_riff,True
+audio/Media/283309943.wem,likely_music_or_ambience,stereo and at least 60 seconds,102.5,1:42.500 seconds,2,44100 Hz,Custom Vorbis,200 kbps,2570979,wwise_riff,True
+audio/Media/286446205.wem,likely_music_or_ambience,stereo and at least 60 seconds,72.483,1:12.483 seconds,2,44100 Hz,Custom Vorbis,164 kbps,1493944,wwise_riff,True
+audio/Media/288674136.wem,likely_music_or_ambience,stereo and at least 60 seconds,70.116,1:10.116 seconds,2,44100 Hz,Custom Vorbis,176 kbps,1542999,wwise_riff,True
+audio/Media/29471732.wem,likely_music_or_ambience,stereo and at least 60 seconds,60.753,1:00.753 seconds,2,44100 Hz,Custom Vorbis,101 kbps,767885,wwise_riff,True
+audio/Media/296740833.wem,likely_music_or_ambience,stereo and at least 60 seconds,76.0,1:16.000 seconds,2,44100 Hz,Custom Vorbis,183 kbps,1740712,wwise_riff,True
+audio/Media/302416290.wem,likely_music_or_ambience,stereo and at least 60 seconds,124.0,2:04.000 seconds,2,44100 Hz,Custom Vorbis,177 kbps,2749533,wwise_riff,True
+audio/Media/304972902.wem,likely_sfx_or_voice_line,short duration,5.907,0:05.907 seconds,2,44100 Hz,Custom Vorbis,198 kbps,146773,wwise_riff,True
+audio/Media/305025522.wem,likely_music_or_ambience,stereo and at least 60 seconds,123.636,2:03.636 seconds,2,44100 Hz,Custom Vorbis,180 kbps,2792911,wwise_riff,True
+audio/Media/308584625.wem,likely_sfx_or_voice_line,short duration,8.0,0:08.000 seconds,2,44100 Hz,Custom Vorbis,166 kbps,166539,wwise_riff,True
+audio/Media/30948939.wem,likely_sfx_or_voice_line,short duration,8.092,0:08.092 seconds,2,44100 Hz,Custom Vorbis,158 kbps,160014,wwise_riff,True
+audio/Media/310576033.wem,likely_music_or_ambience,stereo and at least 60 seconds,63.333,1:03.333 seconds,2,44100 Hz,Custom Vorbis,174 kbps,1384965,wwise_riff,True
+audio/Media/313353859.wem,likely_music_or_ambience,stereo and at least 60 seconds,120.0,2:00.000 seconds,2,44100 Hz,Custom Vorbis,180 kbps,2706098,wwise_riff,True
+audio/Media/318077433.wem,likely_music_or_ambience,stereo and at least 60 seconds,93.75,1:33.750 seconds,2,44100 Hz,Custom Vorbis,194 kbps,2277412,wwise_riff,True
+audio/Media/3217170.wem,likely_music_or_ambience,stereo and at least 60 seconds,128.5,2:08.500 seconds,2,44100 Hz,Custom Vorbis,199 kbps,3208110,wwise_riff,True
+audio/Media/322743157.wem,likely_music_or_ambience,stereo and at least 60 seconds,123.429,2:03.429 seconds,2,44100 Hz,Custom Vorbis,165 kbps,2555603,wwise_riff,True
+audio/Media/341687626.wem,likely_music_or_ambience,stereo and at least 60 seconds,135.183,2:15.183 seconds,2,44100 Hz,Custom Vorbis,160 kbps,2711263,wwise_riff,True
+audio/Media/344687178.wem,likely_sfx_or_voice_line,short duration,6.552,0:06.552 seconds,2,44100 Hz,Custom Vorbis,180 kbps,148265,wwise_riff,True
+audio/Media/346517283.wem,possibly_music_ambience_or_long_sfx,stereo and at least 20 seconds,21.143,0:21.143 seconds,2,44100 Hz,Custom Vorbis,174 kbps,462053,wwise_riff,True
+audio/Media/351327745.wem,likely_music_or_ambience,stereo and at least 60 seconds,115.455,1:55.455 seconds,2,44100 Hz,Custom Vorbis,177 kbps,2557916,wwise_riff,True
+audio/Media/352459332.wem,likely_sfx_or_voice_line,short duration,7.866,0:07.866 seconds,2,44100 Hz,Custom Vorbis,179 kbps,176613,wwise_riff,True
+audio/Media/363280101.wem,likely_music_or_ambience,stereo and at least 60 seconds,88.943,1:28.943 seconds,2,44100 Hz,Custom Vorbis,167 kbps,1861387,wwise_riff,True
+audio/Media/366224958.wem,likely_music_or_ambience,stereo and at least 60 seconds,113.571,1:53.571 seconds,2,44100 Hz,Custom Vorbis,203 kbps,2889535,wwise_riff,True
+audio/Media/4128751.wem,likely_music_or_ambience,stereo and at least 60 seconds,124.0,2:04.000 seconds,2,44100 Hz,Custom Vorbis,171 kbps,2659653,wwise_riff,True
+audio/Media/420376016.wem,likely_music_or_ambience,stereo and at least 60 seconds,126.75,2:06.750 seconds,2,44100 Hz,Custom Vorbis,173 kbps,2750661,wwise_riff,True
+audio/Media/42128501.wem,likely_music_or_ambience,stereo and at least 60 seconds,115.75,1:55.750 seconds,2,44100 Hz,Custom Vorbis,194 kbps,2812136,wwise_riff,True
+audio/Media/444231590.wem,likely_music_or_ambience,stereo and at least 60 seconds,75.136,1:15.136 seconds,2,44100 Hz,Custom Vorbis,179 kbps,1688585,wwise_riff,True
+audio/Media/446226713.wem,possibly_music_ambience_or_long_sfx,stereo and at least 20 seconds,50.687,0:50.687 seconds,2,44100 Hz,Custom Vorbis,111 kbps,704508,wwise_riff,True
+audio/Media/460535770.wem,likely_music_or_ambience,stereo and at least 60 seconds,77.125,1:17.125 seconds,2,44100 Hz,Custom Vorbis,179 kbps,1730677,wwise_riff,True
+audio/Media/467987604.wem,likely_sfx_or_voice_line,short duration,8.692,0:08.692 seconds,2,44100 Hz,Custom Vorbis,199 kbps,217126,wwise_riff,True
+audio/Media/469457561.wem,likely_music_or_ambience,stereo and at least 60 seconds,113.0,1:53.000 seconds,2,44100 Hz,Custom Vorbis,198 kbps,2807732,wwise_riff,True
+audio/Media/482005207.wem,possibly_music_ambience_or_long_sfx,stereo and at least 20 seconds,21.519,0:21.519 seconds,2,44100 Hz,Custom Vorbis,118 kbps,318827,wwise_riff,True
+audio/Media/482355675.wem,likely_sfx_or_voice_line,short duration,8.035,0:08.035 seconds,2,44100 Hz,Custom Vorbis,178 kbps,179770,wwise_riff,True
+audio/Media/486240075.wem,likely_music_or_ambience,stereo and at least 60 seconds,136.0,2:16.000 seconds,2,44100 Hz,Custom Vorbis,219 kbps,3733315,wwise_riff,True
+audio/Media/486276078.wem,possibly_music_ambience_or_long_sfx,stereo and at least 20 seconds,41.844,0:41.844 seconds,2,44100 Hz,Custom Vorbis,127 kbps,669576,wwise_riff,True
+audio/Media/49633189.wem,likely_music_or_ambience,stereo and at least 60 seconds,154.75,2:34.750 seconds,2,44100 Hz,Custom Vorbis,208 kbps,4029301,wwise_riff,True
+audio/Media/501104748.wem,likely_music_or_ambience,stereo and at least 60 seconds,118.66,1:58.660 seconds,2,44100 Hz,Custom Vorbis,172 kbps,2554849,wwise_riff,True
+audio/Media/502218949.wem,possibly_music_ambience_or_long_sfx,stereo and at least 20 seconds,20.005,0:20.005 seconds,2,44100 Hz,Custom Vorbis,147 kbps,368972,wwise_riff,True
+audio/Media/505295999.wem,likely_music_or_ambience,stereo and at least 60 seconds,106.75,1:46.750 seconds,2,44100 Hz,Custom Vorbis,199 kbps,2663388,wwise_riff,True
+audio/Media/509706349.wem,likely_music_or_ambience,stereo and at least 60 seconds,92.75,1:32.750 seconds,2,44100 Hz,Custom Vorbis,191 kbps,2222592,wwise_riff,True
+audio/Media/524094008.wem,likely_music_or_ambience,stereo and at least 60 seconds,121.75,2:01.750 seconds,2,44100 Hz,Custom Vorbis,195 kbps,2982110,wwise_riff,True
+audio/Media/529430509.wem,likely_music_or_ambience,stereo and at least 60 seconds,114.543,1:54.543 seconds,2,44100 Hz,Custom Vorbis,190 kbps,2727068,wwise_riff,True
+audio/Media/535114612.wem,likely_music_or_ambience,stereo and at least 60 seconds,142.934,2:22.934 seconds,2,44100 Hz,Custom Vorbis,179 kbps,3206450,wwise_riff,True
+audio/Media/559585457.wem,likely_music_or_ambience,stereo and at least 60 seconds,115.16,1:55.160 seconds,2,44100 Hz,Custom Vorbis,195 kbps,2813820,wwise_riff,True
+audio/Media/561448613.wem,likely_music_or_ambience,stereo and at least 60 seconds,115.2,1:55.200 seconds,2,44100 Hz,Custom Vorbis,172 kbps,2485844,wwise_riff,True
+audio/Media/572509882.wem,likely_music_or_ambience,stereo and at least 60 seconds,86.866,1:26.866 seconds,2,44100 Hz,Custom Vorbis,178 kbps,1934611,wwise_riff,True
+audio/Media/57287028.wem,likely_music_or_ambience,stereo and at least 60 seconds,68.5,1:08.500 seconds,2,44100 Hz,Custom Vorbis,189 kbps,1620498,wwise_riff,True
+audio/Media/578826403.wem,likely_sfx_or_voice_line,short duration,7.021,0:07.021 seconds,2,44100 Hz,Custom Vorbis,171 kbps,150887,wwise_riff,True
+audio/Media/5840810.wem,likely_music_or_ambience,stereo and at least 60 seconds,108.0,1:48.000 seconds,2,44100 Hz,Custom Vorbis,211 kbps,2853265,wwise_riff,True
+audio/Media/587319189.wem,likely_music_or_ambience,stereo and at least 60 seconds,68.0,1:08.000 seconds,2,44100 Hz,Custom Vorbis,182 kbps,1553099,wwise_riff,True
+audio/Media/58844104.wem,likely_music_or_ambience,stereo and at least 60 seconds,120.375,2:00.375 seconds,2,44100 Hz,Custom Vorbis,194 kbps,2926909,wwise_riff,True
+audio/Media/593177973.wem,likely_sfx_or_voice_line,short duration,6.755,0:06.755 seconds,2,44100 Hz,Custom Vorbis,200 kbps,169528,wwise_riff,True
+audio/Media/595525186.wem,likely_music_or_ambience,stereo and at least 60 seconds,95.25,1:35.250 seconds,2,44100 Hz,Custom Vorbis,187 kbps,2231266,wwise_riff,True
+audio/Media/605439337.wem,likely_sfx_or_voice_line,short duration,3.987,0:03.987 seconds,2,44100 Hz,Custom Vorbis,169 kbps,84676,wwise_riff,True
+audio/Media/622753124.wem,likely_music_or_ambience,stereo and at least 60 seconds,115.75,1:55.750 seconds,2,44100 Hz,Custom Vorbis,192 kbps,2778605,wwise_riff,True
+audio/Media/627528953.wem,likely_sfx_or_voice_line,short duration,9.443,0:09.443 seconds,2,44100 Hz,Custom Vorbis,181 kbps,214516,wwise_riff,True
+audio/Media/629411513.wem,likely_sfx_or_voice_line,short duration,7.425,0:07.425 seconds,2,44100 Hz,Custom Vorbis,129 kbps,120215,wwise_riff,True
+audio/Media/634214285.wem,likely_music_or_ambience,stereo and at least 60 seconds,131.5,2:11.500 seconds,2,44100 Hz,Custom Vorbis,187 kbps,3087368,wwise_riff,True
+audio/Media/640499737.wem,likely_music_or_ambience,stereo and at least 60 seconds,78.25,1:18.250 seconds,2,44100 Hz,Custom Vorbis,185 kbps,1812362,wwise_riff,True
+audio/Media/642147771.wem,likely_music_or_ambience,stereo and at least 60 seconds,86.96000000000001,1:26.960 seconds,2,44100 Hz,Custom Vorbis,171 kbps,1866423,wwise_riff,True
+audio/Media/645326002.wem,likely_sfx_or_voice_line,short duration,3.738,0:03.738 seconds,2,44100 Hz,Custom Vorbis,182 kbps,85444,wwise_riff,True
+audio/Media/648291043.wem,likely_music_or_ambience,stereo and at least 60 seconds,86.25,1:26.250 seconds,2,44100 Hz,Custom Vorbis,195 kbps,2112818,wwise_riff,True
+audio/Media/650349109.wem,likely_music_or_ambience,stereo and at least 60 seconds,116.41,1:56.410 seconds,2,44100 Hz,Custom Vorbis,171 kbps,2499728,wwise_riff,True
+audio/Media/651396886.wem,likely_sfx_or_voice_line,short duration,8.061,0:08.061 seconds,2,44100 Hz,Custom Vorbis,182 kbps,183780,wwise_riff,True
+audio/Media/65738196.wem,likely_music_or_ambience,stereo and at least 60 seconds,113.75399999999999,1:53.754 seconds,2,44100 Hz,Custom Vorbis,166 kbps,2362980,wwise_riff,True
+audio/Media/663855423.wem,likely_sfx_or_voice_line,short duration,3.202,0:03.202 seconds,2,44100 Hz,Custom Vorbis,196 kbps,78668,wwise_riff,True
+audio/Media/670270843.wem,likely_music_or_ambience,stereo and at least 60 seconds,120.787,2:00.787 seconds,2,44100 Hz,Custom Vorbis,168 kbps,2537206,wwise_riff,True
+audio/Media/675227149.wem,likely_music_or_ambience,stereo and at least 60 seconds,115.2,1:55.200 seconds,2,44100 Hz,Custom Vorbis,169 kbps,2441655,wwise_riff,True
+audio/Media/680909247.wem,likely_music_or_ambience,stereo and at least 60 seconds,173.637,2:53.637 seconds,2,44100 Hz,Custom Vorbis,213 kbps,4638748,wwise_riff,True
+audio/Media/68231916.wem,possibly_music_ambience_or_long_sfx,stereo and at least 20 seconds,21.333,0:21.333 seconds,2,44100 Hz,Custom Vorbis,160 kbps,427747,wwise_riff,True
+audio/Media/687259067.wem,likely_music_or_ambience,stereo and at least 60 seconds,119.48599999999999,1:59.486 seconds,2,44100 Hz,Custom Vorbis,178 kbps,2667519,wwise_riff,True
+audio/Media/692494989.wem,likely_music_or_ambience,stereo and at least 60 seconds,77.0,1:17.000 seconds,2,44100 Hz,Custom Vorbis,186 kbps,1791311,wwise_riff,True
+audio/Media/693990111.wem,unknown,insufficient metadata,10.268,0:10.268 seconds,2,44100 Hz,Custom Vorbis,175 kbps,225049,wwise_riff,True
+audio/Media/702423934.wem,likely_music_or_ambience,stereo and at least 60 seconds,196.911,3:16.911 seconds,2,44100 Hz,Custom Vorbis,157 kbps,3877035,wwise_riff,True
+audio/Media/706161170.wem,possibly_music_ambience_or_long_sfx,stereo and at least 20 seconds,54.5,0:54.500 seconds,2,44100 Hz,Custom Vorbis,184 kbps,1254850,wwise_riff,True
+audio/Media/709349582.wem,likely_music_or_ambience,stereo and at least 60 seconds,73.343,1:13.343 seconds,2,44100 Hz,Custom Vorbis,116 kbps,1072327,wwise_riff,True
+audio/Media/715205181.wem,likely_sfx_or_voice_line,short duration,7.034,0:07.034 seconds,2,44100 Hz,Custom Vorbis,164 kbps,144525,wwise_riff,True
+audio/Media/725477004.wem,likely_music_or_ambience,stereo and at least 60 seconds,113.455,1:53.455 seconds,2,44100 Hz,Custom Vorbis,178 kbps,2531557,wwise_riff,True
+audio/Media/726456942.wem,likely_music_or_ambience,stereo and at least 60 seconds,79.004,1:19.004 seconds,2,44100 Hz,Custom Vorbis,190 kbps,1882194,wwise_riff,True
+audio/Media/749666008.wem,likely_sfx_or_voice_line,short duration,7.568,0:07.568 seconds,2,44100 Hz,Custom Vorbis,190 kbps,180512,wwise_riff,True
+audio/Media/753790833.wem,likely_sfx_or_voice_line,short duration,5.934,0:05.934 seconds,2,44100 Hz,Custom Vorbis,180 kbps,134074,wwise_riff,True
+audio/Media/75490051.wem,likely_music_or_ambience,stereo and at least 60 seconds,111.25,1:51.250 seconds,2,44100 Hz,Custom Vorbis,195 kbps,2723012,wwise_riff,True
+audio/Media/756847840.wem,likely_sfx_or_voice_line,short duration,7.425,0:07.425 seconds,2,44100 Hz,Custom Vorbis,123 kbps,114864,wwise_riff,True
+audio/Media/759296528.wem,likely_music_or_ambience,stereo and at least 60 seconds,89.5,1:29.500 seconds,2,44100 Hz,Custom Vorbis,192 kbps,2152564,wwise_riff,True
+audio/Media/768294976.wem,possibly_music_ambience_or_long_sfx,stereo and at least 20 seconds,59.5,0:59.500 seconds,2,44100 Hz,Custom Vorbis,198 kbps,1474759,wwise_riff,True
+audio/Media/77183920.wem,likely_sfx_or_voice_line,short duration,6.714,0:06.714 seconds,2,44100 Hz,Custom Vorbis,90 kbps,76163,wwise_riff,True
+audio/Media/778071800.wem,likely_music_or_ambience,stereo and at least 60 seconds,113.06700000000001,1:53.067 seconds,2,44100 Hz,Custom Vorbis,173 kbps,2455978,wwise_riff,True
+audio/Media/784415476.wem,likely_music_or_ambience,stereo and at least 60 seconds,127.447,2:07.447 seconds,2,44100 Hz,Custom Vorbis,169 kbps,2706751,wwise_riff,True
+audio/Media/788761905.wem,possibly_music_ambience_or_long_sfx,stereo and at least 20 seconds,46.288,0:46.288 seconds,2,44100 Hz,Custom Vorbis,150 kbps,869470,wwise_riff,True
+audio/Media/798688531.wem,likely_sfx_or_voice_line,short duration,4.078,0:04.078 seconds,2,44100 Hz,Custom Vorbis,186 kbps,95344,wwise_riff,True
+audio/Media/80086661.wem,likely_music_or_ambience,stereo and at least 60 seconds,95.0,1:35.000 seconds,2,44100 Hz,Custom Vorbis,169 kbps,2009062,wwise_riff,True
+audio/Media/815135894.wem,possibly_music_ambience_or_long_sfx,stereo and at least 20 seconds,22.807,0:22.807 seconds,2,44100 Hz,Custom Vorbis,103 kbps,295760,wwise_riff,True
+audio/Media/821367877.wem,likely_music_or_ambience,stereo and at least 60 seconds,122.5,2:02.500 seconds,2,44100 Hz,Custom Vorbis,193 kbps,2955907,wwise_riff,True
+audio/Media/85159832.wem,possibly_music_ambience_or_long_sfx,stereo and at least 20 seconds,52.829,0:52.829 seconds,2,44100 Hz,Custom Vorbis,82 kbps,547043,wwise_riff,True
+audio/Media/855895306.wem,likely_music_or_ambience,stereo and at least 60 seconds,107.0,1:47.000 seconds,2,44100 Hz,Custom Vorbis,187 kbps,2514249,wwise_riff,True
+audio/Media/857249375.wem,likely_music_or_ambience,stereo and at least 60 seconds,132.124,2:12.124 seconds,2,44100 Hz,Custom Vorbis,211 kbps,3498572,wwise_riff,True
+audio/Media/858407766.wem,likely_sfx_or_voice_line,short duration,6.739,0:06.739 seconds,2,44100 Hz,Custom Vorbis,185 kbps,156516,wwise_riff,True
+audio/Media/863086055.wem,likely_sfx_or_voice_line,short duration,9.037,0:09.037 seconds,2,44100 Hz,Custom Vorbis,109 kbps,123560,wwise_riff,True
+audio/Media/870556335.wem,likely_music_or_ambience,stereo and at least 60 seconds,173.5,2:53.500 seconds,2,44100 Hz,Custom Vorbis,189 kbps,4104660,wwise_riff,True
+audio/Media/874439383.wem,likely_music_or_ambience,stereo and at least 60 seconds,116.0,1:56.000 seconds,2,44100 Hz,Custom Vorbis,174 kbps,2526737,wwise_riff,True
+audio/Media/889761297.wem,likely_music_or_ambience,stereo and at least 60 seconds,126.0,2:06.000 seconds,2,44100 Hz,Custom Vorbis,192 kbps,3025068,wwise_riff,True
+audio/Media/890379475.wem,likely_music_or_ambience,stereo and at least 60 seconds,115.75,1:55.750 seconds,2,44100 Hz,Custom Vorbis,182 kbps,2634583,wwise_riff,True
+audio/Media/894146897.wem,likely_music_or_ambience,stereo and at least 60 seconds,86.905,1:26.905 seconds,2,44100 Hz,Custom Vorbis,173 kbps,1890140,wwise_riff,True
+audio/Media/901279376.wem,likely_music_or_ambience,stereo and at least 60 seconds,136.444,2:16.444 seconds,2,44100 Hz,Custom Vorbis,197 kbps,3363617,wwise_riff,True
+audio/Media/90238549.wem,likely_music_or_ambience,stereo and at least 60 seconds,67.0,1:07.000 seconds,2,44100 Hz,Custom Vorbis,190 kbps,1599647,wwise_riff,True
+audio/Media/906001149.wem,possibly_music_ambience_or_long_sfx,stereo and at least 20 seconds,30.924,0:30.924 seconds,2,44100 Hz,Custom Vorbis,30 kbps,119297,wwise_riff,True
+audio/Media/945219079.wem,likely_music_or_ambience,stereo and at least 60 seconds,143.63400000000001,2:23.634 seconds,2,44100 Hz,Custom Vorbis,172 kbps,3091149,wwise_riff,True
+audio/Media/94702788.wem,likely_music_or_ambience,stereo and at least 60 seconds,118.25,1:58.250 seconds,2,44100 Hz,Custom Vorbis,199 kbps,2945339,wwise_riff,True
+audio/Media/951805876.wem,possibly_music_ambience_or_long_sfx,stereo and at least 20 seconds,26.324,0:26.324 seconds,2,44100 Hz,Custom Vorbis,147 kbps,485052,wwise_riff,True
+audio/Media/953029036.wem,possibly_music_ambience_or_long_sfx,stereo and at least 20 seconds,27.029,0:27.029 seconds,2,44100 Hz,Custom Vorbis,160 kbps,541029,wwise_riff,True
+audio/Media/953810460.wem,likely_music_or_ambience,stereo and at least 60 seconds,82.5,1:22.500 seconds,2,44100 Hz,Custom Vorbis,179 kbps,1853462,wwise_riff,True
+audio/Media/95966976.wem,likely_music_or_ambience,stereo and at least 60 seconds,92.101,1:32.101 seconds,2,44100 Hz,Custom Vorbis,166 kbps,1916463,wwise_riff,True
+audio/Media/971145827.wem,likely_sfx_or_voice_line,short duration,7.645,0:07.645 seconds,2,44100 Hz,Custom Vorbis,181 kbps,173134,wwise_riff,True
+audio/Media/973419323.wem,likely_music_or_ambience,stereo and at least 60 seconds,83.0,1:23.000 seconds,2,44100 Hz,Custom Vorbis,180 kbps,1871376,wwise_riff,True
+audio/Media/976066693.wem,unknown,insufficient metadata,18.936,0:18.936 seconds,2,44100 Hz,Custom Vorbis,214 kbps,508606,wwise_riff,True
+audio/Media/97923114.wem,likely_sfx_or_voice_line,short duration,5.292,0:05.292 seconds,2,44100 Hz,Custom Vorbis,193 kbps,128029,wwise_riff,True
+audio/Media/982631842.wem,likely_music_or_ambience,stereo and at least 60 seconds,128.75,2:08.750 seconds,2,44100 Hz,Custom Vorbis,194 kbps,3132055,wwise_riff,True
+audio/Media/983487834.wem,unknown,insufficient metadata,11.829,0:11.829 seconds,2,44100 Hz,Custom Vorbis,90 kbps,133778,wwise_riff,True
+audio/Media/986454675.wem,likely_music_or_ambience,stereo and at least 60 seconds,176.788,2:56.788 seconds,2,44100 Hz,Custom Vorbis,175 kbps,3876851,wwise_riff,True
+audio/Media/993559054.wem,likely_sfx_or_voice_line,short duration,5.271,0:05.271 seconds,2,44100 Hz,Custom Vorbis,188 kbps,124195,wwise_riff,True
+audio/Media/993781843.wem,possibly_music_ambience_or_long_sfx,stereo and at least 20 seconds,50.687,0:50.687 seconds,2,44100 Hz,Custom Vorbis,110 kbps,701494,wwise_riff,True
+audio/Media/997552781.wem,likely_music_or_ambience,stereo and at least 60 seconds,115.75,1:55.750 seconds,2,44100 Hz,Custom Vorbis,194 kbps,2808772,wwise_riff,True
+audio/Media/cn/1004722747.wem,likely_localized_voice,localized folder and short duration,9.003,0:09.003 seconds,1,44100 Hz,Custom Vorbis,64 kbps,72814,wwise_riff,True
+audio/Media/cn/1005280123.wem,likely_localized_voice,localized folder and short duration,8.832,0:08.832 seconds,1,44100 Hz,Custom Vorbis,61 kbps,68296,wwise_riff,True
+audio/Media/cn/1007391629.wem,likely_localized_voice,localized folder and short duration,8.768,0:08.768 seconds,1,44100 Hz,Custom Vorbis,63 kbps,70261,wwise_riff,True
+audio/Media/cn/1013144359.wem,likely_localized_voice,localized folder and short duration,4.949,0:04.949 seconds,1,44100 Hz,Custom Vorbis,60 kbps,37516,wwise_riff,True
+audio/Media/cn/1013809480.wem,likely_localized_voice,localized folder and short duration,9.323,0:09.323 seconds,1,44100 Hz,Custom Vorbis,66 kbps,77618,wwise_riff,True
+audio/Media/cn/1017656897.wem,likely_localized_voice,localized folder and short duration,5.909,0:05.909 seconds,1,44100 Hz,Custom Vorbis,58 kbps,43433,wwise_riff,True
+audio/Media/cn/1018958713.wem,likely_localized_voice,localized folder and short duration,3.371,0:03.371 seconds,1,44100 Hz,Custom Vorbis,40 kbps,17372,wwise_riff,True
+audio/Media/cn/1024561441.wem,likely_localized_voice,localized folder and short duration,8.512,0:08.512 seconds,1,44100 Hz,Custom Vorbis,63 kbps,67480,wwise_riff,True
+audio/Media/cn/1024873571.wem,likely_localized_voice,localized folder and short duration,10.805,0:10.805 seconds,1,44100 Hz,Custom Vorbis,73 kbps,98857,wwise_riff,True
+audio/Media/cn/1028921135.wem,likely_localized_voice,localized folder and short duration,3.883,0:03.883 seconds,1,44100 Hz,Custom Vorbis,51 kbps,25187,wwise_riff,True
+audio/Media/cn/1030679919.wem,likely_localized_voice,localized folder and short duration,5.291,0:05.291 seconds,1,44100 Hz,Custom Vorbis,59 kbps,39353,wwise_riff,True
+audio/Media/cn/1031794758.wem,likely_localized_voice,localized folder and short duration,7.232,0:07.232 seconds,1,44100 Hz,Custom Vorbis,63 kbps,57262,wwise_riff,True
+audio/Media/cn/1033400060.wem,likely_localized_voice,localized folder and short duration,4.971,0:04.971 seconds,1,44100 Hz,Custom Vorbis,60 kbps,37635,wwise_riff,True
+audio/Media/cn/1035137760.wem,likely_localized_voice,localized folder and short duration,3.371,0:03.371 seconds,1,44100 Hz,Custom Vorbis,50 kbps,21604,wwise_riff,True
+audio/Media/cn/1038353024.wem,likely_localized_voice,localized folder and short duration,8.085,0:08.085 seconds,1,44100 Hz,Custom Vorbis,65 kbps,66024,wwise_riff,True
+audio/Media/cn/1042953291.wem,likely_localized_voice,localized folder and short duration,6.208,0:06.208 seconds,1,44100 Hz,Custom Vorbis,55 kbps,43548,wwise_riff,True
+audio/Media/cn/1045687439.wem,likely_localized_voice,localized folder and short duration,3.371,0:03.371 seconds,1,44100 Hz,Custom Vorbis,48 kbps,20552,wwise_riff,True
+audio/Media/cn/1046416637.wem,likely_localized_voice,localized folder and short duration,4.245,0:04.245 seconds,1,44100 Hz,Custom Vorbis,52 kbps,28200,wwise_riff,True
+audio/Media/cn/1049079926.wem,likely_localized_voice,localized folder and short duration,6.059,0:06.059 seconds,1,44100 Hz,Custom Vorbis,59 kbps,45426,wwise_riff,True
+audio/Media/cn/1053124975.wem,likely_localized_voice,localized folder and short duration,5.931,0:05.931 seconds,1,44100 Hz,Custom Vorbis,60 kbps,44857,wwise_riff,True
+audio/Media/cn/1053770725.wem,likely_localized_voice,localized folder and short duration,3.293,0:03.293 seconds,1,44100 Hz,Custom Vorbis,78 kbps,32247,wwise_riff,True
+audio/Media/cn/1059806395.wem,likely_localized_voice,localized folder and short duration,4.416,0:04.416 seconds,1,44100 Hz,Custom Vorbis,54 kbps,30277,wwise_riff,True
+audio/Media/cn/1060014690.wem,likely_localized_voice,localized folder and short duration,5.995,0:05.995 seconds,1,44100 Hz,Custom Vorbis,58 kbps,43728,wwise_riff,True
+audio/Media/cn/1060514285.wem,likely_localized_voice,localized folder and short duration,5.754,0:05.754 seconds,1,44100 Hz,Custom Vorbis,64 kbps,46174,wwise_riff,True
+audio/Media/cn/1061362238.wem,likely_localized_voice,localized folder and short duration,7.083,0:07.083 seconds,1,44100 Hz,Custom Vorbis,76 kbps,68130,wwise_riff,True
+audio/Media/cn/1061666670.wem,likely_localized_voice,localized folder and short duration,4.331,0:04.331 seconds,1,44100 Hz,Custom Vorbis,53 kbps,29044,wwise_riff,True
+audio/Media/cn/106183789.wem,likely_localized_voice,localized folder and short duration,5.035,0:05.035 seconds,1,44100 Hz,Custom Vorbis,58 kbps,36775,wwise_riff,True
+audio/Media/cn/1061851095.wem,likely_localized_voice,localized folder and short duration,4.39,0:04.390 seconds,1,44100 Hz,Custom Vorbis,77 kbps,42895,wwise_riff,True
+audio/Media/cn/1063221445.wem,likely_localized_voice,localized folder and short duration,2.661,0:02.661 seconds,1,44100 Hz,Custom Vorbis,80 kbps,27013,wwise_riff,True
+audio/Media/cn/1064293501.wem,likely_localized_voice,localized folder and short duration,6.955,0:06.955 seconds,1,44100 Hz,Custom Vorbis,61 kbps,53470,wwise_riff,True
+audio/Media/cn/1065937109.wem,likely_localized_voice,localized folder and short duration,3.627,0:03.627 seconds,1,44100 Hz,Custom Vorbis,49 kbps,22415,wwise_riff,True
+audio/Media/cn/1070843557.wem,likely_localized_voice,localized folder and short duration,5.995,0:05.995 seconds,1,44100 Hz,Custom Vorbis,62 kbps,46690,wwise_riff,True
+audio/Media/cn/1071439868.wem,likely_localized_voice,localized folder and short duration,6.912,0:06.912 seconds,1,44100 Hz,Custom Vorbis,59 kbps,51706,wwise_riff,True
+audio/Media/cn/1072129179.wem,likely_localized_voice,localized folder and short duration,6.699,0:06.699 seconds,1,44100 Hz,Custom Vorbis,63 kbps,52903,wwise_riff,True
+audio/Media/cn/1072197102.wem,likely_localized_voice,localized folder and short duration,4.444,0:04.444 seconds,1,44100 Hz,Custom Vorbis,74 kbps,41736,wwise_riff,True
+audio/Media/cn/110713851.wem,likely_localized_voice,localized folder and short duration,5.248,0:05.248 seconds,1,44100 Hz,Custom Vorbis,61 kbps,40256,wwise_riff,True
+audio/Media/cn/114816080.wem,likely_localized_voice,localized folder and short duration,4.971,0:04.971 seconds,1,44100 Hz,Custom Vorbis,59 kbps,37134,wwise_riff,True
+audio/Media/cn/121833903.wem,likely_localized_voice,localized folder and short duration,1.494,0:01.494 seconds,1,44100 Hz,Custom Vorbis,75 kbps,14222,wwise_riff,True
+audio/Media/cn/125018686.wem,likely_localized_voice,localized folder and short duration,5.973,0:05.973 seconds,1,44100 Hz,Custom Vorbis,59 kbps,44770,wwise_riff,True
+audio/Media/cn/125371950.wem,likely_localized_voice,localized folder and short duration,4.395,0:04.395 seconds,1,44100 Hz,Custom Vorbis,60 kbps,33445,wwise_riff,True
+audio/Media/cn/129447226.wem,likely_localized_voice,localized folder and short duration,6.421,0:06.421 seconds,1,44100 Hz,Custom Vorbis,65 kbps,52640,wwise_riff,True
+audio/Media/cn/132112390.wem,likely_localized_voice,localized folder and short duration,6.037,0:06.037 seconds,1,44100 Hz,Custom Vorbis,59 kbps,44936,wwise_riff,True
+audio/Media/cn/134011372.wem,likely_localized_voice,localized folder and short duration,2.326,0:02.326 seconds,1,44100 Hz,Custom Vorbis,74 kbps,21783,wwise_riff,True
+audio/Media/cn/134559493.wem,likely_localized_voice,localized folder and short duration,6.677,0:06.677 seconds,1,44100 Hz,Custom Vorbis,61 kbps,51378,wwise_riff,True
+audio/Media/cn/13681013.wem,likely_localized_voice,localized folder and short duration,8.064,0:08.064 seconds,1,44100 Hz,Custom Vorbis,65 kbps,66437,wwise_riff,True
+audio/Media/cn/137030663.wem,likely_localized_voice,localized folder and short duration,6.4,0:06.400 seconds,1,44100 Hz,Custom Vorbis,66 kbps,53005,wwise_riff,True
+audio/Media/cn/142805663.wem,likely_localized_voice,localized folder and short duration,5.163,0:05.163 seconds,1,44100 Hz,Custom Vorbis,53 kbps,34954,wwise_riff,True
+audio/Media/cn/151288790.wem,likely_localized_voice,localized folder and short duration,1.917,0:01.917 seconds,1,44100 Hz,Custom Vorbis,72 kbps,17552,wwise_riff,True
+audio/Media/cn/153368043.wem,likely_localized_voice,localized folder and short duration,2.624,0:02.624 seconds,1,44100 Hz,Custom Vorbis,73 kbps,24379,wwise_riff,True
+audio/Media/cn/155310476.wem,likely_localized_voice,localized folder and short duration,4.502,0:04.502 seconds,1,44100 Hz,Custom Vorbis,75 kbps,42881,wwise_riff,True
+audio/Media/cn/156026381.wem,likely_localized_voice,localized folder and short duration,6.187,0:06.187 seconds,1,44100 Hz,Custom Vorbis,63 kbps,49530,wwise_riff,True
+audio/Media/cn/158391871.wem,likely_localized_voice,localized folder and short duration,5.504,0:05.504 seconds,1,44100 Hz,Custom Vorbis,56 kbps,38967,wwise_riff,True
+audio/Media/cn/160138625.wem,likely_localized_voice,localized folder and short duration,3.369,0:03.369 seconds,1,44100 Hz,Custom Vorbis,74 kbps,31645,wwise_riff,True
+audio/Media/cn/165973458.wem,likely_localized_voice,localized folder and short duration,8.128,0:08.128 seconds,1,44100 Hz,Custom Vorbis,64 kbps,65763,wwise_riff,True
+audio/Media/cn/178322015.wem,likely_localized_voice,localized folder and short duration,6.293,0:06.293 seconds,1,44100 Hz,Custom Vorbis,58 kbps,45917,wwise_riff,True
+audio/Media/cn/178967517.wem,likely_localized_voice,localized folder and short duration,6.507,0:06.507 seconds,1,44100 Hz,Custom Vorbis,60 kbps,49630,wwise_riff,True
+audio/Media/cn/179259302.wem,likely_localized_voice,localized folder and short duration,7.019,0:07.019 seconds,1,44100 Hz,Custom Vorbis,63 kbps,55940,wwise_riff,True
+audio/Media/cn/18193422.wem,likely_localized_voice,localized folder and short duration,7.339,0:07.339 seconds,1,44100 Hz,Custom Vorbis,63 kbps,58080,wwise_riff,True
+audio/Media/cn/184548460.wem,likely_localized_voice,localized folder and short duration,6.251,0:06.251 seconds,1,44100 Hz,Custom Vorbis,61 kbps,48287,wwise_riff,True
+audio/Media/cn/1845667.wem,likely_localized_voice,localized folder and short duration,6.528,0:06.528 seconds,1,44100 Hz,Custom Vorbis,63 kbps,51753,wwise_riff,True
+audio/Media/cn/186644269.wem,likely_localized_voice,localized folder and short duration,2.795,0:02.795 seconds,1,44100 Hz,Custom Vorbis,48 kbps,16894,wwise_riff,True
+audio/Media/cn/18687959.wem,likely_localized_voice,localized folder and short duration,5.547,0:05.547 seconds,1,44100 Hz,Custom Vorbis,57 kbps,40097,wwise_riff,True
+audio/Media/cn/18985756.wem,likely_localized_voice,localized folder and short duration,3.485,0:03.485 seconds,1,44100 Hz,Custom Vorbis,74 kbps,32405,wwise_riff,True
+audio/Media/cn/19377650.wem,likely_localized_voice,localized folder and short duration,4.835,0:04.835 seconds,1,44100 Hz,Custom Vorbis,71 kbps,43448,wwise_riff,True
+audio/Media/cn/195965945.wem,likely_localized_voice,localized folder and short duration,8.021,0:08.021 seconds,1,44100 Hz,Custom Vorbis,66 kbps,66919,wwise_riff,True
+audio/Media/cn/199681180.wem,likely_localized_voice,localized folder and short duration,4.921,0:04.921 seconds,1,44100 Hz,Custom Vorbis,78 kbps,48510,wwise_riff,True
+audio/Media/cn/205653333.wem,likely_localized_voice,localized folder and short duration,3.008,0:03.008 seconds,1,44100 Hz,Custom Vorbis,45 kbps,17238,wwise_riff,True
+audio/Media/cn/209861704.wem,likely_localized_voice,localized folder and short duration,2.455,0:02.455 seconds,1,44100 Hz,Custom Vorbis,77 kbps,23834,wwise_riff,True
+audio/Media/cn/210858563.wem,likely_localized_voice,localized folder and short duration,7.637,0:07.637 seconds,1,44100 Hz,Custom Vorbis,71 kbps,68667,wwise_riff,True
+audio/Media/cn/214275422.wem,likely_localized_voice,localized folder and short duration,5.632,0:05.632 seconds,1,44100 Hz,Custom Vorbis,65 kbps,45976,wwise_riff,True
+audio/Media/cn/215890726.wem,likely_localized_voice,localized folder and short duration,4.608,0:04.608 seconds,1,44100 Hz,Custom Vorbis,54 kbps,31624,wwise_riff,True
+audio/Media/cn/219631040.wem,likely_localized_voice,localized folder and short duration,5.306,0:05.306 seconds,1,44100 Hz,Custom Vorbis,78 kbps,51907,wwise_riff,True
+audio/Media/cn/222530163.wem,likely_localized_voice,localized folder and short duration,6.741,0:06.741 seconds,1,44100 Hz,Custom Vorbis,66 kbps,55842,wwise_riff,True
+audio/Media/cn/233666980.wem,likely_localized_voice,localized folder and short duration,6.549,0:06.549 seconds,1,44100 Hz,Custom Vorbis,63 kbps,52362,wwise_riff,True
+audio/Media/cn/233769473.wem,likely_localized_voice,localized folder and short duration,4.949,0:04.949 seconds,1,44100 Hz,Custom Vorbis,57 kbps,35618,wwise_riff,True
+audio/Media/cn/235961602.wem,likely_localized_voice,localized folder and short duration,5.248,0:05.248 seconds,1,44100 Hz,Custom Vorbis,62 kbps,40989,wwise_riff,True
+audio/Media/cn/239894709.wem,likely_localized_voice,localized folder and short duration,7.765,0:07.765 seconds,1,44100 Hz,Custom Vorbis,63 kbps,62136,wwise_riff,True
+audio/Media/cn/24208554.wem,likely_localized_voice,localized folder and short duration,4.185,0:04.185 seconds,1,44100 Hz,Custom Vorbis,79 kbps,41584,wwise_riff,True
+audio/Media/cn/245643134.wem,likely_localized_voice,localized folder and short duration,2.581,0:02.581 seconds,1,44100 Hz,Custom Vorbis,38 kbps,12533,wwise_riff,True
+audio/Media/cn/24638776.wem,likely_localized_voice,localized folder and short duration,4.034,0:04.034 seconds,1,44100 Hz,Custom Vorbis,81 kbps,41458,wwise_riff,True
+audio/Media/cn/24787874.wem,likely_localized_voice,localized folder and short duration,2.979,0:02.979 seconds,1,44100 Hz,Custom Vorbis,73 kbps,27654,wwise_riff,True
+audio/Media/cn/250401078.wem,likely_localized_voice,localized folder and short duration,3.552,0:03.552 seconds,1,44100 Hz,Custom Vorbis,76 kbps,33878,wwise_riff,True
+audio/Media/cn/251999349.wem,likely_localized_voice,localized folder and short duration,6.507,0:06.507 seconds,1,44100 Hz,Custom Vorbis,63 kbps,51632,wwise_riff,True
+audio/Media/cn/253727126.wem,likely_localized_voice,localized folder and short duration,5.931,0:05.931 seconds,1,44100 Hz,Custom Vorbis,61 kbps,45825,wwise_riff,True
+audio/Media/cn/254962904.wem,likely_localized_voice,localized folder and short duration,7.253,0:07.253 seconds,1,44100 Hz,Custom Vorbis,63 kbps,57822,wwise_riff,True
+audio/Media/cn/255460320.wem,likely_localized_voice,localized folder and short duration,5.632,0:05.632 seconds,1,44100 Hz,Custom Vorbis,59 kbps,42029,wwise_riff,True
+audio/Media/cn/257437250.wem,likely_localized_voice,localized folder and short duration,6.549,0:06.549 seconds,1,44100 Hz,Custom Vorbis,62 kbps,51350,wwise_riff,True
+audio/Media/cn/26354738.wem,likely_localized_voice,localized folder and short duration,4.48,0:04.480 seconds,1,44100 Hz,Custom Vorbis,76 kbps,42913,wwise_riff,True
+audio/Media/cn/264054432.wem,likely_localized_voice,localized folder and short duration,6.571,0:06.571 seconds,1,44100 Hz,Custom Vorbis,70 kbps,58017,wwise_riff,True
+audio/Media/cn/266468745.wem,likely_localized_voice,localized folder and short duration,5.483,0:05.483 seconds,1,44100 Hz,Custom Vorbis,55 kbps,38032,wwise_riff,True
+audio/Media/cn/269827714.wem,likely_localized_voice,localized folder and short duration,7.189,0:07.189 seconds,1,44100 Hz,Custom Vorbis,68 kbps,61846,wwise_riff,True
+audio/Media/cn/280848484.wem,likely_localized_voice,localized folder and short duration,7.531,0:07.531 seconds,1,44100 Hz,Custom Vorbis,62 kbps,58861,wwise_riff,True
+audio/Media/cn/282527538.wem,likely_localized_voice,localized folder and short duration,7.04,0:07.040 seconds,1,44100 Hz,Custom Vorbis,76 kbps,67283,wwise_riff,True
+audio/Media/cn/282746615.wem,likely_localized_voice,localized folder and short duration,7.808,0:07.808 seconds,1,44100 Hz,Custom Vorbis,65 kbps,63808,wwise_riff,True
+audio/Media/cn/283047556.wem,likely_localized_voice,localized folder and short duration,4.715,0:04.715 seconds,1,44100 Hz,Custom Vorbis,55 kbps,32887,wwise_riff,True
+audio/Media/cn/286956719.wem,likely_localized_voice,localized folder and short duration,2.579,0:02.579 seconds,1,44100 Hz,Custom Vorbis,74 kbps,24149,wwise_riff,True
+audio/Media/cn/291574579.wem,likely_localized_voice,localized folder and short duration,2.619,0:02.619 seconds,1,44100 Hz,Custom Vorbis,79 kbps,26187,wwise_riff,True
+audio/Media/cn/293343272.wem,likely_localized_voice,localized folder and short duration,7.125,0:07.125 seconds,1,44100 Hz,Custom Vorbis,64 kbps,57577,wwise_riff,True
+audio/Media/cn/293600204.wem,likely_localized_voice,localized folder and short duration,7.872,0:07.872 seconds,1,44100 Hz,Custom Vorbis,67 kbps,66838,wwise_riff,True
+audio/Media/cn/29610353.wem,likely_localized_voice,localized folder and short duration,7.957,0:07.957 seconds,1,44100 Hz,Custom Vorbis,66 kbps,65774,wwise_riff,True
+audio/Media/cn/297770890.wem,likely_localized_voice,localized folder and short duration,5.525,0:05.525 seconds,1,44100 Hz,Custom Vorbis,53 kbps,37263,wwise_riff,True
+audio/Media/cn/30981852.wem,likely_localized_voice,localized folder and short duration,4.551,0:04.551 seconds,1,44100 Hz,Custom Vorbis,77 kbps,44258,wwise_riff,True
+audio/Media/cn/315521626.wem,likely_localized_voice,localized folder and short duration,5.952,0:05.952 seconds,1,44100 Hz,Custom Vorbis,59 kbps,44038,wwise_riff,True
+audio/Media/cn/322366609.wem,likely_localized_voice,localized folder and short duration,4.238,0:04.238 seconds,1,44100 Hz,Custom Vorbis,73 kbps,38839,wwise_riff,True
+audio/Media/cn/325576385.wem,likely_localized_voice,localized folder and short duration,4.072,0:04.072 seconds,1,44100 Hz,Custom Vorbis,73 kbps,37659,wwise_riff,True
+audio/Media/cn/326480347.wem,likely_localized_voice,localized folder and short duration,5.376,0:05.376 seconds,1,44100 Hz,Custom Vorbis,60 kbps,40722,wwise_riff,True
+audio/Media/cn/331966389.wem,likely_localized_voice,localized folder and short duration,0.685,0:00.685 seconds,1,44100 Hz,Custom Vorbis,74 kbps,6540,wwise_riff,True
+audio/Media/cn/332359485.wem,likely_localized_voice,localized folder and short duration,4.847,0:04.847 seconds,1,44100 Hz,Custom Vorbis,74 kbps,44991,wwise_riff,True
+audio/Media/cn/333326717.wem,likely_localized_voice,localized folder and short duration,6.549,0:06.549 seconds,1,44100 Hz,Custom Vorbis,63 kbps,52363,wwise_riff,True
+audio/Media/cn/334704617.wem,likely_localized_voice,localized folder and short duration,3.137,0:03.137 seconds,1,44100 Hz,Custom Vorbis,71 kbps,28296,wwise_riff,True
+audio/Media/cn/337586090.wem,likely_localized_voice,localized folder and short duration,9.216,0:09.216 seconds,1,44100 Hz,Custom Vorbis,66 kbps,76525,wwise_riff,True
+audio/Media/cn/342683865.wem,likely_localized_voice,localized folder and short duration,6.4,0:06.400 seconds,1,44100 Hz,Custom Vorbis,60 kbps,48232,wwise_riff,True
+audio/Media/cn/344257753.wem,likely_localized_voice,localized folder and short duration,5.888,0:05.888 seconds,1,44100 Hz,Custom Vorbis,59 kbps,43725,wwise_riff,True
+audio/Media/cn/349320607.wem,likely_localized_voice,localized folder and short duration,3.584,0:03.584 seconds,1,44100 Hz,Custom Vorbis,40 kbps,18324,wwise_riff,True
+audio/Media/cn/351573731.wem,likely_localized_voice,localized folder and short duration,12.331,0:12.331 seconds,1,44100 Hz,Custom Vorbis,65 kbps,101098,wwise_riff,True
+audio/Media/cn/353034073.wem,likely_localized_voice,localized folder and short duration,5.504,0:05.504 seconds,1,44100 Hz,Custom Vorbis,60 kbps,41784,wwise_riff,True
+audio/Media/cn/358629793.wem,likely_localized_voice,localized folder and short duration,4.409,0:04.409 seconds,1,44100 Hz,Custom Vorbis,78 kbps,43246,wwise_riff,True
+audio/Media/cn/36031057.wem,likely_localized_voice,localized folder and short duration,7.403,0:07.403 seconds,1,44100 Hz,Custom Vorbis,62 kbps,57648,wwise_riff,True
+audio/Media/cn/361438598.wem,likely_localized_voice,localized folder and short duration,6.421,0:06.421 seconds,1,44100 Hz,Custom Vorbis,62 kbps,50666,wwise_riff,True
+audio/Media/cn/361441009.wem,likely_localized_voice,localized folder and short duration,6.656,0:06.656 seconds,1,44100 Hz,Custom Vorbis,58 kbps,49161,wwise_riff,True
+audio/Media/cn/364688872.wem,likely_localized_voice,localized folder and short duration,7.083,0:07.083 seconds,1,44100 Hz,Custom Vorbis,62 kbps,55261,wwise_riff,True
+audio/Media/cn/364715871.wem,likely_localized_voice,localized folder and short duration,3.443,0:03.443 seconds,1,44100 Hz,Custom Vorbis,75 kbps,32808,wwise_riff,True
+audio/Media/cn/365411232.wem,likely_localized_voice,localized folder and short duration,6.976,0:06.976 seconds,1,44100 Hz,Custom Vorbis,62 kbps,54881,wwise_riff,True
+audio/Media/cn/365631149.wem,likely_localized_voice,localized folder and short duration,5.611,0:05.611 seconds,1,44100 Hz,Custom Vorbis,61 kbps,43248,wwise_riff,True
+audio/Media/cn/365764862.wem,likely_localized_voice,localized folder and short duration,7.403,0:07.403 seconds,1,44100 Hz,Custom Vorbis,65 kbps,60969,wwise_riff,True
+audio/Media/cn/366202051.wem,likely_localized_voice,localized folder and short duration,3.421,0:03.421 seconds,1,44100 Hz,Custom Vorbis,72 kbps,31175,wwise_riff,True
+audio/Media/cn/367488810.wem,likely_localized_voice,localized folder and short duration,5.312,0:05.312 seconds,1,44100 Hz,Custom Vorbis,60 kbps,40134,wwise_riff,True
+audio/Media/cn/368038975.wem,likely_localized_voice,localized folder and short duration,3.221,0:03.221 seconds,1,44100 Hz,Custom Vorbis,46 kbps,18940,wwise_riff,True
+audio/Media/cn/370791681.wem,likely_localized_voice,localized folder and short duration,6.443,0:06.443 seconds,1,44100 Hz,Custom Vorbis,62 kbps,50706,wwise_riff,True
+audio/Media/cn/37148096.wem,likely_localized_voice,localized folder and short duration,7.531,0:07.531 seconds,1,44100 Hz,Custom Vorbis,62 kbps,58971,wwise_riff,True
+audio/Media/cn/372812220.wem,likely_localized_voice,localized folder and short duration,6.315,0:06.315 seconds,1,44100 Hz,Custom Vorbis,62 kbps,49666,wwise_riff,True
+audio/Media/cn/376988009.wem,likely_localized_voice,localized folder and short duration,7.509,0:07.509 seconds,1,44100 Hz,Custom Vorbis,63 kbps,59255,wwise_riff,True
+audio/Media/cn/377707363.wem,likely_localized_voice,localized folder and short duration,7.936,0:07.936 seconds,1,44100 Hz,Custom Vorbis,64 kbps,64374,wwise_riff,True
+audio/Media/cn/381184194.wem,likely_localized_voice,localized folder and short duration,6.144,0:06.144 seconds,1,44100 Hz,Custom Vorbis,59 kbps,46102,wwise_riff,True
+audio/Media/cn/381312085.wem,likely_localized_voice,localized folder and short duration,1.981,0:01.981 seconds,1,44100 Hz,Custom Vorbis,68 kbps,17201,wwise_riff,True
+audio/Media/cn/383347737.wem,likely_localized_voice,localized folder and short duration,2.592,0:02.592 seconds,1,44100 Hz,Custom Vorbis,67 kbps,21932,wwise_riff,True
+audio/Media/cn/386139668.wem,likely_localized_voice,localized folder and short duration,4.821,0:04.821 seconds,1,44100 Hz,Custom Vorbis,56 kbps,34247,wwise_riff,True
+audio/Media/cn/389731385.wem,likely_localized_voice,localized folder and short duration,6.357,0:06.357 seconds,1,44100 Hz,Custom Vorbis,62 kbps,49477,wwise_riff,True
+audio/Media/cn/390076362.wem,likely_localized_voice,localized folder and short duration,1.407,0:01.407 seconds,1,44100 Hz,Custom Vorbis,78 kbps,13901,wwise_riff,True
+audio/Media/cn/396525965.wem,likely_localized_voice,localized folder and short duration,7.36,0:07.360 seconds,1,44100 Hz,Custom Vorbis,70 kbps,64820,wwise_riff,True
+audio/Media/cn/397588799.wem,likely_localized_voice,localized folder and short duration,2.923,0:02.923 seconds,1,44100 Hz,Custom Vorbis,41 kbps,15176,wwise_riff,True
+audio/Media/cn/399911363.wem,likely_localized_voice,localized folder and short duration,3.947,0:03.947 seconds,1,44100 Hz,Custom Vorbis,53 kbps,26396,wwise_riff,True
+audio/Media/cn/40008799.wem,likely_localized_voice,localized folder and short duration,10.261,0:10.261 seconds,1,44100 Hz,Custom Vorbis,63 kbps,81927,wwise_riff,True
+audio/Media/cn/404198615.wem,likely_localized_voice,localized folder and short duration,2.318,0:02.318 seconds,1,44100 Hz,Custom Vorbis,69 kbps,20381,wwise_riff,True
+audio/Media/cn/40434413.wem,likely_localized_voice,localized folder and short duration,9.024,0:09.024 seconds,1,44100 Hz,Custom Vorbis,62 kbps,70690,wwise_riff,True
+audio/Media/cn/407464262.wem,likely_localized_voice,localized folder and short duration,7.701,0:07.701 seconds,1,44100 Hz,Custom Vorbis,64 kbps,62293,wwise_riff,True
+audio/Media/cn/414546509.wem,likely_localized_voice,localized folder and short duration,7.979,0:07.979 seconds,1,44100 Hz,Custom Vorbis,57 kbps,57778,wwise_riff,True
+audio/Media/cn/414569411.wem,likely_localized_voice,localized folder and short duration,6.4,0:06.400 seconds,1,44100 Hz,Custom Vorbis,65 kbps,52506,wwise_riff,True
+audio/Media/cn/417611408.wem,likely_localized_voice,localized folder and short duration,6.037,0:06.037 seconds,1,44100 Hz,Custom Vorbis,62 kbps,47270,wwise_riff,True
+audio/Media/cn/419551183.wem,likely_localized_voice,localized folder and short duration,9.045,0:09.045 seconds,1,44100 Hz,Custom Vorbis,66 kbps,75848,wwise_riff,True
+audio/Media/cn/420737943.wem,likely_localized_voice,localized folder and short duration,5.76,0:05.760 seconds,1,44100 Hz,Custom Vorbis,62 kbps,44975,wwise_riff,True
+audio/Media/cn/420804179.wem,likely_localized_voice,localized folder and short duration,3.529,0:03.529 seconds,1,44100 Hz,Custom Vorbis,73 kbps,32372,wwise_riff,True
+audio/Media/cn/421792058.wem,likely_localized_voice,localized folder and short duration,4.395,0:04.395 seconds,1,44100 Hz,Custom Vorbis,50 kbps,27957,wwise_riff,True
+audio/Media/cn/422121096.wem,likely_localized_voice,localized folder and short duration,3.541,0:03.541 seconds,1,44100 Hz,Custom Vorbis,53 kbps,23685,wwise_riff,True
+audio/Media/cn/422308868.wem,likely_localized_voice,localized folder and short duration,3.524,0:03.524 seconds,1,44100 Hz,Custom Vorbis,77 kbps,34160,wwise_riff,True
+audio/Media/cn/423258454.wem,likely_localized_voice,localized folder and short duration,6.528,0:06.528 seconds,1,44100 Hz,Custom Vorbis,62 kbps,50738,wwise_riff,True
+audio/Media/cn/426438508.wem,likely_localized_voice,localized folder and short duration,6.763,0:06.763 seconds,1,44100 Hz,Custom Vorbis,61 kbps,51888,wwise_riff,True
+audio/Media/cn/429078500.wem,likely_localized_voice,localized folder and short duration,7.125,0:07.125 seconds,1,44100 Hz,Custom Vorbis,64 kbps,57842,wwise_riff,True
+audio/Media/cn/433784496.wem,likely_localized_voice,localized folder and short duration,6.656,0:06.656 seconds,1,44100 Hz,Custom Vorbis,59 kbps,49207,wwise_riff,True
+audio/Media/cn/435407738.wem,likely_localized_voice,localized folder and short duration,9.344,0:09.344 seconds,1,44100 Hz,Custom Vorbis,66 kbps,78121,wwise_riff,True
+audio/Media/cn/441302878.wem,likely_localized_voice,localized folder and short duration,2.733,0:02.733 seconds,1,44100 Hz,Custom Vorbis,79 kbps,27222,wwise_riff,True
+audio/Media/cn/444598854.wem,likely_localized_voice,localized folder and short duration,7.296,0:07.296 seconds,1,44100 Hz,Custom Vorbis,60 kbps,55223,wwise_riff,True
+audio/Media/cn/452240417.wem,likely_localized_voice,localized folder and short duration,8.555,0:08.555 seconds,1,44100 Hz,Custom Vorbis,62 kbps,67046,wwise_riff,True
+audio/Media/cn/458881668.wem,likely_localized_voice,localized folder and short duration,8.704,0:08.704 seconds,1,44100 Hz,Custom Vorbis,64 kbps,70331,wwise_riff,True
+audio/Media/cn/462322281.wem,likely_localized_voice,localized folder and short duration,6.784,0:06.784 seconds,1,44100 Hz,Custom Vorbis,61 kbps,52190,wwise_riff,True
+audio/Media/cn/463093898.wem,likely_localized_voice,localized folder and short duration,10.453,0:10.453 seconds,1,44100 Hz,Custom Vorbis,64 kbps,84596,wwise_riff,True
+audio/Media/cn/463107805.wem,likely_localized_voice,localized folder and short duration,7.765,0:07.765 seconds,1,44100 Hz,Custom Vorbis,62 kbps,61268,wwise_riff,True
+audio/Media/cn/465191495.wem,likely_localized_voice,localized folder and short duration,8.768,0:08.768 seconds,1,44100 Hz,Custom Vorbis,65 kbps,72334,wwise_riff,True
+audio/Media/cn/46624620.wem,likely_localized_voice,localized folder and short duration,3.626,0:03.626 seconds,1,44100 Hz,Custom Vorbis,76 kbps,34778,wwise_riff,True
+audio/Media/cn/477665507.wem,likely_localized_voice,localized folder and short duration,5.675,0:05.675 seconds,1,44100 Hz,Custom Vorbis,61 kbps,43645,wwise_riff,True
+audio/Media/cn/479995809.wem,likely_localized_voice,localized folder and short duration,7.232,0:07.232 seconds,1,44100 Hz,Custom Vorbis,63 kbps,57400,wwise_riff,True
+audio/Media/cn/481271125.wem,likely_localized_voice,localized folder and short duration,4.672,0:04.672 seconds,1,44100 Hz,Custom Vorbis,69 kbps,40681,wwise_riff,True
+audio/Media/cn/481334711.wem,likely_localized_voice,localized folder and short duration,6.037,0:06.037 seconds,1,44100 Hz,Custom Vorbis,67 kbps,51065,wwise_riff,True
+audio/Media/cn/482706596.wem,likely_localized_voice,localized folder and short duration,2.859,0:02.859 seconds,1,44100 Hz,Custom Vorbis,44 kbps,16088,wwise_riff,True
+audio/Media/cn/490070772.wem,likely_localized_voice,localized folder and short duration,3.361,0:03.361 seconds,1,44100 Hz,Custom Vorbis,57 kbps,24123,wwise_riff,True
+audio/Media/cn/493534899.wem,likely_localized_voice,localized folder and short duration,7.936,0:07.936 seconds,1,44100 Hz,Custom Vorbis,63 kbps,62738,wwise_riff,True
+audio/Media/cn/49592825.wem,likely_localized_voice,localized folder and short duration,4.082,0:04.082 seconds,1,44100 Hz,Custom Vorbis,78 kbps,40185,wwise_riff,True
+audio/Media/cn/497125910.wem,likely_localized_voice,localized folder and short duration,2.736,0:02.736 seconds,1,44100 Hz,Custom Vorbis,82 kbps,28227,wwise_riff,True
+audio/Media/cn/506472390.wem,likely_localized_voice,localized folder and short duration,4.267,0:04.267 seconds,1,44100 Hz,Custom Vorbis,62 kbps,33238,wwise_riff,True
+audio/Media/cn/510065990.wem,likely_localized_voice,localized folder and short duration,3.234,0:03.234 seconds,1,44100 Hz,Custom Vorbis,78 kbps,31756,wwise_riff,True
+audio/Media/cn/515350685.wem,likely_localized_voice,localized folder and short duration,1.877,0:01.877 seconds,1,44100 Hz,Custom Vorbis,76 kbps,18046,wwise_riff,True
+audio/Media/cn/518688424.wem,likely_localized_voice,localized folder and short duration,6.891,0:06.891 seconds,1,44100 Hz,Custom Vorbis,63 kbps,55219,wwise_riff,True
+audio/Media/cn/519264822.wem,likely_localized_voice,localized folder and short duration,3.392,0:03.392 seconds,1,44100 Hz,Custom Vorbis,44 kbps,19059,wwise_riff,True
+audio/Media/cn/520725641.wem,likely_localized_voice,localized folder and short duration,8.021,0:08.021 seconds,1,44100 Hz,Custom Vorbis,61 kbps,61455,wwise_riff,True
+audio/Media/cn/526011358.wem,likely_localized_voice,localized folder and short duration,6.549,0:06.549 seconds,1,44100 Hz,Custom Vorbis,61 kbps,50293,wwise_riff,True
+audio/Media/cn/526434318.wem,likely_localized_voice,localized folder and short duration,5.025,0:05.025 seconds,1,44100 Hz,Custom Vorbis,79 kbps,50104,wwise_riff,True
+audio/Media/cn/528085560.wem,likely_localized_voice,localized folder and short duration,5.849,0:05.849 seconds,1,44100 Hz,Custom Vorbis,74 kbps,54949,wwise_riff,True
+audio/Media/cn/537201320.wem,likely_localized_voice,localized folder and short duration,5.056,0:05.056 seconds,1,44100 Hz,Custom Vorbis,57 kbps,36220,wwise_riff,True
+audio/Media/cn/541170277.wem,likely_localized_voice,localized folder and short duration,5.077,0:05.077 seconds,1,44100 Hz,Custom Vorbis,60 kbps,38360,wwise_riff,True
+audio/Media/cn/550167524.wem,likely_localized_voice,localized folder and short duration,4.835,0:04.835 seconds,1,44100 Hz,Custom Vorbis,74 kbps,45146,wwise_riff,True
+audio/Media/cn/551949181.wem,likely_localized_voice,localized folder and short duration,5.632,0:05.632 seconds,1,44100 Hz,Custom Vorbis,59 kbps,42300,wwise_riff,True
+audio/Media/cn/553393531.wem,likely_localized_voice,localized folder and short duration,6.955,0:06.955 seconds,1,44100 Hz,Custom Vorbis,63 kbps,55010,wwise_riff,True
+audio/Media/cn/558802968.wem,likely_localized_voice,localized folder and short duration,6.4,0:06.400 seconds,1,44100 Hz,Custom Vorbis,63 kbps,50937,wwise_riff,True
+audio/Media/cn/559844981.wem,likely_localized_voice,localized folder and short duration,6.869,0:06.869 seconds,1,44100 Hz,Custom Vorbis,61 kbps,52810,wwise_riff,True
+audio/Media/cn/561146840.wem,likely_localized_voice,localized folder and short duration,2.062,0:02.062 seconds,1,44100 Hz,Custom Vorbis,79 kbps,20666,wwise_riff,True
+audio/Media/cn/566059956.wem,likely_localized_voice,localized folder and short duration,4.011,0:04.011 seconds,1,44100 Hz,Custom Vorbis,51 kbps,26025,wwise_riff,True
+audio/Media/cn/569668277.wem,likely_localized_voice,localized folder and short duration,5.76,0:05.760 seconds,1,44100 Hz,Custom Vorbis,64 kbps,46821,wwise_riff,True
+audio/Media/cn/570449801.wem,likely_localized_voice,localized folder and short duration,6.784,0:06.784 seconds,1,44100 Hz,Custom Vorbis,61 kbps,52499,wwise_riff,True
+audio/Media/cn/574386275.wem,likely_localized_voice,localized folder and short duration,2.773,0:02.773 seconds,1,44100 Hz,Custom Vorbis,45 kbps,15863,wwise_riff,True
+audio/Media/cn/578324834.wem,likely_localized_voice,localized folder and short duration,3.992,0:03.992 seconds,1,44100 Hz,Custom Vorbis,74 kbps,37509,wwise_riff,True
+audio/Media/cn/581514636.wem,likely_localized_voice,localized folder and short duration,3.584,0:03.584 seconds,1,44100 Hz,Custom Vorbis,39 kbps,17980,wwise_riff,True
+audio/Media/cn/584781284.wem,likely_localized_voice,localized folder and short duration,7.275,0:07.275 seconds,1,44100 Hz,Custom Vorbis,63 kbps,58089,wwise_riff,True
+audio/Media/cn/585502462.wem,likely_localized_voice,localized folder and short duration,4.544,0:04.544 seconds,1,44100 Hz,Custom Vorbis,53 kbps,30591,wwise_riff,True
+audio/Media/cn/5911225.wem,likely_localized_voice,localized folder and short duration,10.517,0:10.517 seconds,1,44100 Hz,Custom Vorbis,61 kbps,81559,wwise_riff,True
+audio/Media/cn/591444508.wem,likely_localized_voice,localized folder and short duration,6.592,0:06.592 seconds,1,44100 Hz,Custom Vorbis,66 kbps,55186,wwise_riff,True
+audio/Media/cn/598413900.wem,likely_localized_voice,localized folder and short duration,6.503,0:06.503 seconds,1,44100 Hz,Custom Vorbis,71 kbps,58414,wwise_riff,True
+audio/Media/cn/599405805.wem,likely_localized_voice,localized folder and short duration,1.586,0:01.586 seconds,1,44100 Hz,Custom Vorbis,76 kbps,15325,wwise_riff,True
+audio/Media/cn/600441968.wem,likely_localized_voice,localized folder and short duration,6.315,0:06.315 seconds,1,44100 Hz,Custom Vorbis,59 kbps,47189,wwise_riff,True
+audio/Media/cn/60550856.wem,likely_localized_voice,localized folder and short duration,4.203,0:04.203 seconds,1,44100 Hz,Custom Vorbis,56 kbps,29883,wwise_riff,True
+audio/Media/cn/611450140.wem,likely_localized_voice,localized folder and short duration,9.152,0:09.152 seconds,1,44100 Hz,Custom Vorbis,64 kbps,74000,wwise_riff,True
+audio/Media/cn/612604889.wem,likely_localized_voice,localized folder and short duration,6.123,0:06.123 seconds,1,44100 Hz,Custom Vorbis,65 kbps,50251,wwise_riff,True
+audio/Media/cn/615749656.wem,likely_localized_voice,localized folder and short duration,5.163,0:05.163 seconds,1,44100 Hz,Custom Vorbis,58 kbps,37883,wwise_riff,True
+audio/Media/cn/616035912.wem,likely_localized_voice,localized folder and short duration,2.982,0:02.982 seconds,1,44100 Hz,Custom Vorbis,81 kbps,30308,wwise_riff,True
+audio/Media/cn/623634126.wem,likely_localized_voice,localized folder and short duration,2.126,0:02.126 seconds,1,44100 Hz,Custom Vorbis,73 kbps,19637,wwise_riff,True
+audio/Media/cn/624787153.wem,likely_localized_voice,localized folder and short duration,3.059,0:03.059 seconds,1,44100 Hz,Custom Vorbis,77 kbps,29926,wwise_riff,True
+audio/Media/cn/628139809.wem,likely_localized_voice,localized folder and short duration,5.397,0:05.397 seconds,1,44100 Hz,Custom Vorbis,54 kbps,36965,wwise_riff,True
+audio/Media/cn/641713659.wem,likely_localized_voice,localized folder and short duration,10.069,0:10.069 seconds,1,44100 Hz,Custom Vorbis,66 kbps,84038,wwise_riff,True
+audio/Media/cn/644459505.wem,likely_localized_voice,localized folder and short duration,4.672,0:04.672 seconds,1,44100 Hz,Custom Vorbis,50 kbps,29357,wwise_riff,True
+audio/Media/cn/64647016.wem,likely_localized_voice,localized folder and short duration,4.405,0:04.405 seconds,1,44100 Hz,Custom Vorbis,76 kbps,42438,wwise_riff,True
+audio/Media/cn/65119596.wem,likely_localized_voice,localized folder and short duration,8.747,0:08.747 seconds,1,44100 Hz,Custom Vorbis,64 kbps,70956,wwise_riff,True
+audio/Media/cn/651910734.wem,likely_localized_voice,localized folder and short duration,4.715,0:04.715 seconds,1,44100 Hz,Custom Vorbis,52 kbps,31167,wwise_riff,True
+audio/Media/cn/660167544.wem,likely_localized_voice,localized folder and short duration,7.403,0:07.403 seconds,1,44100 Hz,Custom Vorbis,62 kbps,58229,wwise_riff,True
+audio/Media/cn/661591507.wem,likely_localized_voice,localized folder and short duration,5.824,0:05.824 seconds,1,44100 Hz,Custom Vorbis,66 kbps,48555,wwise_riff,True
+audio/Media/cn/66265639.wem,likely_localized_voice,localized folder and short duration,4.779,0:04.779 seconds,1,44100 Hz,Custom Vorbis,44 kbps,26947,wwise_riff,True
+audio/Media/cn/664010331.wem,likely_localized_voice,localized folder and short duration,4.074,0:04.074 seconds,1,44100 Hz,Custom Vorbis,85 kbps,43403,wwise_riff,True
+audio/Media/cn/665733782.wem,likely_localized_voice,localized folder and short duration,5.402,0:05.402 seconds,1,44100 Hz,Custom Vorbis,87 kbps,59422,wwise_riff,True
+audio/Media/cn/666580097.wem,likely_localized_voice,localized folder and short duration,5.205,0:05.205 seconds,1,44100 Hz,Custom Vorbis,54 kbps,35463,wwise_riff,True
+audio/Media/cn/669445607.wem,likely_localized_voice,localized folder and short duration,3.904,0:03.904 seconds,1,44100 Hz,Custom Vorbis,49 kbps,24269,wwise_riff,True
+audio/Media/cn/67354565.wem,likely_localized_voice,localized folder and short duration,2.673,0:02.673 seconds,1,44100 Hz,Custom Vorbis,76 kbps,25541,wwise_riff,True
+audio/Media/cn/677457168.wem,likely_localized_voice,localized folder and short duration,2.039,0:02.039 seconds,1,44100 Hz,Custom Vorbis,67 kbps,17269,wwise_riff,True
+audio/Media/cn/677944364.wem,likely_localized_voice,localized folder and short duration,7.083,0:07.083 seconds,1,44100 Hz,Custom Vorbis,64 kbps,57037,wwise_riff,True
+audio/Media/cn/679768949.wem,likely_localized_voice,localized folder and short duration,3.787,0:03.787 seconds,1,44100 Hz,Custom Vorbis,77 kbps,36717,wwise_riff,True
+audio/Media/cn/680572176.wem,likely_localized_voice,localized folder and short duration,2.492,0:02.492 seconds,1,44100 Hz,Custom Vorbis,77 kbps,24258,wwise_riff,True
+audio/Media/cn/68097048.wem,likely_localized_voice,localized folder and short duration,5.611,0:05.611 seconds,1,44100 Hz,Custom Vorbis,57 kbps,40223,wwise_riff,True
+audio/Media/cn/682815064.wem,likely_localized_voice,localized folder and short duration,6.016,0:06.016 seconds,1,44100 Hz,Custom Vorbis,58 kbps,43834,wwise_riff,True
+audio/Media/cn/682935792.wem,likely_localized_voice,localized folder and short duration,4.843,0:04.843 seconds,1,44100 Hz,Custom Vorbis,56 kbps,34116,wwise_riff,True
+audio/Media/cn/686713365.wem,likely_localized_voice,localized folder and short duration,7.744,0:07.744 seconds,1,44100 Hz,Custom Vorbis,65 kbps,63333,wwise_riff,True
+audio/Media/cn/690127148.wem,likely_localized_voice,localized folder and short duration,6.666,0:06.666 seconds,1,44100 Hz,Custom Vorbis,74 kbps,61846,wwise_riff,True
+audio/Media/cn/694053463.wem,likely_localized_voice,localized folder and short duration,10.027,0:10.027 seconds,1,44100 Hz,Custom Vorbis,68 kbps,86257,wwise_riff,True
+audio/Media/cn/694202220.wem,likely_localized_voice,localized folder and short duration,10.837,0:10.837 seconds,1,44100 Hz,Custom Vorbis,61 kbps,83839,wwise_riff,True
+audio/Media/cn/696397816.wem,likely_localized_voice,localized folder and short duration,5.312,0:05.312 seconds,1,44100 Hz,Custom Vorbis,58 kbps,38894,wwise_riff,True
+audio/Media/cn/698543390.wem,likely_localized_voice,localized folder and short duration,2.923,0:02.923 seconds,1,44100 Hz,Custom Vorbis,45 kbps,16799,wwise_riff,True
+audio/Media/cn/701465228.wem,likely_localized_voice,localized folder and short duration,7.211,0:07.211 seconds,1,44100 Hz,Custom Vorbis,63 kbps,56946,wwise_riff,True
+audio/Media/cn/701669584.wem,likely_localized_voice,localized folder and short duration,3.379,0:03.379 seconds,1,44100 Hz,Custom Vorbis,63 kbps,26783,wwise_riff,True
+audio/Media/cn/703851212.wem,likely_localized_voice,localized folder and short duration,6.763,0:06.763 seconds,1,44100 Hz,Custom Vorbis,61 kbps,52066,wwise_riff,True
+audio/Media/cn/707862401.wem,likely_localized_voice,localized folder and short duration,6.613,0:06.613 seconds,1,44100 Hz,Custom Vorbis,62 kbps,52105,wwise_riff,True
+audio/Media/cn/7086255.wem,likely_localized_voice,localized folder and short duration,5.559,0:05.559 seconds,1,44100 Hz,Custom Vorbis,77 kbps,54150,wwise_riff,True
+audio/Media/cn/710865002.wem,likely_localized_voice,localized folder and short duration,6.699,0:06.699 seconds,1,44100 Hz,Custom Vorbis,65 kbps,55067,wwise_riff,True
+audio/Media/cn/712956645.wem,likely_localized_voice,localized folder and short duration,3.535,0:03.535 seconds,1,44100 Hz,Custom Vorbis,76 kbps,34134,wwise_riff,True
+audio/Media/cn/714006007.wem,likely_localized_voice,localized folder and short duration,11.328,0:11.328 seconds,1,44100 Hz,Custom Vorbis,68 kbps,96630,wwise_riff,True
+audio/Media/cn/714452987.wem,likely_localized_voice,localized folder and short duration,4.992,0:04.992 seconds,1,44100 Hz,Custom Vorbis,62 kbps,38916,wwise_riff,True
+audio/Media/cn/715211161.wem,likely_localized_voice,localized folder and short duration,2.636,0:02.636 seconds,1,44100 Hz,Custom Vorbis,76 kbps,25335,wwise_riff,True
+audio/Media/cn/723378679.wem,likely_localized_voice,localized folder and short duration,9.984,0:09.984 seconds,1,44100 Hz,Custom Vorbis,68 kbps,85425,wwise_riff,True
+audio/Media/cn/724669523.wem,likely_localized_voice,localized folder and short duration,6.571,0:06.571 seconds,1,44100 Hz,Custom Vorbis,61 kbps,50901,wwise_riff,True
+audio/Media/cn/732915317.wem,likely_localized_voice,localized folder and short duration,5.205,0:05.205 seconds,1,44100 Hz,Custom Vorbis,76 kbps,50195,wwise_riff,True
+audio/Media/cn/73300078.wem,likely_localized_voice,localized folder and short duration,4.352,0:04.352 seconds,1,44100 Hz,Custom Vorbis,70 kbps,38638,wwise_riff,True
+audio/Media/cn/733406772.wem,likely_localized_voice,localized folder and short duration,3.669,0:03.669 seconds,1,44100 Hz,Custom Vorbis,56 kbps,26225,wwise_riff,True
+audio/Media/cn/740381745.wem,likely_localized_voice,localized folder and short duration,4.144,0:04.144 seconds,1,44100 Hz,Custom Vorbis,75 kbps,39246,wwise_riff,True
+audio/Media/cn/740834156.wem,likely_localized_voice,localized folder and short duration,7.36,0:07.360 seconds,1,44100 Hz,Custom Vorbis,66 kbps,61088,wwise_riff,True
+audio/Media/cn/740860227.wem,likely_localized_voice,localized folder and short duration,5.568,0:05.568 seconds,1,44100 Hz,Custom Vorbis,61 kbps,42833,wwise_riff,True
+audio/Media/cn/745221310.wem,likely_localized_voice,localized folder and short duration,2.837,0:02.837 seconds,1,44100 Hz,Custom Vorbis,40 kbps,14464,wwise_riff,True
+audio/Media/cn/747968707.wem,likely_localized_voice,localized folder and short duration,24.82,0:24.820 seconds,1,44100 Hz,Custom Vorbis,70 kbps,220425,wwise_riff,True
+audio/Media/cn/748697418.wem,likely_localized_voice,localized folder and short duration,3.563,0:03.563 seconds,1,44100 Hz,Custom Vorbis,52 kbps,23491,wwise_riff,True
+audio/Media/cn/749195986.wem,likely_localized_voice,localized folder and short duration,4.129,0:04.129 seconds,1,44100 Hz,Custom Vorbis,69 kbps,35922,wwise_riff,True
+audio/Media/cn/74979933.wem,likely_localized_voice,localized folder and short duration,5.632,0:05.632 seconds,1,44100 Hz,Custom Vorbis,79 kbps,56065,wwise_riff,True
+audio/Media/cn/751720629.wem,likely_localized_voice,localized folder and short duration,3.819,0:03.819 seconds,1,44100 Hz,Custom Vorbis,51 kbps,24571,wwise_riff,True
+audio/Media/cn/755983852.wem,likely_localized_voice,localized folder and short duration,3.051,0:03.051 seconds,1,44100 Hz,Custom Vorbis,48 kbps,18741,wwise_riff,True
+audio/Media/cn/760940150.wem,likely_localized_voice,localized folder and short duration,2.426,0:02.426 seconds,1,44100 Hz,Custom Vorbis,78 kbps,23908,wwise_riff,True
+audio/Media/cn/765500004.wem,likely_localized_voice,localized folder and short duration,4.631,0:04.631 seconds,1,44100 Hz,Custom Vorbis,70 kbps,41097,wwise_riff,True
+audio/Media/cn/766787556.wem,likely_localized_voice,localized folder and short duration,6.443,0:06.443 seconds,1,44100 Hz,Custom Vorbis,64 kbps,52028,wwise_riff,True
+audio/Media/cn/767066646.wem,likely_localized_voice,localized folder and short duration,7.509,0:07.509 seconds,1,44100 Hz,Custom Vorbis,61 kbps,58019,wwise_riff,True
+audio/Media/cn/773031861.wem,likely_localized_voice,localized folder and short duration,8.555,0:08.555 seconds,1,44100 Hz,Custom Vorbis,69 kbps,73948,wwise_riff,True
+audio/Media/cn/775579034.wem,likely_localized_voice,localized folder and short duration,10.027,0:10.027 seconds,1,44100 Hz,Custom Vorbis,63 kbps,79769,wwise_riff,True
+audio/Media/cn/776107038.wem,likely_localized_voice,localized folder and short duration,6.464,0:06.464 seconds,1,44100 Hz,Custom Vorbis,62 kbps,50455,wwise_riff,True
+audio/Media/cn/78916825.wem,likely_localized_voice,localized folder and short duration,7.744,0:07.744 seconds,1,44100 Hz,Custom Vorbis,65 kbps,63915,wwise_riff,True
+audio/Media/cn/79030697.wem,likely_localized_voice,localized folder and short duration,7.765,0:07.765 seconds,1,44100 Hz,Custom Vorbis,67 kbps,65488,wwise_riff,True
+audio/Media/cn/796360349.wem,likely_localized_voice,localized folder and short duration,7.573,0:07.573 seconds,1,44100 Hz,Custom Vorbis,64 kbps,60938,wwise_riff,True
+audio/Media/cn/797021080.wem,likely_localized_voice,localized folder and short duration,4.544,0:04.544 seconds,1,44100 Hz,Custom Vorbis,78 kbps,44483,wwise_riff,True
+audio/Media/cn/79941995.wem,likely_localized_voice,localized folder and short duration,5.141,0:05.141 seconds,1,44100 Hz,Custom Vorbis,56 kbps,36749,wwise_riff,True
+audio/Media/cn/801610365.wem,likely_localized_voice,localized folder and short duration,3.52,0:03.520 seconds,1,44100 Hz,Custom Vorbis,51 kbps,22859,wwise_riff,True
+audio/Media/cn/803281398.wem,likely_localized_voice,localized folder and short duration,5.931,0:05.931 seconds,1,44100 Hz,Custom Vorbis,60 kbps,45090,wwise_riff,True
+audio/Media/cn/804176978.wem,likely_localized_voice,localized folder and short duration,4.011,0:04.011 seconds,1,44100 Hz,Custom Vorbis,49 kbps,24870,wwise_riff,True
+audio/Media/cn/804396929.wem,likely_localized_voice,localized folder and short duration,4.447,0:04.447 seconds,1,44100 Hz,Custom Vorbis,73 kbps,41182,wwise_riff,True
+audio/Media/cn/804709155.wem,likely_localized_voice,localized folder and short duration,8.107,0:08.107 seconds,1,44100 Hz,Custom Vorbis,63 kbps,64798,wwise_riff,True
+audio/Media/cn/806537972.wem,likely_localized_voice,localized folder and short duration,4.779,0:04.779 seconds,1,44100 Hz,Custom Vorbis,54 kbps,32476,wwise_riff,True
+audio/Media/cn/809297234.wem,likely_localized_voice,localized folder and short duration,3.248,0:03.248 seconds,1,44100 Hz,Custom Vorbis,77 kbps,31445,wwise_riff,True
+audio/Media/cn/810381711.wem,likely_localized_voice,localized folder and short duration,1.573,0:01.573 seconds,1,44100 Hz,Custom Vorbis,71 kbps,14253,wwise_riff,True
+audio/Media/cn/813197605.wem,likely_localized_voice,localized folder and short duration,5.163,0:05.163 seconds,1,44100 Hz,Custom Vorbis,50 kbps,32915,wwise_riff,True
+audio/Media/cn/813298101.wem,likely_localized_voice,localized folder and short duration,5.013,0:05.013 seconds,1,44100 Hz,Custom Vorbis,56 kbps,35676,wwise_riff,True
+audio/Media/cn/814528043.wem,likely_localized_voice,localized folder and short duration,5.163,0:05.163 seconds,1,44100 Hz,Custom Vorbis,54 kbps,35012,wwise_riff,True
+audio/Media/cn/81518319.wem,likely_localized_voice,localized folder and short duration,2.304,0:02.304 seconds,1,44100 Hz,Custom Vorbis,79 kbps,22996,wwise_riff,True
+audio/Media/cn/822625820.wem,likely_localized_voice,localized folder and short duration,7.787,0:07.787 seconds,1,44100 Hz,Custom Vorbis,62 kbps,61026,wwise_riff,True
+audio/Media/cn/826314285.wem,likely_localized_voice,localized folder and short duration,5.077,0:05.077 seconds,1,44100 Hz,Custom Vorbis,71 kbps,45384,wwise_riff,True
+audio/Media/cn/835586328.wem,likely_localized_voice,localized folder and short duration,7.445,0:07.445 seconds,1,44100 Hz,Custom Vorbis,62 kbps,58056,wwise_riff,True
+audio/Media/cn/836544267.wem,likely_localized_voice,localized folder and short duration,4.416,0:04.416 seconds,1,44100 Hz,Custom Vorbis,48 kbps,26959,wwise_riff,True
+audio/Media/cn/837470892.wem,likely_localized_voice,localized folder and short duration,5.376,0:05.376 seconds,1,44100 Hz,Custom Vorbis,57 kbps,38576,wwise_riff,True
+audio/Media/cn/838873640.wem,likely_localized_voice,localized folder and short duration,7.637,0:07.637 seconds,1,44100 Hz,Custom Vorbis,60 kbps,58339,wwise_riff,True
+audio/Media/cn/840970644.wem,likely_localized_voice,localized folder and short duration,4.245,0:04.245 seconds,1,44100 Hz,Custom Vorbis,55 kbps,29324,wwise_riff,True
+audio/Media/cn/844723551.wem,likely_localized_voice,localized folder and short duration,1.495,0:01.495 seconds,1,44100 Hz,Custom Vorbis,75 kbps,14313,wwise_riff,True
+audio/Media/cn/849735422.wem,likely_localized_voice,localized folder and short duration,7.573,0:07.573 seconds,1,44100 Hz,Custom Vorbis,64 kbps,61512,wwise_riff,True
+audio/Media/cn/852493757.wem,likely_localized_voice,localized folder and short duration,6.72,0:06.720 seconds,1,44100 Hz,Custom Vorbis,63 kbps,53726,wwise_riff,True
+audio/Media/cn/855892349.wem,likely_localized_voice,localized folder and short duration,6.293,0:06.293 seconds,1,44100 Hz,Custom Vorbis,64 kbps,51012,wwise_riff,True
+audio/Media/cn/860309687.wem,likely_localized_voice,localized folder and short duration,4.156,0:04.156 seconds,1,44100 Hz,Custom Vorbis,78 kbps,40811,wwise_riff,True
+audio/Media/cn/863323151.wem,likely_localized_voice,localized folder and short duration,6.059,0:06.059 seconds,1,44100 Hz,Custom Vorbis,65 kbps,49739,wwise_riff,True
+audio/Media/cn/864235137.wem,likely_localized_voice,localized folder and short duration,3.055,0:03.055 seconds,1,44100 Hz,Custom Vorbis,71 kbps,27562,wwise_riff,True
+audio/Media/cn/86576425.wem,likely_localized_voice,localized folder and short duration,7.509,0:07.509 seconds,1,44100 Hz,Custom Vorbis,67 kbps,63267,wwise_riff,True
+audio/Media/cn/869875141.wem,likely_localized_voice,localized folder and short duration,8.213,0:08.213 seconds,1,44100 Hz,Custom Vorbis,62 kbps,64040,wwise_riff,True
+audio/Media/cn/875201192.wem,likely_localized_voice,localized folder and short duration,4.437,0:04.437 seconds,1,44100 Hz,Custom Vorbis,57 kbps,31921,wwise_riff,True
+audio/Media/cn/87593584.wem,likely_localized_voice,localized folder and short duration,5.781,0:05.781 seconds,1,44100 Hz,Custom Vorbis,58 kbps,42360,wwise_riff,True
+audio/Media/cn/882415797.wem,likely_localized_voice,localized folder and short duration,3.092,0:03.092 seconds,1,44100 Hz,Custom Vorbis,67 kbps,26093,wwise_riff,True
+audio/Media/cn/896859520.wem,likely_localized_voice,localized folder and short duration,3.074,0:03.074 seconds,1,44100 Hz,Custom Vorbis,71 kbps,27654,wwise_riff,True
+audio/Media/cn/897466788.wem,likely_localized_voice,localized folder and short duration,3.631,0:03.631 seconds,1,44100 Hz,Custom Vorbis,84 kbps,38342,wwise_riff,True
+audio/Media/cn/904503626.wem,likely_localized_voice,localized folder and short duration,6.15,0:06.150 seconds,1,44100 Hz,Custom Vorbis,71 kbps,55416,wwise_riff,True
+audio/Media/cn/90513674.wem,likely_localized_voice,localized folder and short duration,4.069,0:04.069 seconds,1,44100 Hz,Custom Vorbis,67 kbps,34429,wwise_riff,True
+audio/Media/cn/907313874.wem,likely_localized_voice,localized folder and short duration,2.773,0:02.773 seconds,1,44100 Hz,Custom Vorbis,46 kbps,16243,wwise_riff,True
+audio/Media/cn/907731542.wem,likely_localized_voice,localized folder and short duration,4.885,0:04.885 seconds,1,44100 Hz,Custom Vorbis,60 kbps,37205,wwise_riff,True
+audio/Media/cn/908782817.wem,likely_localized_voice,localized folder and short duration,5.12,0:05.120 seconds,1,44100 Hz,Custom Vorbis,57 kbps,36719,wwise_riff,True
+audio/Media/cn/911393245.wem,likely_localized_voice,localized folder and short duration,5.376,0:05.376 seconds,1,44100 Hz,Custom Vorbis,58 kbps,39703,wwise_riff,True
+audio/Media/cn/911898219.wem,likely_localized_voice,localized folder and short duration,5.26,0:05.260 seconds,1,44100 Hz,Custom Vorbis,73 kbps,48532,wwise_riff,True
+audio/Media/cn/912670395.wem,likely_localized_voice,localized folder and short duration,4.608,0:04.608 seconds,1,44100 Hz,Custom Vorbis,54 kbps,31539,wwise_riff,True
+audio/Media/cn/913537714.wem,likely_localized_voice,localized folder and short duration,3.3,0:03.300 seconds,1,44100 Hz,Custom Vorbis,72 kbps,30129,wwise_riff,True
+audio/Media/cn/914408107.wem,likely_localized_voice,localized folder and short duration,4.145,0:04.145 seconds,1,44100 Hz,Custom Vorbis,71 kbps,36971,wwise_riff,True
+audio/Media/cn/918399261.wem,likely_localized_voice,localized folder and short duration,3.712,0:03.712 seconds,1,44100 Hz,Custom Vorbis,48 kbps,22478,wwise_riff,True
+audio/Media/cn/92109389.wem,likely_localized_voice,localized folder and short duration,2.816,0:02.816 seconds,1,44100 Hz,Custom Vorbis,38 kbps,13793,wwise_riff,True
+audio/Media/cn/926994181.wem,likely_localized_voice,localized folder and short duration,7.296,0:07.296 seconds,1,44100 Hz,Custom Vorbis,63 kbps,57718,wwise_riff,True
+audio/Media/cn/930002279.wem,likely_localized_voice,localized folder and short duration,5.227,0:05.227 seconds,1,44100 Hz,Custom Vorbis,55 kbps,36257,wwise_riff,True
+audio/Media/cn/939646534.wem,likely_localized_voice,localized folder and short duration,5.419,0:05.419 seconds,1,44100 Hz,Custom Vorbis,61 kbps,41528,wwise_riff,True
+audio/Media/cn/940769115.wem,likely_localized_voice,localized folder and short duration,4.373,0:04.373 seconds,1,44100 Hz,Custom Vorbis,54 kbps,29945,wwise_riff,True
+audio/Media/cn/941467335.wem,likely_localized_voice,localized folder and short duration,5.248,0:05.248 seconds,1,44100 Hz,Custom Vorbis,56 kbps,36970,wwise_riff,True
+audio/Media/cn/941731351.wem,likely_localized_voice,localized folder and short duration,7.915,0:07.915 seconds,1,44100 Hz,Custom Vorbis,63 kbps,63208,wwise_riff,True
+audio/Media/cn/943894922.wem,likely_localized_voice,localized folder and short duration,1.025,0:01.025 seconds,1,44100 Hz,Custom Vorbis,79 kbps,10305,wwise_riff,True
+audio/Media/cn/951552697.wem,likely_localized_voice,localized folder and short duration,8.128,0:08.128 seconds,1,44100 Hz,Custom Vorbis,64 kbps,66122,wwise_riff,True
+audio/Media/cn/953468986.wem,likely_localized_voice,localized folder and short duration,7.702,0:07.702 seconds,1,44100 Hz,Custom Vorbis,74 kbps,71836,wwise_riff,True
+audio/Media/cn/959808448.wem,likely_localized_voice,localized folder and short duration,5.781,0:05.781 seconds,1,44100 Hz,Custom Vorbis,61 kbps,44604,wwise_riff,True
+audio/Media/cn/960993242.wem,likely_localized_voice,localized folder and short duration,4.479,0:04.479 seconds,1,44100 Hz,Custom Vorbis,75 kbps,42367,wwise_riff,True
+audio/Media/cn/969513086.wem,likely_localized_voice,localized folder and short duration,5.589,0:05.589 seconds,1,44100 Hz,Custom Vorbis,61 kbps,43151,wwise_riff,True
+audio/Media/cn/974254874.wem,likely_localized_voice,localized folder and short duration,7.936,0:07.936 seconds,1,44100 Hz,Custom Vorbis,66 kbps,65892,wwise_riff,True
+audio/Media/cn/976664403.wem,likely_localized_voice,localized folder and short duration,6.752,0:06.752 seconds,1,44100 Hz,Custom Vorbis,71 kbps,60304,wwise_riff,True
+audio/Media/cn/97703211.wem,likely_localized_voice,localized folder and short duration,9.877,0:09.877 seconds,1,44100 Hz,Custom Vorbis,74 kbps,91920,wwise_riff,True
+audio/Media/cn/977526549.wem,likely_localized_voice,localized folder and short duration,5.867,0:05.867 seconds,1,44100 Hz,Custom Vorbis,63 kbps,46832,wwise_riff,True
+audio/Media/cn/979991857.wem,likely_localized_voice,localized folder and short duration,7.36,0:07.360 seconds,1,44100 Hz,Custom Vorbis,59 kbps,55131,wwise_riff,True
+audio/Media/cn/981286527.wem,likely_localized_voice,localized folder and short duration,5.696,0:05.696 seconds,1,44100 Hz,Custom Vorbis,54 kbps,38829,wwise_riff,True
+audio/Media/cn/985707305.wem,likely_localized_voice,localized folder and short duration,8.981,0:08.981 seconds,1,44100 Hz,Custom Vorbis,64 kbps,72011,wwise_riff,True
+audio/Media/cn/990864406.wem,likely_localized_voice,localized folder and short duration,7.765,0:07.765 seconds,1,44100 Hz,Custom Vorbis,61 kbps,60222,wwise_riff,True
+audio/Media/cn/993410376.wem,likely_localized_voice,localized folder and short duration,7.189,0:07.189 seconds,1,44100 Hz,Custom Vorbis,65 kbps,58654,wwise_riff,True
+audio/Media/cn/997854986.wem,likely_localized_voice,localized folder and short duration,4.707,0:04.707 seconds,1,44100 Hz,Custom Vorbis,76 kbps,44866,wwise_riff,True
+audio/Media/cn/998833443.wem,likely_localized_voice,localized folder and short duration,3.162,0:03.162 seconds,1,44100 Hz,Custom Vorbis,81 kbps,32416,wwise_riff,True
+audio/Media/cn/99900345.wem,likely_localized_voice,localized folder and short duration,4.611,0:04.611 seconds,1,44100 Hz,Custom Vorbis,77 kbps,44641,wwise_riff,True
+audio/Media/cn/999403967.wem,likely_localized_voice,localized folder and short duration,5.056,0:05.056 seconds,1,44100 Hz,Custom Vorbis,56 kbps,35847,wwise_riff,True
+audio/Media/kr/651674060.wem,likely_localized_voice,localized folder and short duration,25.666,0:25.666 seconds,1,44100 Hz,Custom Vorbis,71 kbps,230547,wwise_riff,True
