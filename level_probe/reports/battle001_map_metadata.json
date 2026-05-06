@@ -1,0 +1,58 @@
+{
+  "bundle": "battle/map/battle001.unity3d",
+  "resolved_bundle": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Sword of Convallaria\\assets\\battle\\map\\battle001.unity3d",
+  "block_count": 96,
+  "block_type_counts": {
+    "11": 64,
+    "27": 21,
+    "28": 11
+  },
+  "metadata": [
+    {
+      "script": "MapProperty",
+      "mono_id": 1267,
+      "game_object_id": 222,
+      "path": "MapTool/Map",
+      "fields": {
+        "m_Enabled": 1,
+        "m_GameObject": "PPtr(m_FileID=0, m_PathID=222, assetsfile=<SerializedFile>)",
+        "m_Name": "",
+        "m_Script": "PPtr(m_FileID=1, m_PathID=38, assetsfile=<SerializedFile>)",
+        "camera": "PPtr(m_FileID=0, m_PathID=648, assetsfile=<SerializedFile>)",
+        "cineBrain": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+        "director": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+        "virtual_camera": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+        "useBound": 1,
+        "useBattle": 1,
+        "boundMin": "int3_storage(x=-2, y=0, z=-5)",
+        "boundMax": "int3_storage(x=13, y=0, z=5)",
+        "boundMinCamera": "Vector3f(0.20999999344348907, 0.0, -3.130000114440918)",
+        "boundMaxCamera": "Vector3f(10.6899995803833, 0.0, 2.700000047683716)",
+        "planeY": 0.0,
+        "orthographicSize": 3.7200000286102295,
+        "scenarioPosition": "Vector3f(0.0, 0.0, 0.0)",
+        "scenarioRotation": "Vector3f(0.0, 0.0, 0.0)",
+        "scenarioHighCamera": 0.0,
+        "scenarioMiddleCamera": 0.0,
+        "scenarioLowCamera": 0.0
+      }
+    },
+    {
+      "script": "MapTool",
+      "mono_id": 1268,
+      "game_object_id": 223,
+      "path": "MapTool",
+      "fields": {
+        "m_Enabled": 1,
+        "m_GameObject": "PPtr(m_FileID=0, m_PathID=223, assetsfile=<SerializedFile>)",
+        "m_Name": "",
+        "m_Script": "PPtr(m_FileID=1, m_PathID=26, assetsfile=<SerializedFile>)",
+        "width": 20,
+        "height": 20,
+        "map_root": "PPtr(m_FileID=0, m_PathID=1267, assetsfile=<SerializedFile>)",
+        "sceneName": "",
+        "objCharAllHud": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)"
+      }
+    }
+  ]
+}

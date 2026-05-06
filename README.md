@@ -162,6 +162,22 @@ The main result is `reports\unnamed_music_name_candidates.csv`. Detailed notes
 on music categorization and naming strategy are in
 `reports\music_categorization_notes.md`.
 
+A higher-level explanation of the reverse-engineering discoveries, difficulty,
+audio obfuscation, and naming chain is in
+`reports\reverse_engineering_summary.md`.
+
+Export named music/ambience as MP3 files:
+
+```powershell
+python .\scripts\export_named_music.py
+```
+
+By default this exports high-confidence named rows from
+`reports\unnamed_music_name_candidates.csv` to `extracted\music_mp3`, appending
+the WEM media id to every filename and writing
+`extracted\music_mp3\music_export_manifest.csv`. The one unresolved row is
+skipped unless `--include-missing` is passed.
+
 Export images from Unity bundles, if `UnityPy` is installed:
 
 ```powershell

@@ -1,0 +1,5326 @@
+[
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 74,
+    "script": "SplitToning",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "m_Name": "SplitToning",
+      "m_Script": "PPtr(m_FileID=0, m_PathID=46, assetsfile=<SerializedFile>)",
+      "active": 1,
+      "m_AdvancedMode": 0,
+      "shadows": {
+        "m_OverrideState": 1,
+        "m_Value": "ColorRGBA(r=0.2216981053352356, g=0.4811321794986725, b=1.0, a=1.0)",
+        "hdr": 0,
+        "showAlpha": 0,
+        "showEyeDropper": 1
+      },
+      "highlights": {
+        "m_OverrideState": 1,
+        "m_Value": "ColorRGBA(r=1.0, g=0.7628742456436157, b=0.6000000238418579, a=1.0)",
+        "hdr": 0,
+        "showAlpha": 0,
+        "showEyeDropper": 1
+      },
+      "balance": {
+        "m_OverrideState": 1,
+        "m_Value": 17.0,
+        "min": -100.0,
+        "max": 100.0
+      }
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 75,
+    "script": "DepthOfField",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "m_Name": "DepthOfField",
+      "m_Script": "PPtr(m_FileID=0, m_PathID=69, assetsfile=<SerializedFile>)",
+      "active": 0,
+      "m_AdvancedMode": 0,
+      "mode": {
+        "m_OverrideState": 1,
+        "m_Value": 1
+      },
+      "gaussianStart": {
+        "m_OverrideState": 1,
+        "m_Value": 50.099998474121094,
+        "min": 0.0
+      },
+      "gaussianEnd": {
+        "m_OverrideState": 1,
+        "m_Value": 973.0999755859375,
+        "min": 0.0
+      },
+      "gaussianMaxRadius": {
+        "m_OverrideState": 1,
+        "m_Value": 1.2309999465942383,
+        "min": 0.5,
+        "max": 1.5
+      },
+      "highQualitySampling": {
+        "m_OverrideState": 1,
+        "m_Value": 1
+      },
+      "focusDistance": {
+        "m_OverrideState": 1,
+        "m_Value": 0.10000000149011612,
+        "min": 0.10000000149011612
+      },
+      "aperture": {
+        "m_OverrideState": 1,
+        "m_Value": 4.699999809265137,
+        "min": 1.0,
+        "max": 32.0
+      },
+      "focalLength": {
+        "m_OverrideState": 1,
+        "m_Value": 10.0,
+        "min": 1.0,
+        "max": 300.0
+      },
+      "bladeCount": {
+        "m_OverrideState": 1,
+        "m_Value": 6,
+        "min": 3,
+        "max": 9
+      },
+      "bladeCurvature": {
+        "m_OverrideState": 1,
+        "m_Value": 0.8149999976158142,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "bladeRotation": {
+        "m_OverrideState": 1,
+        "m_Value": 62.900001525878906,
+        "min": -180.0,
+        "max": 180.0
+      },
+      "bokehRingNum": {
+        "m_OverrideState": 0,
+        "m_Value": 3,
+        "min": 1,
+        "max": 3
+      },
+      "halfCOC": {
+        "m_OverrideState": 0,
+        "m_Value": 0
+      },
+      "kernelSize": {
+        "m_OverrideState": 0,
+        "m_Value": 1
+      },
+      "RTDownScaling": {
+        "m_OverrideState": 0,
+        "m_Value": 2.0,
+        "min": 2.0,
+        "max": 8.0
+      },
+      "BlurRadius": {
+        "m_OverrideState": 0,
+        "m_Value": 1.0,
+        "min": 0.0,
+        "max": 16.0
+      },
+      "centerOffsetX": {
+        "m_OverrideState": 0,
+        "m_Value": 0.0,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "centerOffsetY": {
+        "m_OverrideState": 0,
+        "m_Value": 0.0,
+        "min": -1.0,
+        "max": 1.0
+      },
+      "AreaSize": {
+        "m_OverrideState": 0,
+        "m_Value": 8.0,
+        "min": 0.0,
+        "max": 50.0
+      },
+      "showPreview": {
+        "m_OverrideState": 0,
+        "m_Value": 0
+      }
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 76,
+    "script": "VolumeProfile",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "m_Name": "stage_common-da",
+      "m_Script": "PPtr(m_FileID=0, m_PathID=57, assetsfile=<SerializedFile>)",
+      "components": [
+        "PPtr(m_FileID=0, m_PathID=78, assetsfile=<SerializedFile>)",
+        "PPtr(m_FileID=0, m_PathID=75, assetsfile=<SerializedFile>)",
+        "PPtr(m_FileID=0, m_PathID=79, assetsfile=<SerializedFile>)",
+        "PPtr(m_FileID=0, m_PathID=74, assetsfile=<SerializedFile>)",
+        "PPtr(m_FileID=0, m_PathID=77, assetsfile=<SerializedFile>)"
+      ]
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 77,
+    "script": "LiftGammaGain",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "m_Name": "LiftGammaGain",
+      "m_Script": "PPtr(m_FileID=0, m_PathID=66, assetsfile=<SerializedFile>)",
+      "active": 0,
+      "m_AdvancedMode": 0,
+      "lift": {
+        "m_OverrideState": 0,
+        "m_Value": "Vector4f(1.0, 1.0, 1.0, 0.0)"
+      },
+      "gamma": {
+        "m_OverrideState": 0,
+        "m_Value": "Vector4f(0.7615585923194885, 1.0, 0.8822743892669678, 0.0)"
+      },
+      "gain": {
+        "m_OverrideState": 0,
+        "m_Value": "Vector4f(0.49442243576049805, 1.0, 0.0, 0.0)"
+      }
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 78,
+    "script": "Bloom",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "m_Name": "Bloom",
+      "m_Script": "PPtr(m_FileID=0, m_PathID=43, assetsfile=<SerializedFile>)",
+      "active": 1,
+      "m_AdvancedMode": 0,
+      "threshold": {
+        "m_OverrideState": 1,
+        "m_Value": 0.75,
+        "min": 0.0
+      },
+      "intensity": {
+        "m_OverrideState": 1,
+        "m_Value": 1.0,
+        "min": 0.0
+      },
+      "scatter": {
+        "m_OverrideState": 0,
+        "m_Value": 0.699999988079071,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "clamp": {
+        "m_OverrideState": 0,
+        "m_Value": 65472.0,
+        "min": 0.0
+      },
+      "tint": {
+        "m_OverrideState": 0,
+        "m_Value": "ColorRGBA(r=1.0, g=1.0, b=1.0, a=1.0)",
+        "hdr": 0,
+        "showAlpha": 0,
+        "showEyeDropper": 1
+      },
+      "highQualityFiltering": {
+        "m_OverrideState": 0,
+        "m_Value": 0
+      },
+      "skipIterations": {
+        "m_OverrideState": 0,
+        "m_Value": 1,
+        "min": 0,
+        "max": 16
+      },
+      "dirtTexture": {
+        "m_OverrideState": 0,
+        "m_Value": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)"
+      },
+      "dirtIntensity": {
+        "m_OverrideState": 0,
+        "m_Value": 0.0,
+        "min": 0.0
+      }
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 79,
+    "script": "ColorAdjustments",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "m_Name": "ColorAdjustments",
+      "m_Script": "PPtr(m_FileID=0, m_PathID=65, assetsfile=<SerializedFile>)",
+      "active": 1,
+      "m_AdvancedMode": 0,
+      "postExposure": {
+        "m_OverrideState": 1,
+        "m_Value": 0.20000000298023224
+      },
+      "contrast": {
+        "m_OverrideState": 0,
+        "m_Value": 30.200000762939453,
+        "min": -100.0,
+        "max": 100.0
+      },
+      "colorFilter": {
+        "m_OverrideState": 0,
+        "m_Value": "ColorRGBA(r=1.0, g=1.0, b=1.0, a=1.0)",
+        "hdr": 1,
+        "showAlpha": 0,
+        "showEyeDropper": 1
+      },
+      "hueShift": {
+        "m_OverrideState": 0,
+        "m_Value": -180.0,
+        "min": -180.0,
+        "max": 180.0
+      },
+      "saturation": {
+        "m_OverrideState": 1,
+        "m_Value": -10.0,
+        "min": -100.0,
+        "max": 100.0
+      }
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 80,
+    "script": "BattleGrassData",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "m_Name": "stage_city-ca-da00101_battle",
+      "m_Script": "PPtr(m_FileID=0, m_PathID=68, assetsfile=<SerializedFile>)",
+      "infos": [
+        {
+          "range_size": "Vector2f(0.5, 0.5)",
+          "num_minmax": "int2_storage(x=3, y=5)",
+          "pos": "Vector3f(8.0, 0.800000011920929, 3.0)",
+          "blockPos": "int3_storage(x=8, y=2, z=3)",
+          "templatesInfo": [
+            "<UnknownObject<InstanceInfo> typename='plane1.49|sprite_p_move_grassshort', mesh=PPtr(m_FileID=16, m_PathID=-7348011900852451187, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=36, assetsfile=<SerializedFile>), shadowMode=1, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(-6.322026990801533e-08, 0.6194999814033508, -6.322027701344268e-08), m_Ext..., matrices=[], instanceBounds=[], goPaths=[], isShort=1, rotation=Quaternion(-0.0, 0.3826834261417389, -0.0, 0.9238795638084412), scale=Vector3f(1.0, 1.100000023841858, 1.0)>"
+          ],
+          "vertexSHs": [
+            "Vector3f(0.9378546476364136, 1.2499653100967407, 2.0481812953948975)"
+          ],
+          "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 8_3",
+          "templatesPath": [
+            "'Assets/Scenes/common/Prefabs/Object/grass/grassshort01.prefab'"
+          ]
+        },
+        {
+          "range_size": "Vector2f(0.5, 0.5)",
+          "num_minmax": "int2_storage(x=5, y=9)",
+          "pos": "Vector3f(10.0, 0.800000011920929, 3.0)",
+          "blockPos": "int3_storage(x=10, y=2, z=3)",
+          "templatesInfo": [
+            "<UnknownObject<InstanceInfo> typename='Plane002|sprite_p_move_grass 1_gai', mesh=PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Exte..., matrices=[], instanceBounds=[], goPaths=[], isShort=0, rotation=Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791), scale=Vector3f(1.2145001888275146, 1.0, 1.000000238418579)>",
+            "<UnknownObject<InstanceInfo> typename='Grass|sprite_p_move_grass_gai', mesh=PPtr(m_FileID=16, m_PathID=-6293451755907439005, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=3, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(0.015554377809166908, 0.5039364099502563, 0.0020718052983283997), m_Extent..., matrices=[], instanceBounds=[], goPaths=[], isShort=0, rotation=Quaternion(-0.0, 0.9169049263000488, -0.0, -0.3991057872772217), scale=Vector3f(1.3841001987457275, 1.5225099325180054, 1.3841001987457275)>",
+            "<UnknownObject<InstanceInfo> typename='Plane003|sprite_p_move_grass 2_gai', mesh=PPtr(m_FileID=16, m_PathID=-7469534348166267095, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=25, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(0.001048203557729721, 0.32470211386680603, -0.004367349669337273), m_Exten..., matrices=[], instanceBounds=[], goPaths=[], isShort=0, rotation=Quaternion(0.001055814791470766, -0.9245238304138184, 0.0025614488404244184, 0.3811141848564148), scale=Vector3f(1.1765999794006348, 1.142300009727478, 1.0)>"
+          ],
+          "vertexSHs": [
+            "Vector3f(0.9871500134468079, 1.243149757385254, 1.8755648136138916)",
+            "Vector3f(0.9871500134468079, 1.243149757385254, 1.8755648136138916)",
+            "Vector3f(0.9876428842544556, 1.2444955110549927, 1.878989815711975)"
+          ],
+          "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 10_3",
+          "templatesPath": [
+            "'Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal01.prefab'",
+            "'Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal02.prefab'",
+            "'Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal03.prefab'"
+          ]
+        },
+        {
+          "range_size": "Vector2f(0.699999988079071, 0.699999988079071)",
+          "num_minmax": "int2_storage(x=3, y=5)",
+          "pos": "Vector3f(3.0, 0.0, 1.0)",
+          "blockPos": "int3_storage(x=3, y=0, z=1)",
+          "templatesInfo": [
+            "<UnknownObject<InstanceInfo> typename='Plane002|sprite_p_move_grass 1_gai', mesh=PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Exte..., matrices=[], instanceBounds=[], goPaths=[], isShort=1, rotation=Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791), scale=Vector3f(1.2145001888275146, 1.0, 1.000000238418579)>"
+          ],
+          "vertexSHs": [
+            "Vector3f(0.9524766802787781, 1.33909273147583, 2.4004065990448)"
+          ],
+          "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 3_1",
+          "templatesPath": [
+            "'Assets/Scenes/common/Prefabs/Object/grass/grassshortfinal01.prefab'"
+          ]
+        },
+        {
+          "range_size": "Vector2f(0.5, 0.5)",
+          "num_minmax": "int2_storage(x=2, y=3)",
+          "pos": "Vector3f(3.0, 0.0, 4.0)",
+          "blockPos": "int3_storage(x=3, y=0, z=4)",
+          "templatesInfo": [
+            "<UnknownObject<InstanceInfo> typename='Plane002|sprite_p_move_grass 1_gai', mesh=PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Exte..., matrices=[], instanceBounds=[], goPaths=[], isShort=1, rotation=Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791), scale=Vector3f(1.2145001888275146, 1.0, 1.000000238418579)>"
+          ],
+          "vertexSHs": [
+            "Vector3f(0.9657264947891235, 1.3368237018585205, 2.3145322799682617)"
+          ],
+          "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 3_4",
+          "templatesPath": [
+            "'Assets/Scenes/common/Prefabs/Object/grass/grassshortfinal01.prefab'"
+          ]
+        },
+        {
+          "range_size": "Vector2f(0.5, 0.5)",
+          "num_minmax": "int2_storage(x=5, y=7)",
+          "pos": "Vector3f(10.0, 0.800000011920929, 2.0)",
+          "blockPos": "int3_storage(x=10, y=2, z=2)",
+          "templatesInfo": [
+            "<UnknownObject<InstanceInfo> typename='Plane002|sprite_p_move_grass 1_gai', mesh=PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Exte..., matrices=[], instanceBounds=[], goPaths=[], isShort=0, rotation=Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791), scale=Vector3f(1.2145001888275146, 1.0, 1.000000238418579)>",
+            "<UnknownObject<InstanceInfo> typename='Grass|sprite_p_move_grass_gai', mesh=PPtr(m_FileID=16, m_PathID=-6293451755907439005, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=3, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(0.015554377809166908, 0.5039364099502563, 0.0020718052983283997), m_Extent..., matrices=[], instanceBounds=[], goPaths=[], isShort=0, rotation=Quaternion(-0.0, 0.9169049263000488, -0.0, -0.3991057872772217), scale=Vector3f(1.3841001987457275, 1.5225099325180054, 1.3841001987457275)>",
+            "<UnknownObject<InstanceInfo> typename='Plane003|sprite_p_move_grass 2_gai', mesh=PPtr(m_FileID=16, m_PathID=-7469534348166267095, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=25, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(0.001048203557729721, 0.32470211386680603, -0.004367349669337273), m_Exten..., matrices=[], instanceBounds=[], goPaths=[], isShort=0, rotation=Quaternion(0.001055814791470766, -0.9245238304138184, 0.0025614488404244184, 0.3811141848564148), scale=Vector3f(1.1765999794006348, 1.142300009727478, 1.0)>"
+          ],
+          "vertexSHs": [
+            "Vector3f(0.9813541173934937, 1.247910976409912, 1.9020148515701294)",
+            "Vector3f(0.9813541173934937, 1.247910976409912, 1.9020148515701294)",
+            "Vector3f(0.9818302392959595, 1.2492440938949585, 1.9054561853408813)"
+          ],
+          "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 10_2",
+          "templatesPath": [
+            "'Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal01.prefab'",
+            "'Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal02.prefab'",
+            "'Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal03.prefab'"
+          ]
+        },
+        {
+          "range_size": "Vector2f(0.5, 0.5)",
+          "num_minmax": "int2_storage(x=2, y=4)",
+          "pos": "Vector3f(2.0, 1.2000000476837158, 10.0)",
+          "blockPos": "int3_storage(x=2, y=3, z=10)",
+          "templatesInfo": [
+            "<UnknownObject<InstanceInfo> typename='Plane002|sprite_p_move_grass 1_gai', mesh=PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Exte..., matrices=[], instanceBounds=[], goPaths=[], isShort=1, rotation=Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791), scale=Vector3f(1.2145001888275146, 1.0, 1.000000238418579)>"
+          ],
+          "vertexSHs": [
+            "Vector3f(0.8510720729827881, 1.1896555423736572, 2.0788676738739014)"
+          ],
+          "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 2_10",
+          "templatesPath": [
+            "'Assets/Scenes/common/Prefabs/Object/grass/grassshortfinal01.prefab'"
+          ]
+        },
+        {
+          "range_size": "Vector2f(0.5, 0.5)",
+          "num_minmax": "int2_storage(x=2, y=4)",
+          "pos": "Vector3f(2.0, 0.0, 0.0)",
+          "blockPos": "int3_storage(x=2, y=0, z=0)",
+          "templatesInfo": [
+            "<UnknownObject<InstanceInfo> typename='Plane002|sprite_p_move_grass 1_gai', mesh=PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Exte..., matrices=[], instanceBounds=[], goPaths=[], isShort=1, rotation=Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791), scale=Vector3f(1.2145001888275146, 1.0, 1.000000238418579)>"
+          ],
+          "vertexSHs": [
+            "Vector3f(0.9886714816093445, 1.4135513305664062, 2.5832905769348145)"
+          ],
+          "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 2_0",
+          "templatesPath": [
+            "'Assets/Scenes/common/Prefabs/Object/grass/grassshortfinal01.prefab'"
+          ]
+        },
+        {
+          "range_size": "Vector2f(0.5, 0.5)",
+          "num_minmax": "int2_storage(x=2, y=3)",
+          "pos": "Vector3f(2.0, 1.2000000476837158, 8.0)",
+          "blockPos": "int3_storage(x=2, y=3, z=8)",
+          "templatesInfo": [
+            "<UnknownObject<InstanceInfo> typename='Plane002|sprite_p_move_grass 1_gai', mesh=PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Exte..., matrices=[], instanceBounds=[], goPaths=[], isShort=1, rotation=Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791), scale=Vector3f(1.2145001888275146, 1.0, 1.000000238418579)>"
+          ],
+          "vertexSHs": [
+            "Vector3f(0.6109735369682312, 0.9674106240272522, 1.9061329364776611)"
+          ],
+          "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 2_8",
+          "templatesPath": [
+            "'Assets/Scenes/common/Prefabs/Object/grass/grassshortfinal01.prefab'"
+          ]
+        },
+        {
+          "range_size": "Vector2f(0.699999988079071, 0.5)",
+          "num_minmax": "int2_storage(x=3, y=5)",
+          "pos": "Vector3f(3.0, 1.600000023841858, 12.0)",
+          "blockPos": "int3_storage(x=3, y=4, z=12)",
+          "templatesInfo": [
+            "<UnknownObject<InstanceInfo> typename='Plane002|sprite_p_move_grass 1_gai', mesh=PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Exte..., matrices=[], instanceBounds=[], goPaths=[], isShort=1, rotation=Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791), scale=Vector3f(1.2145001888275146, 1.0, 1.000000238418579)>"
+          ],
+          "vertexSHs": [
+            "Vector3f(0.700619637966156, 1.0084080696105957, 1.8130714893341064)"
+          ],
+          "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 3_12",
+          "templatesPath": [
+            "'Assets/Scenes/common/Prefabs/Object/grass/grassshortfinal01.prefab'"
+          ]
+        },
+        {
+          "range_size": "Vector2f(0.5, 0.5)",
+          "num_minmax": "int2_storage(x=5, y=7)",
+          "pos": "Vector3f(10.0, 0.800000011920929, 4.0)",
+          "blockPos": "int3_storage(x=10, y=2, z=4)",
+          "templatesInfo": [
+            "<UnknownObject<InstanceInfo> typename='Plane002|sprite_p_move_grass 1_gai', mesh=PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Exte..., matrices=[], instanceBounds=[], goPaths=[], isShort=0, rotation=Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791), scale=Vector3f(1.2145001888275146, 1.0, 1.000000238418579)>",
+            "<UnknownObject<InstanceInfo> typename='Grass|sprite_p_move_grass_gai', mesh=PPtr(m_FileID=16, m_PathID=-6293451755907439005, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=3, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(0.015554377809166908, 0.5039364099502563, 0.0020718052983283997), m_Extent..., matrices=[], instanceBounds=[], goPaths=[], isShort=0, rotation=Quaternion(-0.0, 0.9169049263000488, -0.0, -0.3991057872772217), scale=Vector3f(1.3841001987457275, 1.5225099325180054, 1.3841001987457275)>",
+            "<UnknownObject<InstanceInfo> typename='Plane003|sprite_p_move_grass 2_gai', mesh=PPtr(m_FileID=16, m_PathID=-7469534348166267095, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=25, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(0.001048203557729721, 0.32470211386680603, -0.004367349669337273), m_Exten..., matrices=[], instanceBounds=[], goPaths=[], isShort=0, rotation=Quaternion(0.001055814791470766, -0.9245238304138184, 0.0025614488404244184, 0.3811141848564148), scale=Vector3f(1.1765999794006348, 1.142300009727478, 1.0)>"
+          ],
+          "vertexSHs": [
+            "Vector3f(0.9501041173934937, 1.2303436994552612, 1.8974967002868652)",
+            "Vector3f(0.9501041173934937, 1.2303436994552612, 1.8974967002868652)",
+            "Vector3f(0.9504967331886292, 1.2315973043441772, 1.9007623195648193)"
+          ],
+          "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 10_4",
+          "templatesPath": [
+            "'Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal01.prefab'",
+            "'Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal02.prefab'",
+            "'Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal03.prefab'"
+          ]
+        },
+        {
+          "range_size": "Vector2f(1.0, 1.0)",
+          "num_minmax": "int2_storage(x=3, y=5)",
+          "pos": "Vector3f(9.0, 0.800000011920929, 4.0)",
+          "blockPos": "int3_storage(x=9, y=2, z=4)",
+          "templatesInfo": [
+            "<UnknownObject<InstanceInfo> typename='Plane002|sprite_p_move_grass 1_gai', mesh=PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Exte..., matrices=[], instanceBounds=[], goPaths=[], isShort=1, rotation=Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791), scale=Vector3f(1.2145001888275146, 1.0, 1.000000238418579)>"
+          ],
+          "vertexSHs": [
+            "Vector3f(0.9793445467948914, 1.2509396076202393, 1.9467169046401978)"
+          ],
+          "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 9_4",
+          "templatesPath": [
+            "'Assets/Scenes/common/Prefabs/Object/grass/grassshortfinal01.prefab'"
+          ]
+        },
+        {
+          "range_size": "Vector2f(0.5, 0.699999988079071)",
+          "num_minmax": "int2_storage(x=3, y=4)",
+          "pos": "Vector3f(2.0, 0.0, 2.0)",
+          "blockPos": "int3_storage(x=2, y=0, z=2)",
+          "templatesInfo": [
+            "<UnknownObject<InstanceInfo> typename='Plane002|sprite_p_move_grass 1_gai', mesh=PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Exte..., matrices=[], instanceBounds=[], goPaths=[], isShort=1, rotation=Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791), scale=Vector3f(1.2145001888275146, 1.0, 1.000000238418579)>"
+          ],
+          "vertexSHs": [
+            "Vector3f(0.9630910754203796, 1.3541940450668335, 2.4187099933624268)"
+          ],
+          "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 2_2",
+          "templatesPath": [
+            "'Assets/Scenes/common/Prefabs/Object/grass/grassshortfinal01.prefab'"
+          ]
+        },
+        {
+          "range_size": "Vector2f(0.5, 0.5)",
+          "num_minmax": "int2_storage(x=2, y=4)",
+          "pos": "Vector3f(12.0, 1.600000023841858, 3.0)",
+          "blockPos": "int3_storage(x=12, y=4, z=3)",
+          "templatesInfo": [
+            "<UnknownObject<InstanceInfo> typename='Plane002|sprite_p_move_grass 1_gai', mesh=PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Exte..., matrices=[], instanceBounds=[], goPaths=[], isShort=1, rotation=Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791), scale=Vector3f(1.2145001888275146, 1.0, 1.000000238418579)>"
+          ],
+          "vertexSHs": [
+            "Vector3f(0.9478975534439087, 1.2138930559158325, 1.7768462896347046)"
+          ],
+          "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 12_3",
+          "templatesPath": [
+            "'Assets/Scenes/common/Prefabs/Object/grass/grassshortfinal01.prefab'"
+          ]
+        },
+        {
+          "range_size": "Vector2f(0.5, 0.5)",
+          "num_minmax": "int2_storage(x=2, y=4)",
+          "pos": "Vector3f(8.000051498413086, 0.39999979734420776, 1.999863624572754)",
+          "blockPos": "int3_storage(x=8, y=1, z=2)",
+          "templatesInfo": [
+            "<UnknownObject<InstanceInfo> typename='Plane002|sprite_p_move_grass 1_gai', mesh=PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Exte..., matrices=[], instanceBounds=[], goPaths=[], isShort=1, rotation=Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791), scale=Vector3f(1.2145001888275146, 1.0, 1.000000238418579)>"
+          ],
+          "vertexSHs": [
+            "Vector3f(0.9504061937332153, 1.2624455690383911, 2.076425313949585)"
+          ],
+          "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 8_2",
+          "templatesPath": [
+            "'Assets/Scenes/common/Prefabs/Object/grass/grassshortfinal01.prefab'"
+          ]
+        },
+        {
+          "range_size": "Vector2f(0.5, 0.5)",
+          "num_minmax": "int2_storage(x=3, y=5)",
+          "pos": "Vector3f(1.0, 0.800000011920929, 9.0)",
+          "blockPos": "int3_storage(x=1, y=2, z=9)",
+          "templatesInfo": [
+            "<UnknownObject<InstanceInfo> typename='Plane002|sprite_p_move_grass 1_gai', mesh=PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Exte..., matrices=[], instanceBounds=[], goPaths=[], isShort=1, rotation=Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791), scale=Vector3f(1.2145001888275146, 1.0, 1.000000238418579)>"
+          ],
+          "vertexSHs": [
+            "Vector3f(0.8759512305259705, 1.2274607419967651, 2.1482737064361572)"
+          ],
+          "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 1_9",
+          "templatesPath": [
+            "'Assets/Scenes/common/Prefabs/Object/grass/grassshortfinal01.prefab'"
+          ]
+        },
+        {
+          "range_size": "Vector2f(0.5, 0.5)",
+          "num_minmax": "int2_storage(x=5, y=8)",
+          "pos": "Vector3f(10.0, 1.2000000476837158, 6.0)",
+          "blockPos": "int3_storage(x=10, y=3, z=6)",
+          "templatesInfo": [
+            "<UnknownObject<InstanceInfo> typename='Plane002|sprite_p_move_grass 1_gai', mesh=PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Exte..., matrices=[], instanceBounds=[], goPaths=[], isShort=0, rotation=Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791), scale=Vector3f(1.2145001888275146, 1.0, 1.000000238418579)>",
+            "<UnknownObject<InstanceInfo> typename='Grass|sprite_p_move_grass_gai', mesh=PPtr(m_FileID=16, m_PathID=-6293451755907439005, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=3, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(0.015554377809166908, 0.5039364099502563, 0.0020718052983283997), m_Extent..., matrices=[], instanceBounds=[], goPaths=[], isShort=0, rotation=Quaternion(-0.0, 0.9169049263000488, -0.0, -0.3991057872772217), scale=Vector3f(1.3841001987457275, 1.5225099325180054, 1.3841001987457275)>",
+            "<UnknownObject<InstanceInfo> typename='Plane003|sprite_p_move_grass 2_gai', mesh=PPtr(m_FileID=16, m_PathID=-7469534348166267095, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=25, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(0.001048203557729721, 0.32470211386680603, -0.004367349669337273), m_Exten..., matrices=[], instanceBounds=[], goPaths=[], isShort=0, rotation=Quaternion(0.001055814791470766, -0.9245238304138184, 0.0025614488404244184, 0.3811141848564148), scale=Vector3f(1.1765999794006348, 1.142300009727478, 1.0)>"
+          ],
+          "vertexSHs": [
+            "Vector3f(0.9277116060256958, 1.165719747543335, 1.6607743501663208)",
+            "Vector3f(0.9277116060256958, 1.165719747543335, 1.6607743501663208)",
+            "Vector3f(0.9279066920280457, 1.1665873527526855, 1.6631035804748535)"
+          ],
+          "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 10_6",
+          "templatesPath": [
+            "'Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal01.prefab'",
+            "'Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal02.prefab'",
+            "'Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal03.prefab'"
+          ]
+        },
+        {
+          "range_size": "Vector2f(1.0, 1.0)",
+          "num_minmax": "int2_storage(x=4, y=8)",
+          "pos": "Vector3f(9.0, 0.800000011920929, 3.0)",
+          "blockPos": "int3_storage(x=9, y=2, z=3)",
+          "templatesInfo": [
+            "<UnknownObject<InstanceInfo> typename='Plane002|sprite_p_move_grass 1_gai', mesh=PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Exte..., matrices=[], instanceBounds=[], goPaths=[], isShort=0, rotation=Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791), scale=Vector3f(1.2145001888275146, 1.0, 1.000000238418579)>",
+            "<UnknownObject<InstanceInfo> typename='Grass|sprite_p_move_grass_gai', mesh=PPtr(m_FileID=16, m_PathID=-6293451755907439005, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=3, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(0.015554377809166908, 0.5039364099502563, 0.0020718052983283997), m_Extent..., matrices=[], instanceBounds=[], goPaths=[], isShort=0, rotation=Quaternion(-0.0, 0.9169049263000488, -0.0, -0.3991057872772217), scale=Vector3f(1.3841001987457275, 1.5225099325180054, 1.3841001987457275)>",
+            "<UnknownObject<InstanceInfo> typename='Plane003|sprite_p_move_grass 2_gai', mesh=PPtr(m_FileID=16, m_PathID=-7469534348166267095, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=25, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(0.001048203557729721, 0.32470211386680603, -0.004367349669337273), m_Exten..., matrices=[], instanceBounds=[], goPaths=[], isShort=0, rotation=Quaternion(0.001055814791470766, -0.9245238304138184, 0.0025614488404244184, 0.3811141848564148), scale=Vector3f(1.1765999794006348, 1.142300009727478, 1.0)>"
+          ],
+          "vertexSHs": [
+            "Vector3f(0.9535984396934509, 1.2391875982284546, 1.9527697563171387)",
+            "Vector3f(0.9535984396934509, 1.2391875982284546, 1.9527697563171387)",
+            "Vector3f(0.9541364312171936, 1.240493655204773, 1.955924391746521)"
+          ],
+          "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 9_3",
+          "templatesPath": [
+            "'Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal01.prefab'",
+            "'Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal02.prefab'",
+            "'Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal03.prefab'"
+          ]
+        },
+        {
+          "range_size": "Vector2f(0.5, 0.5)",
+          "num_minmax": "int2_storage(x=2, y=3)",
+          "pos": "Vector3f(14.0, 2.0, 2.0)",
+          "blockPos": "int3_storage(x=14, y=5, z=2)",
+          "templatesInfo": [
+            "<UnknownObject<InstanceInfo> typename='Plane002|sprite_p_move_grass 1_gai', mesh=PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Exte..., matrices=[], instanceBounds=[], goPaths=[], isShort=1, rotation=Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791), scale=Vector3f(1.2145001888275146, 1.0, 1.000000238418579)>"
+          ],
+          "vertexSHs": [
+            "Vector3f(0.8913745284080505, 1.1118501424789429, 1.6123613119125366)"
+          ],
+          "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 14_2",
+          "templatesPath": [
+            "'Assets/Scenes/common/Prefabs/Object/grass/grassshortfinal01.prefab'"
+          ]
+        },
+        {
+          "range_size": "Vector2f(0.5, 0.5)",
+          "num_minmax": "int2_storage(x=2, y=3)",
+          "pos": "Vector3f(5.0, 0.0, 0.0)",
+          "blockPos": "int3_storage(x=5, y=0, z=0)",
+          "templatesInfo": [
+            "<UnknownObject<InstanceInfo> typename='Plane002|sprite_p_move_grass 1_gai', mesh=PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Exte..., matrices=[], instanceBounds=[], goPaths=[], isShort=1, rotation=Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791), scale=Vector3f(1.2145001888275146, 1.0, 1.000000238418579)>"
+          ],
+          "vertexSHs": [
+            "Vector3f(0.9463576078414917, 1.3491102457046509, 2.4529409408569336)"
+          ],
+          "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 5_0",
+          "templatesPath": [
+            "'Assets/Scenes/common/Prefabs/Object/grass/grassshortfinal01.prefab'"
+          ]
+        },
+        {
+          "range_size": "Vector2f(0.5, 0.5)",
+          "num_minmax": "int2_storage(x=2, y=4)",
+          "pos": "Vector3f(9.0, 1.2000000476837158, 6.0)",
+          "blockPos": "int3_storage(x=9, y=3, z=6)",
+          "templatesInfo": [
+            "<UnknownObject<InstanceInfo> typename='Plane002|sprite_p_move_grass 1_gai', mesh=PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>), material=PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>), shadowMode=0, receiveShadow=1, layer=9, isSprite=0, texture=PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>), uv=Vector2f(0.0, 0.0), batchBounds=AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Exte..., matrices=[], instanceBounds=[], goPaths=[], isShort=1, rotation=Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791), scale=Vector3f(1.2145001888275146, 1.0, 1.000000238418579)>"
+          ],
+          "vertexSHs": [
+            "Vector3f(0.9020082354545593, 1.1610928773880005, 1.749236822128296)"
+          ],
+          "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 9_6",
+          "templatesPath": [
+            "'Assets/Scenes/common/Prefabs/Object/grass/grassshortfinal01.prefab'"
+          ]
+        }
+      ],
+      "scenePath": "Assets/Scenes/Battle/stage_city-ca-00101/stage_city-ca-da00101.unity",
+      "layer": "BitField(m_Bits=1073742337)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2441,
+    "script": "AkGameObj",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=31, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=55, assetsfile=<SerializedFile>)",
+      "m_listeners": {
+        "initialListenerList": [],
+        "useDefaultListeners": 1
+      },
+      "isEnvironmentAware": 1,
+      "isStaticObject": 0,
+      "m_positionOffsetData": {
+        "KeepMe": 0,
+        "positionOffset": "Vector3f(0.0, 0.0, 0.0)"
+      },
+      "m_posOffsetData": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "listenerMask": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2442,
+    "script": "ParticleQuality",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=8, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=54, assetsfile=<SerializedFile>)",
+      "highMaxParticles": 2,
+      "middleMaxParticles": 2,
+      "lowMaxParticles": 1,
+      "particleSystem": "PPtr(m_FileID=0, m_PathID=2382, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2443,
+    "script": "ParticleQuality",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=10, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=54, assetsfile=<SerializedFile>)",
+      "highMaxParticles": 2,
+      "middleMaxParticles": 2,
+      "lowMaxParticles": 1,
+      "particleSystem": "PPtr(m_FileID=0, m_PathID=2383, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2444,
+    "script": "ParticleQuality",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=11, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=54, assetsfile=<SerializedFile>)",
+      "highMaxParticles": 10,
+      "middleMaxParticles": 8,
+      "lowMaxParticles": 0,
+      "particleSystem": "PPtr(m_FileID=0, m_PathID=2384, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2445,
+    "script": "SetHeightFogGlobals",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=12, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=59, assetsfile=<SerializedFile>)",
+      "Fog": 0,
+      "advanceUE4": {
+        "UseFogBlend": 0,
+        "UseFogVertex": 1,
+        "CustomLight": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+        "FogDensity": 0.019999999552965164,
+        "FogHeightFalloff": 0.20000000298023224,
+        "FogHeightOffset": 0.0,
+        "FogInscatteringColor1": "ColorRGBA(r=0.44699999690055847, g=0.6380000114440918, b=1.0, a=1.0)",
+        "SecondFogDensity": 0.0,
+        "SecondFogHeightFalloff": 0.20000000298023224,
+        "SecondFogHeightOffset": 0.0,
+        "FogInscatteringColor2": "ColorRGBA(r=0.44699999690055847, g=0.6380000114440918, b=1.0, a=1.0)",
+        "ThirdFogDensity": 0.0,
+        "ThirdFogHeightFalloff": 0.20000000298023224,
+        "ThirdFogHeightOffset": 0.0,
+        "FogInscatteringColor3": "ColorRGBA(r=0.44699999690055847, g=0.6380000114440918, b=1.0, a=1.0)",
+        "FogMaxOpacity": 1.0,
+        "StartDistance": 0.0,
+        "custoffType": 0,
+        "FogCutoffDistance": 0.0,
+        "FogCutoffBais": 1.0,
+        "UseInscattering": 0,
+        "DirectionalInscatteringExponent": 4.0,
+        "DirectionalInscatteringStartDistance": 100.0,
+        "DirectionalInscatteringColor": "ColorRGBA(r=0.25, g=0.25, b=0.125, a=1.0)",
+        "DirectionalInscatteringRamp": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+        "FogRampOffsetX": 0.0,
+        "FogRampOffsetY": 0.0,
+        "FogRampIntensity": 1.0,
+        "FogAngleX": 0.0,
+        "FogAngleY": 90.0,
+        "FogAngleZ": 90.0
+      }
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2446,
+    "script": "SimpleWind",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=14, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=67, assetsfile=<SerializedFile>)",
+      "speed": 1.2400000095367432,
+      "difference": 90.5,
+      "strength": 0.6000000238418579,
+      "direction": 0.0
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2447,
+    "script": "ParticleQuality",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=15, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=54, assetsfile=<SerializedFile>)",
+      "highMaxParticles": 10,
+      "middleMaxParticles": 7,
+      "lowMaxParticles": 0,
+      "particleSystem": "PPtr(m_FileID=0, m_PathID=2385, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2448,
+    "script": "ParticleQuality",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=18, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=54, assetsfile=<SerializedFile>)",
+      "highMaxParticles": 2,
+      "middleMaxParticles": 2,
+      "lowMaxParticles": 2,
+      "particleSystem": "PPtr(m_FileID=0, m_PathID=2387, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2449,
+    "script": "ParticleQuality",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=19, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=54, assetsfile=<SerializedFile>)",
+      "highMaxParticles": 2,
+      "middleMaxParticles": 2,
+      "lowMaxParticles": 1,
+      "particleSystem": "PPtr(m_FileID=0, m_PathID=2388, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2450,
+    "script": "UniversalAdditionalLightData",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=20, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=60, assetsfile=<SerializedFile>)",
+      "m_UsePipelineSettings": 1,
+      "m_LightCookieSize": "Vector2f(1.0, 1.0)",
+      "m_LightCookieOffset": "Vector2f(0.0, 0.0)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2451,
+    "script": "ParticleQuality",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=22, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=54, assetsfile=<SerializedFile>)",
+      "highMaxParticles": 10,
+      "middleMaxParticles": 7,
+      "lowMaxParticles": 0,
+      "particleSystem": "PPtr(m_FileID=0, m_PathID=2389, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2452,
+    "script": "ParticleQuality",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=23, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=54, assetsfile=<SerializedFile>)",
+      "highMaxParticles": 20,
+      "middleMaxParticles": 14,
+      "lowMaxParticles": 5,
+      "particleSystem": "PPtr(m_FileID=0, m_PathID=2390, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2453,
+    "script": "ParticleQuality",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=26, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=54, assetsfile=<SerializedFile>)",
+      "highMaxParticles": 4,
+      "middleMaxParticles": 3,
+      "lowMaxParticles": 0,
+      "particleSystem": "PPtr(m_FileID=0, m_PathID=2391, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2454,
+    "script": "UniversalAdditionalLightData",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=27, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=60, assetsfile=<SerializedFile>)",
+      "m_UsePipelineSettings": 1,
+      "m_LightCookieSize": "Vector2f(1.0, 1.0)",
+      "m_LightCookieOffset": "Vector2f(0.0, 0.0)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2455,
+    "script": "UniversalAdditionalLightData",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=362, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=60, assetsfile=<SerializedFile>)",
+      "m_UsePipelineSettings": 1,
+      "m_LightCookieSize": "Vector2f(1.0, 1.0)",
+      "m_LightCookieOffset": "Vector2f(0.0, 0.0)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2456,
+    "script": "ParticleQuality",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=30, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=54, assetsfile=<SerializedFile>)",
+      "highMaxParticles": 1,
+      "middleMaxParticles": 1,
+      "lowMaxParticles": 0,
+      "particleSystem": "PPtr(m_FileID=0, m_PathID=2392, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2457,
+    "script": "AkEvent",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=31, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=50, assetsfile=<SerializedFile>)",
+      "triggerList": [
+        1281810935
+      ],
+      "useOtherObject": 0,
+      "actionOnEventType": 0,
+      "curveInterpolation": 4,
+      "enableActionOnEvent": 0,
+      "data": {
+        "idInternal": 0,
+        "valueGuidInternal": [],
+        "WwiseObjectReference": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)"
+      },
+      "useCallbacks": 0,
+      "Callbacks": [],
+      "playingId": 0,
+      "soundEmitterObject": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "transitionDuration": 0.0,
+      "eventIdInternal": 0,
+      "valueGuidInternal": [],
+      "m_callbackDataInternal": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2458,
+    "script": "ParticleQuality",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=32, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=54, assetsfile=<SerializedFile>)",
+      "highMaxParticles": 4,
+      "middleMaxParticles": 3,
+      "lowMaxParticles": 0,
+      "particleSystem": "PPtr(m_FileID=0, m_PathID=2393, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2459,
+    "script": "ParticleQuality",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=35, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=54, assetsfile=<SerializedFile>)",
+      "highMaxParticles": 3,
+      "middleMaxParticles": 2,
+      "lowMaxParticles": 0,
+      "particleSystem": "PPtr(m_FileID=0, m_PathID=2395, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2460,
+    "script": "MapTool",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=36, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=48, assetsfile=<SerializedFile>)",
+      "width": 20,
+      "height": 20,
+      "map_root": "PPtr(m_FileID=0, m_PathID=2462, assetsfile=<SerializedFile>)",
+      "sceneName": "",
+      "objCharAllHud": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2461,
+    "script": "ParticleQuality",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=37, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=54, assetsfile=<SerializedFile>)",
+      "highMaxParticles": 10,
+      "middleMaxParticles": 8,
+      "lowMaxParticles": 0,
+      "particleSystem": "PPtr(m_FileID=0, m_PathID=2396, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2462,
+    "script": "MapProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=38, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=63, assetsfile=<SerializedFile>)",
+      "camera": "PPtr(m_FileID=0, m_PathID=1401, assetsfile=<SerializedFile>)",
+      "cineBrain": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "director": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "virtual_camera": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "useBound": 1,
+      "useBattle": 1,
+      "boundMin": "int3_storage(x=-2, y=0, z=-2)",
+      "boundMax": "int3_storage(x=16, y=0, z=19)",
+      "boundMinCamera": "Vector3f(1.350000023841858, 0.0, 2.0)",
+      "boundMaxCamera": "Vector3f(16.360000610351562, 0.0, 16.299999237060547)",
+      "planeY": 0.0,
+      "orthographicSize": 3.7200000286102295,
+      "scenarioPosition": "Vector3f(0.0, 0.0, 0.0)",
+      "scenarioRotation": "Vector3f(0.0, 0.0, 0.0)",
+      "scenarioHighCamera": 0.0,
+      "scenarioMiddleCamera": 0.0,
+      "scenarioLowCamera": 0.0
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2463,
+    "script": "XDGrassLoader",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=38, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=62, assetsfile=<SerializedFile>)",
+      "instanceData": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "battleGrassData": "PPtr(m_FileID=1, m_PathID=80, assetsfile=<SerializedFile>)",
+      "fadeTime": 2.799999952316284,
+      "enterAnimationTime": 0.3840000033378601,
+      "enterWaveX": 0.20000000298023224,
+      "enterWaveZ": 0.0
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2464,
+    "script": "LightProbesContainer",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=38, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=56, assetsfile=<SerializedFile>)",
+      "lightProbes": "PPtr(m_FileID=1, m_PathID=72, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2465,
+    "script": "FeatureTagMark",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=378, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=47, assetsfile=<SerializedFile>)",
+      "featureTagGroupType": 0
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2466,
+    "script": "ParticleQuality",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=40, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=54, assetsfile=<SerializedFile>)",
+      "highMaxParticles": 2,
+      "middleMaxParticles": 2,
+      "lowMaxParticles": 2,
+      "particleSystem": "PPtr(m_FileID=0, m_PathID=2397, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2467,
+    "script": "ParticleQuality",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=44, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=54, assetsfile=<SerializedFile>)",
+      "highMaxParticles": 10,
+      "middleMaxParticles": 5,
+      "lowMaxParticles": 1,
+      "particleSystem": "PPtr(m_FileID=0, m_PathID=2398, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2468,
+    "script": "ParticleQuality",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=45, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=54, assetsfile=<SerializedFile>)",
+      "highMaxParticles": 3,
+      "middleMaxParticles": 2,
+      "lowMaxParticles": 2,
+      "particleSystem": "PPtr(m_FileID=0, m_PathID=2399, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2469,
+    "script": "ParticleQuality",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=46, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=54, assetsfile=<SerializedFile>)",
+      "highMaxParticles": 3,
+      "middleMaxParticles": 2,
+      "lowMaxParticles": 2,
+      "particleSystem": "PPtr(m_FileID=0, m_PathID=2400, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2470,
+    "script": "CameraStackPreset",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=387, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=51, assetsfile=<SerializedFile>)",
+      "camera_name": [
+        "UICamera",
+        "UICharCamera"
+      ]
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2471,
+    "script": "UniversalAdditionalCameraData",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=379, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=49, assetsfile=<SerializedFile>)",
+      "m_RenderShadows": 1,
+      "m_RequiresDepthTextureOption": 2,
+      "m_RequiresOpaqueTextureOption": 2,
+      "m_CameraType": 0,
+      "m_Cameras": [],
+      "m_RendererIndex": -1,
+      "m_VolumeLayerMask": "BitField(m_Bits=1)",
+      "m_VolumeTrigger": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "m_VolumeFrameworkUpdateModeOption": 2,
+      "m_RenderPostProcessing": 0,
+      "m_Antialiasing": 0,
+      "m_AntialiasingQuality": 2,
+      "m_StopNaN": 0,
+      "m_Dithering": 0,
+      "m_ClearDepth": 1,
+      "m_AllowXRRendering": 1,
+      "m_RequiresDepthTexture": 0,
+      "m_RequiresColorTexture": 0,
+      "m_Version": 2.0
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2472,
+    "script": "SpriteCamera",
+    "fields": {
+      "m_Enabled": 0,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=387, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=58, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2473,
+    "script": "UniversalAdditionalCameraData",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=387, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=49, assetsfile=<SerializedFile>)",
+      "m_RenderShadows": 1,
+      "m_RequiresDepthTextureOption": 2,
+      "m_RequiresOpaqueTextureOption": 2,
+      "m_CameraType": 0,
+      "m_Cameras": [],
+      "m_RendererIndex": -1,
+      "m_VolumeLayerMask": "BitField(m_Bits=65537)",
+      "m_VolumeTrigger": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "m_VolumeFrameworkUpdateModeOption": 2,
+      "m_RenderPostProcessing": 1,
+      "m_Antialiasing": 0,
+      "m_AntialiasingQuality": 2,
+      "m_StopNaN": 0,
+      "m_Dithering": 0,
+      "m_ClearDepth": 1,
+      "m_AllowXRRendering": 1,
+      "m_RequiresDepthTexture": 0,
+      "m_RequiresColorTexture": 0,
+      "m_Version": 2.0
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2474,
+    "script": "LightAdjustment",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=377, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=45, assetsfile=<SerializedFile>)",
+      "directColorTint": "ColorRGBA(r=1.4980392456054688, g=1.4980392456054688, b=1.4980392456054688, a=1.0)",
+      "indirectColorTint": "ColorRGBA(r=0.6000000238418579, g=0.6000000238418579, b=0.6000000238418579, a=1.0)",
+      "outlineColorOverride": "ColorRGBA(r=0.03921568766236305, g=0.019607843831181526, b=0.0, a=1.0)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2475,
+    "script": "ToggleGrass",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=687, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=44, assetsfile=<SerializedFile>)",
+      "grassLongWait": "PPtr(m_FileID=1, m_PathID=16, assetsfile=<SerializedFile>)",
+      "grassLongCut": "PPtr(m_FileID=1, m_PathID=29, assetsfile=<SerializedFile>)",
+      "grassMidWait": "PPtr(m_FileID=1, m_PathID=28, assetsfile=<SerializedFile>)",
+      "grassMidCut": "PPtr(m_FileID=1, m_PathID=30, assetsfile=<SerializedFile>)",
+      "fadeTime": 2.799999952316284,
+      "enterAnimationTime": 0.3840000033378601,
+      "enterWaveX": 0.20000000298023224,
+      "enterWaveZ": 0.0
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2476,
+    "script": "ToggleGrass",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=688, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=44, assetsfile=<SerializedFile>)",
+      "grassLongWait": "PPtr(m_FileID=1, m_PathID=16, assetsfile=<SerializedFile>)",
+      "grassLongCut": "PPtr(m_FileID=1, m_PathID=29, assetsfile=<SerializedFile>)",
+      "grassMidWait": "PPtr(m_FileID=1, m_PathID=28, assetsfile=<SerializedFile>)",
+      "grassMidCut": "PPtr(m_FileID=1, m_PathID=30, assetsfile=<SerializedFile>)",
+      "fadeTime": 2.799999952316284,
+      "enterAnimationTime": 0.3840000033378601,
+      "enterWaveX": 0.20000000298023224,
+      "enterWaveZ": 0.0
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2477,
+    "script": "ToggleGrass",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=689, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=44, assetsfile=<SerializedFile>)",
+      "grassLongWait": "PPtr(m_FileID=1, m_PathID=16, assetsfile=<SerializedFile>)",
+      "grassLongCut": "PPtr(m_FileID=1, m_PathID=29, assetsfile=<SerializedFile>)",
+      "grassMidWait": "PPtr(m_FileID=1, m_PathID=28, assetsfile=<SerializedFile>)",
+      "grassMidCut": "PPtr(m_FileID=1, m_PathID=30, assetsfile=<SerializedFile>)",
+      "fadeTime": 2.799999952316284,
+      "enterAnimationTime": 0.3840000033378601,
+      "enterWaveX": 0.20000000298023224,
+      "enterWaveZ": 0.0
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2478,
+    "script": "ToggleGrass",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=690, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=44, assetsfile=<SerializedFile>)",
+      "grassLongWait": "PPtr(m_FileID=1, m_PathID=16, assetsfile=<SerializedFile>)",
+      "grassLongCut": "PPtr(m_FileID=1, m_PathID=29, assetsfile=<SerializedFile>)",
+      "grassMidWait": "PPtr(m_FileID=1, m_PathID=28, assetsfile=<SerializedFile>)",
+      "grassMidCut": "PPtr(m_FileID=1, m_PathID=30, assetsfile=<SerializedFile>)",
+      "fadeTime": 2.799999952316284,
+      "enterAnimationTime": 0.3840000033378601,
+      "enterWaveX": 0.20000000298023224,
+      "enterWaveZ": 0.0
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2479,
+    "script": "ToggleGrass",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=691, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=44, assetsfile=<SerializedFile>)",
+      "grassLongWait": "PPtr(m_FileID=1, m_PathID=16, assetsfile=<SerializedFile>)",
+      "grassLongCut": "PPtr(m_FileID=1, m_PathID=29, assetsfile=<SerializedFile>)",
+      "grassMidWait": "PPtr(m_FileID=1, m_PathID=28, assetsfile=<SerializedFile>)",
+      "grassMidCut": "PPtr(m_FileID=1, m_PathID=30, assetsfile=<SerializedFile>)",
+      "fadeTime": 2.799999952316284,
+      "enterAnimationTime": 0.3840000033378601,
+      "enterWaveX": 0.20000000298023224,
+      "enterWaveZ": 0.0
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2480,
+    "script": "ToggleGrass",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=692, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=44, assetsfile=<SerializedFile>)",
+      "grassLongWait": "PPtr(m_FileID=1, m_PathID=16, assetsfile=<SerializedFile>)",
+      "grassLongCut": "PPtr(m_FileID=1, m_PathID=29, assetsfile=<SerializedFile>)",
+      "grassMidWait": "PPtr(m_FileID=1, m_PathID=28, assetsfile=<SerializedFile>)",
+      "grassMidCut": "PPtr(m_FileID=1, m_PathID=30, assetsfile=<SerializedFile>)",
+      "fadeTime": 2.799999952316284,
+      "enterAnimationTime": 0.3840000033378601,
+      "enterWaveX": 0.20000000298023224,
+      "enterWaveZ": 0.0
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2481,
+    "script": "TimelineTrigger",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=342, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=52, assetsfile=<SerializedFile>)",
+      "trigger": "cut",
+      "directors": [
+        "PPtr(m_FileID=0, m_PathID=2436, assetsfile=<SerializedFile>)"
+      ],
+      "onceOnly": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2482,
+    "script": "TimelineTrigger",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=343, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=52, assetsfile=<SerializedFile>)",
+      "trigger": "cut",
+      "directors": [
+        "PPtr(m_FileID=0, m_PathID=2437, assetsfile=<SerializedFile>)"
+      ],
+      "onceOnly": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2483,
+    "script": "TimelineTrigger",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=341, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=52, assetsfile=<SerializedFile>)",
+      "trigger": "cut",
+      "directors": [
+        "PPtr(m_FileID=0, m_PathID=2435, assetsfile=<SerializedFile>)"
+      ],
+      "onceOnly": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2484,
+    "script": "TimelineTrigger",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=340, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=52, assetsfile=<SerializedFile>)",
+      "trigger": "cut",
+      "directors": [
+        "PPtr(m_FileID=0, m_PathID=2438, assetsfile=<SerializedFile>)"
+      ],
+      "onceOnly": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2485,
+    "script": "TimelineTrigger",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=345, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=52, assetsfile=<SerializedFile>)",
+      "trigger": "cut",
+      "directors": [
+        "PPtr(m_FileID=0, m_PathID=2440, assetsfile=<SerializedFile>)"
+      ],
+      "onceOnly": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2486,
+    "script": "TimelineTrigger",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=344, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=52, assetsfile=<SerializedFile>)",
+      "trigger": "cut",
+      "directors": [
+        "PPtr(m_FileID=0, m_PathID=2439, assetsfile=<SerializedFile>)"
+      ],
+      "onceOnly": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2487,
+    "script": "CameraSwitch",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=387, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=42, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2488,
+    "script": "CameraHotZoneHelper",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=387, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=61, assetsfile=<SerializedFile>)",
+      "lineColor": "ColorRGBA(r=1.0, g=0.0, b=0.0, a=1.0)",
+      "range": "Vector4f(0.4583333432674408, 0.4166666567325592, 0.4583333432674408, 0.4166666567325592)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2489,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=619, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 10,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2490,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=620, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2491,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=617, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2492,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=618, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2493,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=621, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2494,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=622, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2495,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=623, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2496,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=611, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2497,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=607, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2498,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=608, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2499,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=609, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2500,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=610, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2501,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=616, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2502,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=612, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2503,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=615, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2504,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=614, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2505,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=613, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2506,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=637, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2507,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=636, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2508,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=632, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2509,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=633, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2510,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=635, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2511,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=634, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 10,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2512,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=639, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2513,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=638, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2514,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=624, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2515,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=625, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2516,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=626, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2517,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=627, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2518,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=630, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2519,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=631, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2520,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=628, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2521,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=629, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2522,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=653, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2523,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=654, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2524,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=655, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2525,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=651, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2526,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=652, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2527,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=658, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2528,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=656, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2529,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=657, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2530,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=643, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2531,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=640, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2532,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=642, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2533,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=641, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2534,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=649, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2535,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=648, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2536,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=650, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2537,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=644, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2538,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=645, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2539,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=646, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2540,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=647, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2541,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=670, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2542,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=669, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2543,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=673, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2544,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=672, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2545,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=674, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2546,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=671, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2547,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=660, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2548,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=661, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2549,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=662, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2550,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=663, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2551,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=664, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2552,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=659, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2553,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=668, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2554,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=667, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2555,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=665, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2556,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=666, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2557,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=543, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2558,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=545, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2559,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=544, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 11,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2560,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=547, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2561,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=546, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2562,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=541, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2563,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=542, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2564,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=548, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2565,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=549, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2566,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=536, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2567,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=537, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2568,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=534, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2569,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=535, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2570,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=538, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2571,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=539, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2572,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=540, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2573,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=564, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2574,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=565, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2575,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=562, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2576,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=561, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 29,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2577,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=563, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2578,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=567, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2579,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=568, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 29,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2580,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=569, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 10,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2581,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=570, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2582,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=566, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2583,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=552, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2584,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=553, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2585,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=554, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2586,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=555, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2587,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=550, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2588,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=551, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 10,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2589,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=558, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2590,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=559, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2591,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=560, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2592,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=556, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2593,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=557, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2594,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=582, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2595,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=583, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2596,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=584, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2597,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=574, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2598,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=575, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2599,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=576, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2600,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=577, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2601,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=571, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2602,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=572, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2603,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=573, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2604,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=580, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2605,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=581, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2606,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=578, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 10,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2607,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=579, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2608,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=598, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2609,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=599, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2610,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=600, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2611,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=605, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2612,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=606, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2613,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=601, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2614,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=602, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2615,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=603, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2616,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=604, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2617,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=590, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2618,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=589, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2619,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=585, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2620,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=586, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2621,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=588, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2622,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=587, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2623,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=595, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2624,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=596, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2625,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=597, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2626,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=592, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2627,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=591, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 10,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2628,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=593, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2629,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=594, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2630,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=464, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2631,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=465, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2632,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=463, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2633,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=466, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2634,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=467, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2635,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=468, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2636,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=458, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2637,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=456, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2638,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=457, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2639,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=461, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2640,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=462, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2641,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=459, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2642,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=460, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2643,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=485, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2644,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=486, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2645,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=487, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2646,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=484, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2647,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=483, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2648,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=493, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2649,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=494, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2650,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=488, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2651,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=489, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2652,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=490, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2653,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=492, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2654,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=491, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2655,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=473, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2656,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=472, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2657,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=474, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2658,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=475, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2659,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=476, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2660,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=469, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 11,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2661,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=470, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2662,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=471, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2663,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=480, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 10,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2664,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=481, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2665,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=482, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2666,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=477, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2667,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=478, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2668,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=479, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 11,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2669,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=510, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 11,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2670,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=511, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2671,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=508, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2672,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=509, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2673,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=515, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2674,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=512, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2675,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=513, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2676,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=514, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 10,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2677,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=497, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2678,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=499, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2679,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=498, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2680,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=500, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2681,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=501, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2682,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=502, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2683,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=495, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2684,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=496, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2685,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=505, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2686,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=504, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2687,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=506, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2688,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=507, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2689,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=503, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2690,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=524, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2691,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=525, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2692,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=526, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2693,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=527, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2694,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=521, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2695,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=522, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2696,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=523, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2697,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=530, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 29,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2698,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=531, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2699,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=532, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2700,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=533, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2701,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=528, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2702,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=529, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2703,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=516, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2704,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=517, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2705,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=518, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2706,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=520, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2707,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=519, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2708,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=402, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2709,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=400, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2710,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=401, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2711,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=404, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2712,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=405, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2713,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=403, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 10,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2714,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=392, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2715,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=393, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2716,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=390, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2717,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=391, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2718,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=397, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2719,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=398, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2720,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=399, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2721,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=394, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2722,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=395, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2723,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=396, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2724,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=411, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2725,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=412, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2726,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=413, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2727,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=414, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2728,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=417, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2729,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=416, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2730,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=415, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2731,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=422, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2732,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=423, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2733,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=418, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2734,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=419, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2735,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=420, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2736,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=421, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2737,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=408, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 11,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2738,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=406, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2739,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=407, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2740,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=410, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2741,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=409, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2742,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=433, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2743,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=434, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 10,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2744,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=430, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2745,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=431, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2746,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=432, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2747,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=436, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2748,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=435, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2749,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=424, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2750,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=427, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2751,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=428, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2752,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=429, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2753,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=425, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 10,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2754,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=426, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2755,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=449, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2756,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=448, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2757,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=450, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2758,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=445, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2759,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=444, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2760,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=446, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 1,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2761,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=447, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 28,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2762,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=453, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 10,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2763,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=454, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2764,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=455, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2765,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=451, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2766,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=452, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2767,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=439, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2768,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=438, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2769,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=437, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 12,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2770,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=443, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2771,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=440, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 15,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2772,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=441, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2773,
+    "script": "BlockProperty",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=442, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=53, assetsfile=<SerializedFile>)",
+      "type": 2,
+      "isGamepadCursorMovable": 1
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2774,
+    "script": "TimeOfDay",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=694, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=64, assetsfile=<SerializedFile>)",
+      "updateMode": 2,
+      "mainLight": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "effectLevelConfigs": [
+        "PPtr(m_FileID=6, m_PathID=-5826446194186773745, assetsfile=<SerializedFile>)",
+        "PPtr(m_FileID=6, m_PathID=4266044095140678082, assetsfile=<SerializedFile>)",
+        "PPtr(m_FileID=6, m_PathID=-1772885275375449836, assetsfile=<SerializedFile>)",
+        "PPtr(m_FileID=6, m_PathID=444412285866382824, assetsfile=<SerializedFile>)"
+      ],
+      "particleRainFollowCamera": 0,
+      "followScale": 0.0,
+      "rainAmount": 0.0,
+      "snowIntensity": 0.0,
+      "particleAmount": 0.0,
+      "defaultWeather": "PPtr(m_FileID=6, m_PathID=-6609280806837128741, assetsfile=<SerializedFile>)",
+      "thunderConfig": "PPtr(m_FileID=6, m_PathID=-2573735689673810232, assetsfile=<SerializedFile>)",
+      "rainParticleObj": "PPtr(m_FileID=0, m_PathID=43, assetsfile=<SerializedFile>)",
+      "puddlesRoot": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "snowParticleObj": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "snowMeshObj": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "particleObj": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "ssprRot": {},
+      "ssprPos": "Vector3f(0.0, 0.5099999904632568, 0.0)",
+      "textureConfig": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "matrixConfig": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2775,
+    "script": "UniversalAdditionalLightData",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=389, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=60, assetsfile=<SerializedFile>)",
+      "m_UsePipelineSettings": 1,
+      "m_LightCookieSize": "Vector2f(1.0, 1.0)",
+      "m_LightCookieOffset": "Vector2f(0.0, 0.0)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2776,
+    "script": "UniversalAdditionalLightData",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=696, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=60, assetsfile=<SerializedFile>)",
+      "m_UsePipelineSettings": 0,
+      "m_LightCookieSize": "Vector2f(1.0, 1.0)",
+      "m_LightCookieOffset": "Vector2f(0.0, 0.0)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2777,
+    "script": "Volume",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=697, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=41, assetsfile=<SerializedFile>)",
+      "isGlobal": 1,
+      "priority": 0.0,
+      "blendDistance": 0.0,
+      "weight": 1.0,
+      "sharedProfile": "PPtr(m_FileID=1, m_PathID=76, assetsfile=<SerializedFile>)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2778,
+    "script": "UniversalAdditionalLightData",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=698, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=60, assetsfile=<SerializedFile>)",
+      "m_UsePipelineSettings": 0,
+      "m_LightCookieSize": "Vector2f(1.0, 1.0)",
+      "m_LightCookieOffset": "Vector2f(0.0, 0.0)"
+    }
+  },
+  {
+    "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+    "path_id": 2779,
+    "script": "CinemachineBrain",
+    "fields": {
+      "m_Enabled": 1,
+      "m_GameObject": "PPtr(m_FileID=0, m_PathID=387, assetsfile=<SerializedFile>)",
+      "m_Name": "",
+      "m_Script": "PPtr(m_FileID=1, m_PathID=70, assetsfile=<SerializedFile>)",
+      "m_ShowDebugText": 0,
+      "m_ShowCameraFrustum": 1,
+      "m_IgnoreTimeScale": 0,
+      "m_WorldUpOverride": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "m_UpdateMethod": 2,
+      "m_BlendUpdateMethod": 1,
+      "m_DefaultBlend": {
+        "m_Style": 1,
+        "m_Time": 2.0,
+        "m_CustomCurve": "AnimationCurve(m_Curve=[], m_PostInfinity=2, m_PreInfinity=2, m_RotationOrder=4)"
+      },
+      "m_CustomBlends": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+      "m_CameraCutEvent": {
+        "m_PersistentCalls": {
+          "m_Calls": []
+        }
+      },
+      "m_CameraActivatedEvent": {
+        "m_PersistentCalls": {
+          "m_Calls": []
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,1397 @@
+path_id,type,name,tag,layer,component_count,game_object,local_position,local_scale
+5,GameObject,GameObject,,0,1,,,
+6,GameObject,realtime,,0,1,,,
+7,GameObject,props_root,,9,1,,,
+8,GameObject,Particle System (5),,0,4,,,
+9,GameObject,noenter,,0,1,,,
+10,GameObject,Particle System (16),,0,4,,,
+11,GameObject,Particle System (15),,0,4,,,
+12,GameObject,fog,,0,2,,,
+13,GameObject,effect,,0,1,,,
+14,GameObject,wind,,9,2,,,
+15,GameObject,smoke1 (1),,0,4,,,
+16,GameObject,enter-grass,,24,1,,,
+17,GameObject,RainOptimized,,0,3,,,
+18,GameObject,Particle System (13),,0,4,,,
+19,GameObject,Particle System (6),,0,4,,,
+20,GameObject,MainLight,,0,3,,,
+21,GameObject,whole_waterfullRight-64bit,,0,1,,,
+22,GameObject,smoke1,,0,4,,,
+23,GameObject,star (3),,0,4,,,
+24,GameObject,huopen-firelight (1),,0,2,,,
+25,GameObject,indicator,,0,1,,,
+26,GameObject,Particle System (17),,0,4,,,
+27,GameObject,Spot Light,,0,3,,,
+28,GameObject,waterfall02,,0,1,,,
+29,GameObject,block_root,,0,1,,,
+30,GameObject,Particle System (9),,0,4,,,
+31,GameObject,sound_amb_stage_city_day,,0,3,,,
+32,GameObject,Particle System (14),,0,4,,,
+33,GameObject,bakelight,,0,1,,,
+34,GameObject,RainOptimized (1),,0,3,,,
+35,GameObject,Particle System (10),,0,4,,,
+36,GameObject,MapTool,,0,2,,,
+37,GameObject,Particle System (4),,0,4,,,
+38,GameObject,Map,,0,4,,,
+39,GameObject,emptyblock,,0,1,,,
+40,GameObject,Particle System (11),,0,4,,,
+41,GameObject,enter,,0,1,,,
+42,GameObject,Light Probe Group,,0,2,,,
+43,GameObject,rainparticle,,0,1,,,
+44,GameObject,star (4),,0,4,,,
+45,GameObject,Particle System (8),,0,4,,,
+46,GameObject,Particle System (12),,0,4,,,
+47,GameObject,Cube,,10,3,,,
+48,GameObject,Cube,,10,3,,,
+49,GameObject,Cube,,10,3,,,
+50,GameObject,Cube,,10,3,,,
+51,GameObject,Cube,,10,3,,,
+52,GameObject,Cube,,10,3,,,
+53,GameObject,Cube,,10,3,,,
+54,GameObject,Cube,,10,3,,,
+55,GameObject,Cube,,10,3,,,
+56,GameObject,Cube,,10,3,,,
+57,GameObject,Cube,,10,3,,,
+58,GameObject,Cube,,10,3,,,
+59,GameObject,Cube,,10,3,,,
+60,GameObject,Cube,,10,3,,,
+61,GameObject,Cube,,10,3,,,
+62,GameObject,Cube,,10,3,,,
+63,GameObject,Cube,,10,3,,,
+64,GameObject,Cube,,10,3,,,
+65,GameObject,Cube,,10,3,,,
+66,GameObject,Cube,,10,3,,,
+67,GameObject,Cube,,10,3,,,
+68,GameObject,Cube,,10,3,,,
+69,GameObject,Cube,,10,3,,,
+70,GameObject,Cube,,10,3,,,
+71,GameObject,Cube,,10,3,,,
+72,GameObject,Cube,,10,3,,,
+73,GameObject,Cube,,10,3,,,
+74,GameObject,Cube,,10,3,,,
+75,GameObject,Cube,,10,3,,,
+76,GameObject,Cube,,10,3,,,
+77,GameObject,Cube,,10,3,,,
+78,GameObject,Cube,,10,3,,,
+79,GameObject,Cube,,10,3,,,
+80,GameObject,Cube,,10,3,,,
+81,GameObject,Cube,,10,3,,,
+82,GameObject,Cube,,10,3,,,
+83,GameObject,Cube,,10,3,,,
+84,GameObject,Cube,,10,3,,,
+85,GameObject,Cube,,10,3,,,
+86,GameObject,Cube,,10,3,,,
+87,GameObject,Cube,,10,3,,,
+88,GameObject,Cube,,10,3,,,
+89,GameObject,Cube,,10,3,,,
+90,GameObject,Cube,,10,3,,,
+91,GameObject,Cube,,10,3,,,
+92,GameObject,Cube,,10,3,,,
+93,GameObject,Cube,,10,3,,,
+94,GameObject,Cube,,10,3,,,
+95,GameObject,Cube,,10,3,,,
+96,GameObject,Cube,,10,3,,,
+97,GameObject,Cube,,10,3,,,
+98,GameObject,Cube,,10,3,,,
+99,GameObject,Cube,,10,3,,,
+100,GameObject,Cube,,10,3,,,
+101,GameObject,Cube,,10,3,,,
+102,GameObject,Cube,,10,3,,,
+103,GameObject,Cube,,10,3,,,
+104,GameObject,Cube,,10,3,,,
+105,GameObject,Cube,,10,3,,,
+106,GameObject,Cube,,10,3,,,
+107,GameObject,Cube,,10,3,,,
+108,GameObject,Cube,,10,3,,,
+109,GameObject,Cube,,10,3,,,
+110,GameObject,Cube,,10,3,,,
+111,GameObject,Cube,,10,3,,,
+112,GameObject,Cube,,10,3,,,
+113,GameObject,Cube,,10,3,,,
+114,GameObject,Cube,,10,3,,,
+115,GameObject,Cube,,10,3,,,
+116,GameObject,Cube,,10,3,,,
+117,GameObject,Cube,,10,3,,,
+118,GameObject,Cube,,10,3,,,
+119,GameObject,Cube,,10,3,,,
+120,GameObject,Cube,,10,3,,,
+121,GameObject,Cube,,10,3,,,
+122,GameObject,Cube,,10,3,,,
+123,GameObject,Cube,,10,3,,,
+124,GameObject,Cube,,10,3,,,
+125,GameObject,Cube,,10,3,,,
+126,GameObject,Cube,,10,3,,,
+127,GameObject,Cube,,10,3,,,
+128,GameObject,Cube,,10,3,,,
+129,GameObject,Cube,,10,3,,,
+130,GameObject,Cube,,10,3,,,
+131,GameObject,Cube,,10,3,,,
+132,GameObject,Cube,,10,3,,,
+133,GameObject,Cube,,10,3,,,
+134,GameObject,Cube,,10,3,,,
+135,GameObject,Cube,,10,3,,,
+136,GameObject,Cube,,10,3,,,
+137,GameObject,Cube,,10,3,,,
+138,GameObject,Cube,,10,3,,,
+139,GameObject,Cube,,10,3,,,
+140,GameObject,Cube,,10,3,,,
+141,GameObject,Cube,,10,3,,,
+142,GameObject,Cube,,10,3,,,
+143,GameObject,Cube,,10,3,,,
+144,GameObject,Cube,,10,3,,,
+145,GameObject,Cube,,10,3,,,
+146,GameObject,Cube,,10,3,,,
+147,GameObject,Cube,,10,3,,,
+148,GameObject,Cube,,10,3,,,
+149,GameObject,Cube,,10,3,,,
+150,GameObject,Cube,,10,3,,,
+151,GameObject,Cube,,10,3,,,
+152,GameObject,Cube,,10,3,,,
+153,GameObject,Cube,,10,3,,,
+154,GameObject,Cube,,10,3,,,
+155,GameObject,Cube,,10,3,,,
+156,GameObject,Cube,,10,3,,,
+157,GameObject,Cube,,10,3,,,
+158,GameObject,Cube,,10,3,,,
+159,GameObject,Cube,,10,3,,,
+160,GameObject,Cube,,10,3,,,
+161,GameObject,Cube,,10,3,,,
+162,GameObject,Cube,,10,3,,,
+163,GameObject,Cube,,10,3,,,
+164,GameObject,Cube,,10,3,,,
+165,GameObject,Cube,,10,3,,,
+166,GameObject,Cube,,10,3,,,
+167,GameObject,Cube,,10,3,,,
+168,GameObject,Cube,,10,3,,,
+169,GameObject,Cube,,10,3,,,
+170,GameObject,Cube,,10,3,,,
+171,GameObject,Cube,,10,3,,,
+172,GameObject,Cube,,10,3,,,
+173,GameObject,Cube,,10,3,,,
+174,GameObject,Cube,,10,3,,,
+175,GameObject,Cube,,10,3,,,
+176,GameObject,Cube,,10,3,,,
+177,GameObject,Cube,,10,3,,,
+178,GameObject,Cube,,10,3,,,
+179,GameObject,Cube,,10,3,,,
+180,GameObject,Cube,,10,3,,,
+181,GameObject,Cube,,10,3,,,
+182,GameObject,Cube,,10,3,,,
+183,GameObject,Cube,,10,3,,,
+184,GameObject,Cube,,10,3,,,
+185,GameObject,Cube,,10,3,,,
+186,GameObject,Cube,,10,3,,,
+187,GameObject,Cube,,10,3,,,
+188,GameObject,Cube,,10,3,,,
+189,GameObject,Cube,,10,3,,,
+190,GameObject,Cube,,10,3,,,
+191,GameObject,Cube,,10,3,,,
+192,GameObject,Cube,,10,3,,,
+193,GameObject,Cube,,10,3,,,
+194,GameObject,Cube,,10,3,,,
+195,GameObject,Cube,,10,3,,,
+196,GameObject,Cube,,10,3,,,
+197,GameObject,Cube,,10,3,,,
+198,GameObject,Cube,,10,3,,,
+199,GameObject,Cube,,10,3,,,
+200,GameObject,Cube,,10,3,,,
+201,GameObject,Cube,,10,3,,,
+202,GameObject,Cube,,10,3,,,
+203,GameObject,Cube,,10,3,,,
+204,GameObject,Cube,,10,3,,,
+205,GameObject,Cube,,10,3,,,
+206,GameObject,Cube,,10,3,,,
+207,GameObject,Cube,,10,3,,,
+208,GameObject,Cube,,10,3,,,
+209,GameObject,Cube,,10,3,,,
+210,GameObject,Cube,,10,3,,,
+211,GameObject,Cube,,10,3,,,
+212,GameObject,Cube,,10,3,,,
+213,GameObject,Cube,,10,3,,,
+214,GameObject,Cube,,10,3,,,
+215,GameObject,Cube,,10,3,,,
+216,GameObject,Cube,,10,3,,,
+217,GameObject,Cube,,10,3,,,
+218,GameObject,Cube,,10,3,,,
+219,GameObject,Cube,,10,3,,,
+220,GameObject,Cube,,10,3,,,
+221,GameObject,Cube,,10,3,,,
+222,GameObject,Cube,,10,3,,,
+223,GameObject,Cube,,10,3,,,
+224,GameObject,Cube,,10,3,,,
+225,GameObject,Cube,,10,3,,,
+226,GameObject,Cube,,10,3,,,
+227,GameObject,Cube,,10,3,,,
+228,GameObject,Cube,,10,3,,,
+229,GameObject,Cube,,10,3,,,
+230,GameObject,Cube,,10,3,,,
+231,GameObject,Cube,,10,3,,,
+232,GameObject,Cube,,10,3,,,
+233,GameObject,Cube,,10,3,,,
+234,GameObject,Cube,,10,3,,,
+235,GameObject,Cube,,10,3,,,
+236,GameObject,Cube,,10,3,,,
+237,GameObject,Cube,,10,3,,,
+238,GameObject,Cube,,10,3,,,
+239,GameObject,Cube,,10,3,,,
+240,GameObject,Cube,,10,3,,,
+241,GameObject,Cube,,10,3,,,
+242,GameObject,Cube,,10,3,,,
+243,GameObject,Cube,,10,3,,,
+244,GameObject,Cube,,10,3,,,
+245,GameObject,Cube,,10,3,,,
+246,GameObject,Cube,,10,3,,,
+247,GameObject,Cube,,10,3,,,
+248,GameObject,Cube,,10,3,,,
+249,GameObject,Cube,,10,3,,,
+250,GameObject,Cube,,10,3,,,
+251,GameObject,Cube,,10,3,,,
+252,GameObject,Cube,,10,3,,,
+253,GameObject,Cube,,10,3,,,
+254,GameObject,Cube,,10,3,,,
+255,GameObject,Cube,,10,3,,,
+256,GameObject,Cube,,10,3,,,
+257,GameObject,Cube,,10,3,,,
+258,GameObject,Cube,,10,3,,,
+259,GameObject,Cube,,10,3,,,
+260,GameObject,Cube,,10,3,,,
+261,GameObject,Cube,,10,3,,,
+262,GameObject,Cube,,10,3,,,
+263,GameObject,Cube,,10,3,,,
+264,GameObject,Cube,,10,3,,,
+265,GameObject,Cube,,10,3,,,
+266,GameObject,Cube,,10,3,,,
+267,GameObject,Cube,,10,3,,,
+268,GameObject,Cube,,10,3,,,
+269,GameObject,Cube,,10,3,,,
+270,GameObject,Cube,,10,3,,,
+271,GameObject,Cube,,10,3,,,
+272,GameObject,Cube,,10,3,,,
+273,GameObject,Cube,,10,3,,,
+274,GameObject,Cube,,10,3,,,
+275,GameObject,Cube,,10,3,,,
+276,GameObject,Cube,,10,3,,,
+277,GameObject,Cube,,10,3,,,
+278,GameObject,Cube,,10,3,,,
+279,GameObject,Cube,,10,3,,,
+280,GameObject,Cube,,10,3,,,
+281,GameObject,Cube,,10,3,,,
+282,GameObject,Cube,,10,3,,,
+283,GameObject,Cube,,10,3,,,
+284,GameObject,Cube,,10,3,,,
+285,GameObject,Cube,,10,3,,,
+286,GameObject,Cube,,10,3,,,
+287,GameObject,Cube,,10,3,,,
+288,GameObject,Cube,,10,3,,,
+289,GameObject,Cube,,10,3,,,
+290,GameObject,Cube,,10,3,,,
+291,GameObject,Cube,,10,3,,,
+292,GameObject,Cube,,10,3,,,
+293,GameObject,Cube,,10,3,,,
+294,GameObject,Cube,,10,3,,,
+295,GameObject,Cube,,10,3,,,
+296,GameObject,Cube,,10,3,,,
+297,GameObject,Cube,,10,3,,,
+298,GameObject,Cube,,10,3,,,
+299,GameObject,Cube,,10,3,,,
+300,GameObject,Cube,,10,3,,,
+301,GameObject,Cube,,10,3,,,
+302,GameObject,Cube,,10,3,,,
+303,GameObject,Cube,,10,3,,,
+304,GameObject,Cube,,10,3,,,
+305,GameObject,Cube,,10,3,,,
+306,GameObject,Cube,,10,3,,,
+307,GameObject,Cube,,10,3,,,
+308,GameObject,Cube,,10,3,,,
+309,GameObject,Cube,,10,3,,,
+310,GameObject,Cube,,10,3,,,
+311,GameObject,Cube,,10,3,,,
+312,GameObject,Cube,,10,3,,,
+313,GameObject,Cube,,10,3,,,
+314,GameObject,Cube,,10,3,,,
+315,GameObject,Cube,,10,3,,,
+316,GameObject,Cube,,10,3,,,
+317,GameObject,Cube,,10,3,,,
+318,GameObject,Cube,,10,3,,,
+319,GameObject,Cube,,10,3,,,
+320,GameObject,Cube,,10,3,,,
+321,GameObject,Cube,,10,3,,,
+322,GameObject,Cube,,10,3,,,
+323,GameObject,Cube,,10,3,,,
+324,GameObject,Cube,,10,3,,,
+325,GameObject,Cube,,10,3,,,
+326,GameObject,Cube,,10,3,,,
+327,GameObject,Cube,,10,3,,,
+328,GameObject,Cube,,10,3,,,
+329,GameObject,Cube,,10,3,,,
+330,GameObject,Cube,,10,3,,,
+331,GameObject,Cube,,10,3,,,
+332,GameObject,props_rubble13,,0,3,,,
+333,GameObject,props_woodbox00_ironcorner,,0,3,,,
+334,GameObject,props_woodbox00_ironcorner (1),,0,3,,,
+335,GameObject,water_plain_city_ca_00101,,0,1,,,
+336,GameObject,stage_city-ca-da00101,,0,1,,,
+337,GameObject,BG-plane (1),,9,3,,,
+338,GameObject,props_woodbarrel00,,0,3,,,
+339,GameObject,shui-cemian,,4,3,,,
+340,GameObject,grass_end_timeline,,0,3,,,
+341,GameObject,grass_end_timeline,,0,3,,,
+342,GameObject,grass_end_timeline,,0,3,,,
+343,GameObject,grass_end_timeline,,0,3,,,
+344,GameObject,grass_end_timeline,,0,3,,,
+345,GameObject,grass_end_timeline,,0,3,,,
+346,GameObject,Cube (3),,9,3,,,
+347,GameObject,Cube (3),,9,3,,,
+348,GameObject,Cube (3),,9,3,,,
+349,GameObject,props_torch000-r,,0,3,,,
+350,GameObject,props_torch000-r,,0,3,,,
+351,GameObject,props_torch000-r,,0,3,,,
+352,GameObject,props_woodbox00_dustsheet,,0,3,,,
+353,GameObject,chengqiang.001,,0,4,,,
+354,GameObject,props_haystack00,,0,3,,,
+355,GameObject,muqiao,,0,4,,,
+356,GameObject,grasslong04,,0,1,,,
+357,GameObject,grasslong04,,0,1,,,
+358,GameObject,grasslong04,,0,1,,,
+359,GameObject,grasslong04,,0,1,,,
+360,GameObject,grasslong04,,0,1,,,
+361,GameObject,grasslong04,,0,1,,,
+362,GameObject,Light (2),,0,3,,,
+363,GameObject,props_rubble12 (4),,0,3,,,
+364,GameObject,props_rubble12 (2),,0,3,,,
+365,GameObject,props_rubble12 (1),,0,3,,,
+366,GameObject,props_rubble12,,0,3,,,
+367,GameObject,props_rubble12 (3),,0,3,,,
+368,GameObject,props_rubble01,,0,3,,,
+369,GameObject,props_huopen,,0,3,,,
+370,GameObject,props_rubble06 (1),,0,3,,,
+371,GameObject,props_rubble06,,0,3,,,
+372,GameObject,props_haystacks00,,0,3,,,
+373,GameObject,props_haystacks00 (1),,0,3,,,
+374,GameObject,fire (8),,0,3,,,
+375,GameObject,shuei_dimian,,0,3,,,
+376,GameObject,lighting,,0,1,,,
+377,GameObject,lightadjust_da,,0,2,,,
+378,GameObject,shui_dingmian,,4,4,,,
+379,GameObject,TopCamera,,0,3,,,
+380,GameObject,shiqiao,,0,4,,,
+381,GameObject,beimian,,0,3,,,
+382,GameObject,props_rubble02,,0,3,,,
+383,GameObject,stage_lightingDefultSetting_da,,0,1,,,
+384,GameObject,shueidi,,0,3,,,
+385,GameObject,shui_cemian,,4,3,,,
+386,GameObject,Particle System (1),,0,3,,,
+387,GameObject,camera,,0,8,,,
+388,GameObject,props_rubble10,,0,3,,,
+389,GameObject,realtime_MainLight,,0,3,,,
+390,GameObject,empty 0_11,,24,3,,,
+391,GameObject,empty 0_10,,24,3,,,
+392,GameObject,empty 11_10,,24,3,,,
+393,GameObject,empty 4_3,,24,3,,,
+394,GameObject,empty 14_4,,24,3,,,
+395,GameObject,empty 5_3,,24,3,,,
+396,GameObject,empty 3_8,,24,3,,,
+397,GameObject,empty -1_0,,24,3,,,
+398,GameObject,empty 11_8,,24,3,,,
+399,GameObject,empty 1_7,,24,3,,,
+400,GameObject,empty 8_9,,24,3,,,
+401,GameObject,empty 2_1,,24,3,,,
+402,GameObject,empty -1_1,,24,3,,,
+403,GameObject,empty 6_15,,24,3,,,
+404,GameObject,empty 10_13,,24,3,,,
+405,GameObject,empty 12_9,,24,3,,,
+406,GameObject,empty 12_17,,24,3,,,
+407,GameObject,empty 5_1,,24,3,,,
+408,GameObject,empty 7_5,,24,3,,,
+409,GameObject,empty 0_13,,24,3,,,
+410,GameObject,empty 2_11,,24,3,,,
+411,GameObject,empty 6_10,,24,3,,,
+412,GameObject,empty 6_16,,24,3,,,
+413,GameObject,empty 1_9,,24,3,,,
+414,GameObject,empty 0_3,,24,3,,,
+415,GameObject,empty 0_9,,24,3,,,
+416,GameObject,empty 9_18,,24,3,,,
+417,GameObject,empty 7_17,,24,3,,,
+418,GameObject,empty 0_15,,24,3,,,
+419,GameObject,empty 10_17,,24,3,,,
+420,GameObject,empty 14_14,,24,3,,,
+421,GameObject,empty 7_11,,24,3,,,
+422,GameObject,empty 9_12,,24,3,,,
+423,GameObject,empty 7_10,,24,3,,,
+424,GameObject,empty -1_13,,24,3,,,
+425,GameObject,empty 6_14,,24,3,,,
+426,GameObject,empty 0_4,,24,3,,,
+427,GameObject,empty 10_2,,24,3,,,
+428,GameObject,empty 1_16,,24,3,,,
+429,GameObject,empty 2_0,,24,3,,,
+430,GameObject,empty 3_2,,24,3,,,
+431,GameObject,empty 10_7,,24,3,,,
+432,GameObject,empty 3_3,,24,3,,,
+433,GameObject,empty 6_0,,24,3,,,
+434,GameObject,empty 4_13,,24,3,,,
+435,GameObject,empty 0_0,,24,3,,,
+436,GameObject,empty 7_7,,24,3,,,
+437,GameObject,empty 8_13,,24,3,,,
+438,GameObject,empty 9_5,,24,3,,,
+439,GameObject,empty 3_9,,24,3,,,
+440,GameObject,empty 5_11,,24,3,,,
+441,GameObject,empty 13_3,,24,3,,,
+442,GameObject,empty 11_7,,24,3,,,
+443,GameObject,empty 2_10,,24,3,,,
+444,GameObject,empty 3_18,,24,3,,,
+445,GameObject,empty 1_5,,24,3,,,
+446,GameObject,empty 8_7,,24,3,,,
+447,GameObject,empty 0_19,,24,3,,,
+448,GameObject,empty 2_15,,24,3,,,
+449,GameObject,empty 5_5,,24,3,,,
+450,GameObject,empty 7_4,,24,3,,,
+451,GameObject,empty 12_14,,24,3,,,
+452,GameObject,empty 11_15,,24,3,,,
+453,GameObject,empty 6_13,,24,3,,,
+454,GameObject,empty 1_17,,24,3,,,
+455,GameObject,empty 14_3,,24,3,,,
+456,GameObject,empty 11_17,,24,3,,,
+457,GameObject,empty 2_4,,24,3,,,
+458,GameObject,empty -1_2,,24,3,,,
+459,GameObject,empty 3_5,,24,3,,,
+460,GameObject,empty 7_2,,24,3,,,
+461,GameObject,empty 10_16,,24,3,,,
+462,GameObject,empty 10_9,,24,3,,,
+463,GameObject,empty 9_8,,24,3,,,
+464,GameObject,empty 10_0,,24,3,,,
+465,GameObject,empty 2_12,,24,3,,,
+466,GameObject,empty 13_14,,24,3,,,
+467,GameObject,empty 6_7,,24,3,,,
+468,GameObject,empty 10_18,,24,3,,,
+469,GameObject,empty 7_8,,24,3,,,
+470,GameObject,empty 6_8,,24,3,,,
+471,GameObject,empty 14_0,,24,3,,,
+472,GameObject,empty 9_11,,24,3,,,
+473,GameObject,empty 4_4,,24,3,,,
+474,GameObject,empty 14_-1,,24,3,,,
+475,GameObject,empty 4_17,,24,3,,,
+476,GameObject,empty 13_12,,24,3,,,
+477,GameObject,empty 11_4,,24,3,,,
+478,GameObject,empty 1_18,,24,3,,,
+479,GameObject,empty 10_5,,24,3,,,
+480,GameObject,empty 5_13,,24,3,,,
+481,GameObject,empty 0_7,,24,3,,,
+482,GameObject,empty 2_-1,,24,3,,,
+483,GameObject,empty 3_14,,24,3,,,
+484,GameObject,empty 8_3,,24,3,,,
+485,GameObject,empty 12_5,,24,3,,,
+486,GameObject,empty 9_2,,24,3,,,
+487,GameObject,empty 6_6,,24,3,,,
+488,GameObject,empty 11_18,,24,3,,,
+489,GameObject,empty 1_0,,24,3,,,
+490,GameObject,empty 9_9,,24,3,,,
+491,GameObject,empty 10_3,,24,3,,,
+492,GameObject,empty 12_7,,24,3,,,
+493,GameObject,empty 11_0,,24,3,,,
+494,GameObject,empty 6_12,,24,3,,,
+495,GameObject,empty 2_9,,24,3,,,
+496,GameObject,empty 12_13,,24,3,,,
+497,GameObject,empty 12_0,,24,3,,,
+498,GameObject,empty 3_4,,24,3,,,
+499,GameObject,empty 8_5,,24,3,,,
+500,GameObject,empty 13_4,,24,3,,,
+501,GameObject,empty 13_13,,24,3,,,
+502,GameObject,empty 3_7,,24,3,,,
+503,GameObject,empty 2_19,,24,3,,,
+504,GameObject,empty 9_0,,24,3,,,
+505,GameObject,empty 3_17,,24,3,,,
+506,GameObject,empty 12_12,,24,3,,,
+507,GameObject,empty 6_1,,24,3,,,
+508,GameObject,empty 4_1,,24,3,,,
+509,GameObject,empty -1_12,,24,3,,,
+510,GameObject,empty 6_5,,24,3,,,
+511,GameObject,empty 9_16,,24,3,,,
+512,GameObject,empty 0_14,,24,3,,,
+513,GameObject,empty -1_15,,24,3,,,
+514,GameObject,empty 4_14,,24,3,,,
+515,GameObject,empty 4_5,,24,3,,,
+516,GameObject,empty 9_15,,24,3,,,
+517,GameObject,empty 3_1,,24,3,,,
+518,GameObject,empty 2_7,,24,3,,,
+519,GameObject,empty 6_2,,24,3,,,
+520,GameObject,empty 12_18,,24,3,,,
+521,GameObject,empty 1_12,,24,3,,,
+522,GameObject,empty 11_12,,24,3,,,
+523,GameObject,empty 3_0,,24,3,,,
+524,GameObject,empty 3_-1,,24,3,,,
+525,GameObject,empty 4_9,,24,3,,,
+526,GameObject,empty 8_16,,24,3,,,
+527,GameObject,empty 1_2,,24,3,,,
+528,GameObject,empty 14_12,,24,3,,,
+529,GameObject,empty 15_14,,24,3,,,
+530,GameObject,empty 11_16,,24,3,,,
+531,GameObject,empty 0_-1,,24,3,,,
+532,GameObject,empty 0_17,,24,3,,,
+533,GameObject,empty 6_4,,24,3,,,
+534,GameObject,empty 3_13,,24,3,,,
+535,GameObject,empty 9_6,,24,3,,,
+536,GameObject,empty 4_16,,24,3,,,
+537,GameObject,empty 2_2,,24,3,,,
+538,GameObject,empty 1_19,,24,3,,,
+539,GameObject,empty 11_6,,24,3,,,
+540,GameObject,empty 1_4,,24,3,,,
+541,GameObject,empty -1_18,,24,3,,,
+542,GameObject,empty 1_3,,24,3,,,
+543,GameObject,empty -1_3,,24,3,,,
+544,GameObject,empty 7_9,,24,3,,,
+545,GameObject,empty 2_18,,24,3,,,
+546,GameObject,empty 11_5,,24,3,,,
+547,GameObject,empty 10_10,,24,3,,,
+548,GameObject,empty 3_11,,24,3,,,
+549,GameObject,empty 8_10,,24,3,,,
+550,GameObject,empty 7_12,,24,3,,,
+551,GameObject,empty 4_15,,24,3,,,
+552,GameObject,empty 13_1,,24,3,,,
+553,GameObject,empty 10_14,,24,3,,,
+554,GameObject,empty 14_1,,24,3,,,
+555,GameObject,empty 6_9,,24,3,,,
+556,GameObject,empty 11_13,,24,3,,,
+557,GameObject,empty 3_16,,24,3,,,
+558,GameObject,empty 8_17,,24,3,,,
+559,GameObject,empty 8_11,,24,3,,,
+560,GameObject,empty 1_14,,24,3,,,
+561,GameObject,empty 12_16,,24,3,,,
+562,GameObject,empty 4_0,,24,3,,,
+563,GameObject,empty 12_3,,24,3,,,
+564,GameObject,empty 2_5,,24,3,,,
+565,GameObject,empty 2_17,,24,3,,,
+566,GameObject,empty 0_5,,24,3,,,
+567,GameObject,empty 3_15,,24,3,,,
+568,GameObject,empty 11_1,,24,3,,,
+569,GameObject,empty 7_13,,24,3,,,
+570,GameObject,empty 8_14,,24,3,,,
+571,GameObject,empty 2_16,,24,3,,,
+572,GameObject,empty 5_16,,24,3,,,
+573,GameObject,empty 12_11,,24,3,,,
+574,GameObject,empty 12_2,,24,3,,,
+575,GameObject,empty 12_4,,24,3,,,
+576,GameObject,empty 8_1,,24,3,,,
+577,GameObject,empty 2_6,,24,3,,,
+578,GameObject,empty 5_15,,24,3,,,
+579,GameObject,empty 8_6,,24,3,,,
+580,GameObject,empty 15_12,,24,3,,,
+581,GameObject,empty 9_1,,24,3,,,
+582,GameObject,empty -1_16,,24,3,,,
+583,GameObject,empty 0_6,,24,3,,,
+584,GameObject,empty 12_10,,24,3,,,
+585,GameObject,empty 7_-1,,24,3,,,
+586,GameObject,empty 0_16,,24,3,,,
+587,GameObject,empty 4_11,,24,3,,,
+588,GameObject,empty 10_8,,24,3,,,
+589,GameObject,empty 4_12,,24,3,,,
+590,GameObject,empty 0_2,,24,3,,,
+591,GameObject,empty 7_14,,24,3,,,
+592,GameObject,empty 2_13,,24,3,,,
+593,GameObject,empty -1_17,,24,3,,,
+594,GameObject,empty -1_4,,24,3,,,
+595,GameObject,empty 0_12,,24,3,,,
+596,GameObject,empty 1_1,,24,3,,,
+597,GameObject,empty 10_15,,24,3,,,
+598,GameObject,empty 5_4,,24,3,,,
+599,GameObject,empty 1_11,,24,3,,,
+600,GameObject,empty 12_8,,24,3,,,
+601,GameObject,empty 12_15,,24,3,,,
+602,GameObject,empty 1_6,,24,3,,,
+603,GameObject,empty 14_2,,24,3,,,
+604,GameObject,empty -1_6,,24,3,,,
+605,GameObject,empty 12_-1,,24,3,,,
+606,GameObject,empty -1_14,,24,3,,,
+607,GameObject,empty 13_2,,24,3,,,
+608,GameObject,empty 8_8,,24,3,,,
+609,GameObject,empty 3_12,,24,3,,,
+610,GameObject,empty 8_4,,24,3,,,
+611,GameObject,empty 13_-1,,24,3,,,
+612,GameObject,empty 11_2,,24,3,,,
+613,GameObject,empty 1_13,,24,3,,,
+614,GameObject,empty 10_4,,24,3,,,
+615,GameObject,empty -1_8,,24,3,,,
+616,GameObject,empty 6_11,,24,3,,,
+617,GameObject,empty 5_12,,24,3,,,
+618,GameObject,empty 5_-1,,24,3,,,
+619,GameObject,empty 7_15,,24,3,,,
+620,GameObject,empty 1_15,,24,3,,,
+621,GameObject,empty 2_8,,24,3,,,
+622,GameObject,empty 3_6,,24,3,,,
+623,GameObject,empty -1_5,,24,3,,,
+624,GameObject,empty -1_11,,24,3,,,
+625,GameObject,empty 13_5,,24,3,,,
+626,GameObject,empty 12_6,,24,3,,,
+627,GameObject,empty 15_13,,24,3,,,
+628,GameObject,empty 0_1,,24,3,,,
+629,GameObject,empty 7_0,,24,3,,,
+630,GameObject,empty 1_10,,24,3,,,
+631,GameObject,empty 10_11,,24,3,,,
+632,GameObject,empty 14_5,,24,3,,,
+633,GameObject,empty 9_4,,24,3,,,
+634,GameObject,empty 5_14,,24,3,,,
+635,GameObject,empty 11_11,,24,3,,,
+636,GameObject,empty 4_-1,,24,3,,,
+637,GameObject,empty 11_9,,24,3,,,
+638,GameObject,empty 0_18,,24,3,,,
+639,GameObject,empty 8_0,,24,3,,,
+640,GameObject,empty 11_14,,24,3,,,
+641,GameObject,empty 7_1,,24,3,,,
+642,GameObject,empty 13_0,,24,3,,,
+643,GameObject,empty 8_15,,24,3,,,
+644,GameObject,empty 7_3,,24,3,,,
+645,GameObject,empty 9_3,,24,3,,,
+646,GameObject,empty 12_1,,24,3,,,
+647,GameObject,empty 9_14,,24,3,,,
+648,GameObject,empty 8_18,,24,3,,,
+649,GameObject,empty 10_6,,24,3,,,
+650,GameObject,empty -1_7,,24,3,,,
+651,GameObject,empty -1_9,,24,3,,,
+652,GameObject,empty 10_12,,24,3,,,
+653,GameObject,empty 10_1,,24,3,,,
+654,GameObject,empty 2_3,,24,3,,,
+655,GameObject,empty 8_2,,24,3,,,
+656,GameObject,empty 1_8,,24,3,,,
+657,GameObject,empty 4_2,,24,3,,,
+658,GameObject,empty 5_6,,24,3,,,
+659,GameObject,empty 0_8,,24,3,,,
+660,GameObject,empty 3_10,,24,3,,,
+661,GameObject,empty 2_14,,24,3,,,
+662,GameObject,empty 5_0,,24,3,,,
+663,GameObject,empty 9_10,,24,3,,,
+664,GameObject,empty 7_16,,24,3,,,
+665,GameObject,empty 8_12,,24,3,,,
+666,GameObject,empty 14_13,,24,3,,,
+667,GameObject,empty 9_17,,24,3,,,
+668,GameObject,empty 1_-1,,24,3,,,
+669,GameObject,empty 9_13,,24,3,,,
+670,GameObject,empty 13_11,,24,3,,,
+671,GameObject,empty 7_6,,24,3,,,
+672,GameObject,empty 11_3,,24,3,,,
+673,GameObject,empty -1_10,,24,3,,,
+674,GameObject,empty 9_7,,24,3,,,
+675,GameObject,torch000-r (2),,9,1,,,
+676,GameObject,torch000-r,,9,1,,,
+677,GameObject,torch000-r (1),,9,1,,,
+678,GameObject,grass_end,,0,4,,,
+679,GameObject,grass_end,,0,4,,,
+680,GameObject,grass_end,,0,4,,,
+681,GameObject,grass_end,,0,4,,,
+682,GameObject,grass_end,,0,4,,,
+683,GameObject,grass_end,,0,4,,,
+684,GameObject,caodi,,0,4,,,
+685,GameObject,props_rubble03,,0,3,,,
+686,GameObject,chengqiang,,0,4,,,
+687,GameObject,Grass_01,,9,4,,,
+688,GameObject,Grass_01,,9,4,,,
+689,GameObject,Grass_01,,9,4,,,
+690,GameObject,Grass_01,,9,4,,,
+691,GameObject,Grass_01,,9,4,,,
+692,GameObject,Grass_01,,9,4,,,
+693,GameObject,shui,,4,4,,,
+694,GameObject,tod,,0,2,,,
+695,GameObject,shui_cemian02,,4,3,,,
+696,GameObject,bake_Indirectlight,,0,3,,,
+697,GameObject,post volume,,0,2,,,
+698,GameObject,bake_MainLight,,0,3,,,
+699,GameObject,props_rubble14,,0,3,,,
+700,GameObject,Cube (2),,9,3,,,
+701,GameObject,Cube (2),,9,3,,,
+702,GameObject,Cube (2),,9,3,,,
+703,Transform,,,,,5,"0.0,0.0,0.0","1.0,1.0,1.0"
+704,Transform,,,,,6,"10.658203125,6.74609375,-0.19140625","1.0,1.0,1.0"
+705,Transform,,,,,7,"0.0,0.0,-0.5","1.0,1.0,1.0"
+706,Transform,,,,,8,"0.2849999964237213,0.039000000804662704,-2.930999994277954","0.37691864371299744,0.3044278919696808,1.0"
+707,Transform,,,,,9,"0.0,0.0,0.0","1.0,1.0,1.0"
+708,Transform,,,,,10,"-0.00800000037997961,-0.7509999871253967,-5.442999839782715","0.37691864371299744,0.19620688259601593,1.0"
+709,Transform,,,,,11,"-0.10000000149011612,-0.1379999965429306,-4.0929999351501465","4.0485382080078125,0.30000001192092896,0.676045835018158"
+710,Transform,,,,,12,"0.0,0.0,0.0","1.0,1.0,1.0"
+711,Transform,,,,,13,"0.0,0.0,-0.5","1.0,1.0,1.0"
+712,Transform,,,,,14,"0.0,0.0,0.0","1.0,1.0,1.0"
+713,Transform,,,,,15,"0.800000011920929,-1.0089999437332153,-4.38700008392334","1.0,1.0,1.0"
+714,Transform,,,,,16,"0.0,0.0,0.0","1.0,1.0,1.0"
+715,Transform,,,,,17,"12.5,22.200000762939453,17.480243682861328","60.0,0.10000000149011612,40.0"
+716,Transform,,,,,18,"0.285402774810791,-0.3269999921321869,-4.472000598907471","3.1402108669281006,0.7891775965690613,0.8999999761581421"
+717,Transform,,,,,19,"0.13699999451637268,0.44600000977516174,-0.5590000152587891","0.36657533049583435,0.18529197573661804,1.0"
+718,Transform,,,,,20,"-16.850000381469727,2.880000114440918,7.809999942779541","1.0,1.0,1.0"
+719,Transform,,,,,21,"0.0,0.0,0.0","1.0,1.0,1.0"
+720,Transform,,,,,22,"0.800000011920929,0.06199999898672104,-1.5449999570846558","1.0,1.0,1.0"
+721,Transform,,,,,23,"0.4790000021457672,-0.8399999737739563,-4.359000205993652","1.0,1.0,1.0"
+722,Transform,,,,,24,"-9.56674575805664,5.589021682739258,-1.9757013320922852","1.0,1.0,1.0"
+723,Transform,,,,,25,"0.0,0.0,0.0","1.0,1.0,1.0"
+724,Transform,,,,,26,"0.6050000190734863,0.02500000037252903,-1.468999981880188","3.66267728805542,0.11057945340871811,5.257259845733643"
+725,Transform,,,,,27,"10.710000038146973,4.650077819824219,-0.8900003433227539","1.0,1.0,1.0"
+726,Transform,,,,,28,"4.590000152587891,0.5690000057220459,11.460000038146973","1.0,1.0,1.0"
+727,Transform,,,,,29,"0.0,0.0,0.0","1.0,1.0,1.0"
+728,Transform,,,,,30,"0.30040279030799866,0.25,-1.4999992847442627","2.749295473098755,0.39528557658195496,0.8999999761581421"
+729,Transform,,,,,31,"0.5,0.0,0.5","1.0,1.0,1.0"
+730,Transform,,,,,32,"0.08879999816417694,-0.7390000224113464,-4.4710001945495605","3.66267728805542,0.11057945340871811,5.257259845733643"
+731,Transform,,,,,33,"0.0,0.0,0.0","1.0,1.0,1.0"
+732,Transform,,,,,34,"-2.4000000953674316,23.100000381469727,-3.0","29.18400001525879,0.10000000149011612,40.0"
+733,Transform,,,,,35,"-0.0855972170829773,0.2499995231628418,-1.5","3.528825283050537,0.39528557658195496,0.8999999761581421"
+734,Transform,,,,,36,"0.0,-0.0,0.0","1.0,1.0,1.0"
+735,Transform,,,,,37,"0.1289999932050705,0.2290000021457672,-1.1230000257492065","3.5207741260528564,0.30000001192092896,0.676045835018158"
+736,Transform,,,,,38,"0.0,0.0,0.0","1.0,1.0,1.0"
+737,Transform,,,,,39,"0.0,0.0,0.0","1.0,1.0,1.0"
+738,Transform,,,,,40,"0.535402774810791,0.25,-1.4999995231628418","2.749295473098755,0.39528557658195496,0.8999999761581421"
+739,Transform,,,,,41,"0.0,0.0,0.0","1.0,1.0,1.0"
+740,Transform,,,,,42,"3.5,2.5,4.0","1.0,1.0,1.0"
+741,Transform,,,,,43,"0.0,0.0,0.0","1.0,1.0,1.0"
+742,Transform,,,,,44,"1.003000020980835,0.06400000303983688,-1.4869999885559082","1.0,1.0,1.0"
+743,Transform,,,,,45,"0.1599999964237213,0.25,-1.4999992847442627","3.4907805919647217,0.39528557658195496,0.8999999761581421"
+744,Transform,,,,,46,"-0.09000000357627869,-0.3269999921321869,-4.4720001220703125","3.987126111984253,0.7891775965690613,0.8999999761581421"
+745,Transform,,,,,335,"0.0,0.0,0.0","1.0,1.0,1.0"
+746,Transform,,,,,336,"0.0,0.0,0.0","1.0,1.0,1.0"
+747,Transform,,,,,337,"15.220000267028809,-3.2200000286102295,15.0","2.700000047683716,2.0,2.5"
+748,Transform,,,,,333,"13.986672401428223,2.333750009536743,5.057671546936035","1.100000023841858,1.100000023841858,1.100000023841858"
+749,Transform,,,,,334,"14.154672622680664,2.333750009536743,4.344671249389648","1.100000023841858,1.100000023841858,1.100000023841858"
+750,Transform,,,,,151,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+751,Transform,,,,,150,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+752,Transform,,,,,148,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+753,Transform,,,,,149,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+754,Transform,,,,,147,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+755,Transform,,,,,146,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+756,Transform,,,,,145,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+757,Transform,,,,,144,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+758,Transform,,,,,142,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+759,Transform,,,,,143,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+760,Transform,,,,,141,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+761,Transform,,,,,140,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+762,Transform,,,,,139,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+763,Transform,,,,,137,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+764,Transform,,,,,138,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+765,Transform,,,,,133,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+766,Transform,,,,,136,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+767,Transform,,,,,135,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+768,Transform,,,,,134,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+769,Transform,,,,,132,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+770,Transform,,,,,131,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+771,Transform,,,,,129,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+772,Transform,,,,,128,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+773,Transform,,,,,130,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+774,Transform,,,,,127,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+775,Transform,,,,,126,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+776,Transform,,,,,125,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+777,Transform,,,,,124,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+778,Transform,,,,,122,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+779,Transform,,,,,121,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+780,Transform,,,,,123,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+781,Transform,,,,,118,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+782,Transform,,,,,120,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+783,Transform,,,,,119,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+784,Transform,,,,,117,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+785,Transform,,,,,116,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+786,Transform,,,,,114,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+787,Transform,,,,,115,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+788,Transform,,,,,113,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+789,Transform,,,,,190,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+790,Transform,,,,,188,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+791,Transform,,,,,189,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+792,Transform,,,,,187,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+793,Transform,,,,,186,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+794,Transform,,,,,185,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+795,Transform,,,,,184,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+796,Transform,,,,,183,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+797,Transform,,,,,181,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+798,Transform,,,,,182,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+799,Transform,,,,,180,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+800,Transform,,,,,178,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+801,Transform,,,,,179,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+802,Transform,,,,,176,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+803,Transform,,,,,177,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+804,Transform,,,,,175,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+805,Transform,,,,,174,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+806,Transform,,,,,172,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+807,Transform,,,,,171,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+808,Transform,,,,,173,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+809,Transform,,,,,170,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+810,Transform,,,,,168,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+811,Transform,,,,,169,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+812,Transform,,,,,166,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+813,Transform,,,,,167,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+814,Transform,,,,,164,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+815,Transform,,,,,165,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+816,Transform,,,,,163,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+817,Transform,,,,,162,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+818,Transform,,,,,161,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+819,Transform,,,,,160,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+820,Transform,,,,,158,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+821,Transform,,,,,157,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+822,Transform,,,,,159,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+823,Transform,,,,,156,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+824,Transform,,,,,155,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+825,Transform,,,,,154,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+826,Transform,,,,,153,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+827,Transform,,,,,152,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+828,Transform,,,,,78,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+829,Transform,,,,,77,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+830,Transform,,,,,75,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+831,Transform,,,,,76,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+832,Transform,,,,,74,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+833,Transform,,,,,73,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+834,Transform,,,,,72,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+835,Transform,,,,,70,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+836,Transform,,,,,71,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+837,Transform,,,,,69,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+838,Transform,,,,,67,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+839,Transform,,,,,68,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+840,Transform,,,,,66,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+841,Transform,,,,,65,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+842,Transform,,,,,63,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+843,Transform,,,,,64,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+844,Transform,,,,,62,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+845,Transform,,,,,61,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+846,Transform,,,,,59,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+847,Transform,,,,,58,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+848,Transform,,,,,60,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+849,Transform,,,,,57,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+850,Transform,,,,,56,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+851,Transform,,,,,55,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+852,Transform,,,,,54,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+853,Transform,,,,,53,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+854,Transform,,,,,52,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+855,Transform,,,,,51,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+856,Transform,,,,,50,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+857,Transform,,,,,49,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+858,Transform,,,,,47,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+859,Transform,,,,,48,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+860,Transform,,,,,112,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+861,Transform,,,,,111,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+862,Transform,,,,,110,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+863,Transform,,,,,109,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+864,Transform,,,,,108,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+865,Transform,,,,,107,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+866,Transform,,,,,106,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+867,Transform,,,,,105,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+868,Transform,,,,,104,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+869,Transform,,,,,103,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+870,Transform,,,,,101,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+871,Transform,,,,,102,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+872,Transform,,,,,100,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+873,Transform,,,,,99,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+874,Transform,,,,,97,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+875,Transform,,,,,98,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+876,Transform,,,,,96,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+877,Transform,,,,,95,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+878,Transform,,,,,93,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+879,Transform,,,,,94,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+880,Transform,,,,,91,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+881,Transform,,,,,92,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+882,Transform,,,,,86,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+883,Transform,,,,,90,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+884,Transform,,,,,88,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+885,Transform,,,,,89,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+886,Transform,,,,,87,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+887,Transform,,,,,85,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+888,Transform,,,,,84,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+889,Transform,,,,,83,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+890,Transform,,,,,82,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+891,Transform,,,,,81,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+892,Transform,,,,,80,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+893,Transform,,,,,79,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+894,Transform,,,,,298,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+895,Transform,,,,,296,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+896,Transform,,,,,297,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+897,Transform,,,,,294,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+898,Transform,,,,,295,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+899,Transform,,,,,293,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+900,Transform,,,,,291,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+901,Transform,,,,,292,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+902,Transform,,,,,290,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+903,Transform,,,,,288,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+904,Transform,,,,,289,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+905,Transform,,,,,286,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+906,Transform,,,,,287,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+907,Transform,,,,,284,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+908,Transform,,,,,285,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+909,Transform,,,,,283,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+910,Transform,,,,,282,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+911,Transform,,,,,281,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+912,Transform,,,,,280,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+913,Transform,,,,,279,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+914,Transform,,,,,278,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+915,Transform,,,,,277,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+916,Transform,,,,,276,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+917,Transform,,,,,275,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+918,Transform,,,,,274,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+919,Transform,,,,,273,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+920,Transform,,,,,272,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+921,Transform,,,,,271,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+922,Transform,,,,,270,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+923,Transform,,,,,268,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+924,Transform,,,,,269,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+925,Transform,,,,,266,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+926,Transform,,,,,265,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+927,Transform,,,,,267,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+928,Transform,,,,,264,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+929,Transform,,,,,330,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+930,Transform,,,,,331,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+931,Transform,,,,,329,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+932,Transform,,,,,328,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+933,Transform,,,,,327,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+934,Transform,,,,,326,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+935,Transform,,,,,325,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+936,Transform,,,,,324,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+937,Transform,,,,,323,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+938,Transform,,,,,321,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+939,Transform,,,,,322,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+940,Transform,,,,,320,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+941,Transform,,,,,319,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+942,Transform,,,,,317,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+943,Transform,,,,,318,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+944,Transform,,,,,316,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+945,Transform,,,,,315,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+946,Transform,,,,,314,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+947,Transform,,,,,313,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+948,Transform,,,,,312,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+949,Transform,,,,,311,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+950,Transform,,,,,310,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+951,Transform,,,,,309,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+952,Transform,,,,,308,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+953,Transform,,,,,307,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+954,Transform,,,,,306,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+955,Transform,,,,,305,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+956,Transform,,,,,304,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+957,Transform,,,,,303,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+958,Transform,,,,,302,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+959,Transform,,,,,299,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+960,Transform,,,,,301,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+961,Transform,,,,,300,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+962,Transform,,,,,226,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+963,Transform,,,,,225,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+964,Transform,,,,,224,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+965,Transform,,,,,223,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+966,Transform,,,,,222,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+967,Transform,,,,,221,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+968,Transform,,,,,220,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+969,Transform,,,,,218,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+970,Transform,,,,,217,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+971,Transform,,,,,219,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+972,Transform,,,,,216,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+973,Transform,,,,,215,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+974,Transform,,,,,214,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+975,Transform,,,,,213,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+976,Transform,,,,,212,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+977,Transform,,,,,211,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+978,Transform,,,,,209,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+979,Transform,,,,,208,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+980,Transform,,,,,210,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+981,Transform,,,,,207,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+982,Transform,,,,,205,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+983,Transform,,,,,204,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+984,Transform,,,,,206,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+985,Transform,,,,,203,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+986,Transform,,,,,202,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+987,Transform,,,,,201,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+988,Transform,,,,,200,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+989,Transform,,,,,199,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+990,Transform,,,,,198,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+991,Transform,,,,,197,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+992,Transform,,,,,196,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+993,Transform,,,,,195,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+994,Transform,,,,,194,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+995,Transform,,,,,193,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+996,Transform,,,,,192,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+997,Transform,,,,,191,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+998,Transform,,,,,263,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+999,Transform,,,,,262,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1000,Transform,,,,,261,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1001,Transform,,,,,260,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1002,Transform,,,,,257,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1003,Transform,,,,,259,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1004,Transform,,,,,258,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1005,Transform,,,,,256,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1006,Transform,,,,,255,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1007,Transform,,,,,254,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1008,Transform,,,,,253,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1009,Transform,,,,,252,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1010,Transform,,,,,251,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1011,Transform,,,,,250,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1012,Transform,,,,,249,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1013,Transform,,,,,248,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1014,Transform,,,,,246,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1015,Transform,,,,,247,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1016,Transform,,,,,244,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1017,Transform,,,,,245,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1018,Transform,,,,,243,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1019,Transform,,,,,242,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1020,Transform,,,,,241,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1021,Transform,,,,,240,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1022,Transform,,,,,239,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1023,Transform,,,,,238,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1024,Transform,,,,,236,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1025,Transform,,,,,237,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1026,Transform,,,,,235,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1027,Transform,,,,,234,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1028,Transform,,,,,233,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1029,Transform,,,,,232,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1030,Transform,,,,,231,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1031,Transform,,,,,230,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1032,Transform,,,,,229,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1033,Transform,,,,,228,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1034,Transform,,,,,227,"0.0,-0.05000000074505806,0.0","1.0,0.10000000149011612,1.0"
+1035,Transform,,,,,332,"10.871000289916992,0.41600000858306885,1.975000023841858","1.0,1.0,1.0"
+1036,Transform,,,,,383,"0.0,0.0,0.0","1.0,1.0,1.0"
+1037,Transform,,,,,385,"-0.0,0.0,0.0","1.0,1.0,1.0"
+1038,Transform,,,,,352,"14.217672348022461,2.896749973297119,4.6586713790893555","1.100000023841858,1.100000023841858,1.100000023841858"
+1039,Transform,,,,,338,"14.192000389099121,2.308232545852661,5.690000057220459","1.100000023841858,1.100000023841858,1.100000023841858"
+1040,Transform,,,,,374,"-0.026000000536441803,-0.026000000536441803,0.5","0.7329664826393127,0.4074071943759918,0.4074070453643799"
+1041,Transform,,,,,349,"0.009999999776482582,0.003000000026077032,-0.009999999776482582","1.0,1.0,1.0"
+1042,Transform,,,,,350,"0.009999999776482582,0.003000000026077032,-0.009999999776482582","1.0,1.0,1.0"
+1043,Transform,,,,,351,"0.009999999776482582,0.003000000026077032,-0.009999999776482582","1.0,1.0,1.0"
+1044,Transform,,,,,684,"-0.0,0.0,0.0","1.0,1.0,1.0"
+1045,Transform,,,,,381,"-0.0,0.0,0.0","1.0,1.0,1.0"
+1046,Transform,,,,,694,"0.0,0.0,0.5","1.0,1.0,1.0"
+1047,Transform,,,,,346,"0.12999999523162842,0.18400000035762787,-0.04699999839067459","0.0035270312801003456,0.36165910959243774,0.2576046586036682"
+1048,Transform,,,,,348,"0.12800000607967377,0.19300000369548798,-0.04699999839067459","0.002653007162734866,0.4305465817451477,0.30667221546173096"
+1049,Transform,,,,,347,"0.14000000059604645,0.18299999833106995,-0.057999998331069946","0.006167559418827295,0.34432101249694824,0.2437032014131546"
+1050,Transform,,,,,354,"10.830714225769043,3.418428659439087,16.498302459716797","1.100000023841858,1.100000023841858,1.100000023841858"
+1051,Transform,,,,,368,"6.052000045776367,-0.15797559916973114,3.2060000896453857","1.0,1.0,1.0"
+1052,Transform,,,,,387,"-2.509999990463257,10.869999885559082,-2.009999990463257","1.0,1.0,1.0"
+1053,Transform,,,,,344,"0.0,0.0,0.0","1.0,1.0,1.0"
+1054,Transform,,,,,345,"0.0,0.0,0.0","1.0,1.0,1.0"
+1055,Transform,,,,,340,"0.0,0.0,0.0","1.0,1.0,1.0"
+1056,Transform,,,,,341,"0.0,0.0,0.0","1.0,1.0,1.0"
+1057,Transform,,,,,343,"0.0,0.0,0.0","1.0,1.0,1.0"
+1058,Transform,,,,,342,"0.0,0.0,0.0","1.0,1.0,1.0"
+1059,Transform,,,,,386,"-0.09200000017881393,0.07999999821186066,-0.09000000357627869","1.567643642425537,1.3048057556152344,0.6747641563415527"
+1060,Transform,,,,,369,"12.905349731445312,3.5677011013031006,11.496999740600586","1.0,1.0,1.0"
+1061,Transform,,,,,384,"-0.0,0.0,0.0","1.0,1.0,1.0"
+1062,Transform,,,,,366,"10.072400093078613,1.3965721130371094,10.03849983215332","1.0,1.0,1.0"
+1063,Transform,,,,,363,"11.461000442504883,2.0422000885009766,9.943699836730957","0.6000000238418579,0.6000000238418579,0.6000000238418579"
+1064,Transform,,,,,365,"10.27377986907959,1.378000020980835,10.018099784851074","1.0,1.0,1.0"
+1065,Transform,,,,,364,"10.376279830932617,1.220500111579895,10.03849983215332","1.0,1.0,1.0"
+1066,Transform,,,,,367,"10.394200325012207,1.0467000007629395,10.027700424194336","1.0,1.0,1.0"
+1067,Transform,,,,,380,"-0.0,0.0,0.0","1.0,1.0,1.0"
+1068,Transform,,,,,353,"-0.0,0.0,0.0","1.0,1.0,1.0"
+1069,Transform,,,,,375,"-0.0,0.0,0.0","1.0,1.0,1.0"
+1070,Transform,,,,,686,"-0.0,0.0,0.0","1.0,1.0,1.0"
+1071,Transform,,,,,370,"11.428999900817871,0.6879000067710876,1.906000018119812","1.0,1.0,1.0"
+1072,Transform,,,,,371,"3.5676286220550537,-0.23899999260902405,6.2210001945495605","1.0,1.0,1.0"
+1073,Transform,,,,,680,"0.0,0.3800000548362732,0.0","1.0,1.0,1.0"
+1074,Transform,,,,,682,"0.0,0.3800000548362732,0.0","1.0,1.0,1.0"
+1075,Transform,,,,,681,"0.0,0.3800000548362732,0.0","1.0,1.0,1.0"
+1076,Transform,,,,,683,"0.0,0.3800000548362732,0.0","1.0,1.0,1.0"
+1077,Transform,,,,,678,"0.0,0.3800000548362732,0.0","1.0,1.0,1.0"
+1078,Transform,,,,,679,"0.0,0.3800000548362732,0.0","1.0,1.0,1.0"
+1079,Transform,,,,,339,"-0.0,0.0,0.0","1.0,1.0,0.800000011920929"
+1080,Transform,,,,,378,"-0.0,0.0,0.0","1.0,1.0,1.0"
+1081,Transform,,,,,372,"11.508713722229004,3.628714084625244,16.439302444458008","1.100000023841858,1.100000023841858,1.100000023841858"
+1082,Transform,,,,,373,"12.115714073181152,3.628714084625244,16.392303466796875","1.100000023841858,1.100000023841858,1.100000023841858"
+1083,Transform,,,,,377,"0.5,0.0,1.0","1.0,1.0,1.0"
+1084,Transform,,,,,382,"3.1425046920776367,2.2139999866485596,18.400999069213867","1.0,1.0,1.0"
+1085,Transform,,,,,695,"-0.0,0.0,0.0","1.0,1.0,1.0"
+1086,Transform,,,,,463,"9.0,0.4000000059604645,8.0","1.0,1.0,1.0"
+1087,Transform,,,,,464,"10.0,-0.800000011920929,0.0","1.0,1.0,1.0"
+1088,Transform,,,,,465,"2.0,2.0,12.0","1.0,1.0,1.0"
+1089,Transform,,,,,466,"13.0,3.200000047683716,14.0","1.0,1.0,1.0"
+1090,Transform,,,,,467,"6.0,0.0,7.0","1.0,1.0,1.0"
+1091,Transform,,,,,468,"10.0,3.200000047683716,18.0","1.0,1.0,1.0"
+1092,Transform,,,,,456,"11.0,3.6000001430511475,17.0","1.0,1.0,1.0"
+1093,Transform,,,,,457,"2.0,0.0,4.0","1.0,1.0,1.0"
+1094,Transform,,,,,458,"-1.0,0.0,2.0","1.0,1.0,1.0"
+1095,Transform,,,,,459,"3.0,-3.725290298461914e-09,5.0","1.0,1.0,1.0"
+1096,Transform,,,,,460,"7.0,0.4000000059604645,2.0","1.0,1.0,1.0"
+1097,Transform,,,,,461,"10.0,3.200000047683716,16.0","1.0,1.0,1.0"
+1098,Transform,,,,,462,"10.0,0.4000000059604645,9.0","1.0,1.0,1.0"
+1099,Transform,,,,,484,"8.0,0.800000011920929,3.0","1.0,1.0,1.0"
+1100,Transform,,,,,483,"3.0,2.4000000953674316,14.0","1.0,1.0,1.0"
+1101,Transform,,,,,485,"12.0,1.2000000476837158,5.0","1.0,1.0,1.0"
+1102,Transform,,,,,486,"9.0,0.800000011920929,2.0","1.0,1.0,1.0"
+1103,Transform,,,,,487,"6.0,-0.800000011920929,6.0","1.0,1.0,1.0"
+1104,Transform,,,,,488,"11.0,3.200000047683716,18.0","1.0,1.0,1.0"
+1105,Transform,,,,,489,"1.0,0.0,0.0","1.0,1.0,1.0"
+1106,Transform,,,,,490,"9.0,2.0,9.0","1.0,1.0,1.0"
+1107,Transform,,,,,492,"12.0,1.600000023841858,7.0","1.0,1.0,1.0"
+1108,Transform,,,,,491,"10.0,0.800000011920929,3.0","1.0,1.0,1.0"
+1109,Transform,,,,,493,"11.0,-0.800000011920929,0.0","1.0,1.0,1.0"
+1110,Transform,,,,,494,"6.0,0.4000000059604645,12.0","1.0,1.0,1.0"
+1111,Transform,,,,,469,"7.0,1.600000023841858,8.0","1.0,1.0,1.0"
+1112,Transform,,,,,470,"6.0,0.0,8.0","1.0,1.0,1.0"
+1113,Transform,,,,,471,"14.0,1.2000000476837158,0.0","1.0,1.0,1.0"
+1114,Transform,,,,,472,"9.0,3.200000047683716,11.0","1.0,1.0,1.0"
+1115,Transform,,,,,473,"4.0,-0.800000011920929,4.0","1.0,1.0,1.0"
+1116,Transform,,,,,474,"14.0,0.800000011920929,-1.0","1.0,1.0,1.0"
+1117,Transform,,,,,475,"4.0,1.600000023841858,17.0","1.0,1.0,1.0"
+1118,Transform,,,,,476,"13.0,3.200000047683716,12.0","1.0,1.0,1.0"
+1119,Transform,,,,,477,"11.0,1.2000000476837158,4.0","1.0,1.0,1.0"
+1120,Transform,,,,,478,"1.0,2.0,18.0","1.0,1.0,1.0"
+1121,Transform,,,,,479,"10.0,1.600000023841858,5.0","1.0,1.0,1.0"
+1122,Transform,,,,,480,"5.0,2.4000000953674316,13.0","1.0,1.0,1.0"
+1123,Transform,,,,,481,"0.0,0.4000000059604645,7.0","1.0,1.0,1.0"
+1124,Transform,,,,,482,"2.0,0.0,-1.0","1.0,1.0,1.0"
+1125,Transform,,,,,508,"3.999999761581421,0.0,0.9999998807907104","1.0,1.0,1.0"
+1126,Transform,,,,,509,"-1.0,1.600000023841858,12.0","1.0,1.0,1.0"
+1127,Transform,,,,,510,"6.0,0.4000000059604645,5.0","1.0,1.0,1.0"
+1128,Transform,,,,,511,"9.0,3.200000047683716,16.0","1.0,1.0,1.0"
+1129,Transform,,,,,512,"0.0,2.4000000953674316,14.0","1.0,1.0,1.0"
+1130,Transform,,,,,513,"-1.0,1.600000023841858,15.0","1.0,1.0,1.0"
+1131,Transform,,,,,514,"4.0,2.4000000953674316,14.0","1.0,1.0,1.0"
+1132,Transform,,,,,515,"4.0,-0.800000011920929,5.0","1.0,1.0,1.0"
+1133,Transform,,,,,495,"2.0,1.2000000476837158,9.0","1.0,1.0,1.0"
+1134,Transform,,,,,496,"12.0,3.200000047683716,13.0","1.0,1.0,1.0"
+1135,Transform,,,,,497,"12.0,0.800000011920929,0.0","1.0,1.0,1.0"
+1136,Transform,,,,,498,"3.0,0.0,4.0","1.0,1.0,1.0"
+1137,Transform,,,,,499,"8.0,0.800000011920929,5.0","1.0,1.0,1.0"
+1138,Transform,,,,,500,"13.0,1.600000023841858,4.0","1.0,1.0,1.0"
+1139,Transform,,,,,501,"13.0,3.200000047683716,13.0","1.0,1.0,1.0"
+1140,Transform,,,,,502,"3.0,0.0,7.0","1.0,1.0,1.0"
+1141,Transform,,,,,503,"2.0,1.600000023841858,19.0","1.0,1.0,1.0"
+1142,Transform,,,,,504,"9.0,-0.800000011920929,0.0","1.0,1.0,1.0"
+1143,Transform,,,,,505,"3.0,2.799999952316284,17.0","1.0,1.0,1.0"
+1144,Transform,,,,,506,"12.0,3.200000047683716,12.0","1.0,1.0,1.0"
+1145,Transform,,,,,507,"6.0,-0.800000011920929,1.0","1.0,1.0,1.0"
+1146,Transform,,,,,521,"1.0,2.0,12.0","1.0,1.0,1.0"
+1147,Transform,,,,,522,"11.0,3.200000047683716,12.0","1.0,1.0,1.0"
+1148,Transform,,,,,523,"3.0,0.0,0.0","1.0,1.0,1.0"
+1149,Transform,,,,,524,"3.0,0.0,-1.0","1.0,1.0,1.0"
+1150,Transform,,,,,525,"4.0,0.0,9.0","1.0,1.0,1.0"
+1151,Transform,,,,,526,"8.0,4.0,16.0","1.0,1.0,1.0"
+1152,Transform,,,,,527,"1.0,0.0,2.0","1.0,1.0,1.0"
+1153,Transform,,,,,528,"14.0,3.200000047683716,12.0","1.0,1.0,1.0"
+1154,Transform,,,,,529,"15.0,3.200000047683716,14.0","1.0,1.0,1.0"
+1155,Transform,,,,,530,"11.0,3.200000047683716,16.0","1.0,1.0,1.0"
+1156,Transform,,,,,531,"0.0,0.0,-1.0","1.0,1.0,1.0"
+1157,Transform,,,,,532,"1.7881393432617188e-07,2.0,17.0","1.0,1.0,1.0"
+1158,Transform,,,,,533,"6.0,-0.800000011920929,4.0","1.0,1.0,1.0"
+1159,Transform,,,,,516,"9.0,3.200000047683716,15.0","1.0,1.0,1.0"
+1160,Transform,,,,,517,"3.0,0.0,1.0","1.0,1.0,1.0"
+1161,Transform,,,,,518,"2.0,1.2000000476837158,7.0","1.0,1.0,1.0"
+1162,Transform,,,,,519,"6.0,-0.800000011920929,2.0","1.0,1.0,1.0"
+1163,Transform,,,,,520,"12.0,3.200000047683716,18.0","1.0,1.0,1.0"
+1164,Transform,,,,,400,"8.0,2.4000000953674316,9.0","1.0,1.0,1.0"
+1165,Transform,,,,,401,"2.0,2.9802322387695312e-08,1.0","1.0,1.0,1.0"
+1166,Transform,,,,,402,"-1.0,0.0,1.0","1.0,1.0,1.0"
+1167,Transform,,,,,403,"6.0,2.4000000953674316,15.0","1.0,1.0,1.0"
+1168,Transform,,,,,404,"10.0,3.200000047683716,13.0","1.0,1.0,1.0"
+1169,Transform,,,,,405,"12.0,2.4000000953674316,9.0","1.0,1.0,1.0"
+1170,Transform,,,,,390,"2.2351741790771484e-08,1.600000023841858,11.0","1.0,1.0,1.0"
+1171,Transform,,,,,391,"2.2351741790771484e-08,1.600000023841858,10.0","1.0,1.0,1.0"
+1172,Transform,,,,,392,"11.0,2.799999952316284,10.0","1.0,1.0,1.0"
+1173,Transform,,,,,393,"4.0,-0.800000011920929,3.0","1.0,1.0,1.0"
+1174,Transform,,,,,394,"14.0,2.0,4.0","1.0,1.0,1.0"
+1175,Transform,,,,,395,"5.0,-0.800000011920929,3.0","1.0,1.0,1.0"
+1176,Transform,,,,,396,"3.0,0.0,8.0","1.0,1.0,1.0"
+1177,Transform,,,,,397,"-1.0,0.0,0.0","1.0,1.0,1.0"
+1178,Transform,,,,,398,"11.0,1.600000023841858,8.0","1.0,1.0,1.0"
+1179,Transform,,,,,399,"1.0,0.4000000059604645,7.0","1.0,1.0,1.0"
+1180,Transform,,,,,411,"6.0,0.4000000059604645,10.0","1.0,1.0,1.0"
+1181,Transform,,,,,412,"6.0,1.600000023841858,16.0","1.0,1.0,1.0"
+1182,Transform,,,,,413,"1.0,0.800000011920929,9.0","1.0,1.0,1.0"
+1183,Transform,,,,,414,"0.0,0.0,3.0","1.0,1.0,1.0"
+1184,Transform,,,,,417,"7.0,1.600000023841858,17.0","1.0,1.0,1.0"
+1185,Transform,,,,,416,"9.0,3.200000047683716,18.0","1.0,1.0,1.0"
+1186,Transform,,,,,415,"0.0,1.2000000476837158,9.0","1.0,1.0,1.0"
+1187,Transform,,,,,418,"0.0,2.4000000953674316,15.0","1.0,1.0,1.0"
+1188,Transform,,,,,419,"10.0,4.0,17.0","1.0,1.0,1.0"
+1189,Transform,,,,,420,"14.0,3.200000047683716,14.0","1.0,1.0,1.0"
+1190,Transform,,,,,421,"7.0,1.600000023841858,11.0","1.0,1.0,1.0"
+1191,Transform,,,,,422,"9.0,3.200000047683716,12.0","1.0,1.0,1.0"
+1192,Transform,,,,,423,"7.0,2.0,10.0","1.0,1.0,1.0"
+1193,Transform,,,,,406,"12.0,4.0,17.0","1.0,1.0,1.0"
+1194,Transform,,,,,407,"5.0,-0.800000011920929,1.0","1.0,1.0,1.0"
+1195,Transform,,,,,408,"7.0,0.4000000059604645,5.0","1.0,1.0,1.0"
+1196,Transform,,,,,409,"0.0,2.4000000953674316,13.0","1.0,1.0,1.0"
+1197,Transform,,,,,410,"2.0,1.600000023841858,11.0","1.0,1.0,1.0"
+1198,Transform,,,,,430,"3.0,8.940696716308594e-08,2.0","1.0,1.0,1.0"
+1199,Transform,,,,,431,"10.0,1.2000000476837158,7.0","1.0,1.0,1.0"
+1200,Transform,,,,,432,"3.0,8.940696716308594e-08,3.0","1.0,1.0,1.0"
+1201,Transform,,,,,433,"6.0,-0.800000011920929,0.0","1.0,1.0,1.0"
+1202,Transform,,,,,434,"4.0,2.4000000953674316,13.0","1.0,1.0,1.0"
+1203,Transform,,,,,435,"0.0,0.0,0.0","1.0,1.0,1.0"
+1204,Transform,,,,,436,"7.0,1.2000000476837158,7.0","1.0,1.0,1.0"
+1205,Transform,,,,,424,"-1.0,1.600000023841858,13.0","1.0,1.0,1.0"
+1206,Transform,,,,,425,"6.0,2.4000000953674316,14.0","1.0,1.0,1.0"
+1207,Transform,,,,,426,"0.0,0.0,4.0","1.0,1.0,1.0"
+1208,Transform,,,,,427,"10.0,0.800000011920929,2.0","1.0,1.0,1.0"
+1209,Transform,,,,,428,"1.0,2.0,16.0","1.0,1.0,1.0"
+1210,Transform,,,,,429,"2.0,0.0,0.0","1.0,1.0,1.0"
+1211,Transform,,,,,444,"3.0,2.0,18.0","1.0,1.0,1.0"
+1212,Transform,,,,,445,"1.0,0.0,5.0","1.0,1.0,1.0"
+1213,Transform,,,,,446,"8.0,1.2000000476837158,7.0","1.0,1.0,1.0"
+1214,Transform,,,,,447,"0.0,1.600000023841858,19.0","1.0,1.0,1.0"
+1215,Transform,,,,,449,"5.0,-1.1175870895385742e-08,5.0","1.0,1.0,1.0"
+1216,Transform,,,,,448,"2.0,2.4000000953674316,15.0","1.0,1.0,1.0"
+1217,Transform,,,,,450,"7.0,-0.800000011920929,4.0","1.0,1.0,1.0"
+1218,Transform,,,,,451,"12.0,3.200000047683716,14.0","1.0,1.0,1.0"
+1219,Transform,,,,,452,"11.0,3.200000047683716,15.0","1.0,1.0,1.0"
+1220,Transform,,,,,453,"6.0,2.4000000953674316,13.0","1.0,1.0,1.0"
+1221,Transform,,,,,454,"1.000000238418579,2.0,17.0","1.0,1.0,1.0"
+1222,Transform,,,,,455,"14.0,2.4000000953674316,3.0","1.0,1.0,1.0"
+1223,Transform,,,,,439,"3.0,1.600000023841858,9.0","1.0,1.0,1.0"
+1224,Transform,,,,,438,"9.0,0.7999999523162842,5.0","1.0,1.0,1.0"
+1225,Transform,,,,,437,"8.0,2.799999952316284,13.0","1.0,1.0,1.0"
+1226,Transform,,,,,440,"5.0,0.4000000059604645,11.0","1.0,1.0,1.0"
+1227,Transform,,,,,441,"13.0,2.4000000953674316,3.0","1.0,1.0,1.0"
+1228,Transform,,,,,442,"11.0,1.2000000476837158,7.0","1.0,1.0,1.0"
+1229,Transform,,,,,443,"2.0,1.2000000476837158,10.0","1.0,1.0,1.0"
+1230,Transform,,,,,617,"5.0,1.600000023841858,12.0","1.0,1.0,1.0"
+1231,Transform,,,,,618,"5.0,0.0,-1.0","1.0,1.0,1.0"
+1232,Transform,,,,,619,"7.0,2.4000000953674316,15.0","1.0,1.0,1.0"
+1233,Transform,,,,,620,"1.0,2.4000000953674316,15.0","1.0,1.0,1.0"
+1234,Transform,,,,,621,"2.0,1.2000000476837158,8.0","1.0,1.0,1.0"
+1235,Transform,,,,,622,"3.0,-0.800000011920929,6.0","1.0,1.0,1.0"
+1236,Transform,,,,,623,"-1.0,0.0,5.0","1.0,1.0,1.0"
+1237,Transform,,,,,607,"13.0,1.600000023841858,2.0","1.0,1.0,1.0"
+1238,Transform,,,,,608,"8.0,0.4000000059604645,8.0","1.0,1.0,1.0"
+1239,Transform,,,,,609,"3.0,1.600000023841858,12.0","1.0,1.0,1.0"
+1240,Transform,,,,,610,"8.0,0.800000011920929,4.0","1.0,1.0,1.0"
+1241,Transform,,,,,611,"13.0,0.4000000059604645,-1.0","1.0,1.0,1.0"
+1242,Transform,,,,,612,"11.0,1.2000000476837158,2.0","1.0,1.0,1.0"
+1243,Transform,,,,,614,"10.0,0.800000011920929,4.0","1.0,1.0,1.0"
+1244,Transform,,,,,613,"1.0,2.4000000953674316,13.0","1.0,1.0,1.0"
+1245,Transform,,,,,615,"-1.0,0.800000011920929,8.0","1.0,1.0,1.0"
+1246,Transform,,,,,616,"6.0,0.4000000059604645,11.0","1.0,1.0,1.0"
+1247,Transform,,,,,632,"14.0,2.0,5.0","1.0,1.0,1.0"
+1248,Transform,,,,,633,"9.0,0.800000011920929,4.0","1.0,1.0,1.0"
+1249,Transform,,,,,634,"5.0,2.4000000953674316,14.0","1.0,1.0,1.0"
+1250,Transform,,,,,635,"11.0,3.200000047683716,11.0","1.0,1.0,1.0"
+1251,Transform,,,,,636,"4.0,0.0,-1.0","1.0,1.0,1.0"
+1252,Transform,,,,,637,"11.0,2.0,9.0","1.0,1.0,1.0"
+1253,Transform,,,,,638,"0.0,2.0,18.0","1.0,1.0,1.0"
+1254,Transform,,,,,639,"8.0,-0.800000011920929,0.0","1.0,1.0,1.0"
+1255,Transform,,,,,624,"-1.0,1.600000023841858,11.0","1.0,1.0,1.0"
+1256,Transform,,,,,625,"13.0,1.600000023841858,5.0","1.0,1.0,1.0"
+1257,Transform,,,,,626,"12.0,1.2000000476837158,6.0","1.0,1.0,1.0"
+1258,Transform,,,,,627,"15.0,3.200000047683716,13.0","1.0,1.0,1.0"
+1259,Transform,,,,,628,"0.0,0.0,1.0","1.0,1.0,1.0"
+1260,Transform,,,,,629,"7.0,0.0,0.0","1.0,1.0,1.0"
+1261,Transform,,,,,630,"1.0,1.2000000476837158,10.0","1.0,1.0,1.0"
+1262,Transform,,,,,631,"10.0,3.200000047683716,11.0","1.0,1.0,1.0"
+1263,Transform,,,,,651,"-1.0,1.2000000476837158,9.0","1.0,1.0,1.0"
+1264,Transform,,,,,652,"10.0,3.200000047683716,12.0","1.0,1.0,1.0"
+1265,Transform,,,,,653,"10.0,0.4000000059604645,1.0","1.0,1.0,1.0"
+1266,Transform,,,,,654,"2.0,8.940696716308594e-08,3.0","1.0,1.0,1.0"
+1267,Transform,,,,,655,"8.000051498413086,0.39999979734420776,1.999863624572754","1.0,1.0,1.0"
+1268,Transform,,,,,656,"1.0,0.8000000715255737,8.0","1.0,1.0,1.0"
+1269,Transform,,,,,657,"4.0,-0.800000011920929,2.0","1.0,1.0,1.0"
+1270,Transform,,,,,658,"5.0,-0.800000011920929,6.0","1.0,1.0,1.0"
+1271,Transform,,,,,640,"11.0,3.200000047683716,14.0","1.0,1.0,1.0"
+1272,Transform,,,,,642,"13.0,0.800000011920929,0.0","1.0,1.0,1.0"
+1273,Transform,,,,,641,"7.0,0.4000000059604645,1.0","1.0,1.0,1.0"
+1274,Transform,,,,,643,"8.0,2.799999952316284,15.0","1.0,1.0,1.0"
+1275,Transform,,,,,644,"7.0,-0.800000011920929,3.0","1.0,1.0,1.0"
+1276,Transform,,,,,645,"9.0,0.800000011920929,3.0","1.0,1.0,1.0"
+1277,Transform,,,,,646,"12.0,1.2000000476837158,1.0","1.0,1.0,1.0"
+1278,Transform,,,,,647,"9.0,3.200000047683716,14.0","1.0,1.0,1.0"
+1279,Transform,,,,,649,"10.0,1.2000000476837158,6.0","1.0,1.0,1.0"
+1280,Transform,,,,,648,"8.0,3.200000047683716,18.0","1.0,1.0,1.0"
+1281,Transform,,,,,650,"-1.0,0.4000000059604645,7.0","1.0,1.0,1.0"
+1282,Transform,,,,,669,"9.0,3.200000047683716,13.0","1.0,1.0,1.0"
+1283,Transform,,,,,670,"13.0,3.200000047683716,11.0","1.0,1.0,1.0"
+1284,Transform,,,,,671,"7.0,-0.800000011920929,6.0","1.0,1.0,1.0"
+1285,Transform,,,,,673,"-1.0,1.600000023841858,10.0","1.0,1.0,1.0"
+1286,Transform,,,,,672,"11.0,1.2000000476837158,3.0","1.0,1.0,1.0"
+1287,Transform,,,,,674,"9.0,1.2000000476837158,7.0","1.0,1.0,1.0"
+1288,Transform,,,,,659,"5.029141902923584e-07,0.800000011920929,8.0","1.0,1.0,1.0"
+1289,Transform,,,,,660,"3.0,0.4000000059604645,10.0","1.0,1.0,1.0"
+1290,Transform,,,,,661,"2.0,2.4000000953674316,14.0","1.0,1.0,1.0"
+1291,Transform,,,,,662,"5.0,0.0,0.0","1.0,1.0,1.0"
+1292,Transform,,,,,663,"9.0,3.200000047683716,10.0","1.0,1.0,1.0"
+1293,Transform,,,,,664,"7.0,1.600000023841858,16.0","1.0,1.0,1.0"
+1294,Transform,,,,,665,"8.0,3.6000001430511475,12.0","1.0,1.0,1.0"
+1295,Transform,,,,,666,"14.0,3.200000047683716,13.0","1.0,1.0,1.0"
+1296,Transform,,,,,667,"9.0,3.6000001430511475,17.0","1.0,1.0,1.0"
+1297,Transform,,,,,668,"1.0,0.0,-1.0","1.0,1.0,1.0"
+1298,Transform,,,,,541,"-1.0,1.600000023841858,18.0","1.0,1.0,1.0"
+1299,Transform,,,,,542,"1.0,0.0,3.0","1.0,1.0,1.0"
+1300,Transform,,,,,543,"-1.0,0.0,3.0","1.0,1.0,1.0"
+1301,Transform,,,,,545,"1.999999761581421,2.0,18.0","1.0,1.0,1.0"
+1302,Transform,,,,,544,"7.0,1.600000023841858,9.0","1.0,1.0,1.0"
+1303,Transform,,,,,547,"10.0,3.6000001430511475,10.0","1.0,1.0,1.0"
+1304,Transform,,,,,546,"11.0,1.2000000476837158,5.0","1.0,1.0,1.0"
+1305,Transform,,,,,548,"3.0,1.600000023841858,11.0","1.0,1.0,1.0"
+1306,Transform,,,,,549,"8.0,3.6000001430511475,10.0","1.0,1.0,1.0"
+1307,Transform,,,,,534,"3.0,2.4000000953674316,13.0","1.0,1.0,1.0"
+1308,Transform,,,,,535,"9.0,1.2000000476837158,6.0","1.0,1.0,1.0"
+1309,Transform,,,,,536,"4.0,1.600000023841858,16.0","1.0,1.0,1.0"
+1310,Transform,,,,,537,"2.0,0.0,2.0","1.0,1.0,1.0"
+1311,Transform,,,,,538,"1.0,1.600000023841858,19.0","1.0,1.0,1.0"
+1312,Transform,,,,,539,"11.0,1.2000000476837158,6.0","1.0,1.0,1.0"
+1313,Transform,,,,,540,"1.0,-1.4901161193847656e-08,4.0","1.0,1.0,1.0"
+1314,Transform,,,,,561,"12.0,3.200000047683716,16.0","1.0,1.0,1.0"
+1315,Transform,,,,,562,"4.0,0.0,0.0","1.0,1.0,1.0"
+1316,Transform,,,,,563,"12.0,1.600000023841858,3.0","1.0,1.0,1.0"
+1317,Transform,,,,,564,"2.0,0.0,5.0","1.0,1.0,1.0"
+1318,Transform,,,,,565,"2.0,2.0,17.0","1.0,1.0,1.0"
+1319,Transform,,,,,566,"0.0,0.0,5.0","1.0,1.0,1.0"
+1320,Transform,,,,,567,"3.0,2.4000000953674316,15.0","1.0,1.0,1.0"
+1321,Transform,,,,,568,"11.0,0.4000000059604645,1.0","1.0,1.0,1.0"
+1322,Transform,,,,,569,"7.0,2.4000000953674316,13.0","1.0,1.0,1.0"
+1323,Transform,,,,,570,"8.0,2.799999952316284,14.0","1.0,1.0,1.0"
+1324,Transform,,,,,550,"7.0,1.600000023841858,12.0","1.0,1.0,1.0"
+1325,Transform,,,,,551,"4.0,2.4000000953674316,15.0","1.0,1.0,1.0"
+1326,Transform,,,,,552,"13.0,1.600000023841858,1.0","1.0,1.0,1.0"
+1327,Transform,,,,,553,"10.0,3.200000047683716,14.0","1.0,1.0,1.0"
+1328,Transform,,,,,554,"14.0,1.600000023841858,1.0","1.0,1.0,1.0"
+1329,Transform,,,,,555,"6.0,0.0,9.0","1.0,1.0,1.0"
+1330,Transform,,,,,556,"11.0,3.200000047683716,13.0","1.0,1.0,1.0"
+1331,Transform,,,,,557,"3.0,2.4000000953674316,16.0","1.0,1.0,1.0"
+1332,Transform,,,,,558,"8.0,4.0,17.0","1.0,1.0,1.0"
+1333,Transform,,,,,559,"8.0,3.200000047683716,11.0","1.0,1.0,1.0"
+1334,Transform,,,,,560,"1.0,2.4000000953674316,14.0","1.0,1.0,1.0"
+1335,Transform,,,,,582,"-1.0,1.600000023841858,16.0","1.0,1.0,1.0"
+1336,Transform,,,,,583,"-7.450580596923828e-08,0.0,6.0","1.0,1.0,1.0"
+1337,Transform,,,,,584,"12.0,2.799999952316284,10.0","1.0,1.0,1.0"
+1338,Transform,,,,,571,"2.0,2.4000000953674316,16.0","1.0,1.0,1.0"
+1339,Transform,,,,,572,"5.0,1.600000023841858,16.0","1.0,1.0,1.0"
+1340,Transform,,,,,573,"12.0,3.200000047683716,11.0","1.0,1.0,1.0"
+1341,Transform,,,,,574,"12.0,1.600000023841858,2.0","1.0,1.0,1.0"
+1342,Transform,,,,,575,"12.0,1.2000000476837158,4.0","1.0,1.0,1.0"
+1343,Transform,,,,,576,"8.0,0.0,1.0","1.0,1.0,1.0"
+1344,Transform,,,,,577,"2.0,0.4000000059604645,6.0","1.0,1.0,1.0"
+1345,Transform,,,,,578,"5.0,2.4000000953674316,15.0","1.0,1.0,1.0"
+1346,Transform,,,,,579,"8.0,0.800000011920929,6.0","1.0,1.0,1.0"
+1347,Transform,,,,,580,"15.0,3.200000047683716,12.0","1.0,1.0,1.0"
+1348,Transform,,,,,581,"9.0,0.4000000059604645,1.0","1.0,1.0,1.0"
+1349,Transform,,,,,598,"5.0,0.0,4.0","1.0,1.0,1.0"
+1350,Transform,,,,,599,"1.0,1.600000023841858,11.0","1.0,1.0,1.0"
+1351,Transform,,,,,600,"12.0,2.0,8.0","1.0,1.0,1.0"
+1352,Transform,,,,,601,"12.0,3.200000047683716,15.0","1.0,1.0,1.0"
+1353,Transform,,,,,602,"1.0,1.4901161193847656e-08,6.0","1.0,1.0,1.0"
+1354,Transform,,,,,603,"14.0,2.0,2.0","1.0,1.0,1.0"
+1355,Transform,,,,,604,"-1.0,0.0,6.0","1.0,1.0,1.0"
+1356,Transform,,,,,605,"12.0,0.4000000059604645,-1.0","1.0,1.0,1.0"
+1357,Transform,,,,,606,"-1.0,1.600000023841858,14.0","1.0,1.0,1.0"
+1358,Transform,,,,,585,"7.0,0.0,-1.0","1.0,1.0,1.0"
+1359,Transform,,,,,586,"0.0,2.0,16.0","1.0,1.0,1.0"
+1360,Transform,,,,,587,"4.0,0.4000000059604645,11.0","1.0,1.0,1.0"
+1361,Transform,,,,,588,"10.0,0.4000000059604645,8.0","1.0,1.0,1.0"
+1362,Transform,,,,,590,"-4.76837158203125e-07,0.0,2.0","1.0,1.0,1.0"
+1363,Transform,,,,,589,"4.0,1.600000023841858,12.0","1.0,1.0,1.0"
+1364,Transform,,,,,591,"7.0,2.4000000953674316,14.0","1.0,1.0,1.0"
+1365,Transform,,,,,592,"2.0,2.4000000953674316,13.0","1.0,1.0,1.0"
+1366,Transform,,,,,593,"-1.0,1.600000023841858,17.0","1.0,1.0,1.0"
+1367,Transform,,,,,594,"-1.0,0.0,4.0","1.0,1.0,1.0"
+1368,Transform,,,,,595,"0.0,2.0,12.0","1.0,1.0,1.0"
+1369,Transform,,,,,596,"0.9999999403953552,-2.9802322387695312e-08,1.0","1.0,1.0,1.0"
+1370,Transform,,,,,597,"10.0,3.200000047683716,15.0","1.0,1.0,1.0"
+1371,Transform,,,,,379,"0.0,0.0,0.0","1.0,1.0,1.0"
+1372,Transform,,,,,355,"0.0,0.0,0.0","1.0,1.0,1.0"
+1373,Transform,,,,,389,"-6.191797256469727,9.626093864440918,7.618593692779541","1.0,1.0,1.0"
+1374,Transform,,,,,356,"0.0,0.30000001192092896,0.0","1.0,1.0,1.0"
+1375,Transform,,,,,357,"0.0,0.30000001192092896,0.0","1.0,1.0,1.0"
+1376,Transform,,,,,361,"0.0,0.30000001192092896,0.0","1.0,1.0,1.0"
+1377,Transform,,,,,358,"0.0,0.30000001192092896,0.0","1.0,1.0,1.0"
+1378,Transform,,,,,359,"0.0,0.30000001192092896,0.0","1.0,1.0,1.0"
+1379,Transform,,,,,360,"0.0,0.30000001192092896,0.0","1.0,1.0,1.0"
+1380,Transform,,,,,693,"-0.0,0.0,0.0","1.0,1.0,1.0"
+1381,Transform,,,,,388,"10.693400382995605,0.44429999589920044,1.2120000123977661","0.6000000238418579,0.6000000238418579,0.6000000238418579"
+1382,Transform,,,,,675,"13.343999862670898,4.3470001220703125,14.774999618530273","1.0,1.0,1.0"
+1383,Transform,,,,,676,"7.3420000076293945,2.799999952316284,12.53600025177002","1.0,1.0,1.0"
+1384,Transform,,,,,677,"7.3420000076293945,2.9149999618530273,16.39299964904785","1.0,1.0,1.0"
+1385,Transform,,,,,700,"0.03999999910593033,0.5080000162124634,0.023000000044703484","0.0885411947965622,0.6802688837051392,0.08275257796049118"
+1386,Transform,,,,,701,"0.08900000154972076,0.4189999997615814,0.023000000044703484","0.0885411947965622,0.6802688837051392,0.13364002108573914"
+1387,Transform,,,,,702,"0.07999999821186066,0.5130000114440918,0.05700000002980232","0.12733109295368195,0.4943445920944214,0.03414769470691681"
+1388,Transform,,,,,376,"0.0,0.0,0.0","1.0,1.0,1.0"
+1389,Transform,,,,,699,"11.297883033752441,0.5089552998542786,1.7000000476837158","1.0,1.0,1.0"
+1390,Transform,,,,,685,"2.815000057220459,1.9800000190734863,18.207000732421875","1.0,1.0,1.0"
+1391,Transform,,,,,362,"-0.1459999978542328,-0.05299999937415123,0.8069999814033508","1.0,1.0,1.0"
+1392,Transform,,,,,696,"7.400000095367432,3.7800002098083496,-9.550000190734863","1.0,1.0,1.0"
+1393,Transform,,,,,697,"3.37109375,0.71484375,11.40625","1.0,1.0,1.0"
+1394,Transform,,,,,698,"-6.191797256469727,9.626093864440918,7.618593692779541","1.0,1.0,1.0"
+1395,Transform,,,,,688,"-0.003000000026077032,-0.328000009059906,0.02199999988079071","1.3840999603271484,1.5225099325180054,1.3840999603271484"
+1396,Transform,,,,,687,"-0.003000000026077032,-0.328000009059906,0.02199999988079071","1.3840999603271484,1.5225099325180054,1.3840999603271484"
+1397,Transform,,,,,691,"-0.003000000026077032,-0.328000009059906,0.02199999988079071","1.3840999603271484,1.5225099325180054,1.3840999603271484"
+1398,Transform,,,,,692,"-0.003000000026077032,-0.328000009059906,0.02199999988079071","1.3840999603271484,1.5225099325180054,1.3840999603271484"
+1399,Transform,,,,,690,"-0.003000000026077032,-0.328000009059906,0.02199999988079071","1.3840999603271484,1.5225099325180054,1.3840999603271484"
+1400,Transform,,,,,689,"-0.003000000026077032,-0.328000009059906,0.02199999988079071","1.3840999603271484,1.5225099325180054,1.3840999603271484"

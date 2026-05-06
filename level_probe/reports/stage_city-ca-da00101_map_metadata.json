@@ -1,0 +1,530 @@
+{
+  "bundle": "battle/map/stage_city-ca-da00101.unity3d",
+  "resolved_bundle": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Sword of Convallaria\\assets\\battle\\map\\stage_city-ca-da00101.unity3d",
+  "block_count": 285,
+  "block_type_counts": {
+    "2": 86,
+    "1": 49,
+    "28": 48,
+    "12": 42,
+    "15": 40,
+    "10": 12,
+    "11": 5,
+    "29": 3
+  },
+  "metadata": [
+    {
+      "script": "BattleGrassData",
+      "mono_id": 80,
+      "game_object_id": 0,
+      "path": "",
+      "fields": {
+        "m_Enabled": 1,
+        "m_GameObject": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+        "m_Name": "stage_city-ca-da00101_battle",
+        "m_Script": "PPtr(m_FileID=0, m_PathID=68, assetsfile=<SerializedFile>)",
+        "infos": [
+          {
+            "range_size": "Vector2f(0.5, 0.5)",
+            "num_minmax": "int2_storage(x=3, y=5)",
+            "pos": "Vector3f(8.0, 0.800000011920929, 3.0)",
+            "blockPos": "int3_storage(x=8, y=2, z=3)",
+            "templatesInfo": [
+              {
+                "typename": "'plane1.49|sprite_p_move_grassshort'",
+                "mesh": "PPtr(m_FileID=16, m_PathID=-7348011900852451187, assetsfile=<SerializedFile>)",
+                "material": "PPtr(m_FileID=0, m_PathID=36, assetsfile=<SerializedFile>)",
+                "shadowMode": "1",
+                "receiveShadow": "1",
+                "layer": "9",
+                "isSprite": "0",
+                "texture": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+                "uv": "Vector2f(0.0, 0.0)",
+                "batchBounds": "AABB(m_Center=Vector3f(-6.322026990801533e-08, 0.6194999814033508, -6.322027701344268e-08), m_Extent=Vector3f(0.5267946124076843, 0.8194998502731323, 0.5267945528030396))",
+                "matrices": "[]",
+                "instanceBounds": "[]",
+                "goPaths": "[]",
+                "isShort": "1",
+                "rotation": "Quaternion(-0.0, 0.3826834261417389, -0.0, 0.9238795638084412)",
+                "scale": "Vector3f(1.0, 1.100000023841858, 1.0)"
+              }
+            ],
+            "vertexSHs": [
+              "Vector3f(0.9378546476364136, 1.2499653100967407, 2.0481812953948975)"
+            ],
+            "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 8_3",
+            "templatesPath": [
+              "Assets/Scenes/common/Prefabs/Object/grass/grassshort01.prefab"
+            ]
+          },
+          {
+            "range_size": "Vector2f(0.5, 0.5)",
+            "num_minmax": "int2_storage(x=5, y=9)",
+            "pos": "Vector3f(10.0, 0.800000011920929, 3.0)",
+            "blockPos": "int3_storage(x=10, y=2, z=3)",
+            "templatesInfo": [
+              {
+                "typename": "'Plane002|sprite_p_move_grass 1_gai'",
+                "mesh": "PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>)",
+                "material": "PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>)",
+                "shadowMode": "0",
+                "receiveShadow": "1",
+                "layer": "9",
+                "isSprite": "0",
+                "texture": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+                "uv": "Vector2f(0.0, 0.0)",
+                "batchBounds": "AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Extent=Vector3f(0.29410696029663086, 0.22859999537467957, 0.2726251780986786))",
+                "matrices": "[]",
+                "instanceBounds": "[]",
+                "goPaths": "[]",
+                "isShort": "0",
+                "rotation": "Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791)",
+                "scale": "Vector3f(1.2145001888275146, 1.0, 1.000000238418579)"
+              },
+              {
+                "typename": "'Grass|sprite_p_move_grass_gai'",
+                "mesh": "PPtr(m_FileID=16, m_PathID=-6293451755907439005, assetsfile=<SerializedFile>)",
+                "material": "PPtr(m_FileID=0, m_PathID=3, assetsfile=<SerializedFile>)",
+                "shadowMode": "0",
+                "receiveShadow": "1",
+                "layer": "9",
+                "isSprite": "0",
+                "texture": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+                "uv": "Vector2f(0.0, 0.0)",
+                "batchBounds": "AABB(m_Center=Vector3f(0.015554377809166908, 0.5039364099502563, 0.0020718052983283997), m_Extent=Vector3f(0.18543638288974762, 0.514504075050354, 0.19916659593582153))",
+                "matrices": "[]",
+                "instanceBounds": "[]",
+                "goPaths": "[]",
+                "isShort": "0",
+                "rotation": "Quaternion(-0.0, 0.9169049263000488, -0.0, -0.3991057872772217)",
+                "scale": "Vector3f(1.3841001987457275, 1.5225099325180054, 1.3841001987457275)"
+              },
+              {
+                "typename": "'Plane003|sprite_p_move_grass 2_gai'",
+                "mesh": "PPtr(m_FileID=16, m_PathID=-7469534348166267095, assetsfile=<SerializedFile>)",
+                "material": "PPtr(m_FileID=0, m_PathID=25, assetsfile=<SerializedFile>)",
+                "shadowMode": "0",
+                "receiveShadow": "1",
+                "layer": "9",
+                "isSprite": "0",
+                "texture": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+                "uv": "Vector2f(0.0, 0.0)",
+                "batchBounds": "AABB(m_Center=Vector3f(0.001048203557729721, 0.32470211386680603, -0.004367349669337273), m_Extent=Vector3f(0.2768970727920532, 0.3191537857055664, 0.27504152059555054))",
+                "matrices": "[]",
+                "instanceBounds": "[]",
+                "goPaths": "[]",
+                "isShort": "0",
+                "rotation": "Quaternion(0.001055814791470766, -0.9245238304138184, 0.0025614488404244184, 0.3811141848564148)",
+                "scale": "Vector3f(1.1765999794006348, 1.142300009727478, 1.0)"
+              }
+            ],
+            "vertexSHs": [
+              "Vector3f(0.9871500134468079, 1.243149757385254, 1.8755648136138916)",
+              "Vector3f(0.9871500134468079, 1.243149757385254, 1.8755648136138916)",
+              "Vector3f(0.9876428842544556, 1.2444955110549927, 1.878989815711975)"
+            ],
+            "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 10_3",
+            "templatesPath": [
+              "Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal01.prefab",
+              "Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal02.prefab",
+              "Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal03.prefab"
+            ]
+          },
+          {
+            "range_size": "Vector2f(0.699999988079071, 0.699999988079071)",
+            "num_minmax": "int2_storage(x=3, y=5)",
+            "pos": "Vector3f(3.0, 0.0, 1.0)",
+            "blockPos": "int3_storage(x=3, y=0, z=1)",
+            "templatesInfo": [
+              {
+                "typename": "'Plane002|sprite_p_move_grass 1_gai'",
+                "mesh": "PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>)",
+                "material": "PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>)",
+                "shadowMode": "0",
+                "receiveShadow": "1",
+                "layer": "9",
+                "isSprite": "0",
+                "texture": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+                "uv": "Vector2f(0.0, 0.0)",
+                "batchBounds": "AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Extent=Vector3f(0.29410696029663086, 0.22859999537467957, 0.2726251780986786))",
+                "matrices": "[]",
+                "instanceBounds": "[]",
+                "goPaths": "[]",
+                "isShort": "1",
+                "rotation": "Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791)",
+                "scale": "Vector3f(1.2145001888275146, 1.0, 1.000000238418579)"
+              }
+            ],
+            "vertexSHs": [
+              "Vector3f(0.9524766802787781, 1.33909273147583, 2.4004065990448)"
+            ],
+            "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 3_1",
+            "templatesPath": [
+              "Assets/Scenes/common/Prefabs/Object/grass/grassshortfinal01.prefab"
+            ]
+          },
+          {
+            "range_size": "Vector2f(0.5, 0.5)",
+            "num_minmax": "int2_storage(x=2, y=3)",
+            "pos": "Vector3f(3.0, 0.0, 4.0)",
+            "blockPos": "int3_storage(x=3, y=0, z=4)",
+            "templatesInfo": [
+              {
+                "typename": "'Plane002|sprite_p_move_grass 1_gai'",
+                "mesh": "PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>)",
+                "material": "PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>)",
+                "shadowMode": "0",
+                "receiveShadow": "1",
+                "layer": "9",
+                "isSprite": "0",
+                "texture": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+                "uv": "Vector2f(0.0, 0.0)",
+                "batchBounds": "AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Extent=Vector3f(0.29410696029663086, 0.22859999537467957, 0.2726251780986786))",
+                "matrices": "[]",
+                "instanceBounds": "[]",
+                "goPaths": "[]",
+                "isShort": "1",
+                "rotation": "Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791)",
+                "scale": "Vector3f(1.2145001888275146, 1.0, 1.000000238418579)"
+              }
+            ],
+            "vertexSHs": [
+              "Vector3f(0.9657264947891235, 1.3368237018585205, 2.3145322799682617)"
+            ],
+            "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 3_4",
+            "templatesPath": [
+              "Assets/Scenes/common/Prefabs/Object/grass/grassshortfinal01.prefab"
+            ]
+          },
+          {
+            "range_size": "Vector2f(0.5, 0.5)",
+            "num_minmax": "int2_storage(x=5, y=7)",
+            "pos": "Vector3f(10.0, 0.800000011920929, 2.0)",
+            "blockPos": "int3_storage(x=10, y=2, z=2)",
+            "templatesInfo": [
+              {
+                "typename": "'Plane002|sprite_p_move_grass 1_gai'",
+                "mesh": "PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>)",
+                "material": "PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>)",
+                "shadowMode": "0",
+                "receiveShadow": "1",
+                "layer": "9",
+                "isSprite": "0",
+                "texture": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+                "uv": "Vector2f(0.0, 0.0)",
+                "batchBounds": "AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Extent=Vector3f(0.29410696029663086, 0.22859999537467957, 0.2726251780986786))",
+                "matrices": "[]",
+                "instanceBounds": "[]",
+                "goPaths": "[]",
+                "isShort": "0",
+                "rotation": "Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791)",
+                "scale": "Vector3f(1.2145001888275146, 1.0, 1.000000238418579)"
+              },
+              {
+                "typename": "'Grass|sprite_p_move_grass_gai'",
+                "mesh": "PPtr(m_FileID=16, m_PathID=-6293451755907439005, assetsfile=<SerializedFile>)",
+                "material": "PPtr(m_FileID=0, m_PathID=3, assetsfile=<SerializedFile>)",
+                "shadowMode": "0",
+                "receiveShadow": "1",
+                "layer": "9",
+                "isSprite": "0",
+                "texture": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+                "uv": "Vector2f(0.0, 0.0)",
+                "batchBounds": "AABB(m_Center=Vector3f(0.015554377809166908, 0.5039364099502563, 0.0020718052983283997), m_Extent=Vector3f(0.18543638288974762, 0.514504075050354, 0.19916659593582153))",
+                "matrices": "[]",
+                "instanceBounds": "[]",
+                "goPaths": "[]",
+                "isShort": "0",
+                "rotation": "Quaternion(-0.0, 0.9169049263000488, -0.0, -0.3991057872772217)",
+                "scale": "Vector3f(1.3841001987457275, 1.5225099325180054, 1.3841001987457275)"
+              },
+              {
+                "typename": "'Plane003|sprite_p_move_grass 2_gai'",
+                "mesh": "PPtr(m_FileID=16, m_PathID=-7469534348166267095, assetsfile=<SerializedFile>)",
+                "material": "PPtr(m_FileID=0, m_PathID=25, assetsfile=<SerializedFile>)",
+                "shadowMode": "0",
+                "receiveShadow": "1",
+                "layer": "9",
+                "isSprite": "0",
+                "texture": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+                "uv": "Vector2f(0.0, 0.0)",
+                "batchBounds": "AABB(m_Center=Vector3f(0.001048203557729721, 0.32470211386680603, -0.004367349669337273), m_Extent=Vector3f(0.2768970727920532, 0.3191537857055664, 0.27504152059555054))",
+                "matrices": "[]",
+                "instanceBounds": "[]",
+                "goPaths": "[]",
+                "isShort": "0",
+                "rotation": "Quaternion(0.001055814791470766, -0.9245238304138184, 0.0025614488404244184, 0.3811141848564148)",
+                "scale": "Vector3f(1.1765999794006348, 1.142300009727478, 1.0)"
+              }
+            ],
+            "vertexSHs": [
+              "Vector3f(0.9813541173934937, 1.247910976409912, 1.9020148515701294)",
+              "Vector3f(0.9813541173934937, 1.247910976409912, 1.9020148515701294)",
+              "Vector3f(0.9818302392959595, 1.2492440938949585, 1.9054561853408813)"
+            ],
+            "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 10_2",
+            "templatesPath": [
+              "Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal01.prefab",
+              "Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal02.prefab",
+              "Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal03.prefab"
+            ]
+          },
+          {
+            "range_size": "Vector2f(0.5, 0.5)",
+            "num_minmax": "int2_storage(x=2, y=4)",
+            "pos": "Vector3f(2.0, 1.2000000476837158, 10.0)",
+            "blockPos": "int3_storage(x=2, y=3, z=10)",
+            "templatesInfo": [
+              {
+                "typename": "'Plane002|sprite_p_move_grass 1_gai'",
+                "mesh": "PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>)",
+                "material": "PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>)",
+                "shadowMode": "0",
+                "receiveShadow": "1",
+                "layer": "9",
+                "isSprite": "0",
+                "texture": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+                "uv": "Vector2f(0.0, 0.0)",
+                "batchBounds": "AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Extent=Vector3f(0.29410696029663086, 0.22859999537467957, 0.2726251780986786))",
+                "matrices": "[]",
+                "instanceBounds": "[]",
+                "goPaths": "[]",
+                "isShort": "1",
+                "rotation": "Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791)",
+                "scale": "Vector3f(1.2145001888275146, 1.0, 1.000000238418579)"
+              }
+            ],
+            "vertexSHs": [
+              "Vector3f(0.8510720729827881, 1.1896555423736572, 2.0788676738739014)"
+            ],
+            "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 2_10",
+            "templatesPath": [
+              "Assets/Scenes/common/Prefabs/Object/grass/grassshortfinal01.prefab"
+            ]
+          },
+          {
+            "range_size": "Vector2f(0.5, 0.5)",
+            "num_minmax": "int2_storage(x=2, y=4)",
+            "pos": "Vector3f(2.0, 0.0, 0.0)",
+            "blockPos": "int3_storage(x=2, y=0, z=0)",
+            "templatesInfo": [
+              {
+                "typename": "'Plane002|sprite_p_move_grass 1_gai'",
+                "mesh": "PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>)",
+                "material": "PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>)",
+                "shadowMode": "0",
+                "receiveShadow": "1",
+                "layer": "9",
+                "isSprite": "0",
+                "texture": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+                "uv": "Vector2f(0.0, 0.0)",
+                "batchBounds": "AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Extent=Vector3f(0.29410696029663086, 0.22859999537467957, 0.2726251780986786))",
+                "matrices": "[]",
+                "instanceBounds": "[]",
+                "goPaths": "[]",
+                "isShort": "1",
+                "rotation": "Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791)",
+                "scale": "Vector3f(1.2145001888275146, 1.0, 1.000000238418579)"
+              }
+            ],
+            "vertexSHs": [
+              "Vector3f(0.9886714816093445, 1.4135513305664062, 2.5832905769348145)"
+            ],
+            "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 2_0",
+            "templatesPath": [
+              "Assets/Scenes/common/Prefabs/Object/grass/grassshortfinal01.prefab"
+            ]
+          },
+          {
+            "range_size": "Vector2f(0.5, 0.5)",
+            "num_minmax": "int2_storage(x=2, y=3)",
+            "pos": "Vector3f(2.0, 1.2000000476837158, 8.0)",
+            "blockPos": "int3_storage(x=2, y=3, z=8)",
+            "templatesInfo": [
+              {
+                "typename": "'Plane002|sprite_p_move_grass 1_gai'",
+                "mesh": "PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>)",
+                "material": "PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>)",
+                "shadowMode": "0",
+                "receiveShadow": "1",
+                "layer": "9",
+                "isSprite": "0",
+                "texture": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+                "uv": "Vector2f(0.0, 0.0)",
+                "batchBounds": "AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Extent=Vector3f(0.29410696029663086, 0.22859999537467957, 0.2726251780986786))",
+                "matrices": "[]",
+                "instanceBounds": "[]",
+                "goPaths": "[]",
+                "isShort": "1",
+                "rotation": "Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791)",
+                "scale": "Vector3f(1.2145001888275146, 1.0, 1.000000238418579)"
+              }
+            ],
+            "vertexSHs": [
+              "Vector3f(0.6109735369682312, 0.9674106240272522, 1.9061329364776611)"
+            ],
+            "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 2_8",
+            "templatesPath": [
+              "Assets/Scenes/common/Prefabs/Object/grass/grassshortfinal01.prefab"
+            ]
+          },
+          {
+            "range_size": "Vector2f(0.699999988079071, 0.5)",
+            "num_minmax": "int2_storage(x=3, y=5)",
+            "pos": "Vector3f(3.0, 1.600000023841858, 12.0)",
+            "blockPos": "int3_storage(x=3, y=4, z=12)",
+            "templatesInfo": [
+              {
+                "typename": "'Plane002|sprite_p_move_grass 1_gai'",
+                "mesh": "PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>)",
+                "material": "PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>)",
+                "shadowMode": "0",
+                "receiveShadow": "1",
+                "layer": "9",
+                "isSprite": "0",
+                "texture": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+                "uv": "Vector2f(0.0, 0.0)",
+                "batchBounds": "AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Extent=Vector3f(0.29410696029663086, 0.22859999537467957, 0.2726251780986786))",
+                "matrices": "[]",
+                "instanceBounds": "[]",
+                "goPaths": "[]",
+                "isShort": "1",
+                "rotation": "Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791)",
+                "scale": "Vector3f(1.2145001888275146, 1.0, 1.000000238418579)"
+              }
+            ],
+            "vertexSHs": [
+              "Vector3f(0.700619637966156, 1.0084080696105957, 1.8130714893341064)"
+            ],
+            "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 3_12",
+            "templatesPath": [
+              "Assets/Scenes/common/Prefabs/Object/grass/grassshortfinal01.prefab"
+            ]
+          },
+          {
+            "range_size": "Vector2f(0.5, 0.5)",
+            "num_minmax": "int2_storage(x=5, y=7)",
+            "pos": "Vector3f(10.0, 0.800000011920929, 4.0)",
+            "blockPos": "int3_storage(x=10, y=2, z=4)",
+            "templatesInfo": [
+              {
+                "typename": "'Plane002|sprite_p_move_grass 1_gai'",
+                "mesh": "PPtr(m_FileID=16, m_PathID=8707925320576855572, assetsfile=<SerializedFile>)",
+                "material": "PPtr(m_FileID=0, m_PathID=4, assetsfile=<SerializedFile>)",
+                "shadowMode": "0",
+                "receiveShadow": "1",
+                "layer": "9",
+                "isSprite": "0",
+                "texture": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+                "uv": "Vector2f(0.0, 0.0)",
+                "batchBounds": "AABB(m_Center=Vector3f(-0.021522754803299904, 0.18916141986846924, -0.053830161690711975), m_Extent=Vector3f(0.29410696029663086, 0.22859999537467957, 0.2726251780986786))",
+                "matrices": "[]",
+                "instanceBounds": "[]",
+                "goPaths": "[]",
+                "isShort": "0",
+                "rotation": "Quaternion(-0.0, -0.9309626221656799, -0.0, 0.3651145398616791)",
+                "scale": "Vector3f(1.2145001888275146, 1.0, 1.000000238418579)"
+              },
+              {
+                "typename": "'Grass|sprite_p_move_grass_gai'",
+                "mesh": "PPtr(m_FileID=16, m_PathID=-6293451755907439005, assetsfile=<SerializedFile>)",
+                "material": "PPtr(m_FileID=0, m_PathID=3, assetsfile=<SerializedFile>)",
+                "shadowMode": "0",
+                "receiveShadow": "1",
+                "layer": "9",
+                "isSprite": "0",
+                "texture": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+                "uv": "Vector2f(0.0, 0.0)",
+                "batchBounds": "AABB(m_Center=Vector3f(0.015554377809166908, 0.5039364099502563, 0.0020718052983283997), m_Extent=Vector3f(0.18543638288974762, 0.514504075050354, 0.19916659593582153))",
+                "matrices": "[]",
+                "instanceBounds": "[]",
+                "goPaths": "[]",
+                "isShort": "0",
+                "rotation": "Quaternion(-0.0, 0.9169049263000488, -0.0, -0.3991057872772217)",
+                "scale": "Vector3f(1.3841001987457275, 1.5225099325180054, 1.3841001987457275)"
+              },
+              {
+                "typename": "'Plane003|sprite_p_move_grass 2_gai'",
+                "mesh": "PPtr(m_FileID=16, m_PathID=-7469534348166267095, assetsfile=<SerializedFile>)",
+                "material": "PPtr(m_FileID=0, m_PathID=25, assetsfile=<SerializedFile>)",
+                "shadowMode": "0",
+                "receiveShadow": "1",
+                "layer": "9",
+                "isSprite": "0",
+                "texture": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+                "uv": "Vector2f(0.0, 0.0)",
+                "batchBounds": "AABB(m_Center=Vector3f(0.001048203557729721, 0.32470211386680603, -0.004367349669337273), m_Extent=Vector3f(0.2768970727920532, 0.3191537857055664, 0.27504152059555054))",
+                "matrices": "[]",
+                "instanceBounds": "[]",
+                "goPaths": "[]",
+                "isShort": "0",
+                "rotation": "Quaternion(0.001055814791470766, -0.9245238304138184, 0.0025614488404244184, 0.3811141848564148)",
+                "scale": "Vector3f(1.1765999794006348, 1.142300009727478, 1.0)"
+              }
+            ],
+            "vertexSHs": [
+              "Vector3f(0.9501041173934937, 1.2303436994552612, 1.8974967002868652)",
+              "Vector3f(0.9501041173934937, 1.2303436994552612, 1.8974967002868652)",
+              "Vector3f(0.9504967331886292, 1.2315973043441772, 1.9007623195648193)"
+            ],
+            "randomPath": "MapTool/Map/block_root/emptyblock/enter/enter-grass/empty 10_4",
+            "templatesPath": [
+              "Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal01.prefab",
+              "Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal02.prefab",
+              "Assets/Scenes/common/Prefabs/Object/grass/grasslongfinal03.prefab"
+            ]
+          }
+        ],
+        "scenePath": "Assets/Scenes/Battle/stage_city-ca-00101/stage_city-ca-da00101.unity",
+        "layer": "BitField(m_Bits=1073742337)",
+        "infos_count": 20
+      }
+    },
+    {
+      "script": "MapTool",
+      "mono_id": 2460,
+      "game_object_id": 36,
+      "path": "MapTool",
+      "fields": {
+        "m_Enabled": 1,
+        "m_GameObject": "PPtr(m_FileID=0, m_PathID=36, assetsfile=<SerializedFile>)",
+        "m_Name": "",
+        "m_Script": "PPtr(m_FileID=1, m_PathID=48, assetsfile=<SerializedFile>)",
+        "width": 20,
+        "height": 20,
+        "map_root": "PPtr(m_FileID=0, m_PathID=2462, assetsfile=<SerializedFile>)",
+        "sceneName": "",
+        "objCharAllHud": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)"
+      }
+    },
+    {
+      "script": "MapProperty",
+      "mono_id": 2462,
+      "game_object_id": 38,
+      "path": "MapTool/Map",
+      "fields": {
+        "m_Enabled": 1,
+        "m_GameObject": "PPtr(m_FileID=0, m_PathID=38, assetsfile=<SerializedFile>)",
+        "m_Name": "",
+        "m_Script": "PPtr(m_FileID=1, m_PathID=63, assetsfile=<SerializedFile>)",
+        "camera": "PPtr(m_FileID=0, m_PathID=1401, assetsfile=<SerializedFile>)",
+        "cineBrain": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+        "director": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+        "virtual_camera": "PPtr(m_FileID=0, m_PathID=0, assetsfile=<SerializedFile>)",
+        "useBound": 1,
+        "useBattle": 1,
+        "boundMin": "int3_storage(x=-2, y=0, z=-2)",
+        "boundMax": "int3_storage(x=16, y=0, z=19)",
+        "boundMinCamera": "Vector3f(1.350000023841858, 0.0, 2.0)",
+        "boundMaxCamera": "Vector3f(16.360000610351562, 0.0, 16.299999237060547)",
+        "planeY": 0.0,
+        "orthographicSize": 3.7200000286102295,
+        "scenarioPosition": "Vector3f(0.0, 0.0, 0.0)",
+        "scenarioRotation": "Vector3f(0.0, 0.0, 0.0)",
+        "scenarioHighCamera": 0.0,
+        "scenarioMiddleCamera": 0.0,
+        "scenarioLowCamera": 0.0
+      }
+    }
+  ]
+}
