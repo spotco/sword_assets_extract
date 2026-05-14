@@ -16,6 +16,8 @@ from export_level_index import build_index
 OUT_ROOT = Path("extracted/web_levels")
 ASSET_DEP_BUNDLE = ASSETS_ROOT / "asset_dep.unity3d"
 
+MAIN_TEX_SLOTS = {"_MainTex", "_BaseMap", "_AlbedoMap", "_DiffuseMap"}
+
 ObjectKey = tuple[int, int]
 Vec3 = tuple[float, float, float]
 Mat4 = list[list[float]]
@@ -105,6 +107,132 @@ def read_objects(env: Any) -> dict[ObjectKey, Any]:
         except Exception:
             continue
     return objects
+
+
+def save_texture_png(path_id: str, tex_data: Any, textures_dir: Path) -> dict[str, Any] | None:
+    raw_name = object_name(tex_data)
+    file_stem = safe_name(raw_name or "tex")
+    file_name = f"{path_id}_{file_stem}.png"
+    file_path = textures_dir / file_name
+    width = int(getattr(tex_data, "m_Width", 0) or 0)
+    height = int(getattr(tex_data, "m_Height", 0) or 0)
+
+    if not file_path.exists():
+        try:
+            image = tex_data.image
+            if image is None:
+                return None
+            textures_dir.mkdir(parents=True, exist_ok=True)
+            image.save(str(file_path))
+        except Exception:
+            return None
+
+    return {
+        "id": path_id,
+        "name": raw_name,
+        "path": f"textures/{file_name}",
+        "width": width,
+        "height": height,
+    }
+
+
+def build_materials_payload(
+    map_name: str,
+    instances: list[dict[str, Any]],
+    objects: dict[ObjectKey, Any],
+    types: dict[ObjectKey, str],
+    out_dir: Path,
+) -> dict[str, Any]:
+    mat_by_path_id: dict[str, tuple[ObjectKey, Any]] = {}
+    for key, data in objects.items():
+        if types.get(key) == "Material":
+            pid = str(key[1])
+            if pid not in mat_by_path_id:
+                mat_by_path_id[pid] = (key, data)
+
+    referenced_ids = {mid for inst in instances for mid in inst.get("materialIds", [])}
+
+    textures_dir = out_dir / "textures"
+    exported_textures: dict[str, dict[str, Any]] = {}
+    skipped_textures = 0
+    materials = []
+
+    for mat_id in sorted(referenced_ids):
+        entry = mat_by_path_id.get(mat_id)
+        if entry is None:
+            continue
+        _mat_key, mat_data = entry
+
+        shader_ref = getattr(mat_data, "m_Shader", None)
+        shader_name = ""
+        if shader_ref is not None:
+            try:
+                shader_obj = shader_ref.read()
+                shader_name = object_name(shader_obj)
+            except Exception:
+                pass
+
+        saved = getattr(mat_data, "m_SavedProperties", None)
+        tex_envs = getattr(saved, "m_TexEnvs", []) if saved else []
+        colors_raw = getattr(saved, "m_Colors", []) if saved else []
+
+        main_texture: dict[str, Any] | None = None
+        all_textures: dict[str, Any] = {}
+        for item in tex_envs:
+            if not (isinstance(item, (list, tuple)) and len(item) == 2):
+                continue
+            slot, tex_env = item
+            tex_pptr = getattr(tex_env, "m_Texture", None)
+            if tex_pptr is None or getattr(tex_pptr, "m_PathID", 0) == 0:
+                continue
+            tex_id = str(tex_pptr.m_PathID)
+            if tex_id not in exported_textures:
+                try:
+                    tex_data = tex_pptr.read()
+                    record = save_texture_png(tex_id, tex_data, textures_dir)
+                    if record:
+                        exported_textures[tex_id] = record
+                    else:
+                        skipped_textures += 1
+                except Exception:
+                    skipped_textures += 1
+            tex_record = exported_textures.get(tex_id)
+            if tex_record:
+                all_textures[str(slot)] = tex_record
+                if str(slot) in MAIN_TEX_SLOTS and main_texture is None:
+                    main_texture = tex_record
+
+        colors: dict[str, list[float]] = {}
+        for item in colors_raw:
+            if isinstance(item, (list, tuple)) and len(item) == 2:
+                slot, color = item
+                if all(hasattr(color, attr) for attr in ("r", "g", "b", "a")):
+                    colors[str(slot)] = [
+                        round(float(color.r), 4),
+                        round(float(color.g), 4),
+                        round(float(color.b), 4),
+                        round(float(color.a), 4),
+                    ]
+
+        materials.append({
+            "id": mat_id,
+            "name": object_name(mat_data),
+            "shader": shader_name,
+            "mainTexture": main_texture,
+            "textures": all_textures,
+            "colors": colors,
+        })
+
+    return {
+        "schemaVersion": 1,
+        "mapName": map_name,
+        "stats": {
+            "materialCount": len(materials),
+            "textureCount": len(exported_textures),
+            "skippedTextureCount": skipped_textures,
+        },
+        "materials": materials,
+    }
 
 
 def asset_file_names(bundle: Path) -> set[str]:
@@ -259,9 +387,15 @@ def export_mesh_instance(
 
     remap = {old: new for new, old in enumerate(used_indices)}
     vertices = []
+    uvs: list[float] = []
+    raw_uvs = handler.m_UV0 or []
+    has_uvs = len(raw_uvs) >= handler.m_VertexCount
     for old_index in used_indices:
         point = handler.m_Vertices[old_index]
         vertices.extend(round_vec3(transform_point(matrix, (float(point[0]), float(point[1]), float(point[2])))))
+        if has_uvs:
+            uv = raw_uvs[old_index]
+            uvs.extend([round(float(uv[0]), 5), round(float(uv[1]), 5)])
 
     indices: list[int] = []
     submeshes = []
@@ -288,11 +422,17 @@ def export_mesh_instance(
             "subMeshCount": static_count,
         },
         "rendererEnabled": getattr(renderer, "m_Enabled", "") if renderer else "",
+        "materialIds": [
+            str(pptr_id(pptr))
+            for pptr in (getattr(renderer, "m_Materials", []) or [])
+            if pptr_id(pptr) is not None
+        ] if renderer else [],
         "sourceVertexCount": handler.m_VertexCount,
         "vertexCount": len(used_indices),
         "triangleCount": len(indices) // 3,
         "submeshes": submeshes,
         "vertices": vertices,
+        "uvs": uvs,
         "indices": indices,
     }
 
@@ -314,6 +454,7 @@ def main() -> int:
     env = UnityPy.load(*[str(path) for path in [bundle, *deps]])
     target_asset_ids = {id(asset) for asset in env.assets if asset.name in main_asset_names}
     objects = read_objects(env)
+    types = {object_key(obj): obj.type.name for obj in env.objects}
     game_objects, transforms, transform_by_go, mesh_filters, mesh_renderers_by_go = build_indexes(env, objects)
 
     instances = []
@@ -382,6 +523,14 @@ def main() -> int:
         f"{payload['stats']['skippedCount']} skipped"
     )
     print(f"Updated {args.out_root / 'index.json'}")
+
+    materials_payload = build_materials_payload(map_name, instances, objects, types, out_dir)
+    write_json(out_dir / "materials.json", materials_payload)
+    print(
+        f"Wrote {out_dir / 'materials.json'} with {materials_payload['stats']['materialCount']} materials, "
+        f"{materials_payload['stats']['textureCount']} textures "
+        f"({materials_payload['stats']['skippedTextureCount']} skipped)"
+    )
     return 0
 
 

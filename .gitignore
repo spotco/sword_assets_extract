@@ -6,6 +6,7 @@
 
 # Generated large scan reports
 /reports/*.csv
+/level_probe/reports/
 
 # Generated transient category lists/summaries
 /reports/audio_without_human_name.txt

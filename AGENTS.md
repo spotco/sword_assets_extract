@@ -18,7 +18,8 @@ Immediate pipeline:
 7. Export readable embedded Unity meshes to `meshes.json` and render them as an untextured debug layer.
 8. Load map dependency bundles from `asset_dep.unity3d` while exporting meshes, but export only objects from the requested map bundle.
 9. Write `extracted/web_levels/index.json` so the viewer can show all battle maps and grey out maps that have not been exported.
-10. Next milestone: extract material/texture metadata and move toward textured glTF/GLB export.
+10. Export material metadata and textures to `materials.json` + `textures/*.png`; render meshes with their diffuse texture in the web viewer using a "Textured" toggle.
+11. Next milestone: investigate additional texture slots (`_BumpMap`, `_EmissionMap`, specular), handle transparent/water materials separately, and support batch-exporting all maps.
 
 Mesh export caveat:
 
@@ -29,13 +30,24 @@ Mesh export caveat:
   `export_mesh_json.py` resolves those through `asset_dep.unity3d`.
 - Remaining `unity default resources` misses are Unity built-ins, not normal game asset bundles.
 
+Material/texture export:
+
+- `export_mesh_json.py` now writes `materials.json` and `textures/*.png` alongside `meshes.json`.
+- It reads `m_Materials` from each MeshRenderer, resolves the `Material` PPtr (including across dep bundles), and reads `m_SavedProperties.m_TexEnvs`.
+- Main diffuse texture is detected by slot name: `_MainTex`, `_BaseMap`, `_AlbedoMap`, `_DiffuseMap`.
+- Texture2D objects are decoded via UnityPy's `.image` (PIL) and saved as PNG. Already-exported PNGs are skipped on re-run.
+- The viewer applies the main texture via `THREE.MeshBasicMaterial` (unlit, preserves baked lighting) when "Textured" is checked.
+
 Useful first target:
 
 ```powershell
+# Full pipeline for a new map (server.py runs all 5 steps automatically via the Extract button):
+python .\level_probe\extract_battle_grid.py --bundle battle/map/stage_city-ca-da00101.unity3d
+python .\level_probe\dump_scene_layout.py --bundle battle/map/stage_city-ca-da00101.unity3d
 python .\level_probe\export_grid_json.py --map stage_city-ca-da00101
 python .\level_probe\export_mesh_json.py --map stage_city-ca-da00101
 python .\level_probe\export_level_index.py
-python -m http.server 5173
+python .\server.py
 ```
 
 Then open:

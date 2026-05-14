@@ -21,9 +21,10 @@
           <button id="resetView" type="button" title="Reset view">Reset</button>
           <label><input id="showLabels" type="checkbox"> Labels</label>
           <label><input id="showMeshes" type="checkbox" checked> Meshes</label>
-          <label><input id="showColliders" type="checkbox" checked> Colliders</label>
-          <label><input id="showNoEnter" type="checkbox" checked> No enter</label>
-          <label><input id="showEnter" type="checkbox" checked> Enter</label>
+          <label><input id="showTextured" type="checkbox" checked> Textured</label>
+          <label><input id="showColliders" type="checkbox"> Colliders</label>
+          <label><input id="showNoEnter" type="checkbox"> No enter</label>
+          <label><input id="showEnter" type="checkbox"> Enter</label>
         </div>
         <div id="status" class="status">Loading</div>
         <div id="renderStats" class="render-stats">0 polygons</div>
@@ -36,6 +37,18 @@
         <dl id="selection"></dl>
       </aside>
     </main>
+    <div id="extractModal" class="modal-overlay" hidden>
+      <div class="modal">
+        <div class="modal-header">
+          <h2>Extracting <code id="extractModalMap"></code></h2>
+        </div>
+        <div id="extractLog" class="extract-log"></div>
+        <div class="modal-footer">
+          <span id="extractModalStatus" class="modal-status">Running…</span>
+          <button id="extractClose" type="button" class="modal-close-btn" disabled>Close</button>
+        </div>
+      </div>
+    </div>
     <script type="module" src="./app.js"></script>
   </body>
 </html>

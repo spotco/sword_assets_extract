@@ -1,0 +1,121 @@
+#!/usr/bin/env python3
+"""Development server: serves static files and provides a /api/extract SSE endpoint
+that runs the extraction pipeline for a given map name.
+
+Usage:
+    python server.py          # listens on http://localhost:5173/
+"""
+import http.server
+import json
+import subprocess
+import sys
+import threading
+import urllib.parse
+from pathlib import Path
+
+PORT = 5173
+ROOT = Path(__file__).parent
+
+
+INDEX_PATH = ROOT / "extracted" / "web_levels" / "index.json"
+
+
+def bundle_for_map(map_name: str) -> str:
+    """Look up the bundle path from index.json, falling back to the standard convention."""
+    try:
+        data = json.loads(INDEX_PATH.read_text(encoding="utf-8"))
+        for level in data.get("levels", []):
+            if level.get("mapName") == map_name:
+                return level["bundle"]
+    except Exception:
+        pass
+    return f"battle/map/{map_name}.unity3d"
+
+
+class Handler(http.server.SimpleHTTPRequestHandler):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, directory=str(ROOT), **kwargs)
+
+    def do_GET(self):
+        if self.path == "/":
+            self.send_response(302)
+            self.send_header("Location", "/web_level_viewer/")
+            self.end_headers()
+            return
+        super().do_GET()
+
+    def do_POST(self):
+        parsed = urllib.parse.urlparse(self.path)
+        if parsed.path != "/api/extract":
+            self.send_error(404)
+            return
+
+        params = urllib.parse.parse_qs(parsed.query)
+        map_name = (params.get("map") or [None])[0]
+        if not map_name:
+            self.send_error(400, "Missing map parameter")
+            return
+
+        self.send_response(200)
+        self.send_header("Content-Type", "text/event-stream")
+        self.send_header("Cache-Control", "no-cache")
+        self.send_header("X-Accel-Buffering", "no")
+        self.end_headers()
+
+        bundle = bundle_for_map(map_name)
+        steps = [
+            [sys.executable, "level_probe/extract_battle_grid.py", "--bundle", bundle],
+            [sys.executable, "level_probe/dump_scene_layout.py", "--bundle", bundle],
+            [sys.executable, "level_probe/export_grid_json.py", "--map", map_name],
+            [sys.executable, "level_probe/export_mesh_json.py", "--map", map_name],
+            [sys.executable, "level_probe/export_level_index.py"],
+        ]
+
+        try:
+            for cmd in steps:
+                self._sse("log", "$ " + " ".join(cmd[1:]))
+                proc = subprocess.Popen(
+                    cmd,
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.STDOUT,
+                    text=True,
+                    cwd=str(ROOT),
+                )
+                for line in proc.stdout:
+                    self._sse("log", line.rstrip())
+                proc.wait()
+                if proc.returncode != 0:
+                    self._sse("error", f"Process exited with code {proc.returncode}")
+                    return
+            self._sse("done", map_name)
+        except Exception as exc:
+            try:
+                self._sse("error", str(exc))
+            except Exception:
+                pass
+
+    def _sse(self, event: str, data: str):
+        payload = f"event: {event}\ndata: {json.dumps(data)}\n\n"
+        self.wfile.write(payload.encode())
+        self.wfile.flush()
+
+    def log_message(self, fmt, *args):
+        try:
+            path = str(args[0]).split()[1] if args else ""
+            if path.startswith("/api/") or not path.startswith("/extracted/"):
+                super().log_message(fmt, *args)
+        except Exception:
+            super().log_message(fmt, *args)
+
+
+class Server(http.server.ThreadingHTTPServer):
+    daemon_threads = True
+
+
+if __name__ == "__main__":
+    server = Server(("", PORT), Handler)
+    print(f"Serving on http://localhost:{PORT}/  —  Ctrl+C to stop")
+    try:
+        server.serve_forever()
+    except KeyboardInterrupt:
+        pass

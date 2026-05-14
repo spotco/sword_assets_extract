@@ -9,16 +9,23 @@ const levelCount = document.getElementById("levelCount");
 const levelList = document.getElementById("levelList");
 const showLabels = document.getElementById("showLabels");
 const showMeshes = document.getElementById("showMeshes");
+const showTextured = document.getElementById("showTextured");
 const showColliders = document.getElementById("showColliders");
 const showEnter = document.getElementById("showEnter");
 const showNoEnter = document.getElementById("showNoEnter");
 const resetView = document.getElementById("resetView");
+const extractModal = document.getElementById("extractModal");
+const extractModalMap = document.getElementById("extractModalMap");
+const extractLog = document.getElementById("extractLog");
+const extractModalStatus = document.getElementById("extractModalStatus");
+const extractClose = document.getElementById("extractClose");
 
 const params = new URLSearchParams(window.location.search);
 const mapName = params.get("map") || "stage_city-ca-da00101";
 const dataUrl = params.get("data") || `/extracted/web_levels/${mapName}/grid.json`;
 const collidersUrl = params.get("colliders") || dataUrl.replace(/grid\.json(?:\?.*)?$/, "colliders.json");
 const meshesUrl = params.get("meshes") || dataUrl.replace(/grid\.json(?:\?.*)?$/, "meshes.json");
+const materialsUrl = params.get("materials") || dataUrl.replace(/grid\.json(?:\?.*)?$/, "materials.json");
 const levelIndexUrl = params.get("index") || "/extracted/web_levels/index.json";
 
 const state = {
@@ -43,6 +50,9 @@ const state = {
   tileLabels: [],
   colliderObjects: [],
   meshObjects: [],
+  wireObjects: [],
+  materialById: {},
+  texturedMaterialCache: {},
   levelIndex: null,
 };
 
@@ -127,25 +137,132 @@ function renderLevelMenu(index) {
   levelList.replaceChildren();
   levelCount.textContent = `${index.extractedCount} / ${index.levelCount} extracted`;
 
-  for (const level of index.levels || []) {
+  const extracted = (index.levels || []).filter((l) => l.isExtracted);
+  const unextracted = (index.levels || []).filter((l) => !l.isExtracted);
+
+  // If the current map isn't extracted, redirect to the first extracted one
+  if (extracted.length > 0 && !extracted.some((l) => l.mapName === mapName)) {
+    window.location.href = mapUrl(extracted[0].mapName);
+    return;
+  }
+
+  for (const level of extracted) {
     const button = document.createElement("button");
     button.type = "button";
     button.className = [
       "level-item",
-      level.isExtracted ? "is-extracted" : "is-missing",
+      "is-extracted",
       level.mapName === mapName ? "is-active" : "",
     ].filter(Boolean).join(" ");
     button.textContent = level.mapName;
-    button.title = level.isExtracted ? level.bundle : `${level.bundle} (not extracted)`;
-    button.disabled = !level.isExtracted;
-    if (level.isExtracted) {
-      button.addEventListener("click", () => {
-        if (level.mapName !== mapName) {
-          window.location.href = mapUrl(level.mapName);
-        }
-      });
-    }
+    button.title = level.bundle;
+    button.addEventListener("click", () => {
+      if (level.mapName !== mapName) window.location.href = mapUrl(level.mapName);
+    });
     levelList.append(button);
+  }
+
+  if (unextracted.length > 0) {
+    const sep = document.createElement("div");
+    sep.className = "level-list-sep";
+    sep.textContent = "Not extracted";
+    levelList.append(sep);
+
+    for (const level of unextracted) {
+      const row = document.createElement("div");
+      row.className = "level-item--unextracted";
+
+      const nameSpan = document.createElement("span");
+      nameSpan.className = "level-item__name";
+      nameSpan.textContent = level.mapName;
+      nameSpan.title = level.bundle;
+
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "level-extract-btn";
+      btn.textContent = "Extract";
+      btn.addEventListener("click", () => runExtraction(level.mapName));
+
+      row.append(nameSpan, btn);
+      levelList.append(row);
+    }
+  }
+}
+
+function appendExtractLog(text, type) {
+  const line = document.createElement("div");
+  line.className = type === "error" ? "log-line log-error" : "log-line";
+  line.textContent = text;
+  extractLog.append(line);
+  extractLog.scrollTop = extractLog.scrollHeight;
+}
+
+async function runExtraction(targetMap) {
+  extractModalMap.textContent = targetMap;
+  extractLog.replaceChildren();
+  extractModalStatus.textContent = "Running\u2026";
+  extractClose.disabled = true;
+  extractModal.hidden = false;
+
+  let response;
+  try {
+    response = await fetch(`/api/extract?map=${encodeURIComponent(targetMap)}`, { method: "POST" });
+  } catch (err) {
+    appendExtractLog(`Network error: ${err.message}`, "error");
+    appendExtractLog("Is server.py running? (python server.py)", "error");
+    extractModalStatus.textContent = "Failed";
+    extractClose.disabled = false;
+    return;
+  }
+
+  if (!response.ok) {
+    appendExtractLog(`Server error: ${response.status} ${response.statusText}`, "error");
+    extractModalStatus.textContent = "Failed";
+    extractClose.disabled = false;
+    return;
+  }
+
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder();
+  let buf = "";
+
+  const processSSE = (text) => {
+    buf += text;
+    const blocks = buf.split("\n\n");
+    buf = blocks.pop();
+    for (const block of blocks) {
+      if (!block.trim()) continue;
+      let event = "message";
+      let data = "";
+      for (const line of block.split("\n")) {
+        if (line.startsWith("event: ")) event = line.slice(7).trim();
+        else if (line.startsWith("data: ")) {
+          try { data = JSON.parse(line.slice(6)); } catch { data = line.slice(6); }
+        }
+      }
+      if (event === "log") appendExtractLog(data);
+      else if (event === "done") {
+        extractModalStatus.textContent = "Done \u2713";
+        extractClose.disabled = false;
+        loadLevelIndex();
+      } else if (event === "error") {
+        appendExtractLog(data, "error");
+        extractModalStatus.textContent = "Failed";
+        extractClose.disabled = false;
+      }
+    }
+  };
+
+  try {
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      processSSE(decoder.decode(value, { stream: true }));
+    }
+  } catch (err) {
+    appendExtractLog(`Stream error: ${err.message}`, "error");
+    extractModalStatus.textContent = "Failed";
+    extractClose.disabled = false;
   }
 }
 
@@ -158,6 +275,52 @@ function renderFallbackLevelMenu() {
   button.textContent = mapName;
   button.title = "Current map";
   levelList.append(button);
+}
+
+function applyMeshMaterials() {
+  const useTextured = showTextured.checked && Object.keys(state.materialById).length > 0;
+  for (const mesh of state.meshObjects) {
+    if (useTextured) {
+      const matId = mesh.userData.materialIds?.[0];
+      const matRecord = matId ? state.materialById[matId] : null;
+      const tex = matRecord?._texture ?? null;
+      if (tex) {
+        if (!state.texturedMaterialCache[matId]) {
+          state.texturedMaterialCache[matId] = new THREE.MeshBasicMaterial({
+            map: tex,
+            side: THREE.DoubleSide,
+          });
+        }
+        mesh.material = state.texturedMaterialCache[matId];
+      } else {
+        mesh.material = meshMaterial;
+      }
+    } else {
+      mesh.material = meshMaterial;
+    }
+  }
+  for (const wire of state.wireObjects) {
+    wire.visible = !useTextured;
+  }
+  requestDraw();
+}
+
+function initializeMaterials(data) {
+  state.materialById = {};
+  const loader = new THREE.TextureLoader();
+  for (const mat of data.materials || []) {
+    let texture = null;
+    if (mat.mainTexture?.path) {
+      const texUrl = materialsUrl.replace(/materials\.json.*$/, mat.mainTexture.path);
+      texture = loader.load(texUrl, () => {
+        if (showTextured.checked) applyMeshMaterials();
+      });
+      texture.colorSpace = THREE.SRGBColorSpace;
+    }
+    state.materialById[mat.id] = { ...mat, _texture: texture };
+  }
+  applyMeshMaterials();
+  if (state.data) updateSummary();
 }
 
 function materialForTile(tile) {
@@ -274,6 +437,11 @@ function clearGroup(group) {
       if (!shared) child.material.dispose();
     }
   }
+  if (group === meshGroup) {
+    for (const mat of Object.values(state.texturedMaterialCache)) mat.dispose();
+    state.texturedMaterialCache = {};
+    state.wireObjects = [];
+  }
 }
 
 function makeTileLabel(text) {
@@ -326,21 +494,27 @@ function buildGrid(data) {
 function buildMeshes(data) {
   clearGroup(meshGroup);
   state.meshObjects = [];
+  state.wireObjects = [];
   for (const instance of data.instances || []) {
     const geometry = new THREE.BufferGeometry();
     geometry.setAttribute("position", new THREE.Float32BufferAttribute(instance.vertices || [], 3));
+    if (instance.uvs && instance.uvs.length > 0) {
+      geometry.setAttribute("uv", new THREE.Float32BufferAttribute(instance.uvs, 2));
+    }
     geometry.setIndex(instance.indices || []);
     geometry.computeVertexNormals();
     geometry.computeBoundingSphere();
 
     const mesh = new THREE.Mesh(geometry, meshMaterial);
     mesh.renderOrder = 1;
+    mesh.userData.materialIds = instance.materialIds || [];
     meshGroup.add(mesh);
     state.meshObjects.push(mesh);
 
     const wire = new THREE.LineSegments(new THREE.WireframeGeometry(geometry), meshWireMaterial);
     wire.renderOrder = 2;
     meshGroup.add(wire);
+    state.wireObjects.push(wire);
   }
 }
 
@@ -459,12 +633,16 @@ function updateSummary() {
   const extent = data.stats.extent;
   const colliderStats = state.colliders ? state.colliders.stats : null;
   const meshStats = state.meshes ? state.meshes.stats : null;
+  const matStats = Object.keys(state.materialById).length > 0
+    ? `${Object.keys(state.materialById).length} materials`
+    : "Not loaded";
   setDefinitionList(summary, [
     ["Map", data.mapName],
     ["Bundle", metadata.bundle],
     ["Tiles", data.stats.tileCount],
     ["Colliders", colliderStats ? `${colliderStats.colliderCount} (${colliderStats.drawableCount} drawable)` : "Not loaded"],
     ["Meshes", meshStats ? `${meshStats.meshInstanceCount} (${meshStats.triangleCount} tris)` : "Not loaded"],
+    ["Materials", matStats],
     ["Size", mapTool.width && mapTool.height ? `${mapTool.width} x ${mapTool.height}` : "-"],
     ["Walk", JSON.stringify(data.stats.walkabilityCounts)],
     ["Min", `${extent.min.x}, ${extent.min.y}, ${extent.min.z}`],
@@ -510,7 +688,7 @@ function loadOptionalJson(url, handler, label) {
 }
 
 function loadLevelIndex() {
-  return fetch(levelIndexUrl)
+  return fetch(levelIndexUrl, { cache: "no-store" })
     .then((response) => {
       if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
       return response.json();
@@ -585,10 +763,15 @@ canvas.addEventListener("wheel", (event) => {
 
 showLabels.addEventListener("change", requestDraw);
 showMeshes.addEventListener("change", requestDraw);
+showTextured.addEventListener("change", applyMeshMaterials);
 showColliders.addEventListener("change", requestDraw);
 showEnter.addEventListener("change", requestDraw);
 showNoEnter.addEventListener("change", requestDraw);
 resetView.addEventListener("click", resetCamera);
+extractClose.addEventListener("click", () => {
+  extractModal.hidden = true;
+  loadLevelIndex();
+});
 window.addEventListener("resize", resizeRenderer);
 
 resizeRenderer();
@@ -602,6 +785,7 @@ fetch(dataUrl)
   .then(() => Promise.all([
     loadOptionalJson(collidersUrl, initializeColliders, "Collider overlay"),
     loadOptionalJson(meshesUrl, initializeMeshes, "Mesh layer"),
+    loadOptionalJson(materialsUrl, initializeMaterials, "Material data"),
   ]))
   .catch((error) => {
     setStatus(`Could not load ${dataUrl}: ${error.message}`);
