@@ -48,7 +48,7 @@ input {
 }
 
 #levelCanvas.rotating {
-  cursor: ew-resize;
+  cursor: move;
 }
 
 .toolbar {
@@ -90,13 +90,25 @@ input {
 .status {
   position: absolute;
   left: 12px;
-  bottom: 12px;
+  bottom: 40px;
   max-width: min(520px, calc(100% - 24px));
   padding: 7px 9px;
   border-radius: 5px;
   background: rgba(24, 28, 33, 0.86);
   color: #cdd4d8;
   font-size: 13px;
+}
+
+.render-stats {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  padding: 7px 9px;
+  border-radius: 5px;
+  background: rgba(24, 28, 33, 0.86);
+  color: #d7dee2;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
 }
 
 .inspector {
