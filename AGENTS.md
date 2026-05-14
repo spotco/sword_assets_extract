@@ -16,19 +16,25 @@ Immediate pipeline:
 5. Add hover/selection so each tile shows original path, position, type, and collider metadata.
 6. Render box collider overlays for visual alignment checks.
 7. Export readable embedded Unity meshes to `meshes.json` and render them as an untextured debug layer.
-8. Next milestone: resolve dependent mesh/material bundles and move toward textured glTF/GLB export.
+8. Load map dependency bundles from `asset_dep.unity3d` while exporting meshes, but export only objects from the requested map bundle.
+9. Write `extracted/web_levels/index.json` so the viewer can show all battle maps and grey out maps that have not been exported.
+10. Next milestone: extract material/texture metadata and move toward textured glTF/GLB export.
 
 Mesh export caveat:
 
 - Unity static batching reuses large `Combined Mesh` assets across many renderers.
 - For static-batched renderers, only export `m_StaticBatchInfo.firstSubMesh` through `subMeshCount`.
 - Static-batched combined vertices are already in scene space; do not apply the GameObject transform again.
+- Map bundles reference shared meshes in dependency bundles such as `share/fbx/share_fbx*`.
+  `export_mesh_json.py` resolves those through `asset_dep.unity3d`.
+- Remaining `unity default resources` misses are Unity built-ins, not normal game asset bundles.
 
 Useful first target:
 
 ```powershell
 python .\level_probe\export_grid_json.py --map stage_city-ca-da00101
 python .\level_probe\export_mesh_json.py --map stage_city-ca-da00101
+python .\level_probe\export_level_index.py
 python -m http.server 5173
 ```
 

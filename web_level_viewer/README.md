@@ -9,6 +9,7 @@ Generate the default map data:
 ```powershell
 python .\level_probe\export_grid_json.py --map stage_city-ca-da00101
 python .\level_probe\export_mesh_json.py --map stage_city-ca-da00101
+python .\level_probe\export_level_index.py
 ```
 
 This writes:
@@ -16,10 +17,18 @@ This writes:
 - `extracted/web_levels/<map>/grid.json`
 - `extracted/web_levels/<map>/colliders.json`
 - `extracted/web_levels/<map>/meshes.json`
+- `extracted/web_levels/index.json`
 
 The mesh exporter handles Unity static batching by drawing only the renderer's
 assigned submesh range. This avoids duplicating the whole combined mesh for
 every `MeshFilter`.
+
+It also reads `asset_dep.unity3d` and loads dependency bundles while exporting,
+so shared meshes in bundles such as `share/fbx/share_fbx*` can be resolved
+without exporting unrelated objects from those shared bundles.
+
+The viewer uses `index.json` for the left map menu. Exported maps are clickable;
+maps without exported `grid.json` are shown disabled.
 
 Serve the repository root:
 

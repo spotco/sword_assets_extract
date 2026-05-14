@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 
 from common import safe_name, write_json
+from export_level_index import build_index
 
 
 REPORTS = Path("level_probe/reports")
@@ -283,12 +284,14 @@ def main() -> int:
     write_json(out_dir / "grid.json", payload)
     colliders_payload = build_colliders_payload(map_name, colliders_path, scene_objects_path, payload["tiles"])
     write_json(out_dir / "colliders.json", colliders_payload)
+    write_json(args.out_root / "index.json", build_index(args.out_root))
     print(f"Wrote {out_dir / 'grid.json'} with {len(payload['tiles'])} tiles")
     print(
         f"Wrote {out_dir / 'colliders.json'} with "
         f"{colliders_payload['stats']['colliderCount']} colliders "
         f"({colliders_payload['stats']['drawableCount']} drawable)"
     )
+    print(f"Updated {args.out_root / 'index.json'}")
     return 0
 
 

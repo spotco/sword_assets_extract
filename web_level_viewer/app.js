@@ -5,6 +5,8 @@ const summary = document.getElementById("summary");
 const selection = document.getElementById("selection");
 const status = document.getElementById("status");
 const renderStats = document.getElementById("renderStats");
+const levelCount = document.getElementById("levelCount");
+const levelList = document.getElementById("levelList");
 const showLabels = document.getElementById("showLabels");
 const showMeshes = document.getElementById("showMeshes");
 const showColliders = document.getElementById("showColliders");
@@ -17,6 +19,7 @@ const mapName = params.get("map") || "stage_city-ca-da00101";
 const dataUrl = params.get("data") || `/extracted/web_levels/${mapName}/grid.json`;
 const collidersUrl = params.get("colliders") || dataUrl.replace(/grid\.json(?:\?.*)?$/, "colliders.json");
 const meshesUrl = params.get("meshes") || dataUrl.replace(/grid\.json(?:\?.*)?$/, "meshes.json");
+const levelIndexUrl = params.get("index") || "/extracted/web_levels/index.json";
 
 const state = {
   data: null,
@@ -40,6 +43,7 @@ const state = {
   tileLabels: [],
   colliderObjects: [],
   meshObjects: [],
+  levelIndex: null,
 };
 
 const colors = {
@@ -107,6 +111,53 @@ function setDefinitionList(node, rows) {
     dd.textContent = value == null || value === "" ? "-" : String(value);
     node.append(dt, dd);
   }
+}
+
+function mapUrl(levelMapName) {
+  const next = new URL(window.location.href);
+  next.searchParams.set("map", levelMapName);
+  next.searchParams.delete("data");
+  next.searchParams.delete("colliders");
+  next.searchParams.delete("meshes");
+  return next.toString();
+}
+
+function renderLevelMenu(index) {
+  state.levelIndex = index;
+  levelList.replaceChildren();
+  levelCount.textContent = `${index.extractedCount} / ${index.levelCount} extracted`;
+
+  for (const level of index.levels || []) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = [
+      "level-item",
+      level.isExtracted ? "is-extracted" : "is-missing",
+      level.mapName === mapName ? "is-active" : "",
+    ].filter(Boolean).join(" ");
+    button.textContent = level.mapName;
+    button.title = level.isExtracted ? level.bundle : `${level.bundle} (not extracted)`;
+    button.disabled = !level.isExtracted;
+    if (level.isExtracted) {
+      button.addEventListener("click", () => {
+        if (level.mapName !== mapName) {
+          window.location.href = mapUrl(level.mapName);
+        }
+      });
+    }
+    levelList.append(button);
+  }
+}
+
+function renderFallbackLevelMenu() {
+  levelList.replaceChildren();
+  levelCount.textContent = "Index missing";
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "level-item is-extracted is-active";
+  button.textContent = mapName;
+  button.title = "Current map";
+  levelList.append(button);
 }
 
 function materialForTile(tile) {
@@ -458,6 +509,18 @@ function loadOptionalJson(url, handler, label) {
     });
 }
 
+function loadLevelIndex() {
+  return fetch(levelIndexUrl)
+    .then((response) => {
+      if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+      return response.json();
+    })
+    .then(renderLevelMenu)
+    .catch(() => {
+      renderFallbackLevelMenu();
+    });
+}
+
 canvas.addEventListener("mousedown", (event) => {
   event.preventDefault();
   state.dragMode = event.button === 2 ? "rotate" : "pan";
@@ -529,6 +592,7 @@ resetView.addEventListener("click", resetCamera);
 window.addEventListener("resize", resizeRenderer);
 
 resizeRenderer();
+loadLevelIndex();
 fetch(dataUrl)
   .then((response) => {
     if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 from collections import Counter
 from pathlib import Path
 from typing import Any
@@ -8,10 +9,12 @@ from typing import Any
 import UnityPy
 from UnityPy.helpers.MeshHelper import MeshHandler
 
-from common import rel, resolve_asset_path, safe_name, write_json
+from common import ASSETS_ROOT, rel, resolve_asset_path, safe_name, write_json
+from export_level_index import build_index
 
 
 OUT_ROOT = Path("extracted/web_levels")
+ASSET_DEP_BUNDLE = ASSETS_ROOT / "asset_dep.unity3d"
 
 ObjectKey = tuple[int, int]
 Vec3 = tuple[float, float, float]
@@ -102,6 +105,37 @@ def read_objects(env: Any) -> dict[ObjectKey, Any]:
         except Exception:
             continue
     return objects
+
+
+def asset_file_names(bundle: Path) -> set[str]:
+    env = UnityPy.load(str(bundle))
+    return {asset.name for asset in env.assets}
+
+
+def load_asset_dependency_table() -> dict[str, list[str]]:
+    if not ASSET_DEP_BUNDLE.exists():
+        return {}
+    env = UnityPy.load(str(ASSET_DEP_BUNDLE))
+    for obj in env.objects:
+        if obj.type.name != "TextAsset":
+            continue
+        data = obj.read()
+        if getattr(data, "m_Name", "") == "asset_dep":
+            return json.loads(data.m_Script)
+    return {}
+
+
+def dependency_paths(bundle: Path) -> list[Path]:
+    key = rel(bundle)
+    if key.lower().endswith(".unity3d"):
+        key = key[:-8]
+    deps = load_asset_dependency_table().get(key, [])
+    paths = []
+    for dep in deps:
+        path = ASSETS_ROOT / f"{dep}.unity3d"
+        if path.exists():
+            paths.append(path)
+    return paths
 
 
 def build_indexes(env: Any, objects: dict[ObjectKey, Any]):
@@ -269,12 +303,16 @@ def main() -> int:
     parser.add_argument("--bundle", type=Path, help="Full path or path relative to the game assets folder.")
     parser.add_argument("--out-root", type=Path, default=OUT_ROOT, help="Output root for web level folders.")
     parser.add_argument("--visible-only", action="store_true", help="Skip MeshFilter objects without an enabled MeshRenderer.")
+    parser.add_argument("--no-dependencies", action="store_true", help="Do not load dependency bundles from asset_dep.unity3d.")
     args = parser.parse_args()
 
     map_name = safe_name(args.map_name)
     bundle = resolve_asset_path(args.bundle or Path("battle/map") / f"{map_name}.unity3d")
 
-    env = UnityPy.load(str(bundle))
+    main_asset_names = asset_file_names(bundle)
+    deps = [] if args.no_dependencies else dependency_paths(bundle)
+    env = UnityPy.load(*[str(path) for path in [bundle, *deps]])
+    target_asset_ids = {id(asset) for asset in env.assets if asset.name in main_asset_names}
     objects = read_objects(env)
     game_objects, transforms, transform_by_go, mesh_filters, mesh_renderers_by_go = build_indexes(env, objects)
 
@@ -282,6 +320,8 @@ def main() -> int:
     skipped = []
     skipped_reasons: Counter[str] = Counter()
     for go_key, (mesh_filter_key, mesh_filter) in mesh_filters.items():
+        if mesh_filter_key[0] not in target_asset_ids:
+            continue
         renderer_pair = mesh_renderers_by_go.get(go_key)
         renderer = renderer_pair[1] if renderer_pair else None
         if args.visible_only and (renderer is None or not getattr(renderer, "m_Enabled", False)):
@@ -316,9 +356,13 @@ def main() -> int:
     payload = {
         "schemaVersion": 1,
         "mapName": map_name,
-        "source": {"bundle": rel(bundle), "resolvedBundle": str(bundle)},
+        "source": {
+            "bundle": rel(bundle),
+            "resolvedBundle": str(bundle),
+            "dependencyBundles": [rel(path) for path in deps],
+        },
         "stats": {
-            "meshFilterCount": len(mesh_filters),
+            "meshFilterCount": len([key for key in mesh_filters if key[0] in target_asset_ids]),
             "meshInstanceCount": len(instances),
             "skippedCount": len(skipped),
             "skippedReasons": dict(skipped_reasons.most_common()),
@@ -331,11 +375,13 @@ def main() -> int:
 
     out_dir = args.out_root / map_name
     write_json(out_dir / "meshes.json", payload)
+    write_json(args.out_root / "index.json", build_index(args.out_root))
     print(
         f"Wrote {out_dir / 'meshes.json'} with {payload['stats']['meshInstanceCount']} readable "
         f"mesh instances, {payload['stats']['triangleCount']} triangles, "
         f"{payload['stats']['skippedCount']} skipped"
     )
+    print(f"Updated {args.out_root / 'index.json'}")
     return 0
 
 
