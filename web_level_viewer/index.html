@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sword Level Viewer</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="app">
+      <section class="viewport" aria-label="Level viewport">
+        <canvas id="levelCanvas"></canvas>
+        <div class="toolbar">
+          <button id="resetView" type="button" title="Reset view">Reset</button>
+          <label><input id="showLabels" type="checkbox"> Labels</label>
+          <label><input id="showMeshes" type="checkbox" checked> Meshes</label>
+          <label><input id="showColliders" type="checkbox" checked> Colliders</label>
+          <label><input id="showNoEnter" type="checkbox" checked> No enter</label>
+          <label><input id="showEnter" type="checkbox" checked> Enter</label>
+        </div>
+        <div id="status" class="status">Loading</div>
+      </section>
+      <aside class="inspector">
+        <h1>Sword Level Viewer</h1>
+        <dl id="summary"></dl>
+        <hr>
+        <h2>Selected Tile</h2>
+        <dl id="selection"></dl>
+      </aside>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
