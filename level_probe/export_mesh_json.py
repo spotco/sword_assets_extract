@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 from collections import Counter
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -15,6 +16,7 @@ from export_level_index import build_index
 
 OUT_ROOT = Path("extracted/web_levels")
 ASSET_DEP_BUNDLE = ASSETS_ROOT / "asset_dep.unity3d"
+TEXTURE_DEBUG_LOG = Path("temp/mesh_texture_debug.log")
 
 MAIN_TEX_SLOTS = {"_MainTex", "_BaseMap", "_AlbedoMap", "_DiffuseMap"}
 
@@ -41,6 +43,17 @@ def ref_key(ref: Any) -> ObjectKey | None:
 
 def object_name(data: Any) -> str:
     return getattr(data, "m_Name", "") or getattr(data, "name", "") or ""
+
+
+def append_debug_log(event: str, details: dict[str, Any]) -> None:
+    TEXTURE_DEBUG_LOG.parent.mkdir(parents=True, exist_ok=True)
+    record = {
+        "ts": datetime.now(timezone.utc).isoformat(),
+        "event": event,
+        "details": details,
+    }
+    with TEXTURE_DEBUG_LOG.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(record, ensure_ascii=False, sort_keys=True) + "\n")
 
 
 def vec3(value: Any, default: Vec3 = (0.0, 0.0, 0.0)) -> Vec3:
@@ -400,11 +413,22 @@ def export_mesh_instance(
     indices: list[int] = []
     submeshes = []
     offset = 0
+    material_ids = [
+        str(pptr_id(pptr))
+        for pptr in (getattr(renderer, "m_Materials", []) or [])
+        if pptr_id(pptr) is not None
+    ] if renderer else []
     for selected_index, triangles in enumerate(selected_groups):
         submesh_index = static_first + selected_index if is_static_batch_slice else selected_index
+        material_index = selected_index if is_static_batch_slice else submesh_index
         for a, b, c in triangles:
             indices.extend([remap[int(a)], remap[int(b)], remap[int(c)]])
-        submeshes.append({"index": submesh_index, "triangleCount": len(triangles), "start": offset})
+        submeshes.append({
+            "index": submesh_index,
+            "triangleCount": len(triangles),
+            "start": offset,
+            "materialId": material_ids[material_index] if material_index < len(material_ids) else None,
+        })
         offset += len(triangles) * 3
 
     go = game_objects.get(go_key)
@@ -422,11 +446,7 @@ def export_mesh_instance(
             "subMeshCount": static_count,
         },
         "rendererEnabled": getattr(renderer, "m_Enabled", "") if renderer else "",
-        "materialIds": [
-            str(pptr_id(pptr))
-            for pptr in (getattr(renderer, "m_Materials", []) or [])
-            if pptr_id(pptr) is not None
-        ] if renderer else [],
+        "materialIds": material_ids,
         "sourceVertexCount": handler.m_VertexCount,
         "vertexCount": len(used_indices),
         "triangleCount": len(indices) // 3,
@@ -526,6 +546,46 @@ def main() -> int:
 
     materials_payload = build_materials_payload(map_name, instances, objects, types, out_dir)
     write_json(out_dir / "materials.json", materials_payload)
+    material_by_id = {mat["id"]: mat for mat in materials_payload.get("materials", [])}
+    building_instances = [
+        {
+            "id": inst["id"],
+            "name": inst["name"],
+            "path": inst["path"],
+            "meshId": inst["meshId"],
+            "meshName": inst["meshName"],
+            "coordinateSpace": inst["coordinateSpace"],
+            "staticBatch": inst["staticBatch"],
+            "vertexCount": inst["vertexCount"],
+            "triangleCount": inst["triangleCount"],
+            "materialIds": inst["materialIds"],
+            "submeshes": inst["submeshes"],
+            "materials": [
+                {
+                    "id": mat_id,
+                    "name": material_by_id.get(mat_id, {}).get("name"),
+                    "shader": material_by_id.get(mat_id, {}).get("shader"),
+                    "mainTexture": material_by_id.get(mat_id, {}).get("mainTexture"),
+                    "textureSlots": sorted((material_by_id.get(mat_id, {}).get("textures") or {}).keys()),
+                }
+                for mat_id in inst["materialIds"]
+            ],
+        }
+        for inst in instances
+        if "building" in (inst.get("name") or "").lower()
+        or "building" in (inst.get("path") or "").lower()
+        or "building" in (inst.get("meshName") or "").lower()
+    ]
+    append_debug_log("mesh-export", {
+        "mapName": map_name,
+        "bundle": rel(bundle),
+        "dependencyBundles": [rel(path) for path in deps],
+        "meshStats": payload["stats"],
+        "materialStats": materials_payload["stats"],
+        "buildingInstanceCount": len(building_instances),
+        "buildingInstances": building_instances,
+        "skipped": skipped[:100],
+    })
     print(
         f"Wrote {out_dir / 'materials.json'} with {materials_payload['stats']['materialCount']} materials, "
         f"{materials_payload['stats']['textureCount']} textures "

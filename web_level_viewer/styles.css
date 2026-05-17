@@ -273,7 +273,7 @@ input {
 }
 
 .toolbar button,
-.toolbar label {
+.layer-menu summary {
   min-height: 32px;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 5px;
@@ -281,17 +281,72 @@ input {
   color: #f5f7f8;
 }
 
-.toolbar button {
+.toolbar button,
+.layer-menu summary {
   padding: 0 11px;
   cursor: pointer;
 }
 
-.toolbar label {
+.layer-menu {
+  position: relative;
+}
+
+.layer-menu summary {
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+}
+
+.layer-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.layer-menu summary::after {
+  content: "";
+  width: 0;
+  height: 0;
+  margin-left: 8px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #cfd6da;
+}
+
+.layer-menu[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.layer-menu__content {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  min-width: 170px;
+  padding: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 6px;
+  background: rgba(24, 28, 33, 0.96);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+}
+
+.layer-menu__content label {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 0 9px;
+  width: 100%;
+  min-height: 30px;
+  padding: 0 7px;
+  border-radius: 4px;
+  color: #edf3f5;
   white-space: nowrap;
+}
+
+.layer-menu__content label:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.show-all-meshes {
+  color: #d9f2e7;
+  border-color: rgba(111, 201, 160, 0.42);
+  background: rgba(61, 128, 96, 0.28);
 }
 
 .status {
@@ -316,6 +371,32 @@ input {
   color: #d7dee2;
   font-size: 13px;
   font-variant-numeric: tabular-nums;
+}
+
+.mesh-tooltip {
+  position: absolute;
+  z-index: 5;
+  max-width: 320px;
+  padding: 7px 9px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 5px;
+  background: rgba(18, 22, 26, 0.92);
+  color: #edf3f5;
+  font-size: 12px;
+  line-height: 1.35;
+  pointer-events: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+}
+
+.mesh-tooltip__name {
+  font-weight: 650;
+}
+
+.mesh-tooltip__meta {
+  margin-top: 3px;
+  color: #9fb0b8;
+  font-family: ui-monospace, "Cascadia Code", monospace;
+  overflow-wrap: anywhere;
 }
 
 .inspector {
@@ -361,6 +442,58 @@ dd {
   margin: 0;
   overflow-wrap: anywhere;
   color: #f0f3f4;
+}
+
+.inspector-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.inspector-section-header h2 {
+  margin: 0 0 12px;
+}
+
+.inspector-action {
+  min-height: 28px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #f5f7f8;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.inspector-action:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+
+.mesh-materials {
+  margin-top: 12px;
+}
+
+.mesh-material-slot {
+  padding: 8px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  font-size: 12px;
+}
+
+.mesh-material-slot__title {
+  color: #f0f3f4;
+  font-weight: 650;
+}
+
+.mesh-material-slot__meta {
+  margin-top: 4px;
+  color: #a8b5bc;
+  font-family: ui-monospace, "Cascadia Code", monospace;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }
 
 @media (max-width: 820px) {

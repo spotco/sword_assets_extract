@@ -19,15 +19,22 @@
         <canvas id="levelCanvas"></canvas>
         <div class="toolbar">
           <button id="resetView" type="button" title="Reset view">Reset</button>
-          <label><input id="showLabels" type="checkbox"> Labels</label>
-          <label><input id="showMeshes" type="checkbox" checked> Meshes</label>
-          <label><input id="showTextured" type="checkbox" checked> Textured</label>
-          <label><input id="showColliders" type="checkbox"> Colliders</label>
-          <label><input id="showNoEnter" type="checkbox"> No enter</label>
-          <label><input id="showEnter" type="checkbox"> Enter</label>
+          <details id="layerMenu" class="layer-menu">
+            <summary>Layers</summary>
+            <div class="layer-menu__content">
+              <label><input id="showLabels" type="checkbox"> Labels</label>
+              <label><input id="showMeshes" type="checkbox" checked> Meshes</label>
+              <label><input id="showTextured" type="checkbox" checked> Textured</label>
+              <label><input id="showColliders" type="checkbox"> Colliders</label>
+              <label><input id="showNoEnter" type="checkbox"> No enter</label>
+              <label><input id="showEnter" type="checkbox"> Enter</label>
+            </div>
+          </details>
+          <button id="showAllMeshes" type="button" class="show-all-meshes" hidden>Show all meshes</button>
         </div>
         <div id="status" class="status">Loading</div>
         <div id="renderStats" class="render-stats">0 polygons</div>
+        <div id="meshTooltip" class="mesh-tooltip" hidden></div>
       </section>
       <aside class="inspector">
         <h1>Sword Level Viewer</h1>
@@ -35,6 +42,13 @@
         <hr>
         <h2>Selected Tile</h2>
         <dl id="selection"></dl>
+        <hr>
+        <div class="inspector-section-header">
+          <h2>Selected Mesh</h2>
+          <button id="hideSelectedMesh" type="button" class="inspector-action" disabled>Hide</button>
+        </div>
+        <dl id="meshSelection"></dl>
+        <div id="meshMaterials" class="mesh-materials"></div>
       </aside>
     </main>
     <div id="extractModal" class="modal-overlay" hidden>

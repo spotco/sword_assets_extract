@@ -11,6 +11,7 @@ import subprocess
 import sys
 import threading
 import urllib.parse
+from datetime import datetime, timezone
 from pathlib import Path
 
 PORT = 5173
@@ -18,6 +19,7 @@ ROOT = Path(__file__).parent
 
 
 INDEX_PATH = ROOT / "extracted" / "web_levels" / "index.json"
+VIEW_LOG_PATH = ROOT / "temp" / "web_level_viewer_debug.log"
 
 
 def bundle_for_map(map_name: str) -> str:
@@ -46,6 +48,10 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
     def do_POST(self):
         parsed = urllib.parse.urlparse(self.path)
+        if parsed.path == "/api/view-log":
+            self._write_view_log()
+            return
+
         if parsed.path != "/api/extract":
             self.send_error(404)
             return
@@ -98,6 +104,28 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         payload = f"event: {event}\ndata: {json.dumps(data)}\n\n"
         self.wfile.write(payload.encode())
         self.wfile.flush()
+
+    def _write_view_log(self):
+        try:
+            length = int(self.headers.get("Content-Length", "0") or "0")
+            if length <= 0 or length > 64 * 1024:
+                self.send_error(400, "Invalid log payload size")
+                return
+            raw = self.rfile.read(length)
+            payload = json.loads(raw.decode("utf-8"))
+            record = {
+                "ts": datetime.now(timezone.utc).isoformat(),
+                "client": self.client_address[0] if self.client_address else "",
+                "event": payload.get("event"),
+                "details": payload.get("details"),
+            }
+            VIEW_LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
+            with VIEW_LOG_PATH.open("a", encoding="utf-8") as f:
+                f.write(json.dumps(record, ensure_ascii=False, sort_keys=True) + "\n")
+            self.send_response(204)
+            self.end_headers()
+        except Exception as exc:
+            self.send_error(400, str(exc))
 
     def log_message(self, fmt, *args):
         try:
