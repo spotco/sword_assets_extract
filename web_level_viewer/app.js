@@ -46,6 +46,8 @@ const state = {
   yaw: Math.PI / 4,
   pitch: THREE.MathUtils.degToRad(58),
   distance: 42,
+  cameraUp: new THREE.Vector3(0, 1, 0),
+  mirrorCameraX: false,
   zoom: 28,
   target: new THREE.Vector3(0, 0, 0),
   dragMode: null,
@@ -370,7 +372,7 @@ function updateCamera() {
     state.target.y + Math.sin(state.pitch) * state.distance,
     state.target.z + Math.cos(state.yaw) * horizontal,
   );
-  camera.up.set(0, 1, 0);
+  camera.up.copy(state.cameraUp);
   camera.lookAt(state.target);
   camera.updateMatrixWorld();
 }
@@ -381,8 +383,8 @@ function resizeRenderer() {
   const height = Math.max(1, rect.height);
   const ratio = width / height;
   const halfHeight = state.zoom / 2;
-  camera.left = -halfHeight * ratio;
-  camera.right = halfHeight * ratio;
+  camera.left = state.mirrorCameraX ? halfHeight * ratio : -halfHeight * ratio;
+  camera.right = state.mirrorCameraX ? -halfHeight * ratio : halfHeight * ratio;
   camera.top = halfHeight;
   camera.bottom = -halfHeight;
   camera.updateProjectionMatrix();
@@ -404,6 +406,10 @@ function requestMovement() {
   window.requestAnimationFrame(updateMovement);
 }
 
+function screenXSign() {
+  return state.mirrorCameraX ? -1 : 1;
+}
+
 function updateMovement(now) {
   const elapsed = Math.min(0.05, Math.max(0, (now - state.lastMovementTime) / 1000));
   state.lastMovementTime = now;
@@ -418,7 +424,7 @@ function updateMovement(now) {
   if (right || forward) {
     const length = Math.hypot(right, forward) || 1;
     const speed = state.zoom * 0.85;
-    moveCameraByView((right / length) * speed * elapsed, (forward / length) * speed * elapsed);
+    moveCameraByView((right / length) * speed * elapsed * screenXSign(), (forward / length) * speed * elapsed);
     requestDraw();
     window.requestAnimationFrame(updateMovement);
     return;
@@ -832,11 +838,12 @@ function logViewerEvent(event, details) {
 function panByPixels(dx, dy) {
   const rect = canvas.getBoundingClientRect();
   const worldPerPixel = state.zoom / Math.max(1, rect.height);
+  const signedDx = dx * screenXSign();
   const right = new THREE.Vector3();
   const up = new THREE.Vector3();
   camera.updateMatrixWorld();
   camera.matrixWorld.extractBasis(right, up, new THREE.Vector3());
-  state.target.addScaledVector(right, -dx * worldPerPixel);
+  state.target.addScaledVector(right, -signedDx * worldPerPixel);
   state.target.addScaledVector(up, dy * worldPerPixel);
 }
 
@@ -858,9 +865,14 @@ function resetCamera() {
   const forward = defaultCamera?.forward;
   if (forward && Number.isFinite(forward.x) && Number.isFinite(forward.y) && Number.isFinite(forward.z)) {
     const back = new THREE.Vector3(-forward.x, -forward.y, -forward.z).normalize();
+    const up = defaultCamera.up
+      ? new THREE.Vector3(defaultCamera.up.x, defaultCamera.up.y, defaultCamera.up.z).normalize()
+      : new THREE.Vector3(0, 1, 0);
     const horizontal = Math.hypot(back.x, back.z);
     state.yaw = Math.atan2(back.x, back.z);
     state.pitch = Math.atan2(back.y, horizontal);
+    state.cameraUp.copy(up);
+    state.mirrorCameraX = true;
     state.distance = Math.max(20, Math.hypot(
       center.x - (defaultCamera.position?.x ?? center.x),
       center.y - (defaultCamera.position?.y ?? center.y),
@@ -870,6 +882,8 @@ function resetCamera() {
   } else {
     state.yaw = Math.PI / 4;
     state.pitch = THREE.MathUtils.degToRad(58);
+    state.cameraUp.set(0, 1, 0);
+    state.mirrorCameraX = false;
     state.zoom = 24;
   }
   resizeRenderer();
@@ -1002,7 +1016,7 @@ canvas.addEventListener("mousemove", (event) => {
     const dy = point.y - state.lastMouse.y;
     if (Math.abs(dx) + Math.abs(dy) > 2) state.movedDuringDrag = true;
     if (state.dragMode === "rotate") {
-      state.yaw -= dx * 0.008;
+      state.yaw -= dx * screenXSign() * 0.008;
       state.pitch = THREE.MathUtils.clamp(state.pitch + dy * 0.006, THREE.MathUtils.degToRad(8), THREE.MathUtils.degToRad(82));
     } else {
       panByPixels(dx, dy);
