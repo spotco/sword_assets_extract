@@ -87,6 +87,7 @@ const state = {
   hiddenMeshCount: 0,
   materialById: {},
   texturedMaterialCache: {},
+  textureLoadStats: { total: 0, loaded: 0, failed: 0 },
   levelIndex: null,
 };
 
@@ -216,6 +217,7 @@ function mapUrl(levelMapName) {
   next.searchParams.delete("data");
   next.searchParams.delete("colliders");
   next.searchParams.delete("meshes");
+  next.searchParams.delete("materials");
   return next.toString();
 }
 
@@ -382,7 +384,7 @@ function renderFallbackLevelMenu() {
 }
 
 function applyMeshMaterials() {
-  const useTextured = showTextured.checked && Object.keys(state.materialById).length > 0;
+  const useTextured = showTextured.checked && hasReadyTexturedMaterials();
   for (const mesh of state.meshObjects) {
     if (useTextured) {
       const materials = mesh.userData.materialIds.map((matId) => materialForMeshId(matId) || meshMaterial);
@@ -404,6 +406,7 @@ function applyMeshMaterials() {
 
 function materialForMeshId(matId) {
   const matRecord = matId ? state.materialById[matId] : null;
+  if (!matRecord?._textureReady) return null;
   const tex = matRecord?._texture ?? null;
   if (!tex) return null;
   if (!state.texturedMaterialCache[matId]) {
@@ -415,27 +418,65 @@ function materialForMeshId(matId) {
   return state.texturedMaterialCache[matId];
 }
 
+function hasReadyTexturedMaterials() {
+  return Object.values(state.materialById).some((mat) => mat._textureReady);
+}
+
+function loadTextureWithRetry(loader, url, onLoad, onError, onTexture, attempt = 1) {
+  const texture = loader.load(url, onLoad, undefined, (err) => {
+    if (attempt < 3) {
+      window.setTimeout(() => {
+        loadTextureWithRetry(loader, url, onLoad, onError, onTexture, attempt + 1);
+      }, 250 * attempt);
+      return;
+    }
+    onError(err);
+  });
+  texture.colorSpace = THREE.SRGBColorSpace;
+  onTexture(texture);
+  return texture;
+}
+
 function initializeMaterials(data) {
   state.materialById = {};
+  state.textureLoadStats = { total: 0, loaded: 0, failed: 0 };
   const loader = new THREE.TextureLoader();
   for (const mat of data.materials || []) {
-    let texture = null;
+    const record = { ...mat, _texture: null, _textureReady: false, _textureError: null };
+    state.materialById[mat.id] = record;
     if (mat.mainTexture?.path) {
       const texUrl = materialsUrl.replace(/materials\.json.*$/, mat.mainTexture.path);
-      texture = loader.load(texUrl, () => {
-        if (showTextured.checked) applyMeshMaterials();
-      }, undefined, (err) => {
-        logViewerEvent("texture-load-error", {
-          mapName,
-          materialId: mat.id,
-          materialName: mat.name,
-          texturePath: mat.mainTexture.path,
-          error: err?.message || String(err),
-        });
-      });
-      texture.colorSpace = THREE.SRGBColorSpace;
+      state.textureLoadStats.total += 1;
+      loadTextureWithRetry(
+        loader,
+        texUrl,
+        () => {
+          if (!record._textureReady) {
+            record._textureReady = true;
+            state.textureLoadStats.loaded += 1;
+          }
+          if (showTextured.checked) applyMeshMaterials();
+          updateSummary();
+        },
+        (err) => {
+          const record = state.materialById[mat.id];
+          if (record) record._textureError = err?.message || String(err);
+          state.textureLoadStats.failed += 1;
+          logViewerEvent("texture-load-error", {
+            mapName,
+            materialId: mat.id,
+            materialName: mat.name,
+            texturePath: mat.mainTexture.path,
+            error: err?.message || String(err),
+          });
+          if (showTextured.checked) applyMeshMaterials();
+          updateSummary();
+        },
+        (texture) => {
+          record._texture = texture;
+        },
+      );
     }
-    state.materialById[mat.id] = { ...mat, _texture: texture };
   }
   applyMeshMaterials();
   if (state.selectedMesh) updateSelectedMesh(state.selectedMesh);
@@ -810,7 +851,7 @@ function renderMeshMaterialSlots(instance) {
 }
 
 function updateMeshVisibility() {
-  const useTextured = showTextured.checked && Object.keys(state.materialById).length > 0;
+  const useTextured = showTextured.checked && hasReadyTexturedMaterials();
   for (const mesh of state.meshObjects) {
     mesh.visible = !mesh.userData.hidden;
     const wire = mesh.userData.wire;
@@ -822,7 +863,7 @@ function updateMeshVisibility() {
 }
 
 function syncSelectedMeshVisuals() {
-  const useTextured = showTextured.checked && Object.keys(state.materialById).length > 0;
+  const useTextured = showTextured.checked && hasReadyTexturedMaterials();
   for (const mesh of state.meshObjects) {
     const selected = mesh === state.selectedMesh && !mesh.userData.hidden;
     const wire = mesh.userData.wire;
@@ -1027,7 +1068,7 @@ function updateSummary() {
   const colliderStats = state.colliders ? state.colliders.stats : null;
   const meshStats = state.meshes ? state.meshes.stats : null;
   const matStats = Object.keys(state.materialById).length > 0
-    ? `${Object.keys(state.materialById).length} materials`
+    ? `${Object.keys(state.materialById).length} materials (${state.textureLoadStats.loaded}/${state.textureLoadStats.total} textures)`
     : "Not loaded";
   setDefinitionList(summary, [
     ["Map", data.mapName],
@@ -1082,8 +1123,8 @@ function initializeColliders(data) {
 function initializeMeshes(data) {
   state.meshes = data;
   buildMeshes(data);
+  applyMeshMaterials();
   updateSummary();
-  requestDraw();
   setStatus(`Loaded ${state.data.stats.tileCount} tiles and ${data.stats.meshInstanceCount} mesh instances. Click a mesh for material slots.`);
 }
 
