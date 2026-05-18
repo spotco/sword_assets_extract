@@ -115,6 +115,15 @@ const meshMaterial = new THREE.MeshBasicMaterial({
   side: THREE.DoubleSide,
 });
 const meshWireMaterial = new THREE.LineBasicMaterial({ color: 0xd8e4e8, transparent: true, opacity: 0.2 });
+const selectedMeshWireMaterial = new THREE.LineBasicMaterial({ color: 0xffd166, transparent: true, opacity: 0.95 });
+const selectedMeshGlowMaterial = new THREE.MeshBasicMaterial({
+  color: 0xffd166,
+  transparent: true,
+  opacity: 0.16,
+  depthWrite: false,
+  side: THREE.BackSide,
+  blending: THREE.AdditiveBlending,
+});
 const colliderMaterial = new THREE.LineBasicMaterial({ color: colors.collider, transparent: true, opacity: 0.72 });
 
 function setStatus(text) {
@@ -350,6 +359,7 @@ function applyMeshMaterials() {
   for (const wire of state.wireObjects) {
     wire.visible = !useTextured;
   }
+  syncSelectedMeshVisuals();
   requestDraw();
 }
 
@@ -451,16 +461,21 @@ function updateMovement(now) {
   state.lastMovementTime = now;
 
   let right = 0;
-  let forward = 0;
+  let zoomDirection = 0;
   if (state.keys.has("a") || state.keys.has("arrowleft")) right -= 1;
   if (state.keys.has("d") || state.keys.has("arrowright")) right += 1;
-  if (state.keys.has("w") || state.keys.has("arrowup")) forward += 1;
-  if (state.keys.has("s") || state.keys.has("arrowdown")) forward -= 1;
+  if (state.keys.has("w") || state.keys.has("arrowup")) zoomDirection -= 1;
+  if (state.keys.has("s") || state.keys.has("arrowdown")) zoomDirection += 1;
 
-  if (right || forward) {
-    const length = Math.hypot(right, forward) || 1;
+  if (right || zoomDirection) {
+    const length = Math.hypot(right, zoomDirection) || 1;
     const speed = state.zoom * 0.85;
-    moveCameraByView((right / length) * speed * elapsed, (forward / length) * speed * elapsed);
+    moveCameraByView((right / length) * speed * elapsed, 0);
+    if (zoomDirection) {
+      const zoomSpeed = state.zoom * 1.75;
+      state.zoom = THREE.MathUtils.clamp(state.zoom + (zoomDirection / length) * zoomSpeed * elapsed, 5, 120);
+      resizeRenderer();
+    }
     requestDraw();
     window.requestAnimationFrame(updateMovement);
     return;
@@ -502,6 +517,8 @@ function clearGroup(group) {
         edgeMaterial,
         meshMaterial,
         meshWireMaterial,
+        selectedMeshWireMaterial,
+        selectedMeshGlowMaterial,
         colliderMaterial,
         ...Object.values(tileMaterials),
       ].includes(child.material);
@@ -604,7 +621,16 @@ function buildMeshes(data) {
     mesh.userData.wire = wire;
     meshGroup.add(wire);
     state.wireObjects.push(wire);
+
+    const glow = new THREE.Mesh(geometry, selectedMeshGlowMaterial);
+    glow.renderOrder = 3;
+    glow.scale.setScalar(1.02);
+    glow.visible = false;
+    glow.userData.mesh = mesh;
+    mesh.userData.glow = glow;
+    meshGroup.add(glow);
   }
+  syncSelectedMeshVisuals();
 }
 
 function colliderPosition(collider) {
@@ -679,9 +705,11 @@ function updateSelectedMesh(mesh) {
   state.selectedMesh = mesh;
   hideSelectedMesh.disabled = !mesh || mesh.userData.hidden;
   meshMaterials.replaceChildren();
+  syncSelectedMeshVisuals();
 
   if (!mesh) {
     setDefinitionList(meshSelection, [["Mesh", "None"]]);
+    requestDraw();
     return;
   }
 
@@ -702,6 +730,7 @@ function updateSelectedMesh(mesh) {
   ]);
   renderMeshMaterialSlots(instance);
   logViewerEvent("mesh-select", meshDebugPayload(instance));
+  requestDraw();
 }
 
 function renderMeshMaterialSlots(instance) {
@@ -741,6 +770,25 @@ function updateMeshVisibility() {
     mesh.visible = !mesh.userData.hidden;
     const wire = mesh.userData.wire;
     if (wire) wire.visible = !mesh.userData.hidden && !useTextured;
+    const glow = mesh.userData.glow;
+    if (glow) glow.visible = false;
+  }
+  syncSelectedMeshVisuals();
+}
+
+function syncSelectedMeshVisuals() {
+  const useTextured = showTextured.checked && Object.keys(state.materialById).length > 0;
+  for (const mesh of state.meshObjects) {
+    const selected = mesh === state.selectedMesh && !mesh.userData.hidden;
+    const wire = mesh.userData.wire;
+    const glow = mesh.userData.glow;
+    if (wire) {
+      wire.material = selected ? selectedMeshWireMaterial : meshWireMaterial;
+      wire.visible = selected || (!mesh.userData.hidden && !useTextured);
+    }
+    if (glow) {
+      glow.visible = selected;
+    }
   }
 }
 
@@ -1083,14 +1131,6 @@ window.addEventListener("keydown", (event) => {
   const key = event.key.toLowerCase();
   if (!["w", "a", "s", "d", "arrowup", "arrowdown", "arrowleft", "arrowright"].includes(key)) return;
   event.preventDefault();
-  if (key === "w" || key === "arrowup") {
-    zoomByWheelDirection(-1);
-    return;
-  }
-  if (key === "s" || key === "arrowdown") {
-    zoomByWheelDirection(1);
-    return;
-  }
   state.keys.add(key);
   requestMovement();
 });
