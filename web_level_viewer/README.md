@@ -15,7 +15,7 @@ Run from the repository root:
 This script:
 
 - stages a small static-site build with relative viewer URLs
-- points the viewer at `https://raw.githubusercontent.com/spotco/SwordOfConvallaria_LevelPreview/main/web_levels`
+- points the viewer at `https://raw.githubusercontent.com/spotco/SwordOfConvallaria_LevelPreview/refs/heads/master/web_levels`
 - writes the final publishable folder to `..\SwordOfConvallaria_LevelPreview`
 
 The packaged folder contains:
@@ -28,7 +28,7 @@ The packaged folder contains:
 You can override the remote source:
 
 ```powershell
-.\build_sword_level_preview.ps1 -RemoteAssetBase "https://raw.githubusercontent.com/spotco/SwordOfConvallaria_LevelPreview/main/web_levels"
+.\build_sword_level_preview.ps1 -RemoteAssetBase "https://raw.githubusercontent.com/spotco/SwordOfConvallaria_LevelPreview/refs/heads/master/web_levels"
 ```
 
 The packaged viewer expects that remote repository to contain `web_levels/index.json` plus per-map folders. Right now `spotco/SwordOfConvallaria_LevelPreview` is empty, so the built viewer will not load maps until those files are pushed there.

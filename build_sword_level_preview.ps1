@@ -1,7 +1,7 @@
 [CmdletBinding()]
 param(
     [string]$OutputRoot = (Join-Path (Split-Path -Parent $PSScriptRoot) "SwordOfConvallaria_LevelPreview"),
-    [string]$RemoteAssetBase = "https://raw.githubusercontent.com/spotco/SwordOfConvallaria_LevelPreview/main/web_levels"
+    [string]$RemoteAssetBase = "https://raw.githubusercontent.com/spotco/SwordOfConvallaria_LevelPreview/refs/heads/master/web_levels"
 )
 
 Set-StrictMode -Version Latest
