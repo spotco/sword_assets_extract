@@ -462,15 +462,21 @@ function updateMovement(now) {
 
   let right = 0;
   let zoomDirection = 0;
+  let vertical = 0;
   if (state.keys.has("a") || state.keys.has("arrowleft")) right -= 1;
   if (state.keys.has("d") || state.keys.has("arrowright")) right += 1;
   if (state.keys.has("w") || state.keys.has("arrowup")) zoomDirection -= 1;
   if (state.keys.has("s") || state.keys.has("arrowdown")) zoomDirection += 1;
+  if (state.keys.has("q")) vertical += 1;
+  if (state.keys.has("e")) vertical -= 1;
 
-  if (right || zoomDirection) {
-    const length = Math.hypot(right, zoomDirection) || 1;
+  if (right || zoomDirection || vertical) {
+    const length = Math.hypot(right, zoomDirection, vertical) || 1;
     const speed = state.zoom * 0.85;
     moveCameraByView((right / length) * speed * elapsed, 0);
+    if (vertical) {
+      state.target.y += (vertical / length) * speed * elapsed;
+    }
     if (zoomDirection) {
       const zoomSpeed = state.zoom * 1.75;
       state.zoom = THREE.MathUtils.clamp(state.zoom + (zoomDirection / length) * zoomSpeed * elapsed, 5, 120);
@@ -1102,7 +1108,7 @@ canvas.addEventListener("mousemove", (event) => {
     if (Math.abs(dx) + Math.abs(dy) > 2) state.movedDuringDrag = true;
     if (state.dragMode === "rotate") {
       state.yaw -= dx * 0.008;
-      state.pitch = THREE.MathUtils.clamp(state.pitch + dy * 0.006, THREE.MathUtils.degToRad(8), THREE.MathUtils.degToRad(82));
+      state.pitch = THREE.MathUtils.clamp(state.pitch + dy * 0.006, THREE.MathUtils.degToRad(-85), THREE.MathUtils.degToRad(85));
     } else {
       panByPixels(dx, dy);
     }
@@ -1129,7 +1135,7 @@ canvas.addEventListener("contextmenu", (event) => {
 window.addEventListener("keydown", (event) => {
   if (event.altKey || event.ctrlKey || event.metaKey) return;
   const key = event.key.toLowerCase();
-  if (!["w", "a", "s", "d", "arrowup", "arrowdown", "arrowleft", "arrowright"].includes(key)) return;
+  if (!["w", "a", "s", "d", "q", "e", "arrowup", "arrowdown", "arrowleft", "arrowright"].includes(key)) return;
   event.preventDefault();
   state.keys.add(key);
   requestMovement();
