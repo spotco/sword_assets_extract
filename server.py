@@ -23,12 +23,22 @@ from export_level_index import build_index
 
 INDEX_PATH = ROOT / "extracted" / "web_levels" / "index.json"
 VIEW_LOG_PATH = ROOT / "temp" / "web_level_viewer_debug.log"
+VIEWER_TEMPLATE_PATH = ROOT / "web_level_viewer" / "index.template.html"
 
 
 def ensure_level_index() -> None:
     INDEX_PATH.parent.mkdir(parents=True, exist_ok=True)
     payload = build_index(INDEX_PATH.parent)
     INDEX_PATH.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+def render_viewer_html(level_root: str, *, api_root: str | None, static_site: bool) -> bytes:
+    html = VIEWER_TEMPLATE_PATH.read_text(encoding="utf-8")
+    api_attr = f' data-api-root="{api_root}"' if api_root else ""
+    html = html.replace("__LEVEL_ROOT__", level_root)
+    html = html.replace("__API_ROOT_ATTR__", api_attr)
+    html = html.replace("__STATIC_SITE__", "true" if static_site else "false")
+    return html.encode("utf-8")
 
 
 def bundle_for_map(map_name: str) -> str:
@@ -53,6 +63,14 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.send_response(302)
             self.send_header("Location", "/web_level_viewer/")
             self.end_headers()
+            return
+        if parsed.path in {"/web_level_viewer/", "/web_level_viewer/index.html"}:
+            body = render_viewer_html("../extracted/web_levels", api_root="..", static_site=False)
+            self.send_response(200)
+            self.send_header("Content-Type", "text/html; charset=utf-8")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
             return
         if parsed.path == "/extracted/web_levels/index.json":
             ensure_level_index()

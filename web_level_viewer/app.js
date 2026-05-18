@@ -26,13 +26,35 @@ const extractModalStatus = document.getElementById("extractModalStatus");
 const extractClose = document.getElementById("extractClose");
 const meshTooltip = document.getElementById("meshTooltip");
 
+function trimSlashes(value, side) {
+  if (!value) return "";
+  if (side === "start") return value.replace(/^\/+/, "");
+  if (side === "end") return value.replace(/\/+$/, "");
+  return value.replace(/^\/+|\/+$/g, "");
+}
+
+function joinConfiguredUrl(base, path) {
+  const cleanBase = trimSlashes(base, "end");
+  const cleanPath = trimSlashes(path, "start");
+  return cleanBase ? `${cleanBase}/${cleanPath}` : `/${cleanPath}`;
+}
+
+function parseBooleanFlag(value) {
+  return String(value || "").toLowerCase() === "true";
+}
+
 const params = new URLSearchParams(window.location.search);
+const pageConfig = document.documentElement.dataset;
+const levelRoot = trimSlashes(params.get("levelRoot") || pageConfig.levelRoot || "../extracted/web_levels", "end");
+const apiRoot = trimSlashes(params.get("apiRoot") || pageConfig.apiRoot || "..", "end");
+const staticMode = parseBooleanFlag(params.get("static")) || parseBooleanFlag(pageConfig.staticSite);
+const apiEnabled = !staticMode;
 const mapName = params.get("map") || "stage_city-ca-da00101";
-const dataUrl = params.get("data") || `/extracted/web_levels/${mapName}/grid.json`;
+const dataUrl = params.get("data") || joinConfiguredUrl(levelRoot, `${mapName}/grid.json`);
 const collidersUrl = params.get("colliders") || dataUrl.replace(/grid\.json(?:\?.*)?$/, "colliders.json");
 const meshesUrl = params.get("meshes") || dataUrl.replace(/grid\.json(?:\?.*)?$/, "meshes.json");
 const materialsUrl = params.get("materials") || dataUrl.replace(/grid\.json(?:\?.*)?$/, "materials.json");
-const levelIndexUrl = params.get("index") || "/extracted/web_levels/index.json";
+const levelIndexUrl = params.get("index") || joinConfiguredUrl(levelRoot, "index.json");
 
 const state = {
   data: null,
@@ -204,6 +226,7 @@ function renderLevelMenu(index) {
 
   const extracted = (index.levels || []).filter((l) => l.isExtracted);
   const unextracted = (index.levels || []).filter((l) => !l.isExtracted);
+  let activeLevelButton = null;
 
   // If the current map isn't extracted, redirect to the first extracted one
   if (extracted.length > 0 && !extracted.some((l) => l.mapName === mapName)) {
@@ -225,9 +248,10 @@ function renderLevelMenu(index) {
       if (level.mapName !== mapName) window.location.href = mapUrl(level.mapName);
     });
     levelList.append(button);
+    if (level.mapName === mapName) activeLevelButton = button;
   }
 
-  if (unextracted.length > 0) {
+  if (unextracted.length > 0 && apiEnabled) {
     const sep = document.createElement("div");
     sep.className = "level-list-sep";
     sep.textContent = "Not extracted";
@@ -252,6 +276,12 @@ function renderLevelMenu(index) {
       levelList.append(row);
     }
   }
+
+  if (activeLevelButton) {
+    window.requestAnimationFrame(() => {
+      activeLevelButton.scrollIntoView({ block: "nearest" });
+    });
+  }
 }
 
 function appendExtractLog(text, type) {
@@ -263,6 +293,15 @@ function appendExtractLog(text, type) {
 }
 
 async function runExtraction(targetMap) {
+  if (!apiEnabled) {
+    extractModalMap.textContent = targetMap;
+    extractLog.replaceChildren();
+    appendExtractLog("Extraction is only available from the local development server.", "error");
+    extractModalStatus.textContent = "Unavailable";
+    extractClose.disabled = false;
+    extractModal.hidden = false;
+    return;
+  }
   extractModalMap.textContent = targetMap;
   extractLog.replaceChildren();
   extractModalStatus.textContent = "Running\u2026";
@@ -271,7 +310,7 @@ async function runExtraction(targetMap) {
 
   let response;
   try {
-    response = await fetch(`/api/extract?map=${encodeURIComponent(targetMap)}`, { method: "POST" });
+    response = await fetch(joinConfiguredUrl(apiRoot, `api/extract?map=${encodeURIComponent(targetMap)}`), { method: "POST" });
   } catch (err) {
     appendExtractLog(`Network error: ${err.message}`, "error");
     appendExtractLog("Is server.py running? (python server.py)", "error");
@@ -920,7 +959,8 @@ function meshDebugPayload(instance) {
 }
 
 function logViewerEvent(event, details) {
-  fetch("/api/view-log", {
+  if (!apiEnabled) return;
+  fetch(joinConfiguredUrl(apiRoot, "api/view-log"), {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ event, details }),
@@ -1024,7 +1064,11 @@ function initializeMissingLevel(error) {
   setDefinitionList(selection, [["Tile", "None"]]);
   setDefinitionList(meshSelection, [["Mesh", "None"]]);
   meshMaterials.replaceChildren();
-  setStatus(`No extracted data for ${mapName}. Use Extract in the map list, or run the export pipeline.`);
+  setStatus(
+    apiEnabled
+      ? `No extracted data for ${mapName}. Use Extract in the map list, or run the export pipeline.`
+      : `No packaged data for ${mapName}. Rebuild the static bundle to include this map.`,
+  );
 }
 
 function initializeColliders(data) {
@@ -1069,10 +1113,12 @@ function loadLevelIndex() {
 
 async function refreshLevelIndexList() {
   refreshLevelIndex.disabled = true;
-  levelCount.textContent = "Extracting map list...";
+  levelCount.textContent = apiEnabled ? "Extracting map list..." : "Refreshing map list...";
   try {
-    let response = await fetch("/api/level-index", { method: "POST" });
-    if (response.status === 404) {
+    let response = apiEnabled
+      ? await fetch(joinConfiguredUrl(apiRoot, "api/level-index"), { method: "POST" })
+      : await fetch(`${levelIndexUrl}?cb=${Date.now()}`, { cache: "no-store" });
+    if (apiEnabled && response.status === 404) {
       response = await fetch(`${levelIndexUrl}?cb=${Date.now()}`, { cache: "no-store" });
     }
     if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
@@ -1167,6 +1213,9 @@ extractClose.addEventListener("click", () => {
 window.addEventListener("resize", resizeRenderer);
 
 resizeRenderer();
+if (!apiEnabled) {
+  refreshLevelIndex.textContent = "Reload map list";
+}
 loadLevelIndex();
 fetch(dataUrl)
   .then((response) => {

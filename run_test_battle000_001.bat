@@ -1,0 +1,1 @@
+python level_probe/export_mesh_json.py --map stage_city-ca-da00101 && python level_probe/export_grid_json.py --map stage_city-ca-da00101 && python level_probe/export_level_index.py && python server.py
