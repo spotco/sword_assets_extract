@@ -10,7 +10,10 @@
     <main class="app">
       <aside class="level-menu">
         <div class="level-menu__header">
-          <h1>Battle Maps</h1>
+          <div class="level-menu__title-row">
+            <h1>Battle Maps</h1>
+            <button id="refreshLevelIndex" type="button" class="level-index-btn">Extract map list</button>
+          </div>
           <span id="levelCount">Loading</span>
         </div>
         <div id="levelList" class="level-list"></div>

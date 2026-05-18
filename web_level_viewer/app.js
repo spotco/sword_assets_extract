@@ -9,6 +9,7 @@ const status = document.getElementById("status");
 const renderStats = document.getElementById("renderStats");
 const levelCount = document.getElementById("levelCount");
 const levelList = document.getElementById("levelList");
+const refreshLevelIndex = document.getElementById("refreshLevelIndex");
 const showLabels = document.getElementById("showLabels");
 const showMeshes = document.getElementById("showMeshes");
 const showTextured = document.getElementById("showTextured");
@@ -853,9 +854,24 @@ function moveCameraByView(rightAmount, forwardAmount) {
 function resetCamera() {
   const center = state.data?.stats?.extent?.center || { x: 0, y: 0, z: 0 };
   state.target.set(center.x, center.y, center.z);
-  state.yaw = Math.PI / 4;
-  state.pitch = THREE.MathUtils.degToRad(58);
-  state.zoom = 24;
+  const defaultCamera = state.data?.metadata?.defaultCamera;
+  const forward = defaultCamera?.forward;
+  if (forward && Number.isFinite(forward.x) && Number.isFinite(forward.y) && Number.isFinite(forward.z)) {
+    const back = new THREE.Vector3(-forward.x, -forward.y, -forward.z).normalize();
+    const horizontal = Math.hypot(back.x, back.z);
+    state.yaw = Math.atan2(back.x, back.z);
+    state.pitch = Math.atan2(back.y, horizontal);
+    state.distance = Math.max(20, Math.hypot(
+      center.x - (defaultCamera.position?.x ?? center.x),
+      center.y - (defaultCamera.position?.y ?? center.y),
+      center.z - (defaultCamera.position?.z ?? center.z),
+    ));
+    state.zoom = defaultCamera.orthographicSize > 0 ? defaultCamera.orthographicSize * 2 : 24;
+  } else {
+    state.yaw = Math.PI / 4;
+    state.pitch = THREE.MathUtils.degToRad(58);
+    state.zoom = 24;
+  }
   resizeRenderer();
 }
 
@@ -892,6 +908,18 @@ function initialize(data) {
   meshMaterials.replaceChildren();
   resetCamera();
   setStatus(`Loaded ${data.stats.tileCount} tiles from ${dataUrl}. Left-drag pans. Right-drag rotates. W/S or arrows zoom.`);
+}
+
+function initializeMissingLevel(error) {
+  setDefinitionList(summary, [
+    ["Map", mapName],
+    ["Status", "Not extracted"],
+    ["Grid", error.message],
+  ]);
+  setDefinitionList(selection, [["Tile", "None"]]);
+  setDefinitionList(meshSelection, [["Mesh", "None"]]);
+  meshMaterials.replaceChildren();
+  setStatus(`No extracted data for ${mapName}. Use Extract in the map list, or run the export pipeline.`);
 }
 
 function initializeColliders(data) {
@@ -932,6 +960,24 @@ function loadLevelIndex() {
     .catch(() => {
       renderFallbackLevelMenu();
     });
+}
+
+async function refreshLevelIndexList() {
+  refreshLevelIndex.disabled = true;
+  levelCount.textContent = "Extracting map list...";
+  try {
+    let response = await fetch("/api/level-index", { method: "POST" });
+    if (response.status === 404) {
+      response = await fetch(`${levelIndexUrl}?cb=${Date.now()}`, { cache: "no-store" });
+    }
+    if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+    const index = await response.json();
+    renderLevelMenu(index);
+  } catch (error) {
+    levelCount.textContent = `Map list failed: ${error.message}`;
+  } finally {
+    refreshLevelIndex.disabled = false;
+  }
 }
 
 canvas.addEventListener("mousedown", (event) => {
@@ -1016,6 +1062,7 @@ showNoEnter.addEventListener("change", requestDraw);
 resetView.addEventListener("click", resetCamera);
 hideSelectedMesh.addEventListener("click", () => hideMesh(state.selectedMesh));
 showAllMeshes.addEventListener("click", showEveryMesh);
+refreshLevelIndex.addEventListener("click", refreshLevelIndexList);
 extractClose.addEventListener("click", () => {
   extractModal.hidden = true;
   loadLevelIndex();
@@ -1036,5 +1083,5 @@ fetch(dataUrl)
     loadOptionalJson(materialsUrl, initializeMaterials, "Material data"),
   ]))
   .catch((error) => {
-    setStatus(`Could not load ${dataUrl}: ${error.message}`);
+    initializeMissingLevel(error);
   });

@@ -16,10 +16,19 @@ from pathlib import Path
 
 PORT = 5173
 ROOT = Path(__file__).parent
+sys.path.insert(0, str(ROOT / "level_probe"))
+
+from export_level_index import build_index
 
 
 INDEX_PATH = ROOT / "extracted" / "web_levels" / "index.json"
 VIEW_LOG_PATH = ROOT / "temp" / "web_level_viewer_debug.log"
+
+
+def ensure_level_index() -> None:
+    INDEX_PATH.parent.mkdir(parents=True, exist_ok=True)
+    payload = build_index(INDEX_PATH.parent)
+    INDEX_PATH.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
 def bundle_for_map(map_name: str) -> str:
@@ -39,17 +48,23 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         super().__init__(*args, directory=str(ROOT), **kwargs)
 
     def do_GET(self):
-        if self.path == "/":
+        parsed = urllib.parse.urlparse(self.path)
+        if parsed.path == "/":
             self.send_response(302)
             self.send_header("Location", "/web_level_viewer/")
             self.end_headers()
             return
+        if parsed.path == "/extracted/web_levels/index.json":
+            ensure_level_index()
         super().do_GET()
 
     def do_POST(self):
         parsed = urllib.parse.urlparse(self.path)
         if parsed.path == "/api/view-log":
             self._write_view_log()
+            return
+        if parsed.path == "/api/level-index":
+            self._write_level_index()
             return
 
         if parsed.path != "/api/extract":
@@ -126,6 +141,19 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.end_headers()
         except Exception as exc:
             self.send_error(400, str(exc))
+
+    def _write_level_index(self):
+        try:
+            ensure_level_index()
+            payload = json.loads(INDEX_PATH.read_text(encoding="utf-8"))
+            body = json.dumps(payload).encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+        except Exception as exc:
+            self.send_error(500, str(exc))
 
     def log_message(self, fmt, *args):
         try:
