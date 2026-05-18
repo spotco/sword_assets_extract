@@ -6,9 +6,14 @@ import json
 from pathlib import Path
 from typing import Any
 
-import UnityPy
-
 from common import safe_name, resolve_asset_path, write_json
+from export_frame import (
+    build_export_frame,
+    camera_from_bundle,
+    describe_export_frame,
+    transform_camera,
+    transform_vec3_dict,
+)
 from export_level_index import build_index
 
 
@@ -28,119 +33,6 @@ def parse_vec3(text: str) -> dict[str, float] | None:
         return None
     return {"x": x, "y": y, "z": z}
 
-
-def pptr_id(value: Any) -> int | None:
-    return getattr(value, "path_id", None) or getattr(value, "m_PathID", None)
-
-
-def object_key(obj: Any) -> tuple[int, int]:
-    return (id(obj.assets_file), int(obj.path_id))
-
-
-def ref_key(ref: Any) -> tuple[int, int] | None:
-    path_id = pptr_id(ref)
-    assets_file = getattr(ref, "assetsfile", None)
-    if path_id is None or assets_file is None:
-        return None
-    return (id(assets_file), int(path_id))
-
-
-def vec3_dict(value: Any) -> dict[str, float] | None:
-    if value is None or not all(hasattr(value, attr) for attr in ("x", "y", "z")):
-        return None
-    return {"x": float(value.x), "y": float(value.y), "z": float(value.z)}
-
-
-def quat_dict(value: Any) -> dict[str, float] | None:
-    if value is None or not all(hasattr(value, attr) for attr in ("x", "y", "z", "w")):
-        return None
-    return {"x": float(value.x), "y": float(value.y), "z": float(value.z), "w": float(value.w)}
-
-
-def rotate_quat(q: dict[str, float], vec: tuple[float, float, float]) -> dict[str, float]:
-    x, y, z, w = q["x"], q["y"], q["z"], q["w"]
-    xx, yy, zz = x * x, y * y, z * z
-    xy, xz, yz = x * y, x * z, y * z
-    wx, wy, wz = w * x, w * y, w * z
-    matrix = [
-        [1 - 2 * (yy + zz), 2 * (xy - wz), 2 * (xz + wy)],
-        [2 * (xy + wz), 1 - 2 * (xx + zz), 2 * (yz - wx)],
-        [2 * (xz - wy), 2 * (yz + wx), 1 - 2 * (xx + yy)],
-    ]
-    return {
-        "x": sum(matrix[0][i] * vec[i] for i in range(3)),
-        "y": sum(matrix[1][i] * vec[i] for i in range(3)),
-        "z": sum(matrix[2][i] * vec[i] for i in range(3)),
-    }
-
-
-def camera_from_bundle(bundle_path: Path) -> dict[str, Any] | None:
-    try:
-        env = UnityPy.load(str(bundle_path))
-    except Exception:
-        return None
-
-    objects = {}
-    types = {}
-    for obj in env.objects:
-        key = object_key(obj)
-        types[key] = obj.type.name
-        try:
-            objects[key] = obj.read()
-        except Exception:
-            continue
-
-    camera_key = None
-    for key, data in objects.items():
-        if types.get(key) != "MonoBehaviour" or not hasattr(data, "camera"):
-            continue
-        camera_key = ref_key(getattr(data, "camera", None))
-        if camera_key:
-            break
-    if camera_key is None:
-        for key, type_name in types.items():
-            if type_name == "Camera":
-                camera_key = key
-                break
-    if camera_key is None:
-        return None
-
-    camera = objects.get(camera_key)
-    go_key = ref_key(getattr(camera, "m_GameObject", None))
-    transform = None
-    transform_key = None
-    for key, data in objects.items():
-        if types.get(key) in {"Transform", "RectTransform"} and ref_key(getattr(data, "m_GameObject", None)) == go_key:
-            transform = data
-            transform_key = key
-            break
-    if transform is None:
-        return None
-
-    position = vec3_dict(getattr(transform, "m_LocalPosition", None))
-    rotation = quat_dict(getattr(transform, "m_LocalRotation", None))
-    if position is None or rotation is None:
-        return None
-
-    forward = rotate_quat(rotation, (0.0, 0.0, 1.0))
-    right = rotate_quat(rotation, (1.0, 0.0, 0.0))
-    up = rotate_quat(rotation, (0.0, 1.0, 0.0))
-    return {
-        "source": "MapProperty.camera" if types.get(camera_key) == "Camera" else "Camera",
-        "cameraId": str(camera_key[1]),
-        "gameObjectId": str(go_key[1]) if go_key else "",
-        "transformId": str(transform_key[1]) if transform_key else "",
-        "position": position,
-        "rotation": rotation,
-        "forward": forward,
-        "right": right,
-        "up": up,
-        "orthographic": bool(getattr(camera, "orthographic", False)),
-        "orthographicSize": float(getattr(camera, "orthographic_size", 0.0) or 0.0),
-        "fieldOfView": float(getattr(camera, "field_of_view", 0.0) or 0.0),
-    }
-
-
 def walkability_from_path(path: str) -> str:
     marker = "/emptyblock/"
     if marker not in path:
@@ -149,7 +41,7 @@ def walkability_from_path(path: str) -> str:
     return tail.split("/", 1)[0] or "unknown"
 
 
-def read_grid(path: Path) -> list[dict[str, Any]]:
+def read_grid(path: Path, export_frame: dict[str, Any] | None) -> list[dict[str, Any]]:
     with path.open("r", newline="", encoding="utf-8") as handle:
         rows = list(csv.DictReader(handle))
 
@@ -173,15 +65,15 @@ def read_grid(path: Path) -> list[dict[str, Any]]:
                 "name": row.get("name", ""),
                 "path": path_text,
                 "walkability": walkability_from_path(path_text),
-                "position": position,
-                "localPosition": local,
+                "position": transform_vec3_dict(position, export_frame),
+                "localPosition": transform_vec3_dict(local, export_frame),
                 "blockType": int(block_type) if block_type.isdigit() else block_type,
                 "isGamepadCursorMovable": row.get("is_gamepad_cursor_movable", ""),
                 "layer": row.get("layer", ""),
                 "collider": {
                     "type": row.get("collider_type", ""),
                     "isTrigger": row.get("is_trigger", ""),
-                    "center": collider_center,
+                    "center": transform_vec3_dict(collider_center, export_frame),
                     "size": collider_size,
                 },
             }
@@ -220,7 +112,12 @@ def read_scene_object_indexes(path: Path) -> tuple[dict[str, dict[str, Any]], di
     return game_objects, transforms_by_go
 
 
-def read_colliders(path: Path, scene_objects_path: Path, tiles: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def read_colliders(
+    path: Path,
+    scene_objects_path: Path,
+    tiles: list[dict[str, Any]],
+    export_frame: dict[str, Any] | None,
+) -> list[dict[str, Any]]:
     if not path.exists():
         return []
 
@@ -238,7 +135,7 @@ def read_colliders(path: Path, scene_objects_path: Path, tiles: list[dict[str, A
                 position = tile.get("position")
                 source = "grid_tile"
             elif transform.get("localPosition"):
-                position = transform.get("localPosition")
+                position = transform_vec3_dict(transform.get("localPosition"), export_frame)
 
             center = parse_vec3(row.get("center", ""))
             size = parse_vec3(row.get("size", ""))
@@ -254,7 +151,7 @@ def read_colliders(path: Path, scene_objects_path: Path, tiles: list[dict[str, A
                     "isTrigger": row.get("is_trigger", ""),
                     "position": position,
                     "positionSource": source if position else "",
-                    "center": center,
+                    "center": transform_vec3_dict(center, export_frame),
                     "size": size,
                     "tilePath": tile.get("path", "") if tile else "",
                     "walkability": tile.get("walkability", "") if tile else "",
@@ -264,13 +161,14 @@ def read_colliders(path: Path, scene_objects_path: Path, tiles: list[dict[str, A
     return colliders
 
 
-def useful_metadata(raw: dict[str, Any]) -> dict[str, Any]:
+def useful_metadata(raw: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any] | None]:
     result: dict[str, Any] = {
         "bundle": raw.get("bundle", ""),
         "resolvedBundle": raw.get("resolved_bundle", ""),
         "blockCount": raw.get("block_count", 0),
         "blockTypeCounts": raw.get("block_type_counts", {}),
     }
+    export_frame = None
     for item in raw.get("metadata", []):
         script = item.get("script")
         fields = item.get("fields", {})
@@ -301,8 +199,12 @@ def useful_metadata(raw: dict[str, Any]) -> dict[str, Any]:
     if bundle:
         default_camera = camera_from_bundle(resolve_asset_path(Path(bundle)))
         if default_camera:
-            result["defaultCamera"] = default_camera
-    return result
+            export_frame = build_export_frame(default_camera)
+            result["defaultCamera"] = transform_camera(default_camera, export_frame)
+            export_frame_info = describe_export_frame(export_frame)
+            if export_frame_info:
+                result["exportFrame"] = export_frame_info
+    return result, export_frame
 
 
 def extent_for_tiles(tiles: list[dict[str, Any]]) -> dict[str, dict[str, float]]:
@@ -323,9 +225,13 @@ def extent_for_tiles(tiles: list[dict[str, Any]]) -> dict[str, dict[str, float]]
     return {"min": minimum, "max": maximum, "center": center}
 
 
-def build_payload(map_name: str, grid_path: Path, metadata_path: Path) -> dict[str, Any]:
-    tiles = read_grid(grid_path)
-    metadata = useful_metadata(read_metadata(metadata_path))
+def build_payload(
+    map_name: str,
+    grid_path: Path,
+    metadata_path: Path,
+) -> tuple[dict[str, Any], dict[str, Any] | None]:
+    metadata, export_frame = useful_metadata(read_metadata(metadata_path))
+    tiles = read_grid(grid_path, export_frame)
     walkability_counts: dict[str, int] = {}
     for tile in tiles:
         key = str(tile["walkability"])
@@ -345,7 +251,7 @@ def build_payload(map_name: str, grid_path: Path, metadata_path: Path) -> dict[s
             "extent": extent_for_tiles(tiles),
         },
         "tiles": tiles,
-    }
+    }, export_frame
 
 
 def build_colliders_payload(
@@ -353,8 +259,9 @@ def build_colliders_payload(
     colliders_path: Path,
     scene_objects_path: Path,
     tiles: list[dict[str, Any]],
+    export_frame: dict[str, Any] | None,
 ) -> dict[str, Any]:
-    colliders = read_colliders(colliders_path, scene_objects_path, tiles)
+    colliders = read_colliders(colliders_path, scene_objects_path, tiles, export_frame)
     type_counts: dict[str, int] = {}
     drawable_count = 0
     for collider in colliders:
@@ -399,9 +306,15 @@ def main() -> int:
         raise SystemExit(f"Missing grid CSV: {grid_path}")
 
     out_dir = args.out_root / map_name
-    payload = build_payload(map_name, grid_path, metadata_path)
+    payload, export_frame = build_payload(map_name, grid_path, metadata_path)
     write_json(out_dir / "grid.json", payload)
-    colliders_payload = build_colliders_payload(map_name, colliders_path, scene_objects_path, payload["tiles"])
+    colliders_payload = build_colliders_payload(
+        map_name,
+        colliders_path,
+        scene_objects_path,
+        payload["tiles"],
+        export_frame,
+    )
     write_json(out_dir / "colliders.json", colliders_payload)
     write_json(args.out_root / "index.json", build_index(args.out_root))
     print(f"Wrote {out_dir / 'grid.json'} with {len(payload['tiles'])} tiles")

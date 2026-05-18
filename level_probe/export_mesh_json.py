@@ -11,6 +11,7 @@ import UnityPy
 from UnityPy.helpers.MeshHelper import MeshHandler
 
 from common import ASSETS_ROOT, rel, resolve_asset_path, safe_name, write_json
+from export_frame import build_export_frame, camera_from_bundle, describe_export_frame, transform_vec3
 from export_level_index import build_index
 
 
@@ -368,6 +369,7 @@ def export_mesh_instance(
     game_objects: dict[ObjectKey, Any],
     transforms: dict[ObjectKey, Any],
     transform_by_go: dict[ObjectKey, ObjectKey],
+    export_frame: dict[str, Vec3] | None,
 ) -> dict[str, Any]:
     mesh_ref = getattr(mesh_filter, "m_Mesh", None)
     mesh = mesh_ref.read()
@@ -405,7 +407,10 @@ def export_mesh_instance(
     has_uvs = len(raw_uvs) >= handler.m_VertexCount
     for old_index in used_indices:
         point = handler.m_Vertices[old_index]
-        vertices.extend(round_vec3(transform_point(matrix, (float(point[0]), float(point[1]), float(point[2])))))
+        world_point = transform_point(matrix, (float(point[0]), float(point[1]), float(point[2])))
+        if export_frame is not None:
+            world_point = transform_vec3(world_point, export_frame)
+        vertices.extend(round_vec3(world_point))
         if has_uvs:
             uv = raw_uvs[old_index]
             uvs.extend([round(float(uv[0]), 5), round(float(uv[1]), 5)])
@@ -440,7 +445,7 @@ def export_mesh_instance(
         "meshFilterId": str(mesh_filter_key[1]),
         "meshId": str(pptr_id(mesh_ref) or ""),
         "meshName": object_name(mesh),
-        "coordinateSpace": coordinate_space,
+        "coordinateSpace": f"camera_aligned_from_{coordinate_space}" if export_frame is not None else coordinate_space,
         "staticBatch": {
             "firstSubMesh": static_first,
             "subMeshCount": static_count,
@@ -468,6 +473,8 @@ def main() -> int:
 
     map_name = safe_name(args.map_name)
     bundle = resolve_asset_path(args.bundle or Path("battle/map") / f"{map_name}.unity3d")
+    default_camera = camera_from_bundle(bundle)
+    export_frame = build_export_frame(default_camera)
 
     main_asset_names = asset_file_names(bundle)
     deps = [] if args.no_dependencies else dependency_paths(bundle)
@@ -498,6 +505,7 @@ def main() -> int:
                     game_objects,
                     transforms,
                     transform_by_go,
+                    export_frame,
                 )
             )
         except Exception as exc:
@@ -522,6 +530,7 @@ def main() -> int:
             "resolvedBundle": str(bundle),
             "dependencyBundles": [rel(path) for path in deps],
         },
+        "exportFrame": describe_export_frame(export_frame),
         "stats": {
             "meshFilterCount": len([key for key in mesh_filters if key[0] in target_asset_ids]),
             "meshInstanceCount": len(instances),

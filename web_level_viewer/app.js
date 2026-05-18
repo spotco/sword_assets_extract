@@ -38,6 +38,7 @@ const state = {
   data: null,
   colliders: null,
   meshes: null,
+  exportTransform: null,
   selected: null,
   selectedMesh: null,
   hovered: null,
@@ -47,7 +48,6 @@ const state = {
   pitch: THREE.MathUtils.degToRad(58),
   distance: 42,
   cameraUp: new THREE.Vector3(0, 1, 0),
-  mirrorCameraX: false,
   zoom: 28,
   target: new THREE.Vector3(0, 0, 0),
   dragMode: null,
@@ -98,9 +98,6 @@ const camera = new THREE.OrthographicCamera(-10, 10, 10, -10, 0.01, 1000);
 const raycaster = new THREE.Raycaster();
 const mouse = new THREE.Vector2();
 
-const tileGeometry = new THREE.PlaneGeometry(0.84, 0.84);
-tileGeometry.rotateX(-Math.PI / 2);
-
 const tileMaterials = {
   enter: new THREE.MeshBasicMaterial({ color: colors.enter, side: THREE.DoubleSide }),
   noenter: new THREE.MeshBasicMaterial({ color: colors.noenter, side: THREE.DoubleSide }),
@@ -137,6 +134,49 @@ function setDefinitionList(node, rows) {
     }
     node.append(dt, dd);
   }
+}
+
+function identityExportTransform() {
+  const axisX = new THREE.Vector3(1, 0, 0);
+  const axisY = new THREE.Vector3(0, 1, 0);
+  const axisZ = new THREE.Vector3(0, 0, 1);
+  return {
+    axisX,
+    axisY,
+    axisZ,
+    matrix: new THREE.Matrix4().makeBasis(axisX, axisY, axisZ),
+  };
+}
+
+function exportTransformFromPayload(payload) {
+  const basis = payload?.metadata?.exportFrame?.basis || payload?.exportFrame?.basis;
+  if (!basis) return identityExportTransform();
+  const axisX = new THREE.Vector3(basis.right?.x ?? 1, basis.up?.x ?? 0, basis.forward?.x ?? 0).normalize();
+  const axisY = new THREE.Vector3(basis.right?.y ?? 0, basis.up?.y ?? 1, basis.forward?.y ?? 0).normalize();
+  const axisZ = new THREE.Vector3(basis.right?.z ?? 0, basis.up?.z ?? 0, basis.forward?.z ?? 1).normalize();
+  return {
+    axisX,
+    axisY,
+    axisZ,
+    matrix: new THREE.Matrix4().makeBasis(axisX, axisY, axisZ),
+  };
+}
+
+function sourceYOffset(amount) {
+  return (state.exportTransform || identityExportTransform()).axisY.clone().multiplyScalar(amount);
+}
+
+function tileGeometryForExport() {
+  const geometry = new THREE.PlaneGeometry(0.84, 0.84);
+  geometry.rotateX(-Math.PI / 2);
+  geometry.applyMatrix4((state.exportTransform || identityExportTransform()).matrix);
+  return geometry;
+}
+
+function boxGeometryForExport(width, height, depth) {
+  const geometry = new THREE.BoxGeometry(width, height, depth);
+  geometry.applyMatrix4((state.exportTransform || identityExportTransform()).matrix);
+  return geometry;
 }
 
 function mapUrl(levelMapName) {
@@ -383,8 +423,8 @@ function resizeRenderer() {
   const height = Math.max(1, rect.height);
   const ratio = width / height;
   const halfHeight = state.zoom / 2;
-  camera.left = state.mirrorCameraX ? halfHeight * ratio : -halfHeight * ratio;
-  camera.right = state.mirrorCameraX ? -halfHeight * ratio : halfHeight * ratio;
+  camera.left = -halfHeight * ratio;
+  camera.right = halfHeight * ratio;
   camera.top = halfHeight;
   camera.bottom = -halfHeight;
   camera.updateProjectionMatrix();
@@ -406,10 +446,6 @@ function requestMovement() {
   window.requestAnimationFrame(updateMovement);
 }
 
-function screenXSign() {
-  return state.mirrorCameraX ? -1 : 1;
-}
-
 function updateMovement(now) {
   const elapsed = Math.min(0.05, Math.max(0, (now - state.lastMovementTime) / 1000));
   state.lastMovementTime = now;
@@ -424,7 +460,7 @@ function updateMovement(now) {
   if (right || forward) {
     const length = Math.hypot(right, forward) || 1;
     const speed = state.zoom * 0.85;
-    moveCameraByView((right / length) * speed * elapsed * screenXSign(), (forward / length) * speed * elapsed);
+    moveCameraByView((right / length) * speed * elapsed, (forward / length) * speed * elapsed);
     requestDraw();
     window.requestAnimationFrame(updateMovement);
     return;
@@ -497,20 +533,23 @@ function makeTileLabel(text) {
 }
 
 function addTile(tile) {
-  const mesh = new THREE.Mesh(tileGeometry, materialForTile(tile));
-  mesh.position.set(tile.position.x, tile.position.y + 0.035, tile.position.z);
+  const geometry = tileGeometryForExport();
+  const mesh = new THREE.Mesh(geometry, materialForTile(tile));
+  mesh.position.set(tile.position.x, tile.position.y, tile.position.z);
+  mesh.position.add(sourceYOffset(0.035));
   mesh.userData.tile = tile;
   mesh.renderOrder = 20;
   gridGroup.add(mesh);
   state.tileMeshes.push(mesh);
 
-  const edges = new THREE.LineSegments(new THREE.EdgesGeometry(tileGeometry), edgeMaterial);
+  const edges = new THREE.LineSegments(new THREE.EdgesGeometry(geometry), edgeMaterial);
   edges.position.copy(mesh.position);
   edges.renderOrder = 21;
   gridGroup.add(edges);
 
   const label = makeTileLabel(tile.blockType);
-  label.position.set(tile.position.x, tile.position.y + 0.08, tile.position.z);
+  label.position.set(tile.position.x, tile.position.y, tile.position.z);
+  label.position.add(sourceYOffset(0.08));
   label.renderOrder = 30;
   labelGroup.add(label);
   state.tileLabels.push(label);
@@ -585,7 +624,7 @@ function buildColliders(data) {
     if (collider.type !== "BoxCollider" || collider.enabled === "False" || !collider.size) continue;
     const position = colliderPosition(collider);
     if (!position) continue;
-    const geometry = new THREE.BoxGeometry(
+    const geometry = boxGeometryForExport(
       Math.max(0.08, Math.abs(collider.size.x || 0.08)),
       Math.max(0.08, Math.abs(collider.size.y || 0.08)),
       Math.max(0.08, Math.abs(collider.size.z || 0.08)),
@@ -838,12 +877,11 @@ function logViewerEvent(event, details) {
 function panByPixels(dx, dy) {
   const rect = canvas.getBoundingClientRect();
   const worldPerPixel = state.zoom / Math.max(1, rect.height);
-  const signedDx = dx * screenXSign();
   const right = new THREE.Vector3();
   const up = new THREE.Vector3();
   camera.updateMatrixWorld();
   camera.matrixWorld.extractBasis(right, up, new THREE.Vector3());
-  state.target.addScaledVector(right, -signedDx * worldPerPixel);
+  state.target.addScaledVector(right, -dx * worldPerPixel);
   state.target.addScaledVector(up, dy * worldPerPixel);
 }
 
@@ -872,7 +910,6 @@ function resetCamera() {
     state.yaw = Math.atan2(back.x, back.z);
     state.pitch = Math.atan2(back.y, horizontal);
     state.cameraUp.copy(up);
-    state.mirrorCameraX = true;
     state.distance = Math.max(20, Math.hypot(
       center.x - (defaultCamera.position?.x ?? center.x),
       center.y - (defaultCamera.position?.y ?? center.y),
@@ -883,7 +920,6 @@ function resetCamera() {
     state.yaw = Math.PI / 4;
     state.pitch = THREE.MathUtils.degToRad(58);
     state.cameraUp.set(0, 1, 0);
-    state.mirrorCameraX = false;
     state.zoom = 24;
   }
   resizeRenderer();
@@ -915,6 +951,7 @@ function updateSummary() {
 
 function initialize(data) {
   state.data = data;
+  state.exportTransform = exportTransformFromPayload(data);
   buildGrid(data);
   updateSummary();
   setDefinitionList(selection, [["Tile", "None"]]);
@@ -1016,7 +1053,7 @@ canvas.addEventListener("mousemove", (event) => {
     const dy = point.y - state.lastMouse.y;
     if (Math.abs(dx) + Math.abs(dy) > 2) state.movedDuringDrag = true;
     if (state.dragMode === "rotate") {
-      state.yaw -= dx * screenXSign() * 0.008;
+      state.yaw -= dx * 0.008;
       state.pitch = THREE.MathUtils.clamp(state.pitch + dy * 0.006, THREE.MathUtils.degToRad(8), THREE.MathUtils.degToRad(82));
     } else {
       panByPixels(dx, dy);

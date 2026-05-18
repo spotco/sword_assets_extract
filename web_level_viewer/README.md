@@ -19,6 +19,10 @@ This writes:
 - `extracted/web_levels/<map>/meshes.json`
 - `extracted/web_levels/index.json`
 
+The exporters now write grid, collider, mesh, and default-camera data in a
+camera-aligned export frame, so the viewer can use a normal non-mirrored
+orthographic camera and normal controls.
+
 The mesh exporter handles Unity static batching by drawing only the renderer's
 assigned submesh range. This avoids duplicating the whole combined mesh for
 every `MeshFilter`.

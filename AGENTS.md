@@ -2,17 +2,16 @@
 
 ## Sword Level Browser Rendering
 
-TODO:
+Fixed:
 
-1. Fix the map camera/axis inversion at export time instead of compensating in the web viewport.
-   Current evidence from `stage_city-ca-da00101`: Unity's embedded `MapProperty.camera`
-   has `forward ~= (+X, -Y, +Z)`, `right ~= (+X, 0, -Z)`, and `up ~= (+X, +Y, +Z)`.
-   The exported mesh/world positions put `muqiao` on low-X/high-Z, which should appear on
-   the left in the in-game camera view; the web viewer currently mirrors the orthographic
-   X projection and compensates controls with `screenXSign()`. Next step is to transform
-   exported grid/mesh/collider data into the correct in-game camera-oriented coordinate
-   frame so the web viewport can use a normal non-mirrored camera/projection and normal
-   controls without per-view inversion hacks.
+1. Export-space camera alignment is now handled during export instead of in the web viewport.
+   The grid, mesh, and collider exporters rotate world-space data into a camera-aligned
+   frame derived from the embedded `MapProperty.camera`, and the viewer now uses a normal
+   non-mirrored orthographic projection with normal pan/rotate/movement controls.
+   Reference evidence remains the same for `stage_city-ca-da00101`: Unity's embedded
+   camera basis is not aligned with raw world X/Z, so low-X/high-Z objects such as
+   `muqiao` must be transformed into camera-oriented export space to appear on the
+   correct side of the in-game view.
 
 Current level extraction evidence is documented in:
 
