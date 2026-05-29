@@ -83,10 +83,12 @@ const state = {
   tileLabels: [],
   colliderObjects: [],
   meshObjects: [],
+  billboardMeshes: [],
   wireObjects: [],
   hiddenMeshCount: 0,
   materialById: {},
   texturedMaterialCache: {},
+  animatedMaterials: [],
   textureLoadStats: { total: 0, loaded: 0, failed: 0 },
   levelIndex: null,
 };
@@ -404,16 +406,85 @@ function applyMeshMaterials() {
   requestDraw();
 }
 
+function flipbookForMaterialRecord(matRecord) {
+  const raw = matRecord?.colors?._FlipbookXYS;
+  if (!Array.isArray(raw) || raw.length < 2) return null;
+  const columns = Math.max(1, Math.round(Number(raw[0]) || 0));
+  const rows = Math.max(1, Math.round(Number(raw[1]) || 0));
+  if ((columns * rows) <= 1) return null;
+  return {
+    columns,
+    rows,
+    speed: Number(raw[2]) || 1,
+    startFrame: Number(raw[3]) || 0,
+  };
+}
+
+function baseColorForMaterialRecord(matRecord) {
+  const raw = matRecord?.colors?._BaseColor;
+  if (!Array.isArray(raw) || raw.length < 3) return new THREE.Color(0xffffff);
+  return new THREE.Color(
+    THREE.MathUtils.clamp(Number(raw[0]) || 0, 0, 1),
+    THREE.MathUtils.clamp(Number(raw[1]) || 0, 0, 1),
+    THREE.MathUtils.clamp(Number(raw[2]) || 0, 0, 1),
+  );
+}
+
+function animateFlipbookTexture(texture, flipbook, now) {
+  const frameCount = flipbook.columns * flipbook.rows;
+  const fps = Math.max(1, Math.abs(flipbook.speed) * 12);
+  const frame = ((Math.floor((now / 1000) * fps + flipbook.startFrame) % frameCount) + frameCount) % frameCount;
+  if (texture.userData.frame === frame) return false;
+  const column = frame % flipbook.columns;
+  const row = Math.floor(frame / flipbook.columns);
+  texture.offset.set(column / flipbook.columns, 1 - ((row + 1) / flipbook.rows));
+  texture.userData.frame = frame;
+  return true;
+}
+
+function updateAnimatedMaterials(now) {
+  let changed = false;
+  for (const material of state.animatedMaterials) {
+    if (!material?.map || !material.userData.flipbook) continue;
+    changed = animateFlipbookTexture(material.map, material.userData.flipbook, now) || changed;
+  }
+  return changed;
+}
+
+function hasActiveAnimatedMaterials() {
+  return showMeshes.checked && showTextured.checked && hasReadyTexturedMaterials() && state.animatedMaterials.length > 0;
+}
+
 function materialForMeshId(matId) {
   const matRecord = matId ? state.materialById[matId] : null;
   if (!matRecord?._textureReady) return null;
   const tex = matRecord?._texture ?? null;
   if (!tex) return null;
   if (!state.texturedMaterialCache[matId]) {
-    state.texturedMaterialCache[matId] = new THREE.MeshBasicMaterial({
+    const flipbook = flipbookForMaterialRecord(matRecord);
+    tex.wrapS = THREE.RepeatWrapping;
+    tex.wrapT = THREE.RepeatWrapping;
+    tex.repeat.set(1, 1);
+    tex.offset.set(0, 0);
+    if (flipbook) {
+      tex.repeat.set(1 / flipbook.columns, 1 / flipbook.rows);
+      animateFlipbookTexture(tex, flipbook, performance.now());
+    }
+    tex.needsUpdate = true;
+    const material = new THREE.MeshBasicMaterial({
       map: tex,
+      color: baseColorForMaterialRecord(matRecord),
+      transparent: true,
+      alphaTest: flipbook ? 0.04 : 0.01,
+      depthWrite: !flipbook,
       side: THREE.DoubleSide,
     });
+    if (flipbook) {
+      material.blending = THREE.AdditiveBlending;
+      material.userData.flipbook = flipbook;
+      state.animatedMaterials.push(material);
+    }
+    state.texturedMaterialCache[matId] = material;
   }
   return state.texturedMaterialCache[matId];
 }
@@ -570,6 +641,95 @@ function updateMovement(now) {
   state.movementQueued = false;
 }
 
+function planarGeometryInfo(geometry) {
+  const positions = geometry.getAttribute("position");
+  if (!positions || positions.count < 3) return null;
+
+  const a = new THREE.Vector3();
+  const b = new THREE.Vector3();
+  const c = new THREE.Vector3();
+  const ab = new THREE.Vector3();
+  const ac = new THREE.Vector3();
+  const normal = new THREE.Vector3();
+  let origin = null;
+
+  for (let index = 0; index <= positions.count - 3; index += 1) {
+    a.fromBufferAttribute(positions, index);
+    b.fromBufferAttribute(positions, index + 1);
+    c.fromBufferAttribute(positions, index + 2);
+    ab.subVectors(b, a);
+    ac.subVectors(c, a);
+    normal.crossVectors(ab, ac);
+    if (normal.lengthSq() > 1e-10) {
+      normal.normalize();
+      origin = a.clone();
+      break;
+    }
+  }
+
+  if (!origin) return null;
+  geometry.computeBoundingSphere();
+  const radius = geometry.boundingSphere?.radius || 0;
+  let maxDeviation = 0;
+  const point = new THREE.Vector3();
+  for (let index = 0; index < positions.count; index += 1) {
+    point.fromBufferAttribute(positions, index);
+    maxDeviation = Math.max(maxDeviation, Math.abs(point.clone().sub(origin).dot(normal)));
+  }
+  return {
+    center: geometry.boundingSphere?.center?.clone() || new THREE.Vector3(),
+    normal,
+    radius,
+    maxDeviation,
+  };
+}
+
+function isBillboardNamedInstance(instance) {
+  const text = `${instance?.name || ""} ${instance?.path || ""}`.toLowerCase();
+  if (!text) return false;
+  if (text.includes("stageanimation")) return true;
+  if (!/\btree\d+\b/.test(text)) return false;
+  return !/(?:^|[\/\s_-])(?:shadow|shad)(?:$|[\/\s_-])/.test(text);
+}
+
+function billboardInfoForInstance(instance, geometry) {
+  if (!isBillboardNamedInstance(instance)) return null;
+  const info = planarGeometryInfo(geometry);
+  if (!info) return null;
+  const tolerance = Math.max(0.001, info.radius * 0.0025);
+  return info.maxDeviation <= tolerance ? info : null;
+}
+
+function updateBillboardMeshes() {
+  const cameraVector = new THREE.Vector3();
+  const desiredNormal = new THREE.Vector3();
+  const projectedNormal = new THREE.Vector3();
+  const cross = new THREE.Vector3();
+
+  for (const mesh of state.billboardMeshes) {
+    const billboard = mesh.userData.billboard;
+    if (!billboard) continue;
+
+    cameraVector.subVectors(camera.position, mesh.position);
+    desiredNormal.copy(cameraVector).addScaledVector(billboard.axis, -cameraVector.dot(billboard.axis));
+    if (desiredNormal.lengthSq() < 1e-8) continue;
+    desiredNormal.normalize();
+
+    projectedNormal.copy(billboard.normal).addScaledVector(billboard.axis, -billboard.normal.dot(billboard.axis));
+    if (projectedNormal.lengthSq() < 1e-8) continue;
+    projectedNormal.normalize();
+
+    const angle = Math.atan2(
+      cross.crossVectors(projectedNormal, desiredNormal).dot(billboard.axis),
+      THREE.MathUtils.clamp(projectedNormal.dot(desiredNormal), -1, 1),
+    );
+    const rotation = new THREE.Quaternion().setFromAxisAngle(billboard.axis, angle);
+    mesh.quaternion.copy(rotation);
+    mesh.userData.wire?.quaternion.copy(rotation);
+    mesh.userData.glow?.quaternion.copy(rotation);
+  }
+}
+
 function draw() {
   state.renderQueued = false;
   updateCamera();
@@ -577,6 +737,7 @@ function draw() {
   colliderGroup.visible = showColliders.checked;
   labelGroup.visible = showLabels.checked && state.zoom <= 26;
   updateMeshVisibility();
+  updateBillboardMeshes();
   for (const mesh of state.tileMeshes) {
     const walkability = mesh.userData.tile.walkability;
     mesh.visible =
@@ -585,6 +746,11 @@ function draw() {
         : walkability === "noenter"
           ? showNoEnter.checked
           : true;
+  }
+
+  if (hasActiveAnimatedMaterials()) {
+    updateAnimatedMaterials(performance.now());
+    requestDraw();
   }
 
   renderer.info.reset();
@@ -614,6 +780,7 @@ function clearGroup(group) {
   if (group === meshGroup) {
     for (const mat of Object.values(state.texturedMaterialCache)) mat.dispose();
     state.texturedMaterialCache = {};
+    state.animatedMaterials = [];
     state.wireObjects = [];
   }
 }
@@ -671,6 +838,7 @@ function buildGrid(data) {
 function buildMeshes(data) {
   clearGroup(meshGroup);
   state.meshObjects = [];
+  state.billboardMeshes = [];
   state.wireObjects = [];
   state.selectedMesh = null;
   state.hiddenMeshCount = 0;
@@ -691,12 +859,25 @@ function buildMeshes(data) {
     }
     geometry.computeVertexNormals();
     geometry.computeBoundingSphere();
+    const billboardInfo = billboardInfoForInstance(instance, geometry);
+    if (billboardInfo) {
+      geometry.translate(-billboardInfo.center.x, -billboardInfo.center.y, -billboardInfo.center.z);
+      geometry.computeBoundingSphere();
+    }
 
     const mesh = new THREE.Mesh(geometry, meshMaterial);
     mesh.renderOrder = 1;
     mesh.userData.materialIds = instance.materialIds || [];
     mesh.userData.instance = instance;
     mesh.userData.hidden = false;
+    if (billboardInfo) {
+      mesh.position.copy(billboardInfo.center);
+      mesh.userData.billboard = {
+        axis: (state.exportTransform?.axisY || new THREE.Vector3(0, 1, 0)).clone().normalize(),
+        normal: billboardInfo.normal.clone(),
+      };
+      state.billboardMeshes.push(mesh);
+    }
     meshGroup.add(mesh);
     state.meshObjects.push(mesh);
 
@@ -704,6 +885,7 @@ function buildMeshes(data) {
     wire.renderOrder = 2;
     wire.userData.instance = instance;
     wire.userData.mesh = mesh;
+    if (billboardInfo) wire.position.copy(mesh.position);
     mesh.userData.wire = wire;
     meshGroup.add(wire);
     state.wireObjects.push(wire);
@@ -713,6 +895,7 @@ function buildMeshes(data) {
     glow.scale.setScalar(1.02);
     glow.visible = false;
     glow.userData.mesh = mesh;
+    if (billboardInfo) glow.position.copy(mesh.position);
     mesh.userData.glow = glow;
     meshGroup.add(glow);
   }
