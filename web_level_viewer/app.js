@@ -641,7 +641,7 @@ function updateMovement(now) {
   state.movementQueued = false;
 }
 
-function planarGeometryInfo(geometry) {
+function planarGeometryInfo(geometry, axis = new THREE.Vector3(0, 1, 0)) {
   const positions = geometry.getAttribute("position");
   if (!positions || positions.count < 3) return null;
 
@@ -672,11 +672,27 @@ function planarGeometryInfo(geometry) {
   const radius = geometry.boundingSphere?.radius || 0;
   let maxDeviation = 0;
   const point = new THREE.Vector3();
+  let minAxis = Infinity;
   for (let index = 0; index < positions.count; index += 1) {
     point.fromBufferAttribute(positions, index);
     maxDeviation = Math.max(maxDeviation, Math.abs(point.clone().sub(origin).dot(normal)));
+    minAxis = Math.min(minAxis, point.dot(axis));
   }
+
+  const anchor = new THREE.Vector3();
+  let anchorCount = 0;
+  const anchorTolerance = Math.max(0.001, radius * 0.0025);
+  for (let index = 0; index < positions.count; index += 1) {
+    point.fromBufferAttribute(positions, index);
+    if (Math.abs(point.dot(axis) - minAxis) <= anchorTolerance) {
+      anchor.add(point);
+      anchorCount += 1;
+    }
+  }
+  if (anchorCount > 0) anchor.divideScalar(anchorCount);
+  else anchor.copy(geometry.boundingSphere?.center || new THREE.Vector3());
   return {
+    anchor,
     center: geometry.boundingSphere?.center?.clone() || new THREE.Vector3(),
     normal,
     radius,
@@ -694,7 +710,7 @@ function isBillboardNamedInstance(instance) {
 
 function billboardInfoForInstance(instance, geometry) {
   if (!isBillboardNamedInstance(instance)) return null;
-  const info = planarGeometryInfo(geometry);
+  const info = planarGeometryInfo(geometry, (state.exportTransform?.axisY || new THREE.Vector3(0, 1, 0)).clone().normalize());
   if (!info) return null;
   const tolerance = Math.max(0.001, info.radius * 0.0025);
   return info.maxDeviation <= tolerance ? info : null;
@@ -861,7 +877,7 @@ function buildMeshes(data) {
     geometry.computeBoundingSphere();
     const billboardInfo = billboardInfoForInstance(instance, geometry);
     if (billboardInfo) {
-      geometry.translate(-billboardInfo.center.x, -billboardInfo.center.y, -billboardInfo.center.z);
+      geometry.translate(-billboardInfo.anchor.x, -billboardInfo.anchor.y, -billboardInfo.anchor.z);
       geometry.computeBoundingSphere();
     }
 
@@ -871,7 +887,7 @@ function buildMeshes(data) {
     mesh.userData.instance = instance;
     mesh.userData.hidden = false;
     if (billboardInfo) {
-      mesh.position.copy(billboardInfo.center);
+      mesh.position.copy(billboardInfo.anchor);
       mesh.userData.billboard = {
         axis: (state.exportTransform?.axisY || new THREE.Vector3(0, 1, 0)).clone().normalize(),
         normal: billboardInfo.normal.clone(),
