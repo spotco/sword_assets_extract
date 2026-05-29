@@ -688,8 +688,8 @@ function isBillboardNamedInstance(instance) {
   const text = `${instance?.name || ""} ${instance?.path || ""}`.toLowerCase();
   if (!text) return false;
   if (text.includes("stageanimation")) return true;
-  if (!/\btree\d+\b/.test(text)) return false;
-  return !/(?:^|[\/\s_-])(?:shadow|shad)(?:$|[\/\s_-])/.test(text);
+  if (/\btree\d+\b/.test(text) && !/(?:^|[\/\s_-])(?:shadow|shad)(?:$|[\/\s_-])/.test(text)) return true;
+  return /\/tree\d+ \(\d+\)\/tree\d+-shad$/.test((instance?.path || "").toLowerCase());
 }
 
 function billboardInfoForInstance(instance, geometry) {
